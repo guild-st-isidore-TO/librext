@@ -8,7 +8,7 @@ Back to [System Design](./system-design.md)
 
 ## SPEC
 
-According to https://www.markdownguide.org/basic-syntax/
+Core HTML elements rendered by Markdown processors, according to https://www.markdownguide.org/basic-syntax/
 
 ### Headings
 
