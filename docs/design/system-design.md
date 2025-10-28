@@ -14,7 +14,36 @@ Back to [main README](../../README.md)
     + CSS Variables
 - Build around core Markdown element set
 
-### React
+## MAJOR SECTIONS
+
+### Style Guides
+
+- Figma examples
+- Style Guide in PNG, SVG
+
+### Assets and Icon Sets
+
+- SVG
+- JPG/PNG/WEBP
+- Fonts
+- 2D/3D models
+
+### Stylesheet Library
+
+LibRext design system's vanilla CSS stylesheets
+
+### CSS Module Library
+
+LibRext design system's CSS Modules
+
+Something like this example:  
+https://dev.to/evanwinter/create-your-own-css-utility-library-582d
+
+### React Component Library
+
+React component library using Base-UI and LibRext design system
+
+Builds around the core [Markdown Elements](./markdown-elements.md) set
 
 #### Base-UI
 
