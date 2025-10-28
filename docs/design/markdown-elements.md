@@ -1,0 +1,36 @@
+# MARKDOWN ELEMENTS
+
+Back to [main README](../../README.md)
+
+---
+
+## SPEC
+
+According to https://www.markdownguide.org/basic-syntax/
+
+### Headings
+
+- `<h1>` to `<h6>`
+
+### Body Text
+
+- `<p>`
+- `<strong>`
+- `<em>`
+- `<code>`
+
+### Formatted Text
+
+- Block Quotes -- these can nest
+- Code Blocks -- `<pre>` with some fancy formatting
+
+### Lists
+
+- `<ol>`
+- `<ul>`
+
+### Media
+
+- `<img>`
+- `<hr>`
+- `<a>`
