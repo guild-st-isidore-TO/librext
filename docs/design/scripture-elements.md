@@ -6,8 +6,10 @@ Back to [main README](../../README.md)
 
 Typographic and design elements of biblical and liturgical books. Things such as:
 
-- Book/Chapter/Verse markings
-- Footnotes, references to other parts of scripture
-- Typographic flair (ornate capitals, ligatures, ornamentations)
-- Illuminations, engravings
-- Music scores
+| Element | LibRext | HTML 
+| --- | --- | --- |
+| Book/Chapter/Verse markings | `<BookHeading location="wis-9-6">`, `<BookLocator type="chapter" location="wis-9-6">` | ... |
+| Footnotes, references to other parts of text | `<BookFootnote location="wis-9-6">` |   ... |
+| Typographic flair (ligatures, ornamentations) | `<Ornament type="corner" variant="modern" direction="top-left">` | ... |
+| ornate capitals, Illuminations | `<IlluminatedText style="">` |   ... |
+| Music scores | `<MusicScore ... >` |   ... |

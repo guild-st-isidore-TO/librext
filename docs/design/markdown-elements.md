@@ -12,27 +12,37 @@ Core HTML elements rendered by Markdown processors, according to https://www.mar
 
 ### Headings
 
-- `<h1>` to `<h6>`
+| Element | Markdown | HTML | LibRext |
+| --- | --- | --- | --- |
+| ... | `#` to `######` | `<h1>` to `<h6>` | `<Heading level="h1">` |
 
 ### Body Text
 
-- `<p>`
-- `<strong>`
-- `<em>`
-- `<code>`
+| Element | Markdown | HTML | LibRext |
+| --- | --- | --- | --- |
+| ... | `content` | `<p>` | `<Paragraph>` |
+| ... | `**content**` | `<strong>` | `<Text style="bold">` |
+| ... | `_content_` | `<em>` | `<Text style="italic">` |
+| ... | \`content\` | `<code>` | `<Text style="monospace">` |
 
 ### Formatted Text
 
-- Block Quotes -- these can nest
-- Code Blocks -- `<pre>` with some fancy formatting
+| Element | Markdown | HTML | LibRext |
+| --- | --- | --- | --- |
+| ... | `[Link text](http://www.yerr.ca)` | `<a>` | `<FormatText href="https://www.yerr.on.ca">` |
+| Block Quotes | `>` | these can nest | `<FrameText style="quote">` |
+| Code Blocks | `\`` | `<pre>` | `<FrameText style="code">` |
 
 ### Lists
 
-- `<ol>`
-- `<ul>`
+| Element | Markdown | HTML | LibRext |
+| --- | --- | --- | --- |
+| ... | `- content` | `<ul>` | `<List>` |
+| ... | `1. content` | `<ol>` | `<List ordered="true">` |
 
 ### Media
 
-- `<img>`
-- `<hr>`
-- `<a>`
+| Element | Markdown | HTML | LibRext |
+| --- | --- | --- | --- |
+| ... | `![Alt text](http://www.url.ca "Title")` | `<img>` | `<Image>` |
+| ... | `---` | `<hr>` | `<HorizRule>` |
