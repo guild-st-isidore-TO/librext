@@ -1,10 +1,11 @@
 # SCRIPTURE ELEMENTS
 
-Back to [main README](../../README.md)
+Back to [main README](../../README.md)  
+Back to [LibRext Design (Overview)](../design/README.md)
 
 ---
 
-Typographic and design elements of biblical and liturgical books. Things such as:
+Typographic and design elements of biblical and liturgical books. Things like:
 
 | Element | LibRext | HTML 
 | --- | --- | --- |

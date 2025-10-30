@@ -1,6 +1,7 @@
 # GSI Style Guide v2.1 (Sep 2025)
 
-Back to [main README](../../README.md)
+Back to [main README](../../README.md)  
+Back to [LibRext Design (Overview)](../design/README.md)
 
 ---
 
