@@ -24,6 +24,18 @@ LibRext is inspired primarily by printed texts during the [era of the Incunabula
 
 More about [Aesthetic Principles](./aesthetic-principles.md)
 
+## GSI Style Guide v2.0
+
+Some partially-complete work I did back in September. Still using a lot of _Lorem ipsum_ to fill out areas, but there are solid ideas in here.
+
+![Thing](../img/gsi-style-guide-2.1_1.jpg "Thing")
+
+### Typography Specimens
+
+![Thing](../img/gsi-style-guide-2.1_4.jpg "Thing")
+
+More about [GSI Style Guide v2.0](./gsi-style-guide.md)
+
 ## Markdown Elements
 
 LibRext designs around core HTML elements rendered by Markdown processors, such as:
@@ -58,15 +70,3 @@ The system also seeks to model typographic and design elements of biblical and l
 | Music scores | `<MusicScore ... >` |   ... |
 
 More about [Scripture Elements](./scripture-elements.md)
-
-## GSI Style Guide v2.0
-
-Some partially-complete work I did back in September. Still using a lot of _Lorem ipsum_ to fill out areas, but there are solid ideas in here.
-
-![Thing](../img/gsi-style-guide-2.1_1.jpg "Thing")
-
-### Typography Specimens
-
-![Thing](../img/gsi-style-guide-2.1_4.jpg "Thing")
-
-More about [GSI Style Guide v2.0](./gsi-style-guide.md)
