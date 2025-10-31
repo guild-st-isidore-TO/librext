@@ -1,3 +1,3 @@
-const libRextCssBuilder = require('./buillders')
+const libRextCssBuilder = require('./builders')
 
 libRextCssBuilder.build()

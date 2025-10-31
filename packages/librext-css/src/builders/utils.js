@@ -17,7 +17,10 @@ const writeCssRule = (selector, propList) => {
     return variablesContent
 }
 
+const dataDir = `${__dirname}/../data`
+
 module.exports = {
     writeCssVarRule,
     writeCssRule,
+    dataDir,
 }

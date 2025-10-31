@@ -8,13 +8,16 @@ const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
 const buildText = () => {
-    
-    let selectorScope = ':root'
+    let varsSelector = ':root'
     if (scope == 'local') {
-        selectorScope = defaultLocalScope
+        varsSelector = defaultLocalScope
     } else if (scope == 'custom') {
-        selectorScope = customLocalScope
+        varsSelector = customLocalScope
     }
+
+    const textDataFile = `${libRextCssUtil.dataDir}/text.json`
+    const textData = libRextCssFileHandler.readFile(textDataFile)
+    console.log('[LibRext CSS - TextBuilder] textData', textData)
 
     const styleVars = [
         { property: 'test-val-1', value: '#ff00ff' },
@@ -22,9 +25,7 @@ const buildText = () => {
         { property: 'test-val-3', value: '#ff0000' },
         { property: 'test-val-4', value: '#00ffff' },
     ]
-
-    const variablesContent = libRextCssUtil.writeCssVarRule(selectorScope, styleVars);
-    // console.log('[LibRext CSS - TextBuilder] variablesContent', variablesContent)
+    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
 }

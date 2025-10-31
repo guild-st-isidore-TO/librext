@@ -3,14 +3,16 @@
 const fs = require('fs');
 
 const readFile = (filePath) => {
+    let books = null
     console.log('[LibRext CSS - FileHandler.readFile] filePath', filePath)
-    fs.readFile('books.json', function (err, data) {
+    fs.readFile(filePath, function (err, data) {
 
         if (err) throw err;
 
-        const books = JSON.parse(data);
+        books = JSON.parse(data);
         console.log(books);
     })
+    return books
 }
 
 const writeFile = (filePath, content) => {
