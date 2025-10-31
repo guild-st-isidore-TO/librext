@@ -14,6 +14,19 @@ npm install
 npm run build
 ```
 
+## VISUAL DESIGN
+
+This style has a heavy focus on old-style serif fonts, as we’re looking to early Renaissance printed works as inspiration. All the fonts here are free/open source, and are available on Google Fonts (and elsewhere on the web)
+
+| TYPEFACES | USAGE |
+| --- | --- |
+| Crimson Text | Typical serif body, usable as alternate heading |
+| Cormorant Garamond | Ideal serif heading |
+| Cinzel | Titles, display (serif) |
+| Open Sans | Typical sans-serif body |
+| Lato | Alternate sans-serif body |
+| Inconsolata | Typical monospace |
+
 ## SYSTEM DESIGN
 
 - relevant data goes in `src/data-**.json` files
