@@ -2,53 +2,45 @@
     "typeface" : {
         "serif": "Crimson Text",
         "serifAlt": "Cormorant Garamond",
-        "serifBody": "Crimson Text",
-        "serifBodyAlt": "Cormorant Garamond",
-        "serifHeading": "Crimson Text",
-        "serifHeadingAlt": "Cormorant Garamond",
         "sans": "Open Sans",
         "sansAlt": "Lato",
-        "sansBody": "Open Sans",
-        "sansBodyAlt": "Lato",
-        "sansHeading": "Open Sans",
-        "sansHeadingAlt": "Lato",
         "monospace": "Inconsolata",
         "monospaceAlt": "Inconsolata",
-        "monospaceBody": "Inconsolata",
-        "monospaceBodyAlt": "Inconsolata",
-        "monospaceHeading": "Inconsolata",
-        "monospaceHeadingAlt": "Inconsolata",
         "display": "Cinzel",
-        "displayAlt": "Cinzel",
-        "displayBody": "Cinzel",
-        "displayBodyAlt": "Cinzel",
-        "displayHeading": "Cinzel",
-        "displayHeadingAlt": "Cinzel"
+        "displayAlt": "Cinzel"
     },
     "fontVars": {
-        "serif": ["regular"],
-        "serifAlt": ["regular"],
-        "serifBody": ["regular"],
-        "serifBodyAlt": ["regular", "bold", "wt800"],
-        "serifHeading": ["regular"],
-        "serifHeadingAlt": ["regular"],
-        "sans": ["regular"],
-        "sansAlt": ["regular"],
-        "sansBody": ["regular"],
-        "sansBodyAlt": ["regular", "bold", "wt800"],
-        "sansHeading": ["regular"],
-        "sansHeadingAlt": ["regular"],
-        "monospace": ["regular"],
-        "monospaceAlt": ["regular"],
-        "monospaceBody": ["regular"],
-        "monospaceBodyAlt": ["regular", "bold", "wt800"],
-        "monospaceHeading": ["regular"],
-        "monospaceHeadingAlt": ["regular"],
-        "display": ["regular"],
-        "displayAlt": ["regular"],
-        "displayBody": ["regular"],
-        "displayBodyAlt": ["regular", "bold", "wt800"],
-        "displayHeading": ["regular"],
-        "displayHeadingAlt": ["regular"]
+        "serif": {
+            "default": ["regular"],
+            "alt": ["regular"],
+            "body": ["regular"],
+            "bodyAlt": ["regular", "bold", "wt800"],
+            "heading": ["regular"],
+            "headingAlt": ["regular"]
+        },
+        "sans": {
+            "default": ["regular"],
+            "alt": ["regular"],
+            "body": ["regular"],
+            "bodyAlt": ["regular", "bold", "wt800"],
+            "heading": ["regular"],
+            "headingAlt": ["regular"]
+        },
+        "monospace": {
+            "default": ["regular"],
+            "alt": ["regular"],
+            "body": ["regular"],
+            "bodyAlt": ["regular", "bold", "wt800"],
+            "heading": ["regular"],
+            "headingAlt": ["regular"]
+        },
+        "display": {
+            "default": ["regular"],
+            "displayAlt": ["regular"],
+            "displayBody": ["regular"],
+            "displayBodyAlt": ["regular", "bold", "wt800"],
+            "displayHeading": ["regular"],
+            "displayHeadingAlt": ["regular"]
+        }
     }
 }
