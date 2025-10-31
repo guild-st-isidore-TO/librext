@@ -13,3 +13,13 @@ npm install
 
 npm run build
 ```
+
+## SYSTEM DESIGN
+
+- relevant data goes in `src/data-**.json` files
+- `npm run build` invokes `src/build.js`, which will update stylesheet files in `css/`
+- the specimen `**.html` files should now be styled when viewed
+
+### Open Questions
+
+- what to do with distribution as a package?
