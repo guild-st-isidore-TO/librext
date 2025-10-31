@@ -39,94 +39,42 @@
             "Open Sans"
         ]
     },
-    "fontVars": {
-        "serif": {
-            "default": [
-                "regular"
-            ],
-            "alt": [
-                "regular"
-            ],
-            "body": [
-                "regular"
-            ],
-            "bodyAlt": [
-                "regular",
-                "bold",
-                "wt800"
-            ],
-            "heading": [
-                "regular"
-            ],
-            "headingAlt": [
-                "regular"
-            ]
+    "typescale": [
+        {
+            "style": "h1",
+            "value": 2.986
         },
-        "sans": {
-            "default": [
-                "regular"
-            ],
-            "alt": [
-                "regular"
-            ],
-            "body": [
-                "regular"
-            ],
-            "bodyAlt": [
-                "regular",
-                "bold",
-                "wt800"
-            ],
-            "heading": [
-                "regular"
-            ],
-            "headingAlt": [
-                "regular"
-            ]
+        {
+            "style": "h2",
+            "value": 2.488
         },
-        "monospace": {
-            "default": [
-                "regular"
-            ],
-            "alt": [
-                "regular"
-            ],
-            "body": [
-                "regular"
-            ],
-            "bodyAlt": [
-                "regular",
-                "bold",
-                "wt800"
-            ],
-            "heading": [
-                "regular"
-            ],
-            "headingAlt": [
-                "regular"
-            ]
+        {
+            "style": "h3",
+            "value": 2.074
         },
-        "display": {
-            "default": [
-                "regular"
-            ],
-            "displayAlt": [
-                "regular"
-            ],
-            "displayBody": [
-                "regular"
-            ],
-            "displayBodyAlt": [
-                "regular",
-                "bold",
-                "wt800"
-            ],
-            "displayHeading": [
-                "regular"
-            ],
-            "displayHeadingAlt": [
-                "regular"
-            ]
+        {
+            "style": "h4",
+            "value": 1.728
+        },
+        {
+            "style": "h5",
+            "value": 1.44
+        },
+        {
+            "style": "h6",
+            "value": 1.2
+        },
+        {
+            "style": "body",
+            "value": 1
+        },
+        {
+            "style": "small",
+            "value": 0.833
+        },
+        {
+            "style": "tiny",
+            "value": 0.75
         }
-    }
+    ]
 }

@@ -28,6 +28,8 @@ const buildText = () => {
 
     const typefaces = []
     const roles = []
+    const typescale = []
+
     for (const typefaceCtg in textData.typefaces) {
         const dataTypefaceList = textData.typefaces[typefaceCtg]
         const typefaceList = dataTypefaceList.map((typeName, idx) => {
@@ -55,6 +57,14 @@ const buildText = () => {
         roles.push(...typefaceList)
     }
     // console.log('[LibRext CSS - TextBuilder] typefaces', typefaces)
+
+    for (const tScaleVal of textData.typescale) {
+        const newProp = {
+            property: `typescale-${tScaleVal.style}`,
+            value: `${tScaleVal.value}rem`,
+        }
+        styleVars.push(newProp)
+    }
 
     console.log('[LibRext CSS - TextBuilder] roles', roles)
     roles.forEach(role => {

@@ -3,6 +3,15 @@
   --test-val-2: #ffff00;
   --test-val-3: #ff0000;
   --test-val-4: #00ffff;
+  --typescale-h1: 2.986rem;
+  --typescale-h2: 2.488rem;
+  --typescale-h3: 2.074rem;
+  --typescale-h4: 1.728rem;
+  --typescale-h5: 1.44rem;
+  --typescale-h6: 1.2rem;
+  --typescale-body: 1rem;
+  --typescale-small: 0.833rem;
+  --typescale-tiny: 0.75rem;
   --fontfam-display-1: "Cinzel", serif;
   --fontfam-display-2: "Cinzel", serif;
   --fontfam-title-1: "Cormorant Garamond", serif;
