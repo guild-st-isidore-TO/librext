@@ -1,15 +1,15 @@
 "use strict"
 
-const fs = require('node:fs');
+const libRextCssFileHandler = require('./file-handler')
+const libRextCssUtil = require('./utils')
 
 let scope = 'global'
-let defaultLocalScope = '.librext *'
+const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-let selectorScope = ':root'
-
 const buildText = () => {
-
+    
+    let selectorScope = ':root'
     if (scope == 'local') {
         selectorScope = defaultLocalScope
     } else if (scope == 'custom') {
@@ -17,24 +17,16 @@ const buildText = () => {
     }
 
     const styleVars = [
-        { property: 'test-val-1', value: '#00ffff' },
-        { property: 'test-val-2', value: '#ff00ff' },
-        { property: 'test-val-3', value: '#ffff00' },
+        { property: 'test-val-1', value: '#ff00ff' },
+        { property: 'test-val-2', value: '#ffff00' },
+        { property: 'test-val-3', value: '#ff0000' },
+        { property: 'test-val-4', value: '#00ffff' },
     ]
 
-    let variablesContent = `${selectorScope} {\n`;
-    styleVars.forEach(sVar => {
-        variablesContent += `  --${sVar.property}: ${sVar.value};\n`
-    })
-    variablesContent += `}\n`
+    const variablesContent = libRextCssUtil.writeCssVarRule(selectorScope, styleVars);
+    // console.log('[LibRext CSS - TextBuilder] variablesContent', variablesContent)
 
-    fs.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent, err => {
-        if (err) {
-            console.error(err);
-        } else {
-            // file written successfully
-        }
-    });
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
 }
 
 module.exports = { build: buildText };

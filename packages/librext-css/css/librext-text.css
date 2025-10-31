@@ -1,5 +1,6 @@
 :root {
-  --test-val-1: #00ffff;
-  --test-val-2: #ff00ff;
-  --test-val-3: #ffff00;
+  --test-val-1: #ff00ff;
+  --test-val-2: #ffff00;
+  --test-val-3: #ff0000;
+  --test-val-4: #00ffff;
 }
