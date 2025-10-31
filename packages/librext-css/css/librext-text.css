@@ -3,4 +3,14 @@
   --test-val-2: #ffff00;
   --test-val-3: #ff0000;
   --test-val-4: #00ffff;
+  --fontfam-display-1: "Cinzel", serif;
+  --fontfam-display-2: "Cinzel", serif;
+  --fontfam-title-1: "Cormorant Garamond", serif;
+  --fontfam-title-2: "Cormorant Garamond", serif;
+  --fontfam-label-1: "Lato", sans-serif;
+  --fontfam-label-2: "Lato", sans-serif;
+  --fontfam-heading-1: "Cormorant Garamond", serif;
+  --fontfam-heading-2: "Lato", sans-serif;
+  --fontfam-body-1: "Crimson Text", serif;
+  --fontfam-body-2: "Open Sans", sans-serif;
 }

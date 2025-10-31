@@ -9,10 +9,34 @@
             "Lato"
         ],
         "monospace": [
+            "Inconsolata",
             "Inconsolata"
         ],
         "display": [
+            "Cinzel",
             "Cinzel"
+        ]
+    },
+    "roles": {
+        "display": [
+            "Cinzel",
+            "Cinzel"
+        ],
+        "title": [
+            "Cormorant Garamond",
+            "Cormorant Garamond"
+        ],
+        "label": [
+            "Lato",
+            "Lato"
+        ],
+        "heading": [
+            "Cormorant Garamond",
+            "Lato"
+        ],
+        "body": [
+            "Crimson Text",
+            "Open Sans"
         ]
     },
     "fontVars": {

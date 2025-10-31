@@ -7,22 +7,6 @@ let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const getTypefaceCategory = (typefaceKey) => {
-    for (let ctgIdx = 0; ctgIdx < libRextCssUtil.fontData.categories.length; ctgIdx++) {
-        const ctg = libRextCssUtil.fontData.categories[ctgIdx]
-        const keyHasCtg = typefaceKey.includes(ctg);
-        if (keyHasCtg) {
-            return ctg
-        }
-    }
-    return 'serif'
-}
-
-const getTypefaceVariant = (typefaceKey) => {
-    const keyHasAlt = typefaceKey.includes('Alt');
-    return keyHasAlt ? 'secondary' : 'primary';
-}
-
 const buildText = () => {
     let varsSelector = ':root'
     if (scope == 'local') {
@@ -43,6 +27,7 @@ const buildText = () => {
     ]
 
     const typefaces = []
+    const roles = []
     for (const typefaceCtg in textData.typefaces) {
         const dataTypefaceList = textData.typefaces[typefaceCtg]
         const typefaceList = dataTypefaceList.map((typeName, idx) => {
@@ -54,7 +39,38 @@ const buildText = () => {
         })
         typefaces.push(...typefaceList)
     }
-    console.log('[LibRext CSS - TextBuilder] typefaces', typefaces)
+    const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
+
+    for (const typefaceRole in textData.roles) {
+        const dataTypefaceList = textData.roles[typefaceRole]
+        const typefaceList = dataTypefaceList.map((typeName, idx) => {
+            const typefaceData = getTypefaceByName(typeName)
+            return {
+                name: typeName,
+                category: typefaceData.category,
+                role: typefaceRole,
+                priority: idx + 1
+            }
+        })
+        roles.push(...typefaceList)
+    }
+    // console.log('[LibRext CSS - TextBuilder] typefaces', typefaces)
+
+    console.log('[LibRext CSS - TextBuilder] roles', roles)
+    roles.forEach(role => {
+        let genericVal = role.category
+        if (role.category == 'sans') {
+            genericVal = 'sans-serif'
+        } else if (role.category == 'display') {
+            genericVal = 'serif'
+        }
+
+        const newProp = {
+            property: `fontfam-${role.role}-${role.priority}`,
+            value: `"${role.name}", ${genericVal}`,
+        }
+        styleVars.push(newProp)
+    })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
