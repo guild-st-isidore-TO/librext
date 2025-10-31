@@ -1,46 +1,108 @@
 {
-    "typeface" : {
-        "serif": "Crimson Text",
-        "serifAlt": "Cormorant Garamond",
-        "sans": "Open Sans",
-        "sansAlt": "Lato",
-        "monospace": "Inconsolata",
-        "monospaceAlt": "Inconsolata",
-        "display": "Cinzel",
-        "displayAlt": "Cinzel"
+    "typefaces": {
+        "serif": [
+            "Crimson Text",
+            "Cormorant Garamond"
+        ],
+        "sans": [
+            "Open Sans",
+            "Lato"
+        ],
+        "monospace": [
+            "Inconsolata"
+        ],
+        "display": [
+            "Cinzel"
+        ]
     },
     "fontVars": {
         "serif": {
-            "default": ["regular"],
-            "alt": ["regular"],
-            "body": ["regular"],
-            "bodyAlt": ["regular", "bold", "wt800"],
-            "heading": ["regular"],
-            "headingAlt": ["regular"]
+            "default": [
+                "regular"
+            ],
+            "alt": [
+                "regular"
+            ],
+            "body": [
+                "regular"
+            ],
+            "bodyAlt": [
+                "regular",
+                "bold",
+                "wt800"
+            ],
+            "heading": [
+                "regular"
+            ],
+            "headingAlt": [
+                "regular"
+            ]
         },
         "sans": {
-            "default": ["regular"],
-            "alt": ["regular"],
-            "body": ["regular"],
-            "bodyAlt": ["regular", "bold", "wt800"],
-            "heading": ["regular"],
-            "headingAlt": ["regular"]
+            "default": [
+                "regular"
+            ],
+            "alt": [
+                "regular"
+            ],
+            "body": [
+                "regular"
+            ],
+            "bodyAlt": [
+                "regular",
+                "bold",
+                "wt800"
+            ],
+            "heading": [
+                "regular"
+            ],
+            "headingAlt": [
+                "regular"
+            ]
         },
         "monospace": {
-            "default": ["regular"],
-            "alt": ["regular"],
-            "body": ["regular"],
-            "bodyAlt": ["regular", "bold", "wt800"],
-            "heading": ["regular"],
-            "headingAlt": ["regular"]
+            "default": [
+                "regular"
+            ],
+            "alt": [
+                "regular"
+            ],
+            "body": [
+                "regular"
+            ],
+            "bodyAlt": [
+                "regular",
+                "bold",
+                "wt800"
+            ],
+            "heading": [
+                "regular"
+            ],
+            "headingAlt": [
+                "regular"
+            ]
         },
         "display": {
-            "default": ["regular"],
-            "displayAlt": ["regular"],
-            "displayBody": ["regular"],
-            "displayBodyAlt": ["regular", "bold", "wt800"],
-            "displayHeading": ["regular"],
-            "displayHeadingAlt": ["regular"]
+            "default": [
+                "regular"
+            ],
+            "displayAlt": [
+                "regular"
+            ],
+            "displayBody": [
+                "regular"
+            ],
+            "displayBodyAlt": [
+                "regular",
+                "bold",
+                "wt800"
+            ],
+            "displayHeading": [
+                "regular"
+            ],
+            "displayHeadingAlt": [
+                "regular"
+            ]
         }
     }
 }
