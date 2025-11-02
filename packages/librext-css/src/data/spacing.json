@@ -1,5 +1,5 @@
 {
-    "cornerRadiusScale": {
+    "spacingScale": {
         "none": 0,
         "xs": 4,
         "sm": 8,
