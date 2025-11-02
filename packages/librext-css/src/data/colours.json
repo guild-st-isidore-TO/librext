@@ -1,0 +1,38 @@
+{
+    "roles": {
+        "all": [
+            "default",
+            "accent",
+            "primary",
+            "secondary",
+            "tertiary",
+            "error",
+            "surface",
+            "outline"
+        ],
+        "basic": [
+            "default",
+            "accent",
+            "error",
+            "surface",
+            "outline"
+        ],
+        "accent": [
+            "primary",
+            "secondary",
+            "tertiary"
+        ]
+    },
+    "palette": {
+        "greyscale": {
+            "1": "#ffffff",
+            "2": "#ffffff",
+            "3": "#ffffff"
+        },
+        "theme": {
+            "name1": "#ffffff",
+            "name2": "#ffffff",
+            "name3": "#ffffff"
+        }
+    }
+}
