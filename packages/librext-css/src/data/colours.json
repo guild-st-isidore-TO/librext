@@ -13,7 +13,6 @@
         "basic": [
             "default",
             "accent",
-            "error",
             "surface",
             "outline"
         ],
