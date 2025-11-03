@@ -17,7 +17,7 @@ const buildText = () => {
 
     const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
     const colourData = libRextCssFileHandler.readFile(colourDataFile)
-    console.log('[LibRext CSS - ColourBuilder] textData', colourData.typefaces)
+    console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
 
     // const styleVars = [
     //     { property: 'test-val-1', value: '#ff00ff' },

@@ -17,7 +17,7 @@ const buildText = () => {
 
     const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
     const shapeData = libRextCssFileHandler.readFile(shapeDataFile)
-    console.log('[LibRext CSS - ColourBuilder] textData', shapeData.typefaces)
+    console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     // const styleVars = [
     //     { property: 'test-val-1', value: '#ff00ff' },
@@ -56,7 +56,7 @@ const buildText = () => {
     //     })
     //     roles.push(...typefaceList)
     // }
-    // // console.log('[LibRext CSS - ColourBuilder] typefaces', typefaces)
+    // // console.log('[LibRext CSS - ShapesBuilder] typefaces', typefaces)
 
     // for (const tScaleVal of colourData.typescale) {
     //     const newProp = {
@@ -66,7 +66,7 @@ const buildText = () => {
     //     styleVars.push(newProp)
     // }
 
-    // console.log('[LibRext CSS - ColourBuilder] roles', roles)
+    // console.log('[LibRext CSS - ShapesBuilder] roles', roles)
     // roles.forEach(role => {
     //     let genericVal = role.category
     //     if (role.category == 'sans') {
