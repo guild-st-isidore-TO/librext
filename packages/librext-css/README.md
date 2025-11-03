@@ -12,6 +12,8 @@ LibRext design system's vanilla CSS stylesheets.
 npm install
 
 npm run build
+
+npm run dev
 ```
 
 ## VISUAL DESIGN
