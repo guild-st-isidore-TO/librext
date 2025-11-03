@@ -19,14 +19,16 @@ const buildText = () => {
     const shapeData = libRextCssFileHandler.readFile(shapeDataFile)
     console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
-    // const styleVars = [
-    //     { property: 'test-val-1', value: '#ff00ff' },
-    //     { property: 'test-val-2', value: '#ffff00' },
-    //     { property: 'test-val-3', value: '#ff0000' },
-    //     { property: 'test-val-4', value: '#00ffff' },
-    // ]
+    const styleVars = []
+    const cRadiusScale = shapeData.cornerRadiusScale
+    for (const [key, value] of Object.entries(cRadiusScale)) {
+        const cRadiusEntry = {
+            property: `corner-radius-${key}`,
+            value: `${value}px`,
+        }
+        styleVars.push(cRadiusEntry);
+    }
 
-    // const typefaces = []
     // const roles = []
     // const typescale = []
 
@@ -82,9 +84,10 @@ const buildText = () => {
     //     styleVars.push(newProp)
     // })
 
-    // const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    console.log(styleVars)
 
-    // libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
+    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-shapes.css`, variablesContent)
 }
 
 module.exports = { build: buildText };

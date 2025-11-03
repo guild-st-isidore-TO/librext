@@ -19,13 +19,7 @@ const buildText = () => {
     const textData = libRextCssFileHandler.readFile(textDataFile)
     console.log('[LibRext CSS - TextBuilder] textData', textData.typefaces)
 
-    const styleVars = [
-        { property: 'test-val-1', value: '#ff00ff' },
-        { property: 'test-val-2', value: '#ffff00' },
-        { property: 'test-val-3', value: '#ff0000' },
-        { property: 'test-val-4', value: '#00ffff' },
-    ]
-
+    const styleVars = []
     const typefaces = []
     const roles = []
     const typescale = []
@@ -83,7 +77,6 @@ const buildText = () => {
     })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
 }
 

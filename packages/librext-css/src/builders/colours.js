@@ -19,12 +19,26 @@ const buildText = () => {
     const colourData = libRextCssFileHandler.readFile(colourDataFile)
     console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
 
-    // const styleVars = [
-    //     { property: 'test-val-1', value: '#ff00ff' },
-    //     { property: 'test-val-2', value: '#ffff00' },
-    //     { property: 'test-val-3', value: '#ff0000' },
-    //     { property: 'test-val-4', value: '#00ffff' },
-    // ]
+    const styleVars = []
+
+    const greyPalette = colourData.palette.greyscale
+    for (const [key, value] of Object.entries(greyPalette)) {
+        const greyEntry = {
+            property: `grey-${key}`,
+            value,
+        }
+        styleVars.push(greyEntry);
+    }
+
+    const themePalette = colourData.palette.theme
+    for (const [key, value] of Object.entries(themePalette)) {
+        const themeEntry = {
+            property: `theme-${key}`,
+            value,
+        }
+        styleVars.push(themeEntry);
+    }
+
 
     // const typefaces = []
     // const roles = []
@@ -82,9 +96,10 @@ const buildText = () => {
     //     styleVars.push(newProp)
     // })
 
-    // const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    console.log(styleVars)
 
-    // libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
+    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-colours.css`, variablesContent)
 }
 
 module.exports = { build: buildText };
