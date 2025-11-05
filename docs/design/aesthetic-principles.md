@@ -20,7 +20,7 @@ LibRext has a particular focus on biblical and liturgical texts, and all their f
 
 ## USE CASES
 
-LibRext must work well on ***both Print and Screen***.
+LibRext aims to look consistent on ***Print, E-Reader, and Screen***.
 
 ### Print
 
@@ -32,6 +32,12 @@ LibRext must work well on ***both Print and Screen***.
 - interactive
 - animations
 - tactile feedback
+
+### E-Reader
+
+- something of a blend between the two
+- older E-Readers have a long update time and small screens
+- more advanced (expensive) ones are bigger, with a quicker refresh rate
 
 ![Alonso de Cartagena, Doctrinal de los caballeros (1487)](../img/Doctrinal_de_los_caballeros_1487_Alonso_de_Cartagena.jpg "Alonso de Cartagena, Doctrinal de los caballeros (1487)")
 
