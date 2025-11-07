@@ -1,5 +1,37 @@
 @import "./librext-fonts-base.css";
 
+
+:root {
+  --font-hero: 'OpenSans', 'Open Sans', sans-serif;
+  --font-headline: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-title: 'OpenSans', 'Open Sans', sans-serif;
+  --font-subtitle: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-1: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-2: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-3: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-4: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-5: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading-6: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-strong: 'OpenSans', 'Open Sans', sans-serif;
+  --font-em: 'OpenSans', 'Open Sans', sans-serif;
+  --font-link: 'OpenSans', 'Open Sans', sans-serif;
+  --font-small: 'OpenSans', 'Open Sans', sans-serif;
+  --font-tiny: 'OpenSans', 'Open Sans', sans-serif;
+  --font-superscript: 'OpenSans', 'Open Sans', sans-serif;
+  --font-subscript: 'OpenSans', 'Open Sans', sans-serif;
+  --font-img-caption: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-code: 'OpenSans', 'Open Sans', sans-serif;
+  --font-code-inline: 'OpenSans', 'Open Sans', sans-serif;
+  --font-code-block: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-quote: 'OpenSans', 'Open Sans', sans-serif;
+  --font-block-quote: 'OpenSans', 'Open Sans', sans-serif;
+  --font-pull-quote: 'OpenSans', 'Open Sans', sans-serif;
+}
+
 h1,
 h2,
 h3,

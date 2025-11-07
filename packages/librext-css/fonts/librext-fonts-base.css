@@ -145,7 +145,27 @@
   Root Namespace
 ============*/
 
-:root{
-    --font-heading: 'UbuntuSans', sans-serif;
-    --font-body: 'OpenSans', 'Open Sans', sans-serif;
+:root {
+  --font-heading: 'Cormorant_Garamond', sans-serif;
+  --font-heading-serif: 'Cormorant_Garamond', sans-serif;
+  --font-heading-serif-alt: 'Cormorant_Garamond', sans-serif;
+  --font-heading-sans: 'Cormorant_Garamond', sans-serif;
+  --font-heading-sans-alt: 'Cormorant_Garamond', sans-serif;
+
+  --font-body: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-serif: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-sans: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-display: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-serif: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-sans: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-monospace: 'OpenSans', 'Open Sans', sans-serif;
+
+  --font-heading-ui: 'Cormorant_Garamond', sans-serif;
+  --font-body-ui: 'OpenSans', 'Open Sans', sans-serif;
 }
