@@ -1,0 +1,41 @@
+ /* OpenSans */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans/OpenSans-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* UbuntuSans */
+@font-face {
+  font-family: 'UbuntuSans';
+  src: url('/fonts/UbuntuSans/UbuntuSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UbuntuSans';
+  src: url('/fonts/UbuntuSans/UbuntuSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root{
+    --font-heading: 'UbuntuSans', sans-serif;
+    --font-body: 'OpenSans', 'Open Sans', sans-serif;
+}
