@@ -1,39 +1,149 @@
- /* OpenSans */
+/* ========
+  Cinzel 
+==========*/
+
 @font-face {
-  font-family: 'OpenSans';
-  src: url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2');
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('/fonts/OpenSans/OpenSans-Italic.woff2') format('woff2');
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
 }
 
-/* UbuntuSans */
+/* ========
+  Cormorant_Garamond 
+==========*/
+
 @font-face {
-  font-family: 'UbuntuSans';
-  src: url('/fonts/UbuntuSans/UbuntuSans-Regular.woff2') format('woff2');
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'UbuntuSans';
-  src: url('/fonts/UbuntuSans/UbuntuSans-Bold.woff2') format('woff2');
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*============ 
+  Crimson_Text 
+============*/
+
+@font-face {
+  font-family: 'Crimson_Text';
+  src: url('Crimson_Text/Crimson_Text-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson_Text';
+  src: url('Crimson_Text/Crimson_Text-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ========
+  Inconsolata 
+==========*/
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ========
+  Lato 
+==========*/
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ========
+  OpenSans 
+==========*/
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*============ 
+  Root Namespace
+============*/
 
 :root{
     --font-heading: 'UbuntuSans', sans-serif;
