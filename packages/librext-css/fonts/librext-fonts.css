@@ -1,93 +1,185 @@
-@import "./librext-fonts-base.css";
 
+/* ========================================================
+  LIBREXT FONTS 
+  -------------------------------------------------------
+  Font-face declarations and base variables tied to font
+  roles.
+=========================================================*/
+
+
+/* ========
+  Cinzel 
+==========*/
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('Cinzel/Cinzel-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* ========
+  Cormorant_Garamond 
+==========*/
+
+@font-face {
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant_Garamond';
+  src: url('Cormorant_Garamond/Cormorant_Garamond-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*============ 
+  Crimson_Text 
+============*/
+
+@font-face {
+  font-family: 'Crimson_Text';
+  src: url('Crimson_Text/Crimson_Text-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson_Text';
+  src: url('Crimson_Text/Crimson_Text-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* ========
+  Inconsolata 
+==========*/
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata/Inconsolata-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* ========
+  Lato 
+==========*/
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato/Lato-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* ========
+  OpenSans 
+==========*/
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans/OpenSans-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* ============ 
+  Base Variables (Root Namespace)
+============ */
 
 :root {
-  --font-hero: 'OpenSans', 'Open Sans', sans-serif;
-  --font-headline: 'OpenSans', 'Open Sans', sans-serif;
+  --font-heading: 'Cormorant_Garamond', sans-serif;
+  --font-heading-serif: 'Cormorant_Garamond', sans-serif;
+  --font-heading-serif-alt: 'Cormorant_Garamond', sans-serif;
+  --font-heading-sans: 'Cormorant_Garamond', sans-serif;
+  --font-heading-sans-alt: 'Cormorant_Garamond', sans-serif;
 
-  --font-title: 'OpenSans', 'Open Sans', sans-serif;
-  --font-subtitle: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-1: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-2: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-3: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-4: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-5: 'OpenSans', 'Open Sans', sans-serif;
-  --font-heading-6: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-serif: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-sans: 'OpenSans', 'Open Sans', sans-serif;
+  --font-body-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
 
-  --font-strong: 'OpenSans', 'Open Sans', sans-serif;
-  --font-em: 'OpenSans', 'Open Sans', sans-serif;
-  --font-link: 'OpenSans', 'Open Sans', sans-serif;
-  --font-small: 'OpenSans', 'Open Sans', sans-serif;
-  --font-tiny: 'OpenSans', 'Open Sans', sans-serif;
-  --font-superscript: 'OpenSans', 'Open Sans', sans-serif;
-  --font-subscript: 'OpenSans', 'Open Sans', sans-serif;
-  --font-img-caption: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-serif: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-sans: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
 
-  --font-code: 'OpenSans', 'Open Sans', sans-serif;
-  --font-code-inline: 'OpenSans', 'Open Sans', sans-serif;
-  --font-code-block: 'OpenSans', 'Open Sans', sans-serif;
+  --font-monospace: 'OpenSans', 'Open Sans', sans-serif;
 
-  --font-quote: 'OpenSans', 'Open Sans', sans-serif;
-  --font-block-quote: 'OpenSans', 'Open Sans', sans-serif;
-  --font-pull-quote: 'OpenSans', 'Open Sans', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  color: var(--text-light);
-}
-
-p,
-span,
-input,
-input::placeholder,
-button,
-label {
-  font-family: var(--font-body);
-  color: var(--text-light);
-}
-
-h1 {
-  font-size: 2.986rem;
-}
-
-h2 {
-  font-size: 2.488rem;
-}
-
-h3 {
-  font-size: 2.074rem;
-}
-
-h4 {
-  font-size: 1.728rem;
-}
-
-h5 {
-  font-size: 1.44rem;
-}
-
-h6 {
-  font-size: 1.2rem;
-}
-
-p,
-span,
-input {
-  font-size: 1rem;
-}
-
-small,
-label {
-  font-size: 0.833rem;
-}
-
-sub,
-sup {
-  font-size: 0.694rem;
+  --font-heading-ui: 'Cormorant_Garamond', sans-serif;
+  --font-body-ui: 'OpenSans', 'Open Sans', sans-serif;
 }
