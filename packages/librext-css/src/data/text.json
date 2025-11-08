@@ -41,40 +41,147 @@
     },
     "typescale": [
         {
+            "index": 1,
             "style": "h1",
             "value": 2.986
         },
         {
+            "index": 2,
             "style": "h2",
             "value": 2.488
         },
         {
+            "index": 3,
             "style": "h3",
             "value": 2.074
         },
         {
+            "index": 4,
             "style": "h4",
             "value": 1.728
         },
         {
+            "index": 5,
             "style": "h5",
             "value": 1.44
         },
         {
+            "index": 6,
             "style": "h6",
             "value": 1.2
         },
         {
+            "index": 7,
             "style": "body",
             "value": 1
         },
         {
+            "index": 8,
             "style": "small",
             "value": 0.833
         },
         {
+            "index": 9,
             "style": "tiny",
             "value": 0.75
         }
-    ]
+    ],
+    "docroles": {
+        "hero": {
+            "font": "display",
+            "size": "h1"
+        },
+        "headline": {
+            "font": "heading",
+            "size": "h1"
+        },
+        "title": {
+            "font": "",
+            "size": ""
+        },
+        "subtitle": {
+            "font": "",
+            "size": ""
+        },
+        "heading1": {
+            "font": "",
+            "size": ""
+        },
+        "heading2": {
+            "font": "",
+            "size": ""
+        },
+        "heading3": {
+            "font": "",
+            "size": ""
+        },
+        "heading4": {
+            "font": "",
+            "size": ""
+        },
+        "heading5": {
+            "font": "",
+            "size": ""
+        },
+        "heading6": {
+            "font": "",
+            "size": ""
+        },
+        "strong": {
+            "font": "",
+            "size": ""
+        },
+        "em": {
+            "font": "",
+            "size": ""
+        },
+        "link": {
+            "font": "",
+            "size": ""
+        },
+        "small": {
+            "font": "",
+            "size": ""
+        },
+        "tiny": {
+            "font": "",
+            "size": ""
+        },
+        "superscript": {
+            "font": "",
+            "size": ""
+        },
+        "subscript": {
+            "font": "",
+            "size": ""
+        },
+        "imgcaption": {
+            "font": "",
+            "size": ""
+        },
+        "code": {
+            "font": "monospace",
+            "size": ""
+        },
+        "codeinline": {
+            "font": "monospace",
+            "size": ""
+        },
+        "codeblock": {
+            "font": "monospace",
+            "size": ""
+        },
+        "quote": {
+            "font": "",
+            "size": ""
+        },
+        "blockquote": {
+            "font": "",
+            "size": ""
+        },
+        "pullquote": {
+            "font": "",
+            "size": ""
+        }
+    }
 }
