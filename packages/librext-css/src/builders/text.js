@@ -40,7 +40,7 @@ const buildText = () => {
         console.log('[Text Builder] typefaceCtg', typefaceCtg)
         console.log('[Text Builder] currentTypefaces', currentTypefaces)
     }
-    const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
+    // const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
 
     for (const tTypescale of textData.typescale) {
         // const newProp = {
@@ -53,7 +53,7 @@ const buildText = () => {
         console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
     }
 
-    for (const tRoles in textData.roles) {
+    for (const tRoles in textData.typeroles) {
         // const typefaceList = dataTypefaceList.map((typeName, idx) => {
         //     const typefaceData = getTypefaceByName(typeName)
         //     return {
@@ -65,11 +65,11 @@ const buildText = () => {
         // })
         // roles.push(...typefaceList)
 
-        const currentRole = textData.roles[tRoles]
+        const currentRole = textData.typeroles[tRoles]
         console.log('[Text Builder] currentRole', currentRole)
     }
 
-    for (const tDocroles in textData.docroles) {
+    for (const currentDocRole of textData.docroles) {
         // const dataTypefaceList = textData.roles[typefaceRole]
         // const typefaceList = dataTypefaceList.map((typeName, idx) => {
         //     const typefaceData = getTypefaceByName(typeName)
@@ -82,7 +82,7 @@ const buildText = () => {
         // })
         // roles.push(...typefaceList)
 
-        const currentDocRole = textData.docroles[tDocroles]
+        // const currentDocRole = textData.docroles[tDocroles]
         console.log('[Text Builder] currentDocRole', currentDocRole)
     }
 

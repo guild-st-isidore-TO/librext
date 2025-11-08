@@ -64,7 +64,7 @@
             "value": 0.75
         }
     ],
-    "roles": {
+    "typeroles": {
         "display": [
             "display",
             "display.1"
@@ -90,126 +90,174 @@
             "sans"
         ]
     },
-    "docroles": {
-        "hero": {
+    "docroles": [
+        {
             "docrole": "hero",
-            "font": "display",
-            "size": "h1"
+            "typerole": "display",
+            "typescale": "h1",
+            "weight": "bold",
+            "styles": []
         },
-        "headline": {
+        {
             "docrole": "headline",
-            "font": "heading",
-            "size": "h1"
+            "typerole": "heading",
+            "typescale": "h1",
+            "weight": "bold",
+            "styles": []
         },
-        "title": {
+        {
             "docrole": "title",
-            "font": "display",
-            "size": "h1"
+            "typerole": "display",
+            "typescale": "h1",
+            "weight": "bold",
+            "styles": []
         },
-        "subtitle": {
+        {
             "docrole": "subtitle",
-            "font": "heading",
-            "size": "h3"
+            "typerole": "heading",
+            "typescale": "h3",
+            "weight": "regular",
+            "styles": []
         },
-        "heading1": {
+        {
             "docrole": "heading1",
-            "font": "heading",
-            "size": "h1"
+            "typerole": "heading",
+            "typescale": "h1",
+            "weight": "bold",
+            "styles": []
         },
-        "heading2": {
+        {
             "docrole": "heading2",
-            "font": "heading",
-            "size": "h2"
+            "typerole": "heading",
+            "typescale": "h2",
+            "weight": "bold",
+            "styles": []
         },
-        "heading3": {
+        {
             "docrole": "heading3",
-            "font": "heading",
-            "size": "h3"
+            "typerole": "heading",
+            "typescale": "h3",
+            "weight": "bold",
+            "styles": []
         },
-        "heading4": {
+        {
             "docrole": "heading4",
-            "font": "heading",
-            "size": "h4"
+            "typerole": "heading",
+            "typescale": "h4",
+            "weight": "bold",
+            "styles": []
         },
-        "heading5": {
+        {
             "docrole": "heading5",
-            "font": "heading",
-            "size": "h5"
+            "typerole": "heading",
+            "typescale": "h5",
+            "weight": "bold",
+            "styles": []
         },
-        "heading6": {
+        {
             "docrole": "heading6",
-            "font": "heading",
-            "size": "h6"
+            "typerole": "heading",
+            "typescale": "h6",
+            "weight": "bold",
+            "styles": []
         },
-        "strong": {
+        {
             "docrole": "strong",
-            "font": "body",
-            "size": "body"
+            "typerole": "body",
+            "typescale": "body",
+            "weight": "bold",
+            "styles": []
         },
-        "em": {
+        {
             "docrole": "em",
-            "font": "body",
-            "size": "body"
+            "typerole": "body",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": ["italic"]
         },
-        "link": {
+        {
             "docrole": "link",
-            "font": "body",
-            "size": "body"
+            "typerole": "body",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": []
         },
-        "small": {
+        {
             "docrole": "small",
-            "font": "body",
-            "size": "small"
+            "typerole": "body",
+            "typescale": "small",
+            "weight": "regular",
+            "styles": []
         },
-        "tiny": {
+        {
             "docrole": "tiny",
-            "font": "body.2",
-            "size": "tiny"
+            "typerole": "body.2",
+            "typescale": "tiny",
+            "weight": "regular",
+            "styles": []
         },
-        "superscript": {
+        {
             "docrole": "superscript",
-            "font": "body.2",
-            "size": "tiny"
+            "typerole": "body.2",
+            "typescale": "tiny",
+            "weight": "regular",
+            "styles": []
         },
-        "subscript": {
+        {
             "docrole": "subscript",
-            "font": "body.2",
-            "size": "tiny"
+            "typerole": "body.2",
+            "typescale": "tiny",
+            "weight": "regular",
+            "styles": []
         },
-        "imgcaption": {
+        {
             "docrole": "imgcaption",
-            "font": "body",
-            "size": "small"
+            "typerole": "body",
+            "typescale": "small",
+            "weight": "regular",
+            "styles": []
         },
-        "code": {
+        {
             "docrole": "code",
-            "font": "code.1",
-            "size": "body"
+            "typerole": "code.1",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": []
         },
-        "codeinline": {
+        {
             "docrole": "codeinline",
-            "font": "code.2",
-            "size": "body"
+            "typerole": "code.2",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": []
         },
-        "codeblock": {
+        {
             "docrole": "codeblock",
-            "font": "code.1",
-            "size": "body"
+            "typerole": "code.1",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": []
         },
-        "quote": {
+        {
             "docrole": "quote",
-            "font": "body",
-            "size": "body"
+            "typerole": "body",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": ["italic"]
         },
-        "blockquote": {
+        {
             "docrole": "blockquote",
-            "font": "body",
-            "size": "body"
+            "typerole": "body",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": ["italic"]
         },
-        "pullquote": {
+        {
             "docrole": "pullquote",
-            "font": "heading.2",
-            "size": "body"
+            "typerole": "heading.2",
+            "typescale": "body",
+            "weight": "regular",
+            "styles": ["italic"]
         }
-    }
+    ]
 }
