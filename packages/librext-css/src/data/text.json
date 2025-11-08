@@ -1,11 +1,11 @@
 {
     "typefaces": {
         "serif": [
-            "Crimson Text",
-            "Cormorant Garamond"
+            "CrimsonText",
+            "CormorantGaramond"
         ],
         "sans": [
-            "Open Sans",
+            "OpenSans",
             "Lato"
         ],
         "monospace": [
@@ -19,24 +19,28 @@
     },
     "roles": {
         "display": [
-            "Cinzel",
-            "Cinzel"
+            "display",
+            "display.1"
         ],
         "title": [
-            "Cormorant Garamond",
-            "Cormorant Garamond"
+            "serif.2",
+            "serif.2"
         ],
         "label": [
-            "Lato",
-            "Lato"
+            "sans.2",
+            "sans.2"
         ],
         "heading": [
-            "Cormorant Garamond",
-            "Lato"
+            "serif.2",
+            "serif.1"
         ],
         "body": [
-            "Crimson Text",
-            "Open Sans"
+            "serif.1",
+            "sans"
+        ],
+        "code": [
+            "serif.1",
+            "sans"
         ]
     },
     "typescale": [
@@ -96,92 +100,92 @@
             "size": "h1"
         },
         "title": {
-            "font": "",
-            "size": ""
+            "font": "display",
+            "size": "h1"
         },
         "subtitle": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h3"
         },
         "heading1": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h1"
         },
         "heading2": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h2"
         },
         "heading3": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h3"
         },
         "heading4": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h4"
         },
         "heading5": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h5"
         },
         "heading6": {
-            "font": "",
-            "size": ""
+            "font": "heading",
+            "size": "h6"
         },
         "strong": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "body"
         },
         "em": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "body"
         },
         "link": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "body"
         },
         "small": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "small"
         },
         "tiny": {
-            "font": "",
-            "size": ""
+            "font": "body.2",
+            "size": "tiny"
         },
         "superscript": {
-            "font": "",
-            "size": ""
+            "font": "body.2",
+            "size": "tiny"
         },
         "subscript": {
-            "font": "",
-            "size": ""
+            "font": "body.2",
+            "size": "tiny"
         },
         "imgcaption": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "small"
         },
         "code": {
-            "font": "monospace",
-            "size": ""
+            "font": "code.1",
+            "size": "body"
         },
         "codeinline": {
-            "font": "monospace",
-            "size": ""
+            "font": "code.2",
+            "size": "body"
         },
         "codeblock": {
-            "font": "monospace",
-            "size": ""
+            "font": "code.1",
+            "size": "body"
         },
         "quote": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "body"
         },
         "blockquote": {
-            "font": "",
-            "size": ""
+            "font": "body",
+            "size": "body"
         },
         "pullquote": {
-            "font": "",
-            "size": ""
+            "font": "heading.2",
+            "size": "body"
         }
     }
 }
