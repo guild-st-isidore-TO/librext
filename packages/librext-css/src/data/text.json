@@ -17,32 +17,6 @@
             "Cinzel"
         ]
     },
-    "roles": {
-        "display": [
-            "display",
-            "display.1"
-        ],
-        "title": [
-            "serif.2",
-            "serif.2"
-        ],
-        "label": [
-            "sans.2",
-            "sans.2"
-        ],
-        "heading": [
-            "serif.2",
-            "serif.1"
-        ],
-        "body": [
-            "serif.1",
-            "sans"
-        ],
-        "code": [
-            "serif.1",
-            "sans"
-        ]
-    },
     "typescale": [
         {
             "index": 1,
@@ -90,100 +64,150 @@
             "value": 0.75
         }
     ],
+    "roles": {
+        "display": [
+            "display",
+            "display.1"
+        ],
+        "title": [
+            "serif.2",
+            "serif.2"
+        ],
+        "label": [
+            "sans.2",
+            "sans.2"
+        ],
+        "heading": [
+            "serif.2",
+            "serif.1"
+        ],
+        "body": [
+            "serif.1",
+            "sans"
+        ],
+        "code": [
+            "serif.1",
+            "sans"
+        ]
+    },
     "docroles": {
         "hero": {
+            "docrole": "hero",
             "font": "display",
             "size": "h1"
         },
         "headline": {
+            "docrole": "headline",
             "font": "heading",
             "size": "h1"
         },
         "title": {
+            "docrole": "title",
             "font": "display",
             "size": "h1"
         },
         "subtitle": {
+            "docrole": "subtitle",
             "font": "heading",
             "size": "h3"
         },
         "heading1": {
+            "docrole": "heading1",
             "font": "heading",
             "size": "h1"
         },
         "heading2": {
+            "docrole": "heading2",
             "font": "heading",
             "size": "h2"
         },
         "heading3": {
+            "docrole": "heading3",
             "font": "heading",
             "size": "h3"
         },
         "heading4": {
+            "docrole": "heading4",
             "font": "heading",
             "size": "h4"
         },
         "heading5": {
+            "docrole": "heading5",
             "font": "heading",
             "size": "h5"
         },
         "heading6": {
+            "docrole": "heading6",
             "font": "heading",
             "size": "h6"
         },
         "strong": {
+            "docrole": "strong",
             "font": "body",
             "size": "body"
         },
         "em": {
+            "docrole": "em",
             "font": "body",
             "size": "body"
         },
         "link": {
+            "docrole": "link",
             "font": "body",
             "size": "body"
         },
         "small": {
+            "docrole": "small",
             "font": "body",
             "size": "small"
         },
         "tiny": {
+            "docrole": "tiny",
             "font": "body.2",
             "size": "tiny"
         },
         "superscript": {
+            "docrole": "superscript",
             "font": "body.2",
             "size": "tiny"
         },
         "subscript": {
+            "docrole": "subscript",
             "font": "body.2",
             "size": "tiny"
         },
         "imgcaption": {
+            "docrole": "imgcaption",
             "font": "body",
             "size": "small"
         },
         "code": {
+            "docrole": "code",
             "font": "code.1",
             "size": "body"
         },
         "codeinline": {
+            "docrole": "codeinline",
             "font": "code.2",
             "size": "body"
         },
         "codeblock": {
+            "docrole": "codeblock",
             "font": "code.1",
             "size": "body"
         },
         "quote": {
+            "docrole": "quote",
             "font": "body",
             "size": "body"
         },
         "blockquote": {
+            "docrole": "blockquote",
             "font": "body",
             "size": "body"
         },
         "pullquote": {
+            "docrole": "pullquote",
             "font": "heading.2",
             "size": "body"
         }
