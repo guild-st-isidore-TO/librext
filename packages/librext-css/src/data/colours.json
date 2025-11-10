@@ -43,20 +43,20 @@
         ]
     },
     "palette": {
-        "greyscale": {
-            "0": "#ffffff",
-            "1": "#f6f8fa",
-            "2": "#eaeef2",
-            "3": "#d0d7de",
-            "4": "#afb8c1",
-            "5": "#8c959f",
-            "6": "#6e7781",
-            "7": "#57606a",
-            "8": "#424a53",
-            "9": "#32383f",
-            "10": "#24292f",
-            "11": "#000000"
-        },
+        "grey": [
+            "#ffffff",
+            "#f6f8fa",
+            "#eaeef2",
+            "#d0d7de",
+            "#afb8c1",
+            "#8c959f",
+            "#6e7781",
+            "#57606a",
+            "#424a53",
+            "#32383f",
+            "#24292f",
+            "#000000"
+        ],
         "theme": {
             "khaki": "#EADFB4",
             "powder-blue": "#9BB0C1",
@@ -67,5 +67,175 @@
             "navy-blue": "#053C5F",
             "deep-blue": "#00335E"
         }
+    },
+    "rolepalette": {
+        "basic": [
+            {
+                "role": "default.light",
+                "colour": ""
+            },
+            {
+                "role": "default.dark",
+                "colour": ""
+            },
+            {
+                "role": "accent.light",
+                "colour": ""
+            },
+            {
+                "role": "accent.dark",
+                "colour": ""
+            },
+            {
+                "role": "surface.light",
+                "colour": ""
+            },
+            {
+                "role": "surface.dark",
+                "colour": ""
+            },
+            {
+                "role": "outline.light",
+                "colour": ""
+            },
+            {
+                "role": "outline.dark",
+                "colour": ""
+            }
+        ],
+        "text": [
+            {
+                "role": "body.light",
+                "colour": ""
+            },
+            {
+                "role": "heading.light",
+                "colour": ""
+            },
+            {
+                "role": "label.light",
+                "colour": ""
+            },
+            {
+                "role": "display.light",
+                "colour": ""
+            },
+            {
+                "role": "rubric.light",
+                "colour": ""
+            },
+            {
+                "role": "underline.light",
+                "colour": ""
+            },
+            {
+                "role": "highlight.light",
+                "colour": ""
+            },
+            {
+                "role": "body.dark",
+                "colour": ""
+            },
+            {
+                "role": "heading.dark",
+                "colour": ""
+            },
+            {
+                "role": "label.dark",
+                "colour": ""
+            },
+            {
+                "role": "display.dark",
+                "colour": ""
+            },
+            {
+                "role": "rubric.dark",
+                "colour": ""
+            },
+            {
+                "role": "underline.dark",
+                "colour": ""
+            },
+            {
+                "role": "highlight.dark",
+                "colour": ""
+            }
+        ],
+        "accent": [
+            {
+                "role": "plain.light",
+                "colour": ""
+            },
+            {
+                "role": "plain.dark",
+                "colour": ""
+            },
+            {
+                "role": "primary.light",
+                "colour": ""
+            },
+            {
+                "role": "primary.dark",
+                "colour": ""
+            },
+            {
+                "role": "secondary.light",
+                "colour": ""
+            },
+            {
+                "role": "secondary.dark",
+                "colour": ""
+            },
+            {
+                "role": "tertiary.light",
+                "colour": ""
+            },
+            {
+                "role": "tertiary.dark",
+                "colour": ""
+            }
+        ],
+        "indicator": [
+            {
+                "role": "ok.light",
+                "colour": ""
+            },
+            {
+                "role": "ok.dark",
+                "colour": ""
+            },
+            {
+                "role": "info.light",
+                "colour": ""
+            },
+            {
+                "role": "info.dark",
+                "colour": ""
+            },
+            {
+                "role": "warning.light",
+                "colour": ""
+            },
+            {
+                "role": "warning.dark",
+                "colour": ""
+            },
+            {
+                "role": "error.light",
+                "colour": ""
+            },
+            {
+                "role": "error.dark",
+                "colour": ""
+            },
+            {
+                "role": "disabled.light",
+                "colour": ""
+            },
+            {
+                "role": "disabled.dark",
+                "colour": ""
+            }
+        ]
     }
 }
