@@ -7,7 +7,7 @@ let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildText = () => {
+const buildShapes = () => {
     let varsSelector = ':root'
     if (scope == 'local') {
         varsSelector = defaultLocalScope
@@ -90,4 +90,4 @@ const buildText = () => {
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-shapes.css`, variablesContent)
 }
 
-module.exports = { build: buildText };
+module.exports = { build: buildShapes };
