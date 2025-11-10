@@ -14,6 +14,20 @@
             "Inconsolata"
         ]
     },
+    "typefaceDefaults": {
+        "serif": [
+            "Times New Roman",
+            "Georgia"
+        ],
+        "sans": [
+            "Arial",
+            "Helvetica"
+        ],
+        "monospace": [
+            "Courier",
+            "Monaco"
+        ]
+    },
     "typescale": [
         {
             "index": 1,
@@ -90,7 +104,7 @@
     "docroles": [
         {
             "docrole": "hero",
-            "typerole": "display",
+            "typerole": "display.1",
             "typescale": "h1",
             "weight": "bold",
             "html": ".librext-hero",
@@ -98,7 +112,7 @@
         },
         {
             "docrole": "headline",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h1",
             "weight": "bold",
             "html": ".librext-headline",
@@ -106,7 +120,7 @@
         },
         {
             "docrole": "title",
-            "typerole": "display",
+            "typerole": "display.1",
             "typescale": "h1",
             "weight": "bold",
             "html": ".librext-title",
@@ -114,7 +128,7 @@
         },
         {
             "docrole": "subtitle",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h3",
             "weight": "regular",
             "html": ".librext-subtitle",
@@ -122,7 +136,7 @@
         },
         {
             "docrole": "heading1",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h1",
             "weight": "bold",
             "html": "h1",
@@ -130,7 +144,7 @@
         },
         {
             "docrole": "heading2",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h2",
             "weight": "bold",
             "html": "h2",
@@ -138,7 +152,7 @@
         },
         {
             "docrole": "heading3",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h3",
             "weight": "bold",
             "html": "h3",
@@ -146,7 +160,7 @@
         },
         {
             "docrole": "heading4",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h4",
             "weight": "bold",
             "html": "h4",
@@ -154,7 +168,7 @@
         },
         {
             "docrole": "heading5",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h5",
             "weight": "bold",
             "html": "h5",
@@ -162,7 +176,7 @@
         },
         {
             "docrole": "heading6",
-            "typerole": "heading",
+            "typerole": "heading.1",
             "typescale": "h6",
             "weight": "bold",
             "html": "h6",
@@ -170,7 +184,7 @@
         },
         {
             "docrole": "strong",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "bold",
             "html": "strong",
@@ -178,7 +192,7 @@
         },
         {
             "docrole": "em",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
             "html": "em",
@@ -188,7 +202,7 @@
         },
         {
             "docrole": "link",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
             "html": "a",
@@ -196,7 +210,7 @@
         },
         {
             "docrole": "small",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "small",
             "weight": "regular",
             "html": "small",
@@ -204,7 +218,7 @@
         },
         {
             "docrole": "tiny",
-            "typerole": "body.2",
+            "typerole": "body.2.1",
             "typescale": "tiny",
             "weight": "regular",
             "html": ".librext-tiny",
@@ -212,7 +226,7 @@
         },
         {
             "docrole": "superscript",
-            "typerole": "body.2",
+            "typerole": "body.2.1",
             "typescale": "tiny",
             "weight": "regular",
             "html": "sup",
@@ -220,7 +234,7 @@
         },
         {
             "docrole": "subscript",
-            "typerole": "body.2",
+            "typerole": "body.2.1",
             "typescale": "tiny",
             "weight": "regular",
             "html": "sub",
@@ -228,7 +242,7 @@
         },
         {
             "docrole": "imgcaption",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "small",
             "weight": "regular",
             "html": "figcaption",
@@ -236,7 +250,7 @@
         },
         {
             "docrole": "codeinline",
-            "typerole": "code.1",
+            "typerole": "code.1.1",
             "typescale": "body",
             "weight": "regular",
             "html": "code",
@@ -244,7 +258,7 @@
         },
         {
             "docrole": "codeblock",
-            "typerole": "code.1",
+            "typerole": "code.1.1",
             "typescale": "body",
             "weight": "regular",
             "html": "pre",
@@ -252,7 +266,7 @@
         },
         {
             "docrole": "quote",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
             "html": "q",
@@ -262,7 +276,7 @@
         },
         {
             "docrole": "blockquote",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
             "html": "blockquote",
@@ -272,7 +286,7 @@
         },
         {
             "docrole": "pullquote",
-            "typerole": "body",
+            "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
             "html": ".librext-pullquote",

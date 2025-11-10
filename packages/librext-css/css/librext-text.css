@@ -21,253 +21,275 @@
 /* ==================================== *\
  *  hero
  * ------------------------------------
- *    typerole = display
+ *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
 .librext-hero {
   font-weight: bold;
   font-size: 2.986rem;
+  font-family: 'Cinzel', serif;
 }
 
 /* ==================================== *\
  *  headline
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
 .librext-headline {
   font-weight: bold;
   font-size: 2.986rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  title
  * ------------------------------------
- *    typerole = display
+ *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
 .librext-title {
   font-weight: bold;
   font-size: 2.986rem;
+  font-family: 'Cinzel', serif;
 }
 
 /* ==================================== *\
  *  subtitle
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
 .librext-subtitle {
   font-weight: normal;
   font-size: 2.074rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading1
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
 h1 {
   font-weight: bold;
   font-size: 2.986rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading2
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h2
 \* ------------------------------------ */
 h2 {
   font-weight: bold;
   font-size: 2.488rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading3
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
 h3 {
   font-weight: bold;
   font-size: 2.074rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading4
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h4
 \* ------------------------------------ */
 h4 {
   font-weight: bold;
   font-size: 1.728rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading5
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h5
 \* ------------------------------------ */
 h5 {
   font-weight: bold;
   font-size: 1.44rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  heading6
  * ------------------------------------
- *    typerole = heading
+ *    typerole = heading.1
  *    typescale size = h6
 \* ------------------------------------ */
 h6 {
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: 'CormorantGaramond', serif;
 }
 
 /* ==================================== *\
  *  strong
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 strong {
   font-weight: bold;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  em
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 em {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  link
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 a {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  small
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
 small {
   font-weight: normal;
   font-size: 0.833rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  tiny
  * ------------------------------------
- *    typerole = body.2
+ *    typerole = body.2.1
  *    typescale size = tiny
 \* ------------------------------------ */
 .librext-tiny {
   font-weight: normal;
   font-size: 0.75rem;
+  font-family: 'OpenSans', sans-serif;
 }
 
 /* ==================================== *\
  *  superscript
  * ------------------------------------
- *    typerole = body.2
+ *    typerole = body.2.1
  *    typescale size = tiny
 \* ------------------------------------ */
 sup {
   font-weight: normal;
   font-size: 0.75rem;
+  font-family: 'OpenSans', sans-serif;
 }
 
 /* ==================================== *\
  *  subscript
  * ------------------------------------
- *    typerole = body.2
+ *    typerole = body.2.1
  *    typescale size = tiny
 \* ------------------------------------ */
 sub {
   font-weight: normal;
   font-size: 0.75rem;
+  font-family: 'OpenSans', sans-serif;
 }
 
 /* ==================================== *\
  *  imgcaption
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
 figcaption {
   font-weight: normal;
   font-size: 0.833rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  codeinline
  * ------------------------------------
- *    typerole = code.1
+ *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
 code {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'Inconsolata', monospace;
 }
 
 /* ==================================== *\
  *  codeblock
  * ------------------------------------
- *    typerole = code.1
+ *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
 pre {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'Inconsolata', monospace;
 }
 
 /* ==================================== *\
  *  quote
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 q {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  blockquote
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 blockquote {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
 
 /* ==================================== *\
  *  pullquote
  * ------------------------------------
- *    typerole = body
+ *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 .librext-pullquote {
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'CrimsonText', serif;
 }
-

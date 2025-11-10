@@ -90,7 +90,7 @@ const buildText = () => {
         const currentRoleTypefaces = currentRoleTypefaceKeys.map(typeKey => {
             return getTypeface(typeKey)
         })
-        
+
         typeRoles[tRole] = currentRoleTypefaces
     }
     console.log('[Text Builder] typeRoles', typeRoles)
@@ -114,9 +114,22 @@ const buildText = () => {
             return tScaleItem.style == currentDocRole.typescale
         })
 
+        const fFamParts = currentDocRole.typerole.split('.')
+        const fFamCtg = fFamParts[0]
+        const fFamPrio = fFamParts[1]
+        const fFamIdx = Number.parseInt(fFamPrio) - 1
+
+        const fontFamData = typeRoles[fFamCtg][fFamIdx]
+        let fontFamCtg = fontFamData.category
+        if (fontFamData.category == 'sans') {
+            fontFamCtg = 'sans-serif'
+        }
+        const fontFamVal = `'${fontFamData.name}', ${fontFamCtg}`
+
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
             { property: 'font-size', value: `${sizeVal.value}rem`, },
+            { property: 'font-family', value: fontFamVal, },
         ]
 
         const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
