@@ -1,4 +1,3 @@
-
 /* ========================================================
   LIBREXT FONTS 
   -------------------------------------------------------
@@ -38,21 +37,21 @@
 ==========*/
 
 @font-face {
-  font-family: 'Cormorant_Garamond';
+  font-family: 'CormorantGaramond';
   src: url('Cormorant_Garamond/Cormorant_Garamond-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cormorant_Garamond';
+  font-family: 'CormorantGaramond';
   src: url('Cormorant_Garamond/Cormorant_Garamond-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cormorant_Garamond';
+  font-family: 'CormorantGaramond';
   src: url('Cormorant_Garamond/Cormorant_Garamond-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
@@ -63,14 +62,14 @@
 ============*/
 
 @font-face {
-  font-family: 'Crimson_Text';
+  font-family: 'CrimsonText';
   src: url('Crimson_Text/Crimson_Text-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Crimson_Text';
+  font-family: 'CrimsonText';
   src: url('Crimson_Text/Crimson_Text-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
@@ -160,26 +159,15 @@
 ============ */
 
 :root {
-  --font-heading: 'Cormorant_Garamond', sans-serif;
-  --font-heading-serif: 'Cormorant_Garamond', sans-serif;
-  --font-heading-serif-alt: 'Cormorant_Garamond', sans-serif;
-  --font-heading-sans: 'Cormorant_Garamond', sans-serif;
-  --font-heading-sans-alt: 'Cormorant_Garamond', sans-serif;
+  --font-serif-1: 'CrimsonText', sans-serif;
+  --font-serif-2: 'CormorantGaramond', sans-serif;
 
-  --font-body: 'OpenSans', 'Open Sans', sans-serif;
-  --font-body-serif: 'OpenSans', 'Open Sans', sans-serif;
-  --font-body-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
-  --font-body-sans: 'OpenSans', 'Open Sans', sans-serif;
-  --font-body-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-sans-1: 'OpenSans', sans-serif;
+  --font-sans-2: 'Lato', sans-serif;
 
-  --font-display: 'OpenSans', 'Open Sans', sans-serif;
-  --font-display-serif: 'OpenSans', 'Open Sans', sans-serif;
-  --font-display-serif-alt: 'OpenSans', 'Open Sans', sans-serif;
-  --font-display-sans: 'OpenSans', 'Open Sans', sans-serif;
-  --font-display-sans-alt: 'OpenSans', 'Open Sans', sans-serif;
+  --font-monospace-1: 'Inconsolata', sans-serif;
+  --font-monospace-2: 'Inconsolata', sans-serif;
 
-  --font-monospace: 'OpenSans', 'Open Sans', sans-serif;
-
-  --font-heading-ui: 'Cormorant_Garamond', sans-serif;
-  --font-body-ui: 'OpenSans', 'Open Sans', sans-serif;
+  --font-display-1: 'Cinzel', sans-serif;
+  --font-display-2: 'Cinzel', sans-serif;
 }

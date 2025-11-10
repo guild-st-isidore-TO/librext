@@ -9,9 +9,11 @@
             "Lato"
         ],
         "monospace": [
+            "Inconsolata",
             "Inconsolata"
         ],
         "display": [
+            "Cinzel",
             "Cinzel"
         ]
     },
@@ -64,15 +66,16 @@
     ],
     "typeroles": {
         "display": [
-            "display.1"
+            "display.1",
+            "display.2"
         ],
         "title": [
             "serif.2",
-            "serif.2"
+            "display.2"
         ],
         "label": [
             "sans.2",
-            "sans.2"
+            "sans.1"
         ],
         "heading": [
             "serif.2",
@@ -83,8 +86,8 @@
             "sans.1"
         ],
         "code": [
-            "serif.1",
-            "sans.1"
+            "monospace.1",
+            "monospace.1"
         ]
     },
     "docroles": [
