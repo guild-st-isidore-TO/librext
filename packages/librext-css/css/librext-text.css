@@ -1,21 +1,253 @@
-:root {
-  --typescale-h1: 2.986rem;
-  --typescale-h2: 2.488rem;
-  --typescale-h3: 2.074rem;
-  --typescale-h4: 1.728rem;
-  --typescale-h5: 1.44rem;
-  --typescale-h6: 1.2rem;
-  --typescale-body: 1rem;
-  --typescale-small: 0.833rem;
-  --typescale-tiny: 0.75rem;
-  --fontfam-display-1: "Cinzel", serif;
-  --fontfam-display-2: "Cinzel", serif;
-  --fontfam-title-1: "Cormorant Garamond", serif;
-  --fontfam-title-2: "Cormorant Garamond", serif;
-  --fontfam-label-1: "Lato", sans-serif;
-  --fontfam-label-2: "Lato", sans-serif;
-  --fontfam-heading-1: "Cormorant Garamond", serif;
-  --fontfam-heading-2: "Lato", sans-serif;
-  --fontfam-body-1: "Crimson Text", serif;
-  --fontfam-body-2: "Open Sans", sans-serif;
+/* ------------------------------------ *\
+ *  hero
+ * ------------------------------------
+ *    typerole = display
+ *    typescale size = h1
+\* ------------------------------------ */
+
+.librext-hero {
+  font-weight: bold;
 }
+
+/* ------------------------------------ *\
+ *  headline
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h1
+\* ------------------------------------ */
+
+.librext-headline {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  title
+ * ------------------------------------
+ *    typerole = display
+ *    typescale size = h1
+\* ------------------------------------ */
+
+.librext-title {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  subtitle
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h3
+\* ------------------------------------ */
+
+.librext-subtitle {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  heading1
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h1
+\* ------------------------------------ */
+
+h1 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  heading2
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h2
+\* ------------------------------------ */
+
+h2 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  heading3
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h3
+\* ------------------------------------ */
+
+h3 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  heading4
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h4
+\* ------------------------------------ */
+
+h4 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  heading5
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h5
+\* ------------------------------------ */
+
+h5 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  heading6
+ * ------------------------------------
+ *    typerole = heading
+ *    typescale size = h6
+\* ------------------------------------ */
+
+h6 {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  strong
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+strong {
+  font-weight: bold;
+}
+
+/* ------------------------------------ *\
+ *  em
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+em {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  link
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+a {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  small
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = small
+\* ------------------------------------ */
+
+small {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  tiny
+ * ------------------------------------
+ *    typerole = body.2
+ *    typescale size = tiny
+\* ------------------------------------ */
+
+.librext-tiny {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  superscript
+ * ------------------------------------
+ *    typerole = body.2
+ *    typescale size = tiny
+\* ------------------------------------ */
+
+sup {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  subscript
+ * ------------------------------------
+ *    typerole = body.2
+ *    typescale size = tiny
+\* ------------------------------------ */
+
+sub {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  imgcaption
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = small
+\* ------------------------------------ */
+
+figcaption {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  codeinline
+ * ------------------------------------
+ *    typerole = code.1
+ *    typescale size = body
+\* ------------------------------------ */
+
+code {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  codeblock
+ * ------------------------------------
+ *    typerole = code.1
+ *    typescale size = body
+\* ------------------------------------ */
+
+pre {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  quote
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+q {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  blockquote
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+blockquote {
+  font-weight: normal;
+}
+
+/* ------------------------------------ *\
+ *  pullquote
+ * ------------------------------------
+ *    typerole = body
+ *    typescale size = body
+\* ------------------------------------ */
+
+.librext-pullquote {
+  font-weight: normal;
+}
+

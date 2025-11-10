@@ -69,6 +69,7 @@ const buildText = () => {
         console.log('[Text Builder] currentRole', currentRole)
     }
 
+    let docRolesContent = ''
     for (const currentDocRole of textData.docroles) {
         // const dataTypefaceList = textData.roles[typefaceRole]
         // const typefaceList = dataTypefaceList.map((typeName, idx) => {
@@ -84,6 +85,25 @@ const buildText = () => {
 
         // const currentDocRole = textData.docroles[tDocroles]
         console.log('[Text Builder] currentDocRole', currentDocRole)
+
+        let weightVal = currentDocRole.weight
+        if (currentDocRole.weight == 'regular') {
+            weightVal = 'normal'
+        }
+        const docRoleVars = [
+            {
+                property: 'font-weight',
+                value: weightVal,
+            },
+        ]
+        const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
+        const line = '------------------------------------'
+        // const line2 = '---------------------------------'
+        const docRoleComment1 = `/* ${line} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
+        const docRoleComment2 = ` *    typerole = ${currentDocRole.typerole}\n`
+        const docRoleComment3 = ` *    typescale size = ${currentDocRole.typescale}\n\\* ${line} */\n`
+        docRolesContent += docRoleComment1 + docRoleComment2 + docRoleComment3 + '\n' + docRoleRule + '\n'
+        console.log('[Text Builder] docRoleRule', docRoleRule)
     }
 
     // console.log('[LibRext CSS - TextBuilder] roles', roles)
@@ -102,8 +122,10 @@ const buildText = () => {
     //     styleVars.push(newProp)
     // })
 
+
+    console.log('[Text Builder] docRolesContent', docRolesContent)
     // const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    // libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, variablesContent)
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, docRolesContent)
 }
 
 module.exports = { build: buildText };
