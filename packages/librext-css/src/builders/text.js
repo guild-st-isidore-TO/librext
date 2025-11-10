@@ -13,7 +13,8 @@ const buildText = () => {
     const textData = libRextCssFileHandler.readFile(textDataFile)
     // console.log('[LibRext CSS - TextBuilder] textData', textData)
 
-    let prefaceContent = '@import "../fonts/librext-fonts.css";\n'
+    // let prefaceContent = '@import "../fonts/librext-fonts.css";\n'
+    let prefaceContent = '/* TEXT BUILDERS */\n'
 
     const styleVars = []
 

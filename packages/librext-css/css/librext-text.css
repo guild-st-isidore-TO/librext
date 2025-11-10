@@ -1,4 +1,4 @@
-@import "../fonts/librext-fonts.css";
+/* TEXT BUILDERS */
 
 /* ================================================ *\
  * ROOT NAMESPACE
@@ -151,12 +151,25 @@ h6 {
 }
 
 /* ==================================== *\
+ *  body
+ * ------------------------------------
+ *    typerole = body.1
+ *    typescale size = body
+\* ------------------------------------ */
+p, span {
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: normal;
+}
+
+/* ==================================== *\
  *  strong
  * ------------------------------------
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-strong {
+b, strong {
   font-weight: bold;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
@@ -169,7 +182,7 @@ strong {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-em {
+i, em {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
@@ -205,7 +218,7 @@ small {
 /* ==================================== *\
  *  tiny
  * ------------------------------------
- *    typerole = body.2.1
+ *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 .librext-tiny {
@@ -218,7 +231,7 @@ small {
 /* ==================================== *\
  *  superscript
  * ------------------------------------
- *    typerole = body.2.1
+ *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 sup {
@@ -231,7 +244,7 @@ sup {
 /* ==================================== *\
  *  subscript
  * ------------------------------------
- *    typerole = body.2.1
+ *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 sub {

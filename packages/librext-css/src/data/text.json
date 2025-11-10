@@ -183,11 +183,19 @@
             "styles": []
         },
         {
+            "docrole": "body",
+            "typerole": "body.1",
+            "typescale": "body",
+            "weight": "regular",
+            "html": "p, span",
+            "styles": []
+        },
+        {
             "docrole": "strong",
             "typerole": "body.1",
             "typescale": "body",
             "weight": "bold",
-            "html": "strong",
+            "html": "b, strong",
             "styles": []
         },
         {
@@ -195,7 +203,7 @@
             "typerole": "body.1",
             "typescale": "body",
             "weight": "regular",
-            "html": "em",
+            "html": "i, em",
             "styles": [
                 "italic"
             ]
@@ -218,7 +226,7 @@
         },
         {
             "docrole": "tiny",
-            "typerole": "body.2.1",
+            "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
             "html": ".librext-tiny",
@@ -226,7 +234,7 @@
         },
         {
             "docrole": "superscript",
-            "typerole": "body.2.1",
+            "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
             "html": "sup",
@@ -234,7 +242,7 @@
         },
         {
             "docrole": "subscript",
-            "typerole": "body.2.1",
+            "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
             "html": "sub",

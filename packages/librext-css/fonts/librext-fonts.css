@@ -12,49 +12,49 @@
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Regular.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Regular.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Medium.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-SemiBold.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Bold.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Bold.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-ExtraBold.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-ExtraBold.ttf');
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('Cinzel/Cinzel-Black.ttf') format('ttf');
+  src: url('Cinzel/Cinzel-Black.ttf');
   font-weight: 900;
 }
 
@@ -65,91 +65,91 @@
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Light.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Medium.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-SemiBold.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Bold.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Bold.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-LightItalic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-LightItalic.ttf');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Italic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-Italic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf') format('ttf');
+  src: url('Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
@@ -161,65 +161,65 @@
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Regular.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Regular.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-SemiBold.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Bold.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Bold.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Italic.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Italic.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-SemiBoldItalic.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-SemiBoldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf') format('ttf');
+  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
@@ -231,78 +231,78 @@
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Light.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Regular.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Regular.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-SemiBold.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Bold.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Bold.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-LightItalic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-LightItalic.ttf');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Italic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-Italic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-SemiBoldItalic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-SemiBoldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-BoldItalic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Inconsolata';
-  src: url('Inconsolata/Inconsolata-BoldItalic.ttf') format('ttf');
+  src: url('Inconsolata/Inconsolata-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
@@ -314,65 +314,65 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Regular.ttf') format('ttf');
+  src: url('Lato/Lato-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Regular.ttf') format('ttf');
+  src: url('Lato/Lato-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Bold.ttf') format('ttf');
+  src: url('Lato/Lato-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Bold.ttf') format('ttf');
+  src: url('Lato/Lato-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Black.ttf') format('ttf');
+  src: url('Lato/Lato-Black.ttf');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Italic.ttf') format('ttf');
+  src: url('Lato/Lato-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-Italic.ttf') format('ttf');
+  src: url('Lato/Lato-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-BoldItalic.ttf') format('ttf');
+  src: url('Lato/Lato-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-BoldItalic.ttf') format('ttf');
+  src: url('Lato/Lato-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato/Lato-BlackItalic.ttf') format('ttf');
+  src: url('Lato/Lato-BlackItalic.ttf');
   font-weight: 900;
   font-style: italic;
 }
@@ -384,91 +384,91 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Light.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Regular.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Regular.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-SemiBold.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Bold.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Bold.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Bold.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-ExtraBold.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-ExtraBold.ttf');
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-LightItalic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-LightItalic.ttf');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Italic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-Italic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-SemiBoldItalic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-SemiBoldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-BoldItalic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-BoldItalic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-BoldItalic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('ttf');
+  src: url('Open_Sans/OpenSans-ExtraBoldItalic.ttf');
   font-weight: 800;
   font-style: italic;
 }
