@@ -13,6 +13,8 @@ const buildText = () => {
     const textData = libRextCssFileHandler.readFile(textDataFile)
     // console.log('[LibRext CSS - TextBuilder] textData', textData)
 
+    let prefaceContent = '@import "../fonts/librext-fonts.css";\n'
+
     const styleVars = []
 
     const typefaces = textData.typefaces
@@ -134,11 +136,14 @@ const buildText = () => {
             fontFamCtg = 'sans-serif'
         }
         const fontFamVal = `"${fontFamData.name}", ${defaultFontsFormatted}, ${fontFamCtg}`
+        const isItalic = currentDocRole.styles.includes('italic')
+        const fontStyleVal = isItalic ? 'italic' : 'normal'
 
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
             { property: 'font-size', value: `${sizeVal.value}rem`, },
             { property: 'font-family', value: fontFamVal, },
+            { property: 'font-style', value: fontStyleVal, },
         ]
 
         const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
@@ -152,7 +157,7 @@ const buildText = () => {
     // console.log('[Text Builder] docRolesContent', docRolesContent)
 
 
-    const allContent = typeScaleContent + docRolesContent
+    const allContent = prefaceContent + '\n' + typeScaleContent + docRolesContent
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, allContent)
 }
 

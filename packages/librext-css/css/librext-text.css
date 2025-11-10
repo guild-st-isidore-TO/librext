@@ -1,3 +1,5 @@
+@import "../fonts/librext-fonts.css";
+
 /* ================================================ *\
  * ROOT NAMESPACE
 \* ================================================ */
@@ -28,6 +30,7 @@
   font-weight: bold;
   font-size: 2.986rem;
   font-family: "Cinzel", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -40,6 +43,7 @@
   font-weight: bold;
   font-size: 2.986rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -52,6 +56,7 @@
   font-weight: bold;
   font-size: 2.986rem;
   font-family: "Cinzel", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -64,6 +69,7 @@
   font-weight: normal;
   font-size: 2.074rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -76,6 +82,7 @@ h1 {
   font-weight: bold;
   font-size: 2.986rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -88,6 +95,7 @@ h2 {
   font-weight: bold;
   font-size: 2.488rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -100,6 +108,7 @@ h3 {
   font-weight: bold;
   font-size: 2.074rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -112,6 +121,7 @@ h4 {
   font-weight: bold;
   font-size: 1.728rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -124,6 +134,7 @@ h5 {
   font-weight: bold;
   font-size: 1.44rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -136,6 +147,7 @@ h6 {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -148,6 +160,7 @@ strong {
   font-weight: bold;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -160,6 +173,7 @@ em {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: italic;
 }
 
 /* ==================================== *\
@@ -172,6 +186,7 @@ a {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -184,6 +199,7 @@ small {
   font-weight: normal;
   font-size: 0.833rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -196,6 +212,7 @@ small {
   font-weight: normal;
   font-size: 0.75rem;
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -208,6 +225,7 @@ sup {
   font-weight: normal;
   font-size: 0.75rem;
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -220,6 +238,7 @@ sub {
   font-weight: normal;
   font-size: 0.75rem;
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -232,6 +251,7 @@ figcaption {
   font-weight: normal;
   font-size: 0.833rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -244,6 +264,7 @@ code {
   font-weight: normal;
   font-size: 1rem;
   font-family: "Inconsolata", Courier, Monaco, monospace;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -256,6 +277,7 @@ pre {
   font-weight: normal;
   font-size: 1rem;
   font-family: "Inconsolata", Courier, Monaco, monospace;
+  font-style: normal;
 }
 
 /* ==================================== *\
@@ -268,6 +290,7 @@ q {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: italic;
 }
 
 /* ==================================== *\
@@ -280,6 +303,7 @@ blockquote {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: italic;
 }
 
 /* ==================================== *\
@@ -292,5 +316,6 @@ blockquote {
   font-weight: normal;
   font-size: 1rem;
   font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-style: italic;
 }
 
