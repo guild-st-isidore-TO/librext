@@ -17,7 +17,7 @@ const buildColours = () => {
 
     const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
     const colourData = libRextCssFileHandler.readFile(colourDataFile)
-    console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
+    // console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
 
     const styleVars = []
 
@@ -39,7 +39,7 @@ const buildColours = () => {
         styleVars.push(themeEntry);
     }
 
-    console.log(styleVars)
+    // console.log('[LibRext CSS - ColourBuilder] styleVars', styleVars)
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-colours.css`, variablesContent)

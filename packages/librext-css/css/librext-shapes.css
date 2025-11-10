@@ -7,5 +7,14 @@
   --corner-radius-xl: 20px;
   --corner-radius-xxl: 28px;
   --corner-radius-xxxl: 32px;
-  --corner-radius-xxxxl: 48px;
+  --corner-radius-4xl: 48px;
+  --element-height-xs: 12px;
+  --element-height-sm: 16px;
+  --element-height-md: 20px;
+  --element-height-lg: 28px;
+  --element-height-xl: 36px;
+  --element-height-xxl: 48px;
+  --element-height-xxxl: 60px;
+  --element-height-4xl: 84px;
+  --element-height-5xl: 96px;
 }

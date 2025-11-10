@@ -49,15 +49,7 @@ const buildText = () => {
     const docroles = []
     let docRolesContent = ''
 
-
-
-
-    // for (const typefaceCtg in textData.typefaces) {
-    //     const currentTypefaces = textData.typefaces[typefaceCtg]
-    //     console.log('[Text Builder] typefaceCtg', typefaceCtg)
-    //     console.log('[Text Builder] currentTypefaces', currentTypefaces)
-    // }
-    console.log('[Text Builder] typefaces', typefaces)
+    // console.log('[Text Builder] typefaces', typefaces)
     // const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
 
     const typeVars = []
@@ -96,7 +88,7 @@ const buildText = () => {
 
         typeRoles[tRole] = currentRoleTypefaces
     }
-    console.log('[Text Builder] typeRoles', typeRoles)
+    // console.log('[Text Builder] typeRoles', typeRoles)
 
     let docRoleHeadingComment = `/* ${thickLine} *\\\n`
     docRoleHeadingComment += ` * DOCUMENT ROLES\n`
@@ -132,7 +124,7 @@ const buildText = () => {
             }
             return dFont
         }).join(', ')
-        console.log('[Text Builder] defaultFonts', defaultFontsFormatted)
+        // console.log('[Text Builder] defaultFonts', defaultFontsFormatted)
         if (fontFamData.category == 'sans') {
             fontFamCtg = 'sans-serif'
         }

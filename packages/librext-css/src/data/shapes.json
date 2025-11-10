@@ -8,6 +8,17 @@
         "xl": 20,
         "xxl": 28,
         "xxxl": 32,
-        "xxxxl": 48
+        "4xl": 48
+    },
+    "elementHeightScale": {
+        "xs": 12,
+        "sm": 16,
+        "md": 20,
+        "lg": 28,
+        "xl": 36,
+        "xxl": 48,
+        "xxxl": 60,
+        "4xl": 84,
+        "5xl": 96
     }
 }
