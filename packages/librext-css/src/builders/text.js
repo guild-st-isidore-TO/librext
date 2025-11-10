@@ -8,7 +8,8 @@ const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 // const ROOT_SELECTOR = ':root'
 const line = '------------------------------------'
-const thic = '================================================'
+const boldLine = '===================================='
+const thickLine = '================================================'
 
 
 const buildText = () => {
@@ -53,9 +54,9 @@ const buildText = () => {
     // const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
 
     const typeVars = []
-    let typeScaleComment = `/* ${thic} *\\\n`
+    let typeScaleComment = `/* ${thickLine} *\\\n`
     typeScaleComment += ` * ROOT NAMESPACE\n`
-    typeScaleComment += `\\* ${thic} */\n\n`
+    typeScaleComment += `\\* ${thickLine} */\n\n`
 
     for (const tTypescale of textData.typescale) {
         const currentTypescaleItem = tTypescale
@@ -88,9 +89,9 @@ const buildText = () => {
         console.log('[Text Builder] currentRole', currentRole)
     }
 
-    let docRoleHeadingComment = `/* ${thic} *\\\n`
+    let docRoleHeadingComment = `/* ${thickLine} *\\\n`
     docRoleHeadingComment += ` * DOCUMENT ROLES\n`
-    docRoleHeadingComment += `\\* ${thic} */\n\n`
+    docRoleHeadingComment += `\\* ${thickLine} */\n\n`
     docRolesContent += docRoleHeadingComment
 
     for (const currentDocRole of textData.docroles) {
@@ -110,11 +111,11 @@ const buildText = () => {
 
         const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
         // const line2 = '---------------------------------'
-        const docRoleComment1 = `/* ${line} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
+        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
         const docRoleComment2 = ` *    typerole = ${currentDocRole.typerole}\n`
         const docRoleComment3 = ` *    typescale size = ${currentDocRole.typescale}\n\\* ${line} */\n`
 
-        docRolesContent += docRoleComment1 + docRoleComment2 + docRoleComment3 + '\n' + docRoleRule + '\n'
+        docRolesContent += docRoleComment1 + docRoleComment2 + docRoleComment3 + docRoleRule + '\n'
         console.log('[Text Builder] docRoleRule', docRoleRule)
     }
     console.log('[Text Builder] docRolesContent', docRolesContent)
