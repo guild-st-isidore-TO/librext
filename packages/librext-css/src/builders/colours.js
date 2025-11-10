@@ -39,6 +39,44 @@ const buildColours = () => {
         styleVars.push(themeEntry);
     }
 
+
+
+
+    const basicRoles = colourData.roles.basic;
+    const basicVariants = [
+        ...colourData.variants.lighting,
+    ];
+    let basicRoleVariants = libRextCssUtil.getPermutationsOfArrays(basicRoles, basicVariants)
+    basicRoleVariants = basicRoleVariants.map(vars => vars.join('.'))
+    console.log('[LibRext CSS - ColourBuilder] basicRoleVariants', basicRoleVariants)
+
+
+    const textRoles = colourData.roles.text;
+    const textVariants = [
+        ...colourData.variants.lighting,
+    ];
+    let textRoleVariants = libRextCssUtil.getPermutationsOfArrays(textRoles, textVariants)
+    textRoleVariants = textRoleVariants.map(vars => vars.join('.'))
+    console.log('[LibRext CSS - ColourBuilder] textRoleVariants', textRoleVariants)
+
+
+    const indicatorRoles = colourData.roles.indicator;
+    const indicatorVariants = [
+        ...colourData.variants.lighting,
+    ];
+    let indicatorRoleVariants = libRextCssUtil.getPermutationsOfArrays(indicatorRoles, indicatorVariants)
+    indicatorRoleVariants = indicatorRoleVariants.map(vars => vars.join('.'))
+    console.log('[LibRext CSS - ColourBindicatorlder] indicatorRoleVariants', indicatorRoleVariants)
+
+
+    const accentRoles = colourData.variants.accent;
+    const accentVariants = [
+        ...colourData.variants.lighting,
+    ];
+    let accentRoleVariants = libRextCssUtil.getPermutationsOfArrays(accentRoles, accentVariants)
+    accentRoleVariants = accentRoleVariants.map(vars => vars.join('.'))
+    console.log('[LibRext CSS - ColourBuilder] accentRoleVariants', accentRoleVariants)
+
     // console.log('[LibRext CSS - ColourBuilder] styleVars', styleVars)
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);

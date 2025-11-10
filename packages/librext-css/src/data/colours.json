@@ -6,7 +6,16 @@
             "surface",
             "outline"
         ],
-        "ui": [
+        "text": [
+            "body",
+            "heading",
+            "label",
+            "display",
+            "rubric",
+            "underline",
+            "highlight"
+        ],
+        "indicator": [
             "ok",
             "info",
             "warning",
@@ -16,6 +25,7 @@
     },
     "variants": {
         "accent": [
+            "plain",
             "primary",
             "secondary",
             "tertiary"
@@ -25,6 +35,7 @@
             "dark"
         ],
         "ui": [
+            "plain",
             "hover",
             "active",
             "selected",
