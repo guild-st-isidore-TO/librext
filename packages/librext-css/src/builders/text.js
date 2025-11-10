@@ -3,23 +3,12 @@
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
 
-let scope = 'global'
-const defaultLocalScope = '.librext *'
-let customLocalScope = '.placeholder *'
-// const ROOT_SELECTOR = ':root'
 const line = '------------------------------------'
 const boldLine = '===================================='
 const thickLine = '================================================'
 
 
 const buildText = () => {
-    let varsSelector = libRextCssUtil.ROOT_SELECTOR
-    if (scope == 'local') {
-        varsSelector = defaultLocalScope
-    } else if (scope == 'custom') {
-        varsSelector = customLocalScope
-    }
-
     const textDataFile = `${libRextCssUtil.dataDir}/text.json`
     const textData = libRextCssFileHandler.readFile(textDataFile)
     // console.log('[LibRext CSS - TextBuilder] textData', textData)
@@ -37,16 +26,10 @@ const buildText = () => {
     const docroles = []
     let docRolesContent = ''
 
-    for (const typefaceCtg in textData.typefaces) {
-        // const typefaceList = dataTypefaceList.map((typeName, idx) => {
-        //     return {
-        //         name: typeName,
-        //         category: typefaceCtg,
-        //         priority: idx + 1
-        //     }
-        // })
-        // typefaces.push(...typefaceList)
 
+
+
+    for (const typefaceCtg in textData.typefaces) {
         const currentTypefaces = textData.typefaces[typefaceCtg]
         console.log('[Text Builder] typefaceCtg', typefaceCtg)
         console.log('[Text Builder] currentTypefaces', currentTypefaces)
@@ -57,6 +40,9 @@ const buildText = () => {
     let typeScaleComment = `/* ${thickLine} *\\\n`
     typeScaleComment += ` * ROOT NAMESPACE\n`
     typeScaleComment += `\\* ${thickLine} */\n\n`
+
+
+
 
     for (const tTypescale of textData.typescale) {
         const currentTypescaleItem = tTypescale
@@ -73,18 +59,10 @@ const buildText = () => {
     typeScaleContent = typeScaleComment + typeRule + '\n'
     console.log('[Text Builder] typeScaleContent', typeScaleContent)
 
-    for (const tRoles in textData.typeroles) {
-        // const typefaceList = dataTypefaceList.map((typeName, idx) => {
-        //     const typefaceData = getTypefaceByName(typeName)
-        //     return {
-        //         name: typeName,
-        //         category: typefaceData.category,
-        //         role: typefaceRole,
-        //         priority: idx + 1
-        //     }
-        // })
-        // roles.push(...typefaceList)
 
+
+
+    for (const tRoles in textData.typeroles) {
         const currentRole = textData.typeroles[tRoles]
         console.log('[Text Builder] currentRole', currentRole)
     }
@@ -94,51 +72,37 @@ const buildText = () => {
     docRoleHeadingComment += `\\* ${thickLine} */\n\n`
     docRolesContent += docRoleHeadingComment
 
+
+
+
     for (const currentDocRole of textData.docroles) {
-        console.log('[Text Builder] currentDocRole', currentDocRole)
+        // console.log('[Text Builder] currentDocRole', currentDocRole)
 
         let weightVal = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {
             weightVal = 'normal'
         }
+        const sizeVal = textData.typescale.find(tScaleItem => {
+            return tScaleItem.style == currentDocRole.typescale
+        })
 
         const docRoleVars = [
-            {
-                property: 'font-weight',
-                value: weightVal,
-            },
+            { property: 'font-weight', value: weightVal, },
+            { property: 'font-size', value: `${sizeVal.value}rem`, },
         ]
 
         const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
-        // const line2 = '---------------------------------'
         const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
         const docRoleComment2 = ` *    typerole = ${currentDocRole.typerole}\n`
         const docRoleComment3 = ` *    typescale size = ${currentDocRole.typescale}\n\\* ${line} */\n`
 
         docRolesContent += docRoleComment1 + docRoleComment2 + docRoleComment3 + docRoleRule + '\n'
-        console.log('[Text Builder] docRoleRule', docRoleRule)
+        // console.log('[Text Builder] docRoleRule', docRoleRule)
     }
-    console.log('[Text Builder] docRolesContent', docRolesContent)
+    // console.log('[Text Builder] docRolesContent', docRolesContent)
 
-    // console.log('[LibRext CSS - TextBuilder] roles', roles)
-    // roles.forEach(role => {
-    //     let genericVal = role.category
-    //     if (role.category == 'sans') {
-    //         genericVal = 'sans-serif'
-    //     } else if (role.category == 'display') {
-    //         genericVal = 'serif'
-    //     }
-
-    //     const newProp = {
-    //         property: `fontfam-${role.role}-${role.priority}`,
-    //         value: `"${role.name}", ${genericVal}`,
-    //     }
-    //     styleVars.push(newProp)
-    // })
 
     const allContent = typeScaleContent + docRolesContent
-
-    // const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, allContent)
 }
 
