@@ -96,7 +96,7 @@
             "typerole": "display",
             "typescale": "h1",
             "weight": "bold",
-            "html": "span",
+            "html": ".librext-hero",
             "styles": []
         },
         {
@@ -104,7 +104,7 @@
             "typerole": "heading",
             "typescale": "h1",
             "weight": "bold",
-            "html": "span",
+            "html": ".librext-headline",
             "styles": []
         },
         {
@@ -112,7 +112,7 @@
             "typerole": "display",
             "typescale": "h1",
             "weight": "bold",
-            "html": "span",
+            "html": ".librext-title",
             "styles": []
         },
         {
@@ -120,7 +120,7 @@
             "typerole": "heading",
             "typescale": "h3",
             "weight": "regular",
-            "html": "span",
+            "html": ".librext-subtitle",
             "styles": []
         },
         {
@@ -128,7 +128,7 @@
             "typerole": "heading",
             "typescale": "h1",
             "weight": "bold",
-            "html": "span",
+            "html": "h1",
             "styles": []
         },
         {
@@ -136,7 +136,7 @@
             "typerole": "heading",
             "typescale": "h2",
             "weight": "bold",
-            "html": "span",
+            "html": "h2",
             "styles": []
         },
         {
@@ -144,7 +144,7 @@
             "typerole": "heading",
             "typescale": "h3",
             "weight": "bold",
-            "html": "span",
+            "html": "h3",
             "styles": []
         },
         {
@@ -152,7 +152,7 @@
             "typerole": "heading",
             "typescale": "h4",
             "weight": "bold",
-            "html": "span",
+            "html": "h4",
             "styles": []
         },
         {
@@ -160,7 +160,7 @@
             "typerole": "heading",
             "typescale": "h5",
             "weight": "bold",
-            "html": "span",
+            "html": "h5",
             "styles": []
         },
         {
@@ -168,7 +168,7 @@
             "typerole": "heading",
             "typescale": "h6",
             "weight": "bold",
-            "html": "span",
+            "html": "h6",
             "styles": []
         },
         {
@@ -176,7 +176,7 @@
             "typerole": "body",
             "typescale": "body",
             "weight": "bold",
-            "html": "span",
+            "html": "strong",
             "styles": []
         },
         {
@@ -184,7 +184,7 @@
             "typerole": "body",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "em",
             "styles": [
                 "italic"
             ]
@@ -194,7 +194,7 @@
             "typerole": "body",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "a",
             "styles": []
         },
         {
@@ -202,7 +202,7 @@
             "typerole": "body",
             "typescale": "small",
             "weight": "regular",
-            "html": "span",
+            "html": "small",
             "styles": []
         },
         {
@@ -210,7 +210,7 @@
             "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
-            "html": "span",
+            "html": ".librext-tiny",
             "styles": []
         },
         {
@@ -218,7 +218,7 @@
             "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
-            "html": "span",
+            "html": "sup",
             "styles": []
         },
         {
@@ -226,7 +226,7 @@
             "typerole": "body.2",
             "typescale": "tiny",
             "weight": "regular",
-            "html": "span",
+            "html": "sub",
             "styles": []
         },
         {
@@ -234,23 +234,15 @@
             "typerole": "body",
             "typescale": "small",
             "weight": "regular",
-            "html": "span",
-            "styles": []
-        },
-        {
-            "docrole": "code",
-            "typerole": "code.1",
-            "typescale": "body",
-            "weight": "regular",
-            "html": "span",
+            "html": "figcaption",
             "styles": []
         },
         {
             "docrole": "codeinline",
-            "typerole": "code.2",
+            "typerole": "code.1",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "code",
             "styles": []
         },
         {
@@ -258,7 +250,7 @@
             "typerole": "code.1",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "pre",
             "styles": []
         },
         {
@@ -266,7 +258,7 @@
             "typerole": "body",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "q",
             "styles": [
                 "italic"
             ]
@@ -276,17 +268,17 @@
             "typerole": "body",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": "blockquote",
             "styles": [
                 "italic"
             ]
         },
         {
             "docrole": "pullquote",
-            "typerole": "heading.2",
+            "typerole": "body",
             "typescale": "body",
             "weight": "regular",
-            "html": "span",
+            "html": ".librext-pullquote",
             "styles": [
                 "italic"
             ]
