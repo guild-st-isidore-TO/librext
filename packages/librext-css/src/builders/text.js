@@ -121,10 +121,19 @@ const buildText = () => {
 
         const fontFamData = typeRoles[fFamCtg][fFamIdx]
         let fontFamCtg = fontFamData.category
+        const defaultFonts = textData.typefaceDefaults[fontFamData.category]
+        const defaultFontsFormatted = defaultFonts.map(dFont => {
+            const numTokens = dFont.split(' ').length
+            if (numTokens > 1) {
+                return `"${dFont}"`
+            }
+            return dFont
+        }).join(', ')
+        console.log('[Text Builder] defaultFonts', defaultFontsFormatted)
         if (fontFamData.category == 'sans') {
             fontFamCtg = 'sans-serif'
         }
-        const fontFamVal = `'${fontFamData.name}', ${fontFamCtg}`
+        const fontFamVal = `"${fontFamData.name}", ${defaultFontsFormatted}, ${fontFamCtg}`
 
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
