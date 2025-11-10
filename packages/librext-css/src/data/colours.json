@@ -24,14 +24,28 @@
     },
     "palette": {
         "greyscale": {
-            "1": "#ffffff",
-            "2": "#ffffff",
-            "3": "#ffffff"
+            "0": "#ffffff",
+            "1": "#f6f8fa",
+            "2": "#eaeef2",
+            "3": "#d0d7de",
+            "4": "#afb8c1",
+            "5": "#8c959f",
+            "6": "#6e7781",
+            "7": "#57606a",
+            "8": "#424a53",
+            "9": "#32383f",
+            "10": "#24292f",
+            "11": "#000000"
         },
         "theme": {
-            "name1": "#ffffff",
-            "name2": "#ffffff",
-            "name3": "#ffffff"
+            "khaki": "#EADFB4",
+            "powderBlue": "#9BB0C1",
+            "cerulean": "#51829b",
+            "orange": "#F6995C",
+            "lightBlue": "#E6FAFF",
+            "oceanBlue": "#1B628F",
+            "navyBlue": "#053C5F",
+            "deepBlue": "#00335E"
         }
     }
 }
