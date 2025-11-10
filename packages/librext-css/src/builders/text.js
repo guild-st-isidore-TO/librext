@@ -15,12 +15,32 @@ const buildText = () => {
 
     const styleVars = []
 
-    const typefaces = []
+    const typefaces = textData.typefaces
+    const getTypeface = (typefaceId) => {
+        let tFace;
+
+        try {
+            const typeParts = typefaceId.split('.')
+            const typeCtg = typeParts[0]
+            const typePrio = typeParts[1]
+            const typeIdx = Number.parseInt(typePrio) - 1
+
+            tFace = {
+                name: typefaces[typeCtg][typeIdx],
+                category: typeCtg,
+            }
+        } catch (error) {
+            console.log('[Text Builder] Failed to get typeface.')
+            console.log(error);
+        }
+
+        return tFace
+    }
 
     const typescale = []
     let typeScaleContent = ''
 
-    const roles = []
+    const typeRoles = {}
     let rolesContent = ''
 
     const docroles = []
@@ -29,11 +49,12 @@ const buildText = () => {
 
 
 
-    for (const typefaceCtg in textData.typefaces) {
-        const currentTypefaces = textData.typefaces[typefaceCtg]
-        console.log('[Text Builder] typefaceCtg', typefaceCtg)
-        console.log('[Text Builder] currentTypefaces', currentTypefaces)
-    }
+    // for (const typefaceCtg in textData.typefaces) {
+    //     const currentTypefaces = textData.typefaces[typefaceCtg]
+    //     console.log('[Text Builder] typefaceCtg', typefaceCtg)
+    //     console.log('[Text Builder] currentTypefaces', currentTypefaces)
+    // }
+    console.log('[Text Builder] typefaces', typefaces)
     // const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
 
     const typeVars = []
@@ -46,7 +67,7 @@ const buildText = () => {
 
     for (const tTypescale of textData.typescale) {
         const currentTypescaleItem = tTypescale
-        console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
+        // console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
 
         typeVars.push({
             property: `typescale-${currentTypescaleItem.style}`,
@@ -55,17 +76,24 @@ const buildText = () => {
     }
 
     const typeRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, typeVars);
-    console.log('[Text Builder] typeRule', typeRule)
+    // console.log('[Text Builder] typeRule', typeRule)
     typeScaleContent = typeScaleComment + typeRule + '\n'
-    console.log('[Text Builder] typeScaleContent', typeScaleContent)
+    // console.log('[Text Builder] typeScaleContent', typeScaleContent)
 
 
 
 
-    for (const tRoles in textData.typeroles) {
-        const currentRole = textData.typeroles[tRoles]
-        console.log('[Text Builder] currentRole', currentRole)
+    for (const tRole in textData.typeroles) {
+        const currentRoleTypefaceKeys = textData.typeroles[tRole]
+        // console.log('[Text Builder] currentRole', tRole, currentRoleTypefaceKeys)
+
+        const currentRoleTypefaces = currentRoleTypefaceKeys.map(typeKey => {
+            return getTypeface(typeKey)
+        })
+        
+        typeRoles[tRole] = currentRoleTypefaces
     }
+    console.log('[Text Builder] typeRoles', typeRoles)
 
     let docRoleHeadingComment = `/* ${thickLine} *\\\n`
     docRoleHeadingComment += ` * DOCUMENT ROLES\n`

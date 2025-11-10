@@ -2,7 +2,8 @@
     "typefaces": {
         "serif": [
             "CrimsonText",
-            "CormorantGaramond"
+            "CormorantGaramond",
+            "Cinzel"
         ],
         "sans": [
             "OpenSans",
@@ -11,10 +12,6 @@
         "monospace": [
             "Inconsolata",
             "Inconsolata"
-        ],
-        "display": [
-            "Cinzel",
-            "Cinzel"
         ]
     },
     "typescale": [
@@ -66,12 +63,12 @@
     ],
     "typeroles": {
         "display": [
-            "display.1",
-            "display.2"
+            "serif.3",
+            "serif.2"
         ],
         "title": [
             "serif.2",
-            "display.2"
+            "serif.3"
         ],
         "label": [
             "sans.2",
