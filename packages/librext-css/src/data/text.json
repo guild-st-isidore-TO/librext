@@ -99,6 +99,10 @@
         "code": [
             "monospace.1",
             "monospace.1"
+        ],
+        "ui": [
+            "sans.1",
+            "monospace.1"
         ]
     },
     "docroles": [
