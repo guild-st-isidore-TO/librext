@@ -65,9 +65,12 @@ const fontData = {
     roles: fontRoles,
 }
 
+const ROOT_SELECTOR = ':root'
+
 module.exports = {
     writeCssVarRule,
     writeCssRule,
     dataDir,
     fontData,
+    ROOT_SELECTOR
 }
