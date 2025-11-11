@@ -26,20 +26,20 @@
   --typescale-small: 0.833rem;
   --typescale-9: 0.75rem;
   --typescale-tiny: 0.75rem;
-  --fontfam-display-1: "Cinzel", "Times New Roman", Georgia, serif;
-  --fontfam-display-2: "CormorantGaramond", "Times New Roman", Georgia, serif;
-  --fontfam-title-1: "CormorantGaramond", "Times New Roman", Georgia, serif;
-  --fontfam-title-2: "Cinzel", "Times New Roman", Georgia, serif;
-  --fontfam-label-1: "Lato", Arial, Helvetica, sans-serif;
-  --fontfam-label-2: "OpenSans", Arial, Helvetica, sans-serif;
-  --fontfam-heading-1: "CormorantGaramond", "Times New Roman", Georgia, serif;
-  --fontfam-heading-2: "CrimsonText", "Times New Roman", Georgia, serif;
-  --fontfam-body-1: "CrimsonText", "Times New Roman", Georgia, serif;
-  --fontfam-body-2: "OpenSans", Arial, Helvetica, sans-serif;
-  --fontfam-code-1: "Inconsolata", Courier, Monaco, monospace;
-  --fontfam-code-2: "Inconsolata", Courier, Monaco, monospace;
-  --fontfam-ui-1: "OpenSans", Arial, Helvetica, sans-serif;
-  --fontfam-ui-2: "Inconsolata", Courier, Monaco, monospace;
+  --fontfam-display-1: var(--fontfam-serif-3);
+  --fontfam-display-2: var(--fontfam-serif-2);
+  --fontfam-title-1: var(--fontfam-serif-2);
+  --fontfam-title-2: var(--fontfam-serif-3);
+  --fontfam-label-1: var(--fontfam-sans-2);
+  --fontfam-label-2: var(--fontfam-sans-1);
+  --fontfam-heading-1: var(--fontfam-serif-2);
+  --fontfam-heading-2: var(--fontfam-serif-1);
+  --fontfam-body-1: var(--fontfam-serif-1);
+  --fontfam-body-2: var(--fontfam-sans-1);
+  --fontfam-code-1: var(--fontfam-monospace-1);
+  --fontfam-code-2: var(--fontfam-monospace-1);
+  --fontfam-ui-1: var(--fontfam-sans-1);
+  --fontfam-ui-2: var(--fontfam-monospace-1);
 }
 
 /* ================================================ *\
@@ -54,8 +54,8 @@
 \* ------------------------------------ */
 .librext-hero {
   font-weight: bold;
-  font-size: 2.986rem;
-  font-family: "Cinzel", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h1);
+  font-family: var(--fontfam-display-1);
   font-style: normal;
 }
 
@@ -67,8 +67,8 @@
 \* ------------------------------------ */
 .librext-headline {
   font-weight: bold;
-  font-size: 2.986rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h1);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -80,8 +80,8 @@
 \* ------------------------------------ */
 .librext-title {
   font-weight: bold;
-  font-size: 2.986rem;
-  font-family: "Cinzel", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h1);
+  font-family: var(--fontfam-display-1);
   font-style: normal;
 }
 
@@ -93,8 +93,8 @@
 \* ------------------------------------ */
 .librext-subtitle {
   font-weight: normal;
-  font-size: 2.074rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h3);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -106,8 +106,8 @@
 \* ------------------------------------ */
 h1 {
   font-weight: bold;
-  font-size: 2.986rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h1);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -119,8 +119,8 @@ h1 {
 \* ------------------------------------ */
 h2 {
   font-weight: bold;
-  font-size: 2.488rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h2);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -132,8 +132,8 @@ h2 {
 \* ------------------------------------ */
 h3 {
   font-weight: bold;
-  font-size: 2.074rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h3);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -145,8 +145,8 @@ h3 {
 \* ------------------------------------ */
 h4 {
   font-weight: bold;
-  font-size: 1.728rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h4);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -158,8 +158,8 @@ h4 {
 \* ------------------------------------ */
 h5 {
   font-weight: bold;
-  font-size: 1.44rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h5);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -171,8 +171,8 @@ h5 {
 \* ------------------------------------ */
 h6 {
   font-weight: bold;
-  font-size: 1.2rem;
-  font-family: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-h6);
+  font-family: var(--fontfam-heading-1);
   font-style: normal;
 }
 
@@ -184,8 +184,8 @@ h6 {
 \* ------------------------------------ */
 p, span {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: normal;
 }
 
@@ -197,8 +197,8 @@ p, span {
 \* ------------------------------------ */
 b, strong {
   font-weight: bold;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: normal;
 }
 
@@ -210,8 +210,8 @@ b, strong {
 \* ------------------------------------ */
 i, em {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: italic;
 }
 
@@ -223,8 +223,8 @@ i, em {
 \* ------------------------------------ */
 a {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: normal;
 }
 
@@ -236,8 +236,8 @@ a {
 \* ------------------------------------ */
 small {
   font-weight: normal;
-  font-size: 0.833rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-small);
+  font-family: var(--fontfam-body-1);
   font-style: normal;
 }
 
@@ -249,8 +249,8 @@ small {
 \* ------------------------------------ */
 .librext-tiny {
   font-weight: normal;
-  font-size: 0.75rem;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: var(--typescale-tiny);
+  font-family: var(--fontfam-body-2);
   font-style: normal;
 }
 
@@ -262,8 +262,8 @@ small {
 \* ------------------------------------ */
 sup {
   font-weight: normal;
-  font-size: 0.75rem;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: var(--typescale-tiny);
+  font-family: var(--fontfam-body-2);
   font-style: normal;
 }
 
@@ -275,8 +275,8 @@ sup {
 \* ------------------------------------ */
 sub {
   font-weight: normal;
-  font-size: 0.75rem;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: var(--typescale-tiny);
+  font-family: var(--fontfam-body-2);
   font-style: normal;
 }
 
@@ -288,8 +288,8 @@ sub {
 \* ------------------------------------ */
 figcaption {
   font-weight: normal;
-  font-size: 0.833rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-small);
+  font-family: var(--fontfam-body-1);
   font-style: normal;
 }
 
@@ -301,8 +301,8 @@ figcaption {
 \* ------------------------------------ */
 code {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "Inconsolata", Courier, Monaco, monospace;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-code-1);
   font-style: normal;
 }
 
@@ -314,8 +314,8 @@ code {
 \* ------------------------------------ */
 pre {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "Inconsolata", Courier, Monaco, monospace;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-code-1);
   font-style: normal;
 }
 
@@ -327,8 +327,8 @@ pre {
 \* ------------------------------------ */
 q {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: italic;
 }
 
@@ -340,8 +340,8 @@ q {
 \* ------------------------------------ */
 blockquote {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: italic;
 }
 
@@ -353,8 +353,8 @@ blockquote {
 \* ------------------------------------ */
 .librext-pullquote {
   font-weight: normal;
-  font-size: 1rem;
-  font-family: "CrimsonText", "Times New Roman", Georgia, serif;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body-1);
   font-style: italic;
 }
 
