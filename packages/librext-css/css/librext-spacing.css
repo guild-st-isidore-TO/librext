@@ -9,3 +9,7 @@
   --space-xxxl: 32px;
   --space-xxxxl: 48px;
 }
+
+div {
+  margin: var(--space-md);
+}

@@ -72,11 +72,19 @@ const buildColours = () => {
         });
     }
 
-
     // console.log('[LibRext CSS - ColourBuilder] styleVars', styleVars)
 
-    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-colours.css`, variablesContent)
+    let variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    variablesContent += '\n'
+
+    const baseRules = [
+        { property: 'background-color', value: 'var(--col-default-light)' }
+    ]
+    let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
+
+    const allContent = variablesContent + baseContent
+
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-colours.css`, allContent)
 }
 
 module.exports = { build: buildColours };

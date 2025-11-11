@@ -19,8 +19,16 @@ const buildSpacing = () => {
     }
 
     spacingContent += libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, styleVars);
+    spacingContent += '\n'
 
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-spacing.css`, spacingContent)
+    const divRules = [
+        { property: 'margin', value: 'var(--space-md)' }
+    ]
+
+    let divContent = libRextCssUtil.writeCssRule('div', divRules)
+    const allContent = spacingContent + divContent
+
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-spacing.css`, allContent)
 }
 
 module.exports = { build: buildSpacing };

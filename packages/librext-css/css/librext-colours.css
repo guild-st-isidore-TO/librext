@@ -60,3 +60,7 @@
   --col-tertiary-light: var(--grey-2);
   --col-tertiary-dark: var(--grey-2);
 }
+
+body {
+  background-color: var(--col-default-light);
+}
