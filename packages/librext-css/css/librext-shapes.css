@@ -1,25 +1,6 @@
+@import "./librext-base.css";
+
 :root {
-  --librext-scale-1: 4px;
-  --librext-scale-2: 6px;
-  --librext-scale-3: 8px;
-  --librext-scale-4: 9px;
-  --librext-scale-5: 10px;
-  --librext-scale-6: 12px;
-  --librext-scale-7: 14px;
-  --librext-scale-8: 16px;
-  --librext-scale-9: 18px;
-  --librext-scale-10: 20px;
-  --librext-scale-11: 24px;
-  --librext-scale-12: 28px;
-  --librext-scale-13: 32px;
-  --librext-scale-14: 36px;
-  --librext-scale-15: 42px;
-  --librext-scale-16: 48px;
-  --librext-scale-17: 60px;
-  --librext-scale-18: 60px;
-  --librext-scale-19: 72px;
-  --librext-scale-20: 84px;
-  --librext-scale-21: 96px;
   --cor-radius-xs: var(--librext-scale-1);
   --cor-radius-sm: var(--librext-scale-3);
   --cor-radius-md: var(--librext-scale-6);

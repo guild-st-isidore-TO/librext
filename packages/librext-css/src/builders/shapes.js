@@ -15,19 +15,24 @@ const buildShapes = () => {
         varsSelector = customLocalScope
     }
 
+    // const baseDataFile = `${libRextCssUtil.dataDir}/base.json`
+    // const baseData = libRextCssFileHandler.readFile(shapeDataFile)
+
     const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
     const shapeData = libRextCssFileHandler.readFile(shapeDataFile)
     // console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     const styleVars = []
-    
-    for (const [key, value] of Object.entries(shapeData.librextScale)) {
-        const scaleVar = {
-            property: `librext-scale-${key.replace('ls', '')}`,
-            value: `${value}px`,
-        }
-        styleVars.push(scaleVar);
-    }
+
+    let prefaceContent = '@import "./librext-base.css";\n'
+
+    // for (const [key, value] of Object.entries(shapeData.librextScale)) {
+    //     const scaleVar = {
+    //         property: `librext-scale-${key.replace('ls', '')}`,
+    //         value: `${value}px`,
+    //     }
+    //     styleVars.push(scaleVar);
+    // }
 
     const cRadiusScale = shapeData.cornerRadiusScale
     for (const [key, value] of Object.entries(cRadiusScale)) {
@@ -49,7 +54,9 @@ const buildShapes = () => {
     // console.log('[LibRext CSS - ShapesBuilder] styleVars', styleVars)
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-shapes.css`, variablesContent)
+    const allContent = prefaceContent + '\n' + variablesContent
+
+    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-shapes.css`, allContent)
 }
 
 module.exports = { build: buildShapes };

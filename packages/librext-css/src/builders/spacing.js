@@ -7,6 +7,7 @@ const buildSpacing = () => {
     const spacingDataFile = `${libRextCssUtil.dataDir}/spacing.json`
     const spacingData = libRextCssFileHandler.readFile(spacingDataFile)
     // console.log('[LibRext CSS - SpacingBuilder] spacingData', spacingData)
+    let prefaceContent = '@import "./librext-base.css";\n'
     let spacingContent = '';
     const styleVars = []
 
@@ -26,7 +27,7 @@ const buildSpacing = () => {
     ]
 
     let divContent = libRextCssUtil.writeCssRule('div', divRules)
-    const allContent = spacingContent + divContent
+    const allContent = prefaceContent + '\n' + spacingContent + divContent
 
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-spacing.css`, allContent)
 }
