@@ -19,3 +19,16 @@
   --height-4xl: var(--librext-scale-20);
   --height-5xl: var(--librext-scale-21);
 }
+
+.card.sm {
+  height: var(--height-sm);
+  border-radius: var(--cor-radius-sm);
+}
+.card.md {
+  height: var(--height-md);
+  border-radius: var(--cor-radius-md);
+}
+.card.lg {
+  height: var(--height-lg);
+  border-radius: var(--cor-radius-lg);
+}
