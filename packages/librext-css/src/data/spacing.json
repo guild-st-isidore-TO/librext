@@ -1,13 +1,12 @@
 {
     "spacingScale": {
-        "none": 0,
-        "xs": 4,
-        "sm": 8,
-        "md": 12,
-        "lg": 16,
-        "xl": 20,
-        "xxl": 28,
-        "xxxl": 32,
-        "xxxxl": 48
+        "xs": "ls1",
+        "sm": "ls3",
+        "md": "ls6",
+        "lg": "ls8",
+        "xl": "ls10",
+        "xxl": "ls12",
+        "xxxl": "ls13",
+        "xxxxl": "ls16"
     }
 }

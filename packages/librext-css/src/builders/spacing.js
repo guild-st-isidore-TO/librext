@@ -15,7 +15,7 @@ const buildSpacing = () => {
         const scaleVal = spacingData.spacingScale[scaleKey]
         styleVars.push({
             property: `space-${scaleKey}`,
-            value: `${scaleVal}px`,
+            value: `var(--librext-scale-${scaleVal.replace('ls', '')})`,
         })
     }
 

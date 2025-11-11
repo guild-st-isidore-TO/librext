@@ -1,15 +1,14 @@
 @import "./librext-base.css";
 
 :root {
-  --space-none: 0px;
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 12px;
-  --space-lg: 16px;
-  --space-xl: 20px;
-  --space-xxl: 28px;
-  --space-xxxl: 32px;
-  --space-xxxxl: 48px;
+  --space-xs: var(--librext-scale-1);
+  --space-sm: var(--librext-scale-3);
+  --space-md: var(--librext-scale-6);
+  --space-lg: var(--librext-scale-8);
+  --space-xl: var(--librext-scale-10);
+  --space-xxl: var(--librext-scale-12);
+  --space-xxxl: var(--librext-scale-13);
+  --space-xxxxl: var(--librext-scale-16);
 }
 
 div {
