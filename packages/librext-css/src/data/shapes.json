@@ -1,24 +1,69 @@
 {
+    "librextScale": {
+        "ls1": 4,
+        "ls2": 6,
+        "ls3": 8,
+        "ls4": 9,
+        "ls5": 10,
+        "ls6": 12,
+        "ls7": 14,
+        "ls8": 16,
+        "ls9": 18,
+        "ls10": 20,
+        "ls11": 24,
+        "ls12": 28,
+        "ls13": 32,
+        "ls14": 36,
+        "ls15": 42,
+        "ls16": 48,
+        "ls17": 60,
+        "ls18": 60,
+        "ls19": 72,
+        "ls20": 84,
+        "ls21": 96
+    },
     "cornerRadiusScale": {
-        "none": 0,
-        "xs": 4,
-        "sm": 8,
-        "md": 12,
-        "lg": 16,
-        "xl": 20,
-        "xxl": 28,
-        "xxxl": 32,
-        "4xl": 48
+        "xs": "ls1",
+        "sm": "ls3",
+        "md": "ls6",
+        "lg": "ls8",
+        "xl": "ls10",
+        "xxl": "ls12",
+        "xxxl": "ls13",
+        "4xl": "ls16"
     },
     "elementHeightScale": {
-        "xs": 12,
-        "sm": 16,
-        "md": 20,
-        "lg": 28,
-        "xl": 36,
-        "xxl": 48,
-        "xxxl": 60,
-        "4xl": 84,
-        "5xl": 96
-    }
+        "xs": "ls6",
+        "sm": "ls8",
+        "md": "ls10",
+        "lg": "ls12",
+        "xl": "ls14",
+        "xxl": "ls16",
+        "xxxl": "ls18",
+        "4xl": "ls20",
+        "5xl": "ls21"
+    },
+    "shapeElements": [
+        "card",
+        "image",
+        "input",
+        "button"
+    ],
+    "shapeDefinitions": [
+        {
+            "name": "card.sm",
+            "height": "sm",
+            "cornerRadius": "sm"
+        },
+        {
+            "name": "card.md",
+            "height": "md",
+            "cornerRadius": "md"
+        },
+        {
+            "name": "card.lg",
+            "height": "lg",
+            "cornerRadius": "lg"
+        }
+    ]
 }
