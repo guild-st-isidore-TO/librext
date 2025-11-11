@@ -40,62 +40,36 @@ const buildColours = () => {
         styleVars.push(themeEntry);
     }
 
-
-
-
-    // const basicRoles = colourData.roles.basic;
-    // const basicVariants = [
-    //     ...colourData.variants.lighting,
-    // ];
-    // let basicRoleVariants = libRextCssUtil.getPermutationsOfArrays(basicRoles, basicVariants)
-    // basicRoleVariants = basicRoleVariants.map(vars => vars.join('.'))
-    // console.log('[LibRext CSS - ColourBuilder] basicRoleVariants', basicRoleVariants)
-
-
-    // const textRoles = colourData.roles.text;
-    // const textVariants = [
-    //     ...colourData.variants.lighting,
-    // ];
-    // let textRoleVariants = libRextCssUtil.getPermutationsOfArrays(textRoles, textVariants)
-    // textRoleVariants = textRoleVariants.map(vars => vars.join('.'))
-    // console.log('[LibRext CSS - ColourBuilder] textRoleVariants', textRoleVariants)
-
-
-    // const indicatorRoles = colourData.roles.indicator;
-    // const indicatorVariants = [
-    //     ...colourData.variants.lighting,
-    // ];
-    // let indicatorRoleVariants = libRextCssUtil.getPermutationsOfArrays(indicatorRoles, indicatorVariants)
-    // indicatorRoleVariants = indicatorRoleVariants.map(vars => vars.join('.'))
-    // console.log('[LibRext CSS - ColourBindicatorlder] indicatorRoleVariants', indicatorRoleVariants)
-
-
-    // const accentRoles = colourData.variants.accent;
-    // const accentVariants = [
-    //     ...colourData.variants.lighting,
-    // ];
-    // let accentRoleVariants = libRextCssUtil.getPermutationsOfArrays(accentRoles, accentVariants)
-    // accentRoleVariants = accentRoleVariants.map(vars => vars.join('.'))
-    // console.log('[LibRext CSS - ColourBuilder] accentRoleVariants', accentRoleVariants)
-    
-    
-    
-    
-    
-    for(const basicRoles of colourData.rolepalette.basic) {
-        console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRoles)
+    for (const basicRole of colourData.rolepalette.basic) {
+        console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
+        styleVars.push({
+            property: `col-${basicRole.role.replace('.', '-')}`,
+            value: `var(--${basicRole.colour.replace('.', '-')})`,
+        });
     }
-    
-    for(const textRoles of colourData.rolepalette.text) {
-        console.log('[LibRext CSS - ColourBuilder] textRoles', textRoles)
+
+    for (const textRole of colourData.rolepalette.text) {
+        console.log('[LibRext CSS - ColourBuilder] textRoles', textRole)
+        styleVars.push({
+            property: `col-${textRole.role.replace('.', '-')}`,
+            value: `var(--${textRole.colour.replace('.', '-')})`,
+        });
     }
-    
-    for(const indicatorRoles of colourData.rolepalette.indicator) {
-        console.log('[LibRext CSS - ColourBuilder] indicatorRoles', indicatorRoles)
+
+    for (const indicatorRole of colourData.rolepalette.indicator) {
+        console.log('[LibRext CSS - ColourBuilder] indicatorRoles', indicatorRole)
+        styleVars.push({
+            property: `col-${indicatorRole.role.replace('.', '-')}`,
+            value: `var(--${indicatorRole.colour.replace('.', '-')})`,
+        });
     }
-    
-    for(const accentRoles of colourData.rolepalette.accent) {
-        console.log('[LibRext CSS - ColourBuilder] accentRoles', accentRoles)
+
+    for (const accentRole of colourData.rolepalette.accent) {
+        console.log('[LibRext CSS - ColourBuilder] accentRoles', accentRole)
+        styleVars.push({
+            property: `col-${accentRole.role.replace('.', '-')}`,
+            value: `var(--${accentRole.colour.replace('.', '-')})`,
+        });
     }
 
 
