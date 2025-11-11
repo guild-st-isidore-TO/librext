@@ -4,6 +4,7 @@
             "default",
             "accent",
             "surface",
+            "altsurface",
             "outline"
         ],
         "text": [
@@ -93,6 +94,14 @@
             {
                 "role": "surface.dark",
                 "colour": "grey.2"
+            },
+            {
+                "role": "altsurface.light",
+                "colour": "grey.3"
+            },
+            {
+                "role": "altsurface.dark",
+                "colour": "grey.3"
             },
             {
                 "role": "outline.light",

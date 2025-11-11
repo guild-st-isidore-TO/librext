@@ -25,6 +25,8 @@ const buildShapes = () => {
     const styleVars = []
 
     let prefaceContent = '@import "./librext-base.css";\n'
+    prefaceContent += '@import "./librext-spacing.css";\n'
+    prefaceContent += '@import "./librext-colours.css";\n'
 
     let shapesContent = ''
 
@@ -50,7 +52,15 @@ const buildShapes = () => {
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
     shapeData.shapeDefinitions.forEach((shapeDef, idx) => {
+        const selectorParts = shapeDef.name.split('.')
+        const selectorBase = selectorParts[0]
+        const selectorSize = selectorParts[1]
+
         const selector = `.${shapeDef.name}`
+
+        const shadowScaleVal = shapeData.boxShadowScale[shapeDef.boxShadow]
+        const boxShadowVal = `${shadowScaleVal.len} ${shadowScaleVal.len} ${shadowScaleVal.blur} var(--grey-10)`
+
         const props = [
             {
                 property: 'height',
@@ -60,8 +70,25 @@ const buildShapes = () => {
                 property: 'border-radius',
                 value: `var(--cor-radius-${shapeDef.cornerRadius})`,
             },
+            {
+                property: 'padding',
+                value: `var(--space-${shapeDef.padding})`,
+            },
+            {
+                property: 'background-color',
+                value: `var(--col-${shapeDef.background}-light)`,
+            },
+            {
+                property: 'box-shadow',
+                value: boxShadowVal,
+            },
         ]
         shapesContent += libRextCssUtil.writeCssRule(selector, props)
+
+        if (selectorSize && selectorSize == 'md') {
+            shapesContent += libRextCssUtil.writeCssRule(`.${selectorBase}`, props)
+        }
+
     })
 
     const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent

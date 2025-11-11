@@ -27,7 +27,16 @@ const buildSpacing = () => {
     ]
 
     let divContent = libRextCssUtil.writeCssRule('div', divRules)
-    const allContent = prefaceContent + '\n' + spacingContent + divContent
+
+    const pRules = [
+        { property: 'margin', value: '0' }
+    ]
+
+    let pContent = libRextCssUtil.writeCssRule('p', pRules)
+
+    const ruleContent = divContent + pContent
+
+    const allContent = prefaceContent + '\n' + spacingContent + ruleContent
 
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-spacing.css`, allContent)
 }

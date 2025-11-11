@@ -1,4 +1,6 @@
 @import "./librext-base.css";
+@import "./librext-spacing.css";
+@import "./librext-colours.css";
 
 :root {
   --cor-radius-xs: var(--librext-scale-1);
@@ -20,15 +22,45 @@
   --height-5xl: var(--librext-scale-21);
 }
 
+.card.xs {
+  height: var(--height-xs);
+  border-radius: var(--cor-radius-xs);
+  padding: var(--space-xs);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 1px 1px 2px var(--grey-10);
+}
 .card.sm {
   height: var(--height-sm);
   border-radius: var(--cor-radius-sm);
+  padding: var(--space-sm);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 2px 2px 2px var(--grey-10);
 }
 .card.md {
   height: var(--height-md);
   border-radius: var(--cor-radius-md);
+  padding: var(--space-md);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 3px 3px 3px var(--grey-10);
+}
+.card {
+  height: var(--height-md);
+  border-radius: var(--cor-radius-md);
+  padding: var(--space-md);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 3px 3px 3px var(--grey-10);
 }
 .card.lg {
   height: var(--height-lg);
   border-radius: var(--cor-radius-lg);
+  padding: var(--space-lg);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 4px 4px 4px var(--grey-10);
+}
+.card.xl {
+  height: var(--height-xl);
+  border-radius: var(--cor-radius-xl);
+  padding: var(--space-xl);
+  background-color: var(--col-altsurface-light);
+  box-shadow: 5px 5px 4px var(--grey-10);
 }

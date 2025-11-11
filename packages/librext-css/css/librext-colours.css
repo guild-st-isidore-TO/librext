@@ -25,6 +25,8 @@
   --col-accent-dark: var(--grey-2);
   --col-surface-light: var(--grey-2);
   --col-surface-dark: var(--grey-2);
+  --col-altsurface-light: var(--grey-3);
+  --col-altsurface-dark: var(--grey-3);
   --col-outline-light: var(--grey-2);
   --col-outline-dark: var(--grey-2);
   --col-body-light: var(--grey-2);
