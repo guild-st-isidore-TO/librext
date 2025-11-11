@@ -472,22 +472,3 @@
   font-weight: 800;
   font-style: italic;
 }
-
-
-/* ============ 
-  Base Variables (Root Namespace)
-============ */
-
-:root {
-  --font-serif-1: 'CrimsonText', sans-serif;
-  --font-serif-2: 'CormorantGaramond', sans-serif;
-
-  --font-sans-1: 'OpenSans', sans-serif;
-  --font-sans-2: 'Lato', sans-serif;
-
-  --font-monospace-1: 'Inconsolata', sans-serif;
-  --font-monospace-2: 'Inconsolata', sans-serif;
-
-  --font-display-1: 'Cinzel', sans-serif;
-  --font-display-2: 'Cinzel', sans-serif;
-}

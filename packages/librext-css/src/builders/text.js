@@ -40,8 +40,10 @@ const buildText = () => {
         return tFace
     }
 
+    const rootCssVars = []
+    let rootCssVarContent = ''
+
     const typescale = []
-    let typeScaleContent = ''
 
     const typeRoles = {}
     let rolesContent = ''
@@ -52,27 +54,53 @@ const buildText = () => {
     // console.log('[Text Builder] typefaces', typefaces)
     // const getTypefaceByName = (name) => typefaces.find(tFace => tFace.name == name);
 
-    const typeVars = []
+
     let typeScaleComment = `/* ${thickLine} *\\\n`
     typeScaleComment += ` * ROOT NAMESPACE\n`
     typeScaleComment += `\\* ${thickLine} */\n\n`
 
 
+    for (const tCateg in typefaces) {
+        // const currentRoleTypeface = getTypeface(typeKey)
 
+        typefaces[tCateg].forEach((fontFam, idx) => {
+            let fontFamCtg = tCateg
+            const defaultFonts = textData.typefaceDefaults[tCateg]
+            const defaultFontsFormatted = defaultFonts.map(dFont => {
+                const numTokens = dFont.split(' ').length
+                if (numTokens > 1) {
+                    return `"${dFont}"`
+                }
+                return dFont
+            }).join(', ')
+            if (tCateg == 'sans') {
+                fontFamCtg = 'sans-serif'
+            }
+            const fontFamVal = `"${fontFam}", ${defaultFontsFormatted}, ${fontFamCtg}`
+            rootCssVars.push({
+                property: `fontfam-${tCateg}-${idx + 1}`,
+                value: fontFamVal,
+            })
+        })
+    }
 
     for (const tTypescale of textData.typescale) {
         const currentTypescaleItem = tTypescale
         // console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
 
-        typeVars.push({
+        rootCssVars.push({
+            property: `typescale-${currentTypescaleItem.index}`,
+            value: `${currentTypescaleItem.value}rem`,
+        })
+        rootCssVars.push({
             property: `typescale-${currentTypescaleItem.style}`,
             value: `${currentTypescaleItem.value}rem`,
         })
     }
 
-    const typeRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, typeVars);
+    // const rootCssVars = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, typeVars);
     // console.log('[Text Builder] typeRule', typeRule)
-    typeScaleContent = typeScaleComment + typeRule + '\n'
+    // typeScaleContent = typeScaleComment + rootCssVars + '\n'
     // console.log('[Text Builder] typeScaleContent', typeScaleContent)
 
 
@@ -82,11 +110,35 @@ const buildText = () => {
         const currentRoleTypefaceKeys = textData.typeroles[tRole]
         // console.log('[Text Builder] currentRole', tRole, currentRoleTypefaceKeys)
 
-        const currentRoleTypefaces = currentRoleTypefaceKeys.map(typeKey => {
-            return getTypeface(typeKey)
+        const currentRoleTypefaces = currentRoleTypefaceKeys.map((typeKey, idx) => {
+            // const fontFamData = typeRoles[typeKey][io]
+
+            const currentRoleTypeface = getTypeface(typeKey)
+
+            let fontFamCtg = currentRoleTypeface.category
+            const defaultFonts = textData.typefaceDefaults[fontFamCtg]
+            const defaultFontsFormatted = defaultFonts.map(dFont => {
+                const numTokens = dFont.split(' ').length
+                if (numTokens > 1) {
+                    return `"${dFont}"`
+                }
+                return dFont
+            }).join(', ')
+            if (currentRoleTypeface.category == 'sans') {
+                fontFamCtg = 'sans-serif'
+            }
+            const fontFamVal = `"${currentRoleTypeface.name}", ${defaultFontsFormatted}, ${fontFamCtg}`
+
+            rootCssVars.push({
+                property: `fontfam-${tRole}-${idx + 1}`,
+                value: fontFamVal,
+            })
+
+            return currentRoleTypeface
         })
 
         typeRoles[tRole] = currentRoleTypefaces
+
     }
     // console.log('[Text Builder] typeRoles', typeRoles)
 
@@ -149,8 +201,10 @@ const buildText = () => {
     }
     // console.log('[Text Builder] docRolesContent', docRolesContent)
 
+    const rootCssVarRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, rootCssVars);
+    rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
-    const allContent = prefaceContent + '\n' + typeScaleContent + docRolesContent
+    const allContent = prefaceContent + '\n' + rootCssVarContent + docRolesContent
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, allContent)
 }
 

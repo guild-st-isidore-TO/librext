@@ -1,19 +1,45 @@
 /* TEXT BUILDERS */
 
-/* ================================================ *\
- * ROOT NAMESPACE
-\* ================================================ */
-
 :root {
+  --fontfam-serif-1: "CrimsonText", "Times New Roman", Georgia, serif;
+  --fontfam-serif-2: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  --fontfam-serif-3: "Cinzel", "Times New Roman", Georgia, serif;
+  --fontfam-sans-1: "OpenSans", Arial, Helvetica, sans-serif;
+  --fontfam-sans-2: "Lato", Arial, Helvetica, sans-serif;
+  --fontfam-monospace-1: "Inconsolata", Courier, Monaco, monospace;
+  --fontfam-monospace-2: "Inconsolata", Courier, Monaco, monospace;
+  --typescale-1: 2.986rem;
   --typescale-h1: 2.986rem;
+  --typescale-2: 2.488rem;
   --typescale-h2: 2.488rem;
+  --typescale-3: 2.074rem;
   --typescale-h3: 2.074rem;
+  --typescale-4: 1.728rem;
   --typescale-h4: 1.728rem;
+  --typescale-5: 1.44rem;
   --typescale-h5: 1.44rem;
+  --typescale-6: 1.2rem;
   --typescale-h6: 1.2rem;
+  --typescale-7: 1rem;
   --typescale-body: 1rem;
+  --typescale-8: 0.833rem;
   --typescale-small: 0.833rem;
+  --typescale-9: 0.75rem;
   --typescale-tiny: 0.75rem;
+  --fontfam-display-1: "Cinzel", "Times New Roman", Georgia, serif;
+  --fontfam-display-2: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  --fontfam-title-1: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  --fontfam-title-2: "Cinzel", "Times New Roman", Georgia, serif;
+  --fontfam-label-1: "Lato", Arial, Helvetica, sans-serif;
+  --fontfam-label-2: "OpenSans", Arial, Helvetica, sans-serif;
+  --fontfam-heading-1: "CormorantGaramond", "Times New Roman", Georgia, serif;
+  --fontfam-heading-2: "CrimsonText", "Times New Roman", Georgia, serif;
+  --fontfam-body-1: "CrimsonText", "Times New Roman", Georgia, serif;
+  --fontfam-body-2: "OpenSans", Arial, Helvetica, sans-serif;
+  --fontfam-code-1: "Inconsolata", Courier, Monaco, monospace;
+  --fontfam-code-2: "Inconsolata", Courier, Monaco, monospace;
+  --fontfam-ui-1: "OpenSans", Arial, Helvetica, sans-serif;
+  --fontfam-ui-2: "Inconsolata", Courier, Monaco, monospace;
 }
 
 /* ================================================ *\
