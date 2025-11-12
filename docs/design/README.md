@@ -14,6 +14,8 @@ LibRext will be implemented as a front-end focused monorepo (HTML, CSS, JS, etc.
 - CSS Module Library
 - React Component Library
 
+![LibRext CSS](./librext-css-1.0.svg)
+
 More about [System Design](./system-design.md)
 
 &nbsp;
