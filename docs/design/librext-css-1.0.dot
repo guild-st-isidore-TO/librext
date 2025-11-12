@@ -1,0 +1,27 @@
+digraph {
+    label = "\nLibRext CSS\nDesign v1.0";
+    node [shape = box;];
+    
+    asssets -> cssBuilder;
+    styleDefs -> cssBuilder;
+    cssBuilder -> genStylesheets;
+    
+    subgraph cluster_0 {
+        label = "LibRext";
+        fontcolor = 1;
+        colorscheme = set19;color = 1;
+        penwidth = 2;
+        node [bgcolor = white;];
+        
+        cssBuilder [label = "LibRext\nCSS builder";colorscheme = set19;color = 1;fontcolor = 1;];
+    }
+    
+    // libRextCSSBuilder [label = "other FaVirtu module";];
+    
+    asssets [label = "Assets\n(fonts, images, etc)";colorscheme = set19;color = 2;fontcolor = 2;];
+    styleDefs [label = "Style definitions\n(data, colours, variations, etc)";colorscheme = set19;color = 2;fontcolor = 2;];
+    
+    
+    genStylesheets [label = "Generated CSS\n(for web apps, e-books, printed docs)";colorscheme = set19;color = 4;fontcolor = 4;];
+    // libRextCSSBuilder [label = "libRextCSSBuilder";colorscheme = set19;color = 1;fontcolor = 1;];
+}

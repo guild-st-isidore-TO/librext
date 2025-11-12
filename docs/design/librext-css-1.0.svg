@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332pt" height="267pt" viewBox="0.00 0.00 331.84 267.2">
+<g id="graph0" class="graph" transform="translate(5.613262155395537,227.7950659939926) scale(0.7659759995373785)" data-name="">
+<polygon fill="white" stroke="none" points="-4,4 -4,-263.2 327.84,-263.2 327.84,4 -4,4"/>
+<text text-anchor="middle" x="161.92" y="-25" font-family="Times,serif" font-size="14.00">LibRext CSS</text>
+<text text-anchor="middle" x="161.92" y="-8.2" font-family="Times,serif" font-size="14.00">Design v1.0</text>
+<g id="clust1" class="cluster" data-name="cluster_0">
+
+<polygon fill="none" stroke="#e41a1c" stroke-width="2" points="96.65,-127.2 96.65,-209.6 196.65,-209.6 196.65,-127.2 96.65,-127.2"/>
+<text text-anchor="middle" x="146.65" y="-193" font-family="Times,serif" font-size="14.00" fill="rgb(228, 26, 28)">LibRext</text>
+</g>
+<!-- extModule --><!-- libRextCSSBuilder -->
+<!-- libRextCSSBuilder -->
+<!-- libRextCSSBuilder -->
+<g id="node1" class="node" pointer-events="visible" data-name="asssets" data-comment="libRextCSSBuilder">
+
+<polygon fill="none" stroke="#377eb8" points="123.45,-259 -0.15,-259 -0.15,-217.8 123.45,-217.8 123.45,-259"/>
+<text text-anchor="middle" x="61.65" y="-242.6" font-family="Times,serif" font-size="14.00" fill="rgb(55, 126, 184)">Assets</text>
+<text text-anchor="middle" x="61.65" y="-225.8" font-family="Times,serif" font-size="14.00" fill="rgb(55, 126, 184)">(fonts, images, etc)</text>
+</g>
+<!-- styleDefs -->
+
+<g id="node3" class="node" pointer-events="visible" data-name="styleDefs">
+
+<polygon fill="none" stroke="#377eb8" points="324.03,-259 141.27,-259 141.27,-217.8 324.03,-217.8 324.03,-259"/>
+<text text-anchor="middle" x="232.65" y="-242.6" font-family="Times,serif" font-size="14.00" fill="rgb(55, 126, 184)">Style definitions</text>
+<text text-anchor="middle" x="232.65" y="-225.8" font-family="Times,serif" font-size="14.00" fill="rgb(55, 126, 184)">(data, colours, variations, etc)</text>
+</g>
+<g id="edge2" class="edge" data-name="styleDefs-&gt;cssBuilder" data-comment="styleDefs">
+
+<path fill="none" stroke="black" d="M211.39,-217.53C200.74,-207.57 187.68,-195.36 176.09,-184.52"/>
+<polygon fill="black" stroke="black" points="178.76,-182.23 169.07,-177.96 173.98,-187.34 178.76,-182.23"/>
+</g><g id="edge3" class="edge" data-name="cssBuilder-&gt;genStylesheets" data-comment="styleDefs">
+
+<path fill="none" stroke="black" d="M146.65,-135.14C146.65,-127.64 146.65,-118.93 146.65,-110.64"/>
+<polygon fill="black" stroke="black" points="150.15,-110.91 146.65,-100.91 143.15,-110.91 150.15,-110.91"/>
+</g>
+<g id="node2" class="node" pointer-events="visible" data-name="cssBuilder" data-comment="styleDefs">
+
+<polygon fill="none" stroke="#e41a1c" points="188.71,-176.6 104.58,-176.6 104.58,-135.4 188.71,-135.4 188.71,-176.6"/>
+<text text-anchor="middle" x="146.65" y="-160.2" font-family="Times,serif" font-size="14.00" fill="rgb(228, 26, 28)">LibRext</text>
+<text text-anchor="middle" x="146.65" y="-143.4" font-family="Times,serif" font-size="14.00" fill="rgb(228, 26, 28)">CSS builder</text>
+</g><g id="edge1" class="edge" data-name="asssets-&gt;cssBuilder" data-comment="styleDefs">
+
+<path fill="none" stroke="black" d="M82.66,-217.53C93.18,-207.57 106.09,-195.36 117.55,-184.52"/>
+<polygon fill="black" stroke="black" points="119.62,-187.38 124.48,-177.96 114.81,-182.29 119.62,-187.38"/>
+</g>
+<!-- genStylesheets -->
+<!-- genStylesheets -->
+<g id="node4" class="node" pointer-events="visible" data-name="genStylesheets">
+
+<polygon fill="none" stroke="#984ea3" points="258.92,-99 34.37,-99 34.37,-57.8 258.92,-57.8 258.92,-99"/>
+<text text-anchor="middle" x="146.65" y="-82.6" font-family="Times,serif" font-size="14.00" fill="rgb(152, 78, 163)">Generated CSS</text>
+<text text-anchor="middle" x="146.65" y="-65.8" font-family="Times,serif" font-size="14.00" fill="rgb(152, 78, 163)">(for web apps, e-books, printed docs)</text>
+</g>
+
+
+</g>
+</svg>
