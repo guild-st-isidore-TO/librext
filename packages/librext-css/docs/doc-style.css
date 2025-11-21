@@ -96,3 +96,7 @@
 .colour-detail-swatch {
     flex: 3 3 auto
 }
+
+.card {
+    margin: 4rem 0;
+}
