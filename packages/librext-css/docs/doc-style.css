@@ -82,3 +82,17 @@
 .type-role-info {
     flex: 1 1 auto
 }
+
+.colour-detail {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.colour-detail-desc {
+    flex: 1 1 auto
+}
+
+.colour-detail-swatch {
+    flex: 3 3 auto
+}
