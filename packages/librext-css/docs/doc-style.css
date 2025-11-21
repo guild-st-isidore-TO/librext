@@ -100,3 +100,46 @@
 .card {
     margin: 4rem 0;
 }
+
+.shape-box {
+    border-radius: 0;
+    background-color: #cccccc;
+}
+
+.colour-swatch-box {
+    border-radius: 0.33rem;
+    background-color: #cccccc;
+}
+
+.palette-row {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.palette-item {
+    flex: 1 1 auto;
+}
+
+.palette-box {
+    height: 100px;
+    margin: 0;
+    background-color: #bbbbbb;
+}
+
+.palette-cell {
+    display: flex;
+    justify-content: space-around;
+}
+
+.palette-cell .palette-box {
+    flex: 1 1 auto;
+    margin: 2rem;
+}
+
+.colour-bg-light {
+    background-color: #e6e6e6;
+}
+
+.colour-bg-dark {
+    background-color: #181818;
+}
