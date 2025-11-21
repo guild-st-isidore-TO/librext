@@ -22,11 +22,12 @@ const buildSpacing = () => {
     spacingContent += libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, styleVars);
     spacingContent += '\n'
 
-    const divRules = [
-        { property: 'margin', value: 'var(--space-md)' }
-    ]
+    // const divRules = [
+    //     { property: 'margin', value: 'var(--space-md)' }
+    // ]
 
-    let divContent = libRextCssUtil.writeCssRule('div', divRules)
+    // let divContent = libRextCssUtil.writeCssRule('div', divRules)
+    let divContent = ''
 
     const pRules = [
         { property: 'margin', value: '0' }

@@ -83,19 +83,9 @@
     flex: 1 1 auto
 }
 
-.colour-detail {
-    margin-top: 4rem;
-    display: flex;
-    gap: 1rem;
-}
 
-.colour-detail-desc {
-    flex: 1 1 auto
-}
 
-.colour-detail-swatch {
-    flex: 3 3 auto
-}
+
 
 .card {
     margin: 4rem 0;
@@ -106,10 +96,8 @@
     background-color: #cccccc;
 }
 
-.colour-swatch-box {
-    border-radius: 0.33rem;
-    background-color: #cccccc;
-}
+
+
 
 .palette-row {
     display: flex;
@@ -126,12 +114,66 @@
     background-color: #bbbbbb;
 }
 
+.palette-box.var-1 {
+    background-color: #aaaaaa;
+}
+
+.palette-box.var-2 {
+    background-color: #999999;
+}
+
+.palette-box.var-3 {
+    background-color: #888888;
+}
+
+.palette-box.var-4 {
+    background-color: #777777;
+}
+
 .palette-cell {
     display: flex;
+    margin: 0;
     justify-content: space-around;
 }
 
-.palette-cell .palette-box {
+.palette-cell .palette-row {
+    flex: 1 1 auto;
+    margin: 2rem;
+}
+
+
+
+
+.colour-details {
+    margin: 2rem 0;
+}
+
+.colour-detail {
+    /* margin-top: 4rem; */
+    display: flex;
+    gap: 1rem;
+}
+
+.colour-detail-desc {
+    flex: 1 1 33%;
+    padding-top: 2rem;
+}
+
+.colour-detail-swatch {
+    flex: 3 3 67%;
+    display: flex;
+}
+
+.colour-swatch-box {
+    border-radius: 0.33rem;
+    background-color: #cccccc;
+}
+
+.colour-detail-swatch .palette-cell {
+    flex: 1 1 auto;
+}
+
+.colour-detail .palette-cell .palette-box {
     flex: 1 1 auto;
     margin: 2rem;
 }

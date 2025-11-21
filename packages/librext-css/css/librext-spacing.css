@@ -11,9 +11,6 @@
   --space-xxxxl: var(--librext-scale-16);
 }
 
-div {
-  margin: var(--space-md);
-}
 p {
   margin: 0;
 }
