@@ -266,3 +266,70 @@
 .colour-layers-dark .layer-4 {
     background-color: #555555;
 }
+
+
+
+/* ==================================== *\
+ * SHAPES
+\* ------------------------------------ */
+
+.shape-box-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shape-box-wrapper {
+    flex: 1 1 33%;
+    display: flex;
+}
+
+.shape-box {
+    flex: 1 1 auto;
+    height: 12.5rem;
+    margin: 1.5rem;
+    background-color: #bbbbbb;
+}
+
+/* ------------------------------------ *\
+ * Widgets display
+\* ------------------------------------ */
+
+.shape-box-set.widget .shape-box-wrapper {
+    flex: 1 1 50%;
+}
+
+.widget.size-xs {
+    height: var(--height-xs);
+}
+
+.widget.size-sm {
+    height: var(--height-sm);
+}
+
+.widget.size-md {
+    height: var(--height-md);
+}
+
+.widget.size-lg {
+    height: var(--height-lg);
+}
+
+.widget.size-xl {
+    height: var(--height-xl);
+}
+
+.widget.size-xxl {
+    height: var(--height-xxl);
+}
+
+.widget.size-xxxl {
+    height: var(--height-xxxl);
+}
+
+.widget.size-4xl {
+    height: var(--height-4xl);
+}
+
+.widget.size-5xl {
+    height: var(--height-5xl);
+}
