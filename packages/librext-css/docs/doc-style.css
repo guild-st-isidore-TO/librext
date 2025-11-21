@@ -1,0 +1,70 @@
+:root {
+    /*
+      Typical breakpoints
+      360px - mobile 
+      568px - small landscape 
+      666px - large landscape 
+      768px - tablet 
+      1024px - large tablet/small laptop 
+      1300px - full desktop 
+      2500px - large monitors
+    */
+
+    /* 480 and less: Small phones (default, as mobile-first) */
+    --breakpoint-mobile: 480px;
+    /* 480-768: Phones, small tablets */
+    --breakpoint-tablet: 768px;
+    /* 768-960: Large Tablets */
+    --breakpoint-laptop: 960px;
+    /* 960-1300: Laptop */
+    --breakpoint-desktop: 1300px;
+    /* 1300-2500: Desktop */
+    --breakpoint-lg-desktop: 2500px;
+    /* 2500 and larger: Massive screens */
+
+    --page-container-width: 300px;
+
+    /* --hvy-box-shadow: 0.125rem 0.125rem 0.67rem rgba(0, 0, 0, 0.5);
+    --typ-box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.25);
+
+    --hvy-box-shadow-in: inset 0.125rem 0.125rem 0.67rem rgba(0, 0, 0, 0.5);
+    --typ-box-shadow-in: inset 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.25); */
+
+    /* --typ-border-radius: 3px; */
+}
+
+
+@media (min-width: 481px) {
+    :root {
+        --page-container-width: 480px;
+    }
+}
+
+@media (min-width: 769px) {
+    :root {
+        --page-container-width: 768px;
+    }
+}
+
+@media (min-width: 961px) {
+    :root {
+        --page-container-width: 960px;
+    }
+}
+
+@media (min-width: 1301px) {
+    :root {
+        --page-container-width: 1300px;
+    }
+}
+
+@media (min-width: 2501px) {
+    :root {
+        --page-container-width: 2500px;
+    }
+}
+
+.page-container {
+    width: var(--page-container-width);
+    margin: 0 auto;
+}
