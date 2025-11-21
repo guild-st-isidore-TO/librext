@@ -185,3 +185,70 @@
 .colour-bg-dark {
     background-color: #181818;
 }
+
+
+
+.colour-layers {
+    height: 25rem;
+    width: 100%;
+    position: relative;
+}
+
+.colour-layer {
+    height: 12.5rem;
+    width: calc(100% - 9.375rem);
+    position: absolute;
+    background-color: #bbbbbb;
+}
+
+.colour-layer.layer-1 {
+    bottom: 0;
+    left: 0;
+}
+
+.colour-layer.layer-2 {
+    bottom: 3.125rem;
+    left: 3.125rem;
+}
+
+.colour-layer.layer-3 {
+    bottom: 6.25rem;
+    left: 6.25rem;
+}
+
+.colour-layer.layer-4 {
+    bottom: 9.375rem;
+    left: 9.375rem;
+}
+
+.colour-layers-light .layer-1 {
+    background-color: #bbbbbb;
+}
+
+.colour-layers-light .layer-2 {
+    background-color: #aaaaaa;
+}
+
+.colour-layers-light .layer-3 {
+    background-color: #999999;
+}
+
+.colour-layers-light .layer-4 {
+    background-color: #888888;
+}
+
+.colour-layers-dark .layer-1 {
+    background-color: #222222;
+}
+
+.colour-layers-dark .layer-2 {
+    background-color: #333333;
+}
+
+.colour-layers-dark .layer-3 {
+    background-color: #444444;
+}
+
+.colour-layers-dark .layer-4 {
+    background-color: #555555;
+}
