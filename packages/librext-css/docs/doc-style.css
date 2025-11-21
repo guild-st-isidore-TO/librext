@@ -68,3 +68,17 @@
     width: var(--page-container-width);
     margin: 0 auto;
 }
+
+.type-role {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.type-role-specimen {
+    flex: 3 3 auto
+}
+
+.type-role-info {
+    flex: 1 1 auto
+}
