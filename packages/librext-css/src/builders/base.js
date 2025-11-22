@@ -16,7 +16,7 @@ const buildBase = () => {
     }
 
     const baseDataFile = `${libRextCssUtil.dataDir}/base.json`
-    const baseData = libRextCssFileHandler.readFile(baseDataFile)
+    const baseData = libRextCssFileHandler.readJsonFile(baseDataFile)
     // console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     const styleVars = []

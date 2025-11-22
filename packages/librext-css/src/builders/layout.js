@@ -5,7 +5,7 @@ const libRextCssUtil = require('./utils')
 
 const buildLayout = () => {
     const layoutDataFile = `${libRextCssUtil.dataDir}/layout.json`
-    const layoutData = libRextCssFileHandler.readFile(layoutDataFile)
+    const layoutData = libRextCssFileHandler.readJsonFile(layoutDataFile)
     // console.log('[LibRext CSS - LayoutBuilder] layoutData', layoutData)
 
     let layoutContent = '';

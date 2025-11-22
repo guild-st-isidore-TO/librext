@@ -15,11 +15,8 @@ const buildShapes = () => {
         varsSelector = customLocalScope
     }
 
-    // const baseDataFile = `${libRextCssUtil.dataDir}/base.json`
-    // const baseData = libRextCssFileHandler.readFile(shapeDataFile)
-
     const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    const shapeData = libRextCssFileHandler.readFile(shapeDataFile)
+    const shapeData = libRextCssFileHandler.readJsonFile(shapeDataFile)
     // console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     const styleVars = []

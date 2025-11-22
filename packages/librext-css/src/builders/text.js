@@ -10,7 +10,7 @@ const thickLine = '================================================'
 
 const buildText = () => {
     const textDataFile = `${libRextCssUtil.dataDir}/text.json`
-    const textData = libRextCssFileHandler.readFile(textDataFile)
+    const textData = libRextCssFileHandler.readJsonFile(textDataFile)
     // console.log('[LibRext CSS - TextBuilder] textData', textData)
 
     // let prefaceContent = '@import "../fonts/librext-fonts.css";\n'

@@ -5,7 +5,7 @@ const libRextCssUtil = require('./utils')
 
 const buildSpacing = () => {
     const spacingDataFile = `${libRextCssUtil.dataDir}/spacing.json`
-    const spacingData = libRextCssFileHandler.readFile(spacingDataFile)
+    const spacingData = libRextCssFileHandler.readJsonFile(spacingDataFile)
     // console.log('[LibRext CSS - SpacingBuilder] spacingData', spacingData)
     let prefaceContent = '@import "./librext-base.css";\n'
     let spacingContent = '';

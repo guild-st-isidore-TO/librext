@@ -2,11 +2,17 @@
 
 const fs = require('fs');
 
-const readFile = (filePath) => {
+const readTemplateFile = (filePath) => {
     let returnData = {}
-    console.log('[LibRext CSS - FileHandler.readFile] filePath', filePath)
+    console.log('[LibRext CSS - FileHandler.readTemplateFile] filePath', filePath)
+    returnData = fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' })
+    return returnData
+}
+
+const readJsonFile = (filePath) => {
+    let returnData = {}
+    console.log('[LibRext CSS - FileHandler.readJsonFile] filePath', filePath)
     returnData = JSON.parse(fs.readFileSync(filePath))
-    // console.log('[LibRext CSS - FileHandler.readFile] returnData', returnData)
     return returnData
 }
 
@@ -16,6 +22,7 @@ const writeFile = (filePath, content) => {
 }
 
 module.exports = {
-    readFile,
+    readTemplateFile,
+    readJsonFile,
     writeFile,
 }

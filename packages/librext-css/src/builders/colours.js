@@ -16,7 +16,7 @@ const buildColours = () => {
     }
 
     const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
-    const colourData = libRextCssFileHandler.readFile(colourDataFile)
+    const colourData = libRextCssFileHandler.readJsonFile(colourDataFile)
     // console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
 
     const styleVars = []
