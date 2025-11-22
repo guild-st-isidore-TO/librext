@@ -18,7 +18,7 @@ const buildText = () => {
 
     const styleVars = []
 
-    const typefaces = textData.typefaces
+    const typefaces = textData.definitions.typefaces
     const getTypeface = (typefaceId) => {
         let tFace;
 
@@ -64,7 +64,7 @@ const buildText = () => {
 
         typefaces[tCateg].forEach((fontFam, idx) => {
             let fontFamCtg = tCateg
-            const defaultFonts = textData.typefaceDefaults[tCateg]
+            const defaultFonts = textData.definitions.typefaceDefaults[tCateg]
             const defaultFontsFormatted = defaultFonts.map(dFont => {
                 const numTokens = dFont.split(' ').length
                 if (numTokens > 1) {
@@ -83,7 +83,7 @@ const buildText = () => {
         })
     }
 
-    for (const tTypescale of textData.typescale) {
+    for (const tTypescale of textData.definitions.typescale) {
         const currentTypescaleItem = tTypescale
         // console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
 
@@ -97,8 +97,8 @@ const buildText = () => {
         })
     }
 
-    for (const tRole in textData.typeroles) {
-        const currentRoleTypefaceKeys = textData.typeroles[tRole]
+    for (const tRole in textData.variables.typeroles) {
+        const currentRoleTypefaceKeys = textData.variables.typeroles[tRole]
         // console.log('[Text Builder] currentRole', tRole, currentRoleTypefaceKeys)
 
         const currentRoleTypefaces = currentRoleTypefaceKeys.map((typeKey, idx) => {
@@ -126,7 +126,7 @@ const buildText = () => {
 
 
 
-    for (const currentDocRole of textData.docroles) {
+    for (const currentDocRole of textData.variables.docroles) {
         // console.log('[Text Builder] currentDocRole', currentDocRole)
 
         let weightVal = currentDocRole.weight

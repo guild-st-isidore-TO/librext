@@ -21,7 +21,7 @@ const buildColours = () => {
 
     const styleVars = []
 
-    const greyPalette = colourData.palette.grey
+    const greyPalette = colourData.variables.palette.grey
     // for (const [key, value] of Object.entries(greyPalette)) {
     greyPalette.forEach((val, idx) => {
         const greyEntry = {
@@ -31,7 +31,7 @@ const buildColours = () => {
         styleVars.push(greyEntry);
     })
 
-    const themePalette = colourData.palette.theme
+    const themePalette = colourData.variables.palette.theme
     for (const [key, value] of Object.entries(themePalette)) {
         const themeEntry = {
             property: `theme-${key}`,
@@ -40,7 +40,7 @@ const buildColours = () => {
         styleVars.push(themeEntry);
     }
 
-    for (const basicRole of colourData.rolepalette.basic) {
+    for (const basicRole of colourData.variables.rolepalette.basic) {
         console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
         styleVars.push({
             property: `col-${basicRole.role.replace('.', '-')}`,
@@ -48,7 +48,7 @@ const buildColours = () => {
         });
     }
 
-    for (const textRole of colourData.rolepalette.text) {
+    for (const textRole of colourData.variables.rolepalette.text) {
         console.log('[LibRext CSS - ColourBuilder] textRoles', textRole)
         styleVars.push({
             property: `col-${textRole.role.replace('.', '-')}`,
@@ -56,7 +56,7 @@ const buildColours = () => {
         });
     }
 
-    for (const indicatorRole of colourData.rolepalette.indicator) {
+    for (const indicatorRole of colourData.variables.rolepalette.indicator) {
         console.log('[LibRext CSS - ColourBuilder] indicatorRoles', indicatorRole)
         styleVars.push({
             property: `col-${indicatorRole.role.replace('.', '-')}`,
@@ -64,7 +64,7 @@ const buildColours = () => {
         });
     }
 
-    for (const accentRole of colourData.rolepalette.accent) {
+    for (const accentRole of colourData.variables.rolepalette.accent) {
         console.log('[LibRext CSS - ColourBuilder] accentRoles', accentRole)
         styleVars.push({
             property: `col-${accentRole.role.replace('.', '-')}`,

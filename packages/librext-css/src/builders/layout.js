@@ -11,7 +11,7 @@ const buildLayout = () => {
     let layoutContent = '';
     const styleVars = []
 
-    for (const sectionLevel of layoutData.sectionLevels) {
+    for (const sectionLevel of layoutData.variables.sectionLevels) {
         // const scaleVal = layoutData.layoutScale[scaleKey]
         // const property
         console.log('[LibRext CSS - LayoutBuilder] sectionLevel', sectionLevel)

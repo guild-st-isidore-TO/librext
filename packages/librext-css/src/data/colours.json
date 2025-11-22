@@ -1,250 +1,254 @@
 {
-    "roles": {
-        "basic": [
-            "default",
-            "accent",
-            "surface",
-            "altsurface",
-            "outline"
-        ],
-        "text": [
-            "body",
-            "heading",
-            "label",
-            "display",
-            "rubric",
-            "underline",
-            "highlight"
-        ],
-        "indicator": [
-            "ok",
-            "info",
-            "warning",
-            "error",
-            "disabled"
-        ]
-    },
-    "variants": {
-        "accent": [
-            "plain",
-            "primary",
-            "secondary",
-            "tertiary"
-        ],
-        "lighting": [
-            "light",
-            "dark"
-        ],
-        "ui": [
-            "plain",
-            "hover",
-            "active",
-            "selected",
-            "disabled"
-        ]
-    },
-    "palette": {
-        "grey": [
-            "#ffffff",
-            "#f6f8fa",
-            "#eaeef2",
-            "#d0d7de",
-            "#afb8c1",
-            "#8c959f",
-            "#6e7781",
-            "#57606a",
-            "#424a53",
-            "#32383f",
-            "#24292f",
-            "#000000"
-        ],
-        "theme": {
-            "khaki": "#EADFB4",
-            "powder-blue": "#9BB0C1",
-            "cerulean": "#51829b",
-            "orange": "#F6995C",
-            "light-blue": "#E6FAFF",
-            "ocean-blue": "#1B628F",
-            "navy-blue": "#053C5F",
-            "deep-blue": "#00335E"
+    "definitions": {
+        "roles": {
+            "basic": [
+                "default",
+                "accent",
+                "surface",
+                "altsurface",
+                "outline"
+            ],
+            "text": [
+                "body",
+                "heading",
+                "label",
+                "display",
+                "rubric",
+                "underline",
+                "highlight"
+            ],
+            "indicator": [
+                "ok",
+                "info",
+                "warning",
+                "error",
+                "disabled"
+            ]
+        },
+        "variants": {
+            "accent": [
+                "plain",
+                "primary",
+                "secondary",
+                "tertiary"
+            ],
+            "lighting": [
+                "light",
+                "dark"
+            ],
+            "ui": [
+                "plain",
+                "hover",
+                "active",
+                "selected",
+                "disabled"
+            ]
         }
     },
-    "rolepalette": {
-        "basic": [
-            {
-                "role": "default.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "default.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "accent.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "accent.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "surface.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "surface.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "altsurface.light",
-                "colour": "grey.3"
-            },
-            {
-                "role": "altsurface.dark",
-                "colour": "grey.3"
-            },
-            {
-                "role": "outline.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "outline.dark",
-                "colour": "grey.2"
+    "variables": {
+        "palette": {
+            "grey": [
+                "#ffffff",
+                "#f6f8fa",
+                "#eaeef2",
+                "#d0d7de",
+                "#afb8c1",
+                "#8c959f",
+                "#6e7781",
+                "#57606a",
+                "#424a53",
+                "#32383f",
+                "#24292f",
+                "#000000"
+            ],
+            "theme": {
+                "khaki": "#EADFB4",
+                "powder-blue": "#9BB0C1",
+                "cerulean": "#51829b",
+                "orange": "#F6995C",
+                "light-blue": "#E6FAFF",
+                "ocean-blue": "#1B628F",
+                "navy-blue": "#053C5F",
+                "deep-blue": "#00335E"
             }
-        ],
-        "text": [
-            {
-                "role": "body.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "heading.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "label.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "display.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "rubric.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "underline.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "highlight.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "body.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "heading.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "label.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "display.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "rubric.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "underline.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "highlight.dark",
-                "colour": "grey.2"
-            }
-        ],
-        "accent": [
-            {
-                "role": "plain.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "plain.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "primary.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "primary.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "secondary.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "secondary.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "tertiary.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "tertiary.dark",
-                "colour": "grey.2"
-            }
-        ],
-        "indicator": [
-            {
-                "role": "ok.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "ok.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "info.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "info.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "warning.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "warning.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "error.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "error.dark",
-                "colour": "grey.2"
-            },
-            {
-                "role": "disabled.light",
-                "colour": "grey.2"
-            },
-            {
-                "role": "disabled.dark",
-                "colour": "grey.2"
-            }
-        ]
+        },
+        "rolepalette": {
+            "basic": [
+                {
+                    "role": "default.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "default.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "accent.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "accent.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "surface.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "surface.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "altsurface.light",
+                    "colour": "grey.3"
+                },
+                {
+                    "role": "altsurface.dark",
+                    "colour": "grey.3"
+                },
+                {
+                    "role": "outline.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "outline.dark",
+                    "colour": "grey.2"
+                }
+            ],
+            "text": [
+                {
+                    "role": "body.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "heading.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "label.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "display.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "rubric.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "underline.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "highlight.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "body.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "heading.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "label.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "display.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "rubric.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "underline.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "highlight.dark",
+                    "colour": "grey.2"
+                }
+            ],
+            "accent": [
+                {
+                    "role": "plain.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "plain.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "primary.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "primary.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "secondary.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "secondary.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "tertiary.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "tertiary.dark",
+                    "colour": "grey.2"
+                }
+            ],
+            "indicator": [
+                {
+                    "role": "ok.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "ok.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "info.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "info.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "warning.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "warning.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "error.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "error.dark",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "disabled.light",
+                    "colour": "grey.2"
+                },
+                {
+                    "role": "disabled.dark",
+                    "colour": "grey.2"
+                }
+            ]
+        }
     }
 }

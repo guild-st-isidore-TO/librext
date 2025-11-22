@@ -30,7 +30,7 @@ const buildShapes = () => {
 
     let shapesContent = ''
 
-    const cRadiusScale = shapeData.cornerRadiusScale
+    const cRadiusScale = shapeData.definitions.cornerRadiusScale
     for (const [key, value] of Object.entries(cRadiusScale)) {
         const cRadiusEntry = {
             property: `cor-radius-${key}`,
@@ -39,7 +39,7 @@ const buildShapes = () => {
         styleVars.push(cRadiusEntry);
     }
 
-    for (const [key, value] of Object.entries(shapeData.elementHeightScale)) {
+    for (const [key, value] of Object.entries(shapeData.definitions.elementHeightScale)) {
         const heightEntry = {
             property: `height-${key}`,
             value: `var(--librext-scale-${value.replace('ls', '')})`,
@@ -51,14 +51,14 @@ const buildShapes = () => {
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
-    shapeData.shapeDefinitions.forEach((shapeDef, idx) => {
+    shapeData.variables.shapeDefinitions.forEach((shapeDef, idx) => {
         const selectorParts = shapeDef.name.split('.')
         const selectorBase = selectorParts[0]
         const selectorSize = selectorParts[1]
 
         const selector = `.${shapeDef.name}`
 
-        const shadowScaleVal = shapeData.boxShadowScale[shapeDef.boxShadow]
+        const shadowScaleVal = shapeData.definitions.boxShadowScale[shapeDef.boxShadow]
         const boxShadowVal = `${shadowScaleVal.len} ${shadowScaleVal.len} ${shadowScaleVal.blur} var(--grey-10)`
 
         const props = [

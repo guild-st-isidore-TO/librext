@@ -21,7 +21,7 @@ const buildBase = () => {
 
     const styleVars = []
 
-    for (const [key, value] of Object.entries(baseData.librextScale)) {
+    for (const [key, value] of Object.entries(baseData.definitions.librextScale)) {
         const scaleVar = {
             property: `librext-scale-${key.replace('ls', '')}`,
             value: `${value}px`,

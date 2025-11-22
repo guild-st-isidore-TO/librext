@@ -1,93 +1,97 @@
 {
-    "boxShadowScale": {
-        "xs": {
-            "len": "1px",
-            "blur": "2px"
+    "definitions": {
+        "boxShadowScale": {
+            "xs": {
+                "len": "1px",
+                "blur": "2px"
+            },
+            "sm": {
+                "len": "2px",
+                "blur": "2px"
+            },
+            "md": {
+                "len": "3px",
+                "blur": "3px"
+            },
+            "lg": {
+                "len": "4px",
+                "blur": "4px"
+            },
+            "xl": {
+                "len": "5px",
+                "blur": "4px"
+            }
         },
-        "sm": {
-            "len": "2px",
-            "blur": "2px"
+        "cornerRadiusScale": {
+            "xs": "ls1",
+            "sm": "ls3",
+            "md": "ls6",
+            "lg": "ls8",
+            "xl": "ls10",
+            "xxl": "ls12",
+            "xxxl": "ls13",
+            "4xl": "ls16"
         },
-        "md": {
-            "len": "3px",
-            "blur": "3px"
+        "elementHeightScale": {
+            "xs": "ls6",
+            "sm": "ls8",
+            "md": "ls10",
+            "lg": "ls12",
+            "xl": "ls14",
+            "xxl": "ls16",
+            "xxxl": "ls18",
+            "4xl": "ls20",
+            "5xl": "ls21"
         },
-        "lg": {
-            "len": "4px",
-            "blur": "4px"
-        },
-        "xl": {
-            "len": "5px",
-            "blur": "4px"
-        }
+        "shapeElements": [
+            "card",
+            "image",
+            "input",
+            "button"
+        ]
     },
-    "cornerRadiusScale": {
-        "xs": "ls1",
-        "sm": "ls3",
-        "md": "ls6",
-        "lg": "ls8",
-        "xl": "ls10",
-        "xxl": "ls12",
-        "xxxl": "ls13",
-        "4xl": "ls16"
-    },
-    "elementHeightScale": {
-        "xs": "ls6",
-        "sm": "ls8",
-        "md": "ls10",
-        "lg": "ls12",
-        "xl": "ls14",
-        "xxl": "ls16",
-        "xxxl": "ls18",
-        "4xl": "ls20",
-        "5xl": "ls21"
-    },
-    "shapeElements": [
-        "card",
-        "image",
-        "input",
-        "button"
-    ],
-    "shapeDefinitions": [
-        {
-            "name": "card.xs",
-            "height": "xs",
-            "background": "altsurface",
-            "padding": "xs",
-            "boxShadow": "xs",
-            "cornerRadius": "xs"
-        },
-        {
-            "name": "card.sm",
-            "height": "sm",
-            "background": "altsurface",
-            "padding": "sm",
-            "boxShadow": "sm",
-            "cornerRadius": "sm"
-        },
-        {
-            "name": "card.md",
-            "height": "md",
-            "background": "altsurface",
-            "padding": "md",
-            "boxShadow": "md",
-            "cornerRadius": "md"
-        },
-        {
-            "name": "card.lg",
-            "height": "lg",
-            "background": "altsurface",
-            "padding": "lg",
-            "boxShadow": "lg",
-            "cornerRadius": "lg"
-        },
-        {
-            "name": "card.xl",
-            "height": "xl",
-            "background": "altsurface",
-            "padding": "xl",
-            "boxShadow": "xl",
-            "cornerRadius": "xl"
-        }
-    ]
+    "variables": {
+        "shapeDefinitions": [
+            {
+                "name": "card.xs",
+                "height": "xs",
+                "background": "altsurface",
+                "padding": "xs",
+                "boxShadow": "xs",
+                "cornerRadius": "xs"
+            },
+            {
+                "name": "card.sm",
+                "height": "sm",
+                "background": "altsurface",
+                "padding": "sm",
+                "boxShadow": "sm",
+                "cornerRadius": "sm"
+            },
+            {
+                "name": "card.md",
+                "height": "md",
+                "background": "altsurface",
+                "padding": "md",
+                "boxShadow": "md",
+                "cornerRadius": "md"
+            },
+            {
+                "name": "card.lg",
+                "height": "lg",
+                "background": "altsurface",
+                "padding": "lg",
+                "boxShadow": "lg",
+                "cornerRadius": "lg"
+            },
+            {
+                "name": "card.xl",
+                "height": "xl",
+                "background": "altsurface",
+                "padding": "xl",
+                "boxShadow": "xl",
+                "cornerRadius": "xl"
+            }
+        ]
+    }
 }
