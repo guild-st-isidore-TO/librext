@@ -84,7 +84,7 @@
     <div class="palette-cell colour-bg-light">
       <div class="palette-row">
         <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
-        <div class="palette-item palette-box">
+        <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
         </div>
         <% } %>
       </div>
@@ -93,7 +93,7 @@
     <div class="palette-cell colour-bg-dark">
       <div class="palette-row">
         <% for(var i=0; i < greyscalePaletteDark.length; i++) { %>
-        <div class="palette-item palette-box">
+        <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteDark[i].colour %>;">
         </div>
         <% } %>
       </div>
@@ -107,6 +107,7 @@
       <% for(var i=0; i < paletteDetailItems.length; i++) { %>
       <div class="colour-detail">
         <div class="colour-detail-desc">
+          <%= paletteDetailItems[i].colour %>
           <%= paletteDetailItems[i].description %>
         </div>
         <div class="colour-detail-swatch">
@@ -125,7 +126,12 @@
 
     <div class="colour-layers colour-layers-light">
       <% for(var i=0; i < colourLayersLight.length; i++) { %>
-      <div class="colour-layer layer-<%= i %>" style="background-color: <%= paletteDetailItems[i].colour %>;"></div>
+      <div class="colour-layer layer-<%= i %>" style="background-color: <%= colourLayersLight[i].colour %>;"></div>
+      <% } %>
+    </div>
+    <div class="colour-layers colour-layers-dark">
+      <% for(var i=0; i < colourLayersDark.length; i++) { %>
+      <div class="colour-layer layer-<%= i %>" style="background-color: <%= colourLayersDark[i].colour %>;"></div>
       <% } %>
     </div>
 

@@ -19,6 +19,8 @@ const writeCssRule = (selector, propList) => {
 
 const dataDir = `${__dirname}/../data`
 const templatesDir = `${__dirname}/html`
+const htmlOutputDir = `${__dirname}/../../docs`
+const cssOutputDir = `${__dirname}/../../css`
 
 const fontCategories = [
     'serif',
@@ -94,6 +96,8 @@ module.exports = {
     writeCssRule,
     dataDir,
     templatesDir,
+    htmlOutputDir,
+    cssOutputDir,
     fontData,
     ROOT_SELECTOR,
     getPermutationsOfArrays,
