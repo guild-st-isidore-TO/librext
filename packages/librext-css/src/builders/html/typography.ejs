@@ -62,7 +62,16 @@
             blandit id nisi at, tempor consequat risus. Ut
             a velit ante. Praesent id blandit nisi. </p>
 
-        <%- include('typography-role.ejs', data) %>
+        <% for(var i=0; i < roles.length; i++) { %>
+            <div class="type-role">
+                <div class="type-role-specimen">
+                    <span><%= roles[i].spec %></span>
+                </div>
+                <div class="type-role-info">
+                    <span><%= roles[i].info %></span>
+                </div>
+            </div>
+        <% } %>
     </div>
 
     <!-- <script src="js/app.js"></script> -->
