@@ -1,8 +1,8 @@
 const ejs = require('ejs');
+const libRextCssFileHandler = require('../file-handler')
+const libRextCssUtil = require('../utils')
 
 const buildHtmlTypography = () => {
-    const libRextCssFileHandler = require('../file-handler')
-    const libRextCssUtil = require('../utils')
     
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);

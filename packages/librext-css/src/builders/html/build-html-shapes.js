@@ -3,14 +3,65 @@ const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
 
+
+const buildHtmlShapes = () => {
+
 const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
 const template = libRextCssFileHandler.readTemplateFile(fPath);
 
 const templatePayload = {
-    name: 'John',
-    date: new Date().toISOString().split('T')[0]
+    borderRadiusSizes: [
+        {
+            sizeCode: 'sm',
+        },
+        {
+            sizeCode: 'md',
+        },
+        {
+            sizeCode: 'lg',
+        },
+    ],
+    boxShadowSizes: [
+        {
+            sizeCode: 'sm',
+        },
+        {
+            sizeCode: 'md',
+        },
+        {
+            sizeCode: 'lg',
+        },
+    ],
+    widgetSizes: [
+        {
+            sizeCode: 'sm',
+        },
+        {
+            sizeCode: 'md',
+        },
+        {
+            sizeCode: 'lg',
+        },
+    ],
+    cards: [
+        {
+            sizeCode: 'sm',
+            specText: 'Cras in lacus a dui tristique rutrum id sed.',
+        },
+        {
+            sizeCode: 'md',
+            specText: 'Cras in lacus a dui tristique rutrum id sed.',
+        },
+        {
+            sizeCode: 'lg',
+            specText: 'Cras in lacus a dui tristique rutrum id sed.',
+        },
+    ],
 };
 
 const output = ejs.render(template, templatePayload);
 
 console.log(output);
+}
+
+module.exports = { build: buildHtmlShapes };

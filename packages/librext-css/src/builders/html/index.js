@@ -7,7 +7,7 @@
 const build = () => {
     return {
         // htmlColours: require('./build-html-colours').build(),
-        // htmlShapes: require('./build-html-shapes').build(),
+        htmlShapes: require('./build-html-shapes').build(),
         htmlTypography: require('./build-html-typography').build(),
     }
 }

@@ -121,7 +121,7 @@
 
     <div class="cards-set">
       <% for(var i=0; i < cards.length; i++) { %>
-      <div class="card">
+      <div class="card card-<%= cards[i].sizeCode %>">
         <p><%= cards[i].specText %></p>
       </div>
       <% } %>
