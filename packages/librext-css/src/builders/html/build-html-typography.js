@@ -13,12 +13,12 @@ const buildHtmlTypography = () => {
     const dataRoles = textData.variables.docroles.map(docrole => {
         return {
             name: docrole.docrole,
-            htmlTags: docrole.html,
+            htmlTags: docrole.html.split(','),
             htmlClass: docrole.class,
             typescale: docrole.typescale,
             weight: docrole.weight,
             styles: JSON.stringify(docrole.styles),
-            spec: 'Vivamus semper facilisis massa sit'
+            spec: 'The quick brown fox jumps over the lazy dog.',
         }
     })
 

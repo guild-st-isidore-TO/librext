@@ -272,7 +272,7 @@ small,
  *    typescale size = tiny
 \* ------------------------------------ */
 sup,
-.lbrxt-supe {
+.lbrxt-super {
   font-weight: normal;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body-2);
