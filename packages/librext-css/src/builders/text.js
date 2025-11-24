@@ -153,7 +153,10 @@ const buildText = () => {
             { property: 'font-style', value: fontStyleVal, },
         ]
 
-        const docRoleRule = libRextCssUtil.writeCssRule(currentDocRole.html, docRoleVars);
+        const selectorHtml = currentDocRole.html.length == 0 ? '' : `${currentDocRole.html},\n`
+        let docRoleSelector = `${selectorHtml}.${currentDocRole.class}`
+
+        const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
         const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
         const docRoleComment2 = ` *    typerole = ${currentDocRole.typerole}\n`
         const docRoleComment3 = ` *    typescale size = ${currentDocRole.typescale}\n\\* ${line} */\n`

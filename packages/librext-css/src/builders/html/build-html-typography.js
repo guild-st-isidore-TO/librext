@@ -7,17 +7,35 @@ const buildHtmlTypography = () => {
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
 
+    const textDataFile = `${libRextCssUtil.dataDir}/text.json`
+    const textData = libRextCssFileHandler.readJsonFile(textDataFile)
+
+    const dataRoles = textData.variables.docroles.map(docrole => {
+        return {
+            name: docrole.docrole,
+            htmlTags: docrole.html,
+            htmlClass: docrole.class,
+            typescale: docrole.typescale,
+            weight: docrole.weight,
+            styles: JSON.stringify(docrole.styles),
+            spec: 'Vivamus semper facilisis massa sit'
+        }
+    })
+
+    // const outRoles = dataRoles.map(role => {
+    //     let infoString = `${role.name}<br/>`
+    //     infoString += `Weight: ${role.weight}<br/>`
+    //     infoString += `Typescale: ${role.typescale}<br/>`
+    //     infoString += `HTML Tags: ${role.htmlTags}<br/>`
+    //     infoString += `CSS Class: ${role.htmlClass}<br/>`
+    //     return {
+    //         spec: 'Vivamus semper facilisis massa sit',
+    //         info: infoString
+    //     }
+    // })
+
     const templatePayload = {
-        roles: [
-            {
-                spec: 'Heading 1',
-                info: 'Font Size: 32px; Line Height: 40px; Font Weight: 700;'
-            },
-            {
-                spec: 'Heading 2',
-                info: 'Font Size: 28px; Line Height: 36px; Font Weight: 700;'
-            }
-        ],
+        roles: dataRoles,
     };
     const filledTemplate = ejs.render(template, templatePayload);
     // console.log(filledTemplate);

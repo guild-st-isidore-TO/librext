@@ -68,7 +68,11 @@
                     <span><%= roles[i].spec %></span>
                 </div>
                 <div class="type-role-info">
-                    <span><%= roles[i].info %></span>
+                    <span><%= roles[i].name %></span><br/>
+                    <span>weight: <%= roles[i].weight %></span>
+                    <span>typescale: <%= roles[i].typescale %></span>
+                    <span>htmlTags: <%= roles[i].htmlTags %></span>
+                    <span>htmlClass: <%= roles[i].htmlClass %></span>
                 </div>
             </div>
         <% } %>

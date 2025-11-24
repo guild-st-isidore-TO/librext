@@ -52,7 +52,7 @@
  *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
-.librext-hero {
+.lbrxt-hero {
   font-weight: bold;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display-1);
@@ -65,7 +65,7 @@
  *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
-.librext-headline {
+.lbrxt-headline {
   font-weight: bold;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading-1);
@@ -78,7 +78,7 @@
  *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
-.librext-title {
+.lbrxt-title {
   font-weight: bold;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display-1);
@@ -91,7 +91,7 @@
  *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
-.librext-subtitle {
+.lbrxt-subtitle {
   font-weight: normal;
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading-1);
@@ -104,7 +104,8 @@
  *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
-h1 {
+h1,
+.lbrxt-h1 {
   font-weight: bold;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading-1);
@@ -117,7 +118,8 @@ h1 {
  *    typerole = heading.1
  *    typescale size = h2
 \* ------------------------------------ */
-h2 {
+h2,
+.lbrxt-h2 {
   font-weight: bold;
   font-size: var(--typescale-h2);
   font-family: var(--fontfam-heading-1);
@@ -130,7 +132,8 @@ h2 {
  *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
-h3 {
+h3,
+.lbrxt-h3 {
   font-weight: bold;
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading-1);
@@ -143,7 +146,8 @@ h3 {
  *    typerole = heading.1
  *    typescale size = h4
 \* ------------------------------------ */
-h4 {
+h4,
+.lbrxt-h4 {
   font-weight: bold;
   font-size: var(--typescale-h4);
   font-family: var(--fontfam-heading-1);
@@ -156,7 +160,8 @@ h4 {
  *    typerole = heading.1
  *    typescale size = h5
 \* ------------------------------------ */
-h5 {
+h5,
+.lbrxt-h5 {
   font-weight: bold;
   font-size: var(--typescale-h5);
   font-family: var(--fontfam-heading-1);
@@ -169,7 +174,8 @@ h5 {
  *    typerole = heading.1
  *    typescale size = h6
 \* ------------------------------------ */
-h6 {
+h6,
+.lbrxt-h6 {
   font-weight: bold;
   font-size: var(--typescale-h6);
   font-family: var(--fontfam-heading-1);
@@ -182,7 +188,8 @@ h6 {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-p, span {
+p, span,
+.lbrxt-body {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -195,7 +202,8 @@ p, span {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-b, strong {
+b, strong,
+.lbrxt-strong {
   font-weight: bold;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -208,7 +216,8 @@ b, strong {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-i, em {
+i, em,
+.lbrxt-em {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -221,7 +230,8 @@ i, em {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-a {
+a,
+.lbrxt-link {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -234,7 +244,8 @@ a {
  *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
-small {
+small,
+.lbrxt-small {
   font-weight: normal;
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body-1);
@@ -247,7 +258,7 @@ small {
  *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
-.librext-tiny {
+.lbrxt-tiny {
   font-weight: normal;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body-2);
@@ -260,7 +271,8 @@ small {
  *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
-sup {
+sup,
+.lbrxt-supe {
   font-weight: normal;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body-2);
@@ -273,7 +285,8 @@ sup {
  *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
-sub {
+sub,
+.lbrxt-sub {
   font-weight: normal;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body-2);
@@ -286,7 +299,8 @@ sub {
  *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
-figcaption {
+figcaption,
+.lbrxt-imgcap {
   font-weight: normal;
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body-1);
@@ -299,7 +313,8 @@ figcaption {
  *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
-code {
+code,
+.lbrxt-codein {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-code-1);
@@ -312,7 +327,8 @@ code {
  *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
-pre {
+pre,
+.lbrxt-codeblk {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-code-1);
@@ -325,7 +341,8 @@ pre {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-q {
+q,
+.lbrxt-quote {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -338,7 +355,8 @@ q {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-blockquote {
+blockquote,
+.lbrxt-bquote {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
@@ -351,7 +369,7 @@ blockquote {
  *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
-.librext-pullquote {
+.lbrxt-pquote {
   font-weight: normal;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body-1);
