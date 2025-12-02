@@ -124,15 +124,19 @@
 
     <h2>Layers</h2>
 
-    <div class="colour-layers colour-layers-light">
-      <% for(var i=0; i < colourLayersLight.length; i++) { %>
-      <div class="colour-layer layer-<%= i + 1 %>" style="background-color: <%= colourLayersLight[i].colour %>;"></div>
-      <% } %>
+    <div class="palette-cell colour-bg-light">
+      <div class="colour-layers colour-layers-light">
+        <% for(var i=0; i < colourLayersLight.length; i++) { %>
+        <div class="colour-layer layer-<%= i + 1 %>" style="background-color: <%= colourLayersLight[i].colour %>;"></div>
+        <% } %>
+      </div>
     </div>
-    <div class="colour-layers colour-layers-dark">
-      <% for(var i=0; i < colourLayersDark.length; i++) { %>
-      <div class="colour-layer layer-<%= i + 1 %>" style="background-color: <%= colourLayersDark[i].colour %>;"></div>
-      <% } %>
+    <div class="palette-cell colour-bg-dark">
+      <div class="colour-layers colour-layers-dark">
+        <% for(var i=0; i < colourLayersDark.length; i++) { %>
+        <div class="colour-layer layer-<%= i + 1 %>" style="background-color: <%= colourLayersDark[i].colour %>;"></div>
+        <% } %>
+      </div>
     </div>
 
 
