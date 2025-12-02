@@ -8,54 +8,53 @@ const buildHtmlShapes = () => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
 
+    const shapesDataFile = `${libRextCssUtil.dataDir}/shapes.json`
+    const shapesData = libRextCssFileHandler.readJsonFile(shapesDataFile)
+
+    const dataBorderRadSizes = []
+    for (const cRadiusSize in shapesData.definitions.cornerRadiusScale) {
+        const currentRadSize = shapesData.definitions.cornerRadiusScale[cRadiusSize];
+        dataBorderRadSizes.push({
+            sizeCode: cRadiusSize,
+            lenVar: currentRadSize,
+        })
+    }
+
+    const dataElementHeightSizes = []
+
+    const dataBoxShadowSizes = []
+    for (const bShadowSize in shapesData.definitions.boxShadowScale) {
+        const currentShadowSize = shapesData.definitions.boxShadowScale[bShadowSize];
+        dataBoxShadowSizes.push({
+            sizeCode: bShadowSize,
+            len: currentShadowSize.len,
+            blur: currentShadowSize.blur,
+        })
+    }
+
+    const dataWidgetSizes = []
+
+    const cardDefinitions = shapesData.variables.shapeDefinitions.filter(shapeDef => shapeDef.name.startsWith('card'))
+    const dataCards = cardDefinitions.map(shapeDef => {
+        const nameParts = shapeDef.name.split('.')
+        const sizeSuffix = nameParts[1]
+        return {
+            sizeCode: sizeSuffix,
+            specText: 'Cras in lacus a dui tristique rutrum id sed.',
+            name: shapeDef.name,
+            height: shapeDef.height,
+            background: shapeDef.background,
+            padding: shapeDef.padding,
+            boxShadow: shapeDef.boxShadow,
+            cornerRadius: shapeDef.cornerRadius,
+        }
+    })
+
     const templatePayload = {
-        borderRadiusSizes: [
-            {
-                sizeCode: 'sm',
-            },
-            {
-                sizeCode: 'md',
-            },
-            {
-                sizeCode: 'lg',
-            },
-        ],
-        boxShadowSizes: [
-            {
-                sizeCode: 'sm',
-            },
-            {
-                sizeCode: 'md',
-            },
-            {
-                sizeCode: 'lg',
-            },
-        ],
-        widgetSizes: [
-            {
-                sizeCode: 'sm',
-            },
-            {
-                sizeCode: 'md',
-            },
-            {
-                sizeCode: 'lg',
-            },
-        ],
-        cards: [
-            {
-                sizeCode: 'sm',
-                specText: 'Cras in lacus a dui tristique rutrum id sed.',
-            },
-            {
-                sizeCode: 'md',
-                specText: 'Cras in lacus a dui tristique rutrum id sed.',
-            },
-            {
-                sizeCode: 'lg',
-                specText: 'Cras in lacus a dui tristique rutrum id sed.',
-            },
-        ],
+        borderRadiusSizes: dataBorderRadSizes,
+        boxShadowSizes: dataBoxShadowSizes,
+        widgetSizes: [],
+        cards: dataCards,
     };
 
     const output = ejs.render(template, templatePayload);
