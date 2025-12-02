@@ -1,6 +1,6 @@
 {
   "name": "librext-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LibRext's CSS stylesheets",
   "main": "index.js",
   "scripts": {
