@@ -15,27 +15,27 @@ const buildText = () => {
 
     const styleVars = []
 
-    const typefaces = textData.definitions.typefaces
-    const getTypeface = (typefaceId) => {
-        let tFace;
+    // const typefaces = textData.definitions.typefaces
+    // const getTypeface = (typefaceId) => {
+    //     let tFace;
 
-        try {
-            const typeParts = typefaceId.split('.')
-            const typeCtg = typeParts[0]
-            const typePrio = typeParts[1]
-            const typeIdx = Number.parseInt(typePrio) - 1
+    //     try {
+    //         const typeParts = typefaceId.split('.')
+    //         const typeCtg = typeParts[0]
+    //         const typePrio = typeParts[1]
+    //         const typeIdx = Number.parseInt(typePrio) - 1
 
-            tFace = {
-                name: typefaces[typeCtg][typeIdx],
-                category: typeCtg,
-            }
-        } catch (error) {
-            console.log('[Text Builder] Failed to get typeface.')
-            console.log(error);
-        }
+    //         tFace = {
+    //             name: typefaces[typeCtg][typeIdx],
+    //             category: typeCtg,
+    //         }
+    //     } catch (error) {
+    //         console.log('[Text Builder] Failed to get typeface.')
+    //         console.log(error);
+    //     }
 
-        return tFace
-    }
+    //     return tFace
+    // }
 
     const rootCssVars = []
     let rootCssVarContent = ''
@@ -56,63 +56,76 @@ const buildText = () => {
     typeScaleComment += `\\* ${thickLine} */\n\n`
 
 
-    for (const tCateg in typefaces) {
-        // const currentRoleTypeface = getTypeface(typeKey)
+    // for (const tCateg in typefaces) {
+    for (const fontRole in uiSpec.fonts) {
+        const currentFontFamily = uiSpec.fonts[fontRole]
 
-        typefaces[tCateg].forEach((fontFam, idx) => {
-            let fontFamCtg = tCateg
-            const defaultFonts = textData.definitions.typefaceDefaults[tCateg]
-            const defaultFontsFormatted = defaultFonts.map(dFont => {
-                const numTokens = dFont.split(' ').length
-                if (numTokens > 1) {
-                    return `"${dFont}"`
-                }
-                return dFont
-            }).join(', ')
-            if (tCateg == 'sans') {
-                fontFamCtg = 'sans-serif'
-            }
-            const fontFamVal = `"${fontFam}", ${defaultFontsFormatted}, ${fontFamCtg}`
-            rootCssVars.push({
-                property: `fontfam-${tCateg}-${idx + 1}`,
-                value: fontFamVal,
-            })
+        // let fontFamCtg = tCateg
+        // const defaultFonts = textData.definitions.typefaceDefaults[tCateg]
+        // const defaultFontsFormatted = defaultFonts.map(dFont => {
+        //     const numTokens = dFont.split(' ').length
+        //     if (numTokens > 1) {
+        //         return `"${dFont}"`
+        //     }
+        //     return dFont
+        // }).join(', ')
+        // if (tCateg == 'sans') {
+        //     fontFamCtg = 'sans-serif'
+        // }
+
+        // const fontFamVal = `"${fontFam}", ${defaultFontsFormatted}, ${fontFamCtg}`
+        rootCssVars.push({
+            property: `fontfam-${fontRole}`,
+            value: currentFontFamily,
         })
     }
 
-    for (const tTypescale of textData.definitions.typescale) {
-        const currentTypescaleItem = tTypescale
+    // for (const fontSizeVal of uiSpec.fontSizes) {
+    uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
+        // const currentTypescaleItem = fontSizeVal
         // console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
 
         rootCssVars.push({
-            property: `typescale-${currentTypescaleItem.index}`,
-            value: `${currentTypescaleItem.value}rem`,
+            property: `typescale-${idx + 1}`,
+            value: fontSizeVal,
         })
+        // rootCssVars.push({
+        //     property: `typescale-${fontSizeVal}`,
+        //     value: `${fontSizeVal}rem`,
+        // })
+        // }
+    })
+
+    for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
+        // const currentTypescaleItem = fontSizeVal
+        // console.log('[Text Builder] currentTypescaleItem', currentTypescaleItem)
+
         rootCssVars.push({
-            property: `typescale-${currentTypescaleItem.style}`,
-            value: `${currentTypescaleItem.value}rem`,
+            property: `typescale-${fontSizeRole}`,
+            value: uiSpec.libRextData.fontSizes[fontSizeRole],
         })
+        // }
     }
 
-    for (const tRole in textData.variables.typeroles) {
-        const currentRoleTypefaceKeys = textData.variables.typeroles[tRole]
-        // console.log('[Text Builder] currentRole', tRole, currentRoleTypefaceKeys)
+    // for (const tRole in textData.variables.typeroles) {
+    //     const currentRoleTypefaceKeys = textData.variables.typeroles[tRole]
+    //     // console.log('[Text Builder] currentRole', tRole, currentRoleTypefaceKeys)
 
-        const currentRoleTypefaces = currentRoleTypefaceKeys.map((typeKey, idx) => {
-            const currentRoleTypeface = getTypeface(typeKey)
-            const fontFamVal = `var(--fontfam-${currentRoleTypeface.category}-${typeKey.split('.')[1]})`
+    //     const currentRoleTypefaces = currentRoleTypefaceKeys.map((typeKey, idx) => {
+    //         const currentRoleTypeface = getTypeface(typeKey)
+    //         const fontFamVal = `var(--fontfam-${currentRoleTypeface.category}-${typeKey.split('.')[1]})`
 
-            rootCssVars.push({
-                property: `fontfam-${tRole}-${idx + 1}`,
-                value: fontFamVal,
-            })
+    //         rootCssVars.push({
+    //             property: `fontfam-${tRole}-${idx + 1}`,
+    //             value: fontFamVal,
+    //         })
 
-            return currentRoleTypeface
-        })
+    //         return currentRoleTypeface
+    //     })
 
-        typeRoles[tRole] = currentRoleTypefaces
+    //     typeRoles[tRole] = currentRoleTypefaces
 
-    }
+    // }
     // console.log('[Text Builder] typeRoles', typeRoles)
 
     let docRoleHeadingComment = `/* ${thickLine} *\\\n`
@@ -123,8 +136,10 @@ const buildText = () => {
 
 
 
-    for (const currentDocRole of textData.variables.docroles) {
-        // console.log('[Text Builder] currentDocRole', currentDocRole)
+    // for (const currentDocRole of textData.variables.docroles) {
+    for (const docRoleName in uiSpec.docRoles) {
+        const currentDocRole = uiSpec.docRoles[docRoleName]
+        console.log('[Text Builder] currentDocRole', currentDocRole)
 
         let weightVal = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {
@@ -133,14 +148,10 @@ const buildText = () => {
         // const sizeVal = textData.typescale.find(tScaleItem => {
         //     return tScaleItem.style == currentDocRole.typescale
         // })
-        const sizeVal = `var(--typescale-${currentDocRole.typescale})`
+        const sizeVal = `var(--typescale-${currentDocRole.libRextData.typescale})`
 
-        const fFamParts = currentDocRole.typerole.split('.')
-        const fFamCtg = fFamParts[0]
-        const fFamPrio = fFamParts[1]
-
-        const fontFamVal = `var(--fontfam-${fFamCtg}-${fFamPrio})`
-        const isItalic = currentDocRole.styles.includes('italic')
+        const fontFamVal = `var(--fontfam-${currentDocRole.fontFamily})`
+        const isItalic = currentDocRole.libRextData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
 
         const docRoleVars = [
@@ -150,15 +161,14 @@ const buildText = () => {
             { property: 'font-style', value: fontStyleVal, },
         ]
 
-        const selectorHtml = currentDocRole.html.length == 0 ? '' : `${currentDocRole.html},\n`
-        let docRoleSelector = `${selectorHtml}.${currentDocRole.class}`
+        const selectorHtml = currentDocRole.libRextData.html.length == 0 ? '' : `${currentDocRole.libRextData.html},\n`
+        let docRoleSelector = `${selectorHtml}.${currentDocRole.libRextData.class}`
 
         const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
-        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.docrole}\n * ${line}\n`
-        const docRoleComment2 = ` *    typerole = ${currentDocRole.typerole}\n`
-        const docRoleComment3 = ` *    typescale size = ${currentDocRole.typescale}\n\\* ${line} */\n`
+        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.libRextData.name}\n * ${line}\n`
+        const docRoleComment3 = ` *    typescale size = ${currentDocRole.libRextData.typescale}\n\\* ${line} */\n`
 
-        docRolesContent += docRoleComment1 + docRoleComment2 + docRoleComment3 + docRoleRule + '\n'
+        docRolesContent += docRoleComment1 + docRoleComment3 + docRoleRule + '\n'
         // console.log('[Text Builder] docRoleRule', docRoleRule)
     }
     // console.log('[Text Builder] docRolesContent', docRolesContent)

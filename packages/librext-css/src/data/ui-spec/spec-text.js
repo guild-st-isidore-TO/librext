@@ -1,3 +1,15 @@
+const fontSizes = [
+    '0.75rem',
+    '0.833rem',
+    '1rem',
+    '1.2rem',
+    '1.44rem',
+    '1.728rem',
+    '2.074rem',
+    '2.488rem',
+    '2.986rem',
+]
+
 const themeText = {
     fonts: {
         body: '"CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif',
@@ -5,22 +17,12 @@ const themeText = {
         heading: '"CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif',
         headingAlt: '"CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif',
         display: '"Cinzel", "Times New Roman", Georgia, serif',
-        monospace: 'Inconsolata, Courier, Monaco, monospace',
+        monospace: '"Inconsolata", Courier, "Monaco", monospace',
         label: '"OpenSans", "Open Sans", Arial, Helvetica, sans-serif',
         uiHeading: '"OpenSans", "Open Sans", Arial, Helvetica, sans-serif',
         uiBody: '"Lato", Arial, Helvetica, sans-serif',
     },
-    fontSizes: [
-        '0.75rem',
-        '0.833rem',
-        '1rem',
-        '1.2rem',
-        '1.44rem',
-        '1.728rem',
-        '2.074rem',
-        '2.488rem',
-        '2.986rem',
-    ],
+    fontSizes,
     fontWeights: {
         body: 400,
         heading: 700,
@@ -30,15 +32,18 @@ const themeText = {
         body: 1.25,
         heading: 1.125,
     },
-    /** LibRext Document Roles */
+    /**
+     * VARIANTS - LibRext Document Roles
+     */
     docRoles: {
         hero: {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            data: {
+            libRextData: {
                 name: "hero",
+                typescale: "h1",
                 html: "",
                 class: "lbrxt-hero",
                 styles: []
@@ -49,8 +54,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            data: {
+            libRextData: {
                 name: "headline",
+                typescale: "h1",
                 html: "",
                 class: "lbrxt-headline",
                 styles: []
@@ -61,8 +67,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            data: {
+            libRextData: {
                 name: "title",
+                typescale: "h1",
                 html: "",
                 class: "lbrxt-title",
                 styles: []
@@ -73,8 +80,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 6,
-            data: {
+            libRextData: {
                 name: "subtitle",
+                typescale: "h3",
                 html: "",
                 class: "lbrxt-subtitle",
                 styles: []
@@ -85,8 +93,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            data: {
+            libRextData: {
                 name: "heading1",
+                typescale: "h1",
                 html: "h1",
                 class: "lbrxt-h1",
                 styles: []
@@ -97,8 +106,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 7,
-            data: {
+            libRextData: {
                 name: "heading2",
+                typescale: "h2",
                 html: "h2",
                 class: "lbrxt-h2",
                 styles: []
@@ -109,8 +119,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 6,
-            data: {
+            libRextData: {
                 name: "heading3",
+                typescale: "h3",
                 html: "h3",
                 class: "lbrxt-h3",
                 styles: []
@@ -121,8 +132,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 5,
-            data: {
+            libRextData: {
                 name: "heading4",
+                typescale: "h4",
                 html: "h4",
                 class: "lbrxt-h4",
                 styles: []
@@ -133,8 +145,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 4,
-            data: {
+            libRextData: {
                 name: "heading5",
+                typescale: "h5",
                 html: "h5",
                 class: "lbrxt-h5",
                 styles: []
@@ -145,8 +158,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 3,
-            data: {
+            libRextData: {
                 name: "heading6",
+                typescale: "h6",
                 html: "h6",
                 class: "lbrxt-h6",
                 styles: []
@@ -157,8 +171,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "body",
+                typescale: "body",
                 html: "p, span",
                 class: "lbrxt-body",
                 styles: []
@@ -169,8 +184,9 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "strong",
+                typescale: "body",
                 html: "b, strong",
                 class: "lbrxt-strong",
                 styles: []
@@ -181,8 +197,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "em",
+                typescale: "body",
                 html: "i, em",
                 class: "lbrxt-em",
                 styles: [
@@ -195,8 +212,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "link",
+                typescale: "body",
                 html: "a",
                 class: "lbrxt-link",
                 styles: []
@@ -207,8 +225,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
-            data: {
+            libRextData: {
                 name: "small",
+                typescale: "small",
                 html: "small",
                 class: "lbrxt-small",
                 styles: []
@@ -219,8 +238,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            data: {
+            libRextData: {
                 name: "tiny",
+                typescale: "tiny",
                 html: "",
                 class: "lbrxt-tiny",
                 styles: []
@@ -231,8 +251,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            data: {
+            libRextData: {
                 name: "superscript",
+                typescale: "tiny",
                 html: "sup",
                 class: "lbrxt-super",
                 styles: []
@@ -243,8 +264,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            data: {
+            libRextData: {
                 name: "subscript",
+                typescale: "tiny",
                 html: "sub",
                 class: "lbrxt-sub",
                 styles: []
@@ -255,8 +277,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
-            data: {
+            libRextData: {
                 name: "imgcaption",
+                typescale: "small",
                 html: "figcaption",
                 class: "lbrxt-imgcap",
                 styles: []
@@ -267,8 +290,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "codeinline",
+                typescale: "body",
                 html: "code",
                 class: "lbrxt-codein",
                 styles: []
@@ -279,8 +303,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "codeblock",
+                typescale: "body",
                 html: "pre",
                 class: "lbrxt-codeblk",
                 styles: []
@@ -291,8 +316,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "quote",
+                typescale: "body",
                 html: "q",
                 class: "lbrxt-quote",
                 styles: [
@@ -305,8 +331,9 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "blockquote",
+                typescale: "body",
                 html: "blockquote",
                 class: "lbrxt-bquote",
                 styles: [
@@ -319,14 +346,31 @@ const themeText = {
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            data: {
+            libRextData: {
                 name: "pullquote",
+                typescale: "body",
                 html: "",
                 class: "lbrxt-pquote",
                 styles: [
                     "italic"
                 ]
             }
+        },
+    },
+    /**
+     * DATA - 
+     */
+    libRextData: {
+        fontSizes: {
+            h1: fontSizes[8],
+            h2: fontSizes[7],
+            h3: fontSizes[6],
+            h4: fontSizes[5],
+            h5: fontSizes[4],
+            h6: fontSizes[3],
+            body: fontSizes[2],
+            small: fontSizes[1],
+            tiny: fontSizes[0],
         },
     }
 }
