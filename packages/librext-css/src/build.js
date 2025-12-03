@@ -3,4 +3,4 @@ const libRextHtmlSpecBuilder = require('./builders/html')
 
 libRextCssBuilder.build()
 
-// libRextHtmlSpecBuilder.build()
+libRextHtmlSpecBuilder.build()
