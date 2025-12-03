@@ -57,7 +57,7 @@
     <div class="palette-cell colour-bg-light">
       <div class="palette-row">
         <% for(var i=0; i < themePaletteLight.length; i++) { %>
-        <div class="palette-item palette-box">
+        <div class="palette-item palette-box" style="background-color: <%= themePaletteLight[i].colour %>;">
         </div>
         <% } %>
       </div>
@@ -66,7 +66,7 @@
     <div class="palette-cell colour-bg-dark">
       <div class="palette-row">
         <% for(var i=0; i < themePaletteDark.length; i++) { %>
-        <div class="palette-item palette-box">
+        <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
         </div>
         <% } %>
       </div>
