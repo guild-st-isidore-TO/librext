@@ -1,4 +1,4 @@
-# librext-css
+# librext-css-builder
 
 LibRext design system's vanilla CSS stylesheets.
 
