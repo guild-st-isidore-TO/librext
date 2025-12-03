@@ -1,0 +1,24 @@
+"use strict"
+
+const libRextCssFileHandler = require('./file-handler')
+const libRextCssUtil = require('./utils')
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+
+const buildLayout = () => {
+    // console.log('[LibRext CSS - LayoutBuilder] uiSpec', uiSpec);
+
+    let layoutContent = '';
+    const styleVars = []
+
+    for (const sectionLevel of layoutData.variables.sectionLevels) {
+        // const scaleVal = layoutData.layoutScale[scaleKey]
+        // const property
+        console.log('[LibRext CSS - LayoutBuilder] sectionLevel', sectionLevel)
+    }
+
+    // layoutContent += libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, styleVars);
+
+    // libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-layout.css`, layoutContent)
+}
+
+module.exports = { build: buildLayout };
