@@ -1,7 +1,7 @@
 const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-const uiSpec = require(libRextCssUtil.dataUiSpecDir)
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const buildHtmlColours = () => {
   const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`

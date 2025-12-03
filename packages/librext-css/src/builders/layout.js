@@ -2,7 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const uiSpec = require(libRextCssUtil.dataUiSpecDir)
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const buildLayout = () => {
     // console.log('[LibRext CSS - LayoutBuilder] uiSpec', uiSpec);

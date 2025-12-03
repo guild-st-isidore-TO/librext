@@ -2,7 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const uiSpec = require(libRextCssUtil.dataUiSpecDir)
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const line = '------------------------------------'
 const boldLine = '===================================='
@@ -10,7 +10,7 @@ const thickLine = '================================================'
 
 
 const buildText = () => {
-    // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
+    console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
     let prefaceContent = '/* TEXT BUILDERS */\n'
 
     const styleVars = []

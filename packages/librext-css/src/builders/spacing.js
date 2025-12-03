@@ -2,7 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const uiSpec = require(libRextCssUtil.dataUiSpecDir)
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const buildSpacing = () => {
     // console.log('[LibRext CSS - SpacingBuilder] uiSpec', uiSpec);

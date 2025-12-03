@@ -2,7 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const uiSpec = require(libRextCssUtil.dataUiSpecDir)
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -10,6 +10,7 @@ let customLocalScope = '.placeholder *'
 
 const buildBase = () => {
     // console.log('[LibRext CSS - BaseBuilder] uiSpec', uiSpec);
+
     let varsSelector = ':root'
     if (scope == 'local') {
         varsSelector = defaultLocalScope
@@ -18,14 +19,13 @@ const buildBase = () => {
     }
 
     const styleVars = []
-
-    for (const [key, value] of Object.entries(baseData.definitions.librextScale)) {
+    uiSpec.sizes.forEach((sizeNum, idx) => {
         const scaleVar = {
-            property: `librext-scale-${key.replace('ls', '')}`,
-            value: `${value}px`,
+            property: `librext-scale-${idx + 1}`,
+            value: `${sizeNum}px`,
         }
         styleVars.push(scaleVar);
-    }
+    })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-base.css`, variablesContent)
