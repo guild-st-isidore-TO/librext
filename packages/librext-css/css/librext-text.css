@@ -54,7 +54,7 @@
 .lbrxt-headline {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -78,7 +78,7 @@
 .lbrxt-subtitle {
   font-weight: body;
   font-size: var(--typescale-h3);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -91,7 +91,7 @@ h1,
 .lbrxt-h1 {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -104,7 +104,7 @@ h2,
 .lbrxt-h2 {
   font-weight: bold;
   font-size: var(--typescale-h2);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -117,7 +117,7 @@ h3,
 .lbrxt-h3 {
   font-weight: bold;
   font-size: var(--typescale-h3);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -130,7 +130,7 @@ h4,
 .lbrxt-h4 {
   font-weight: bold;
   font-size: var(--typescale-h4);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -143,7 +143,7 @@ h5,
 .lbrxt-h5 {
   font-weight: bold;
   font-size: var(--typescale-h5);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -156,7 +156,7 @@ h6,
 .lbrxt-h6 {
   font-weight: bold;
   font-size: var(--typescale-h6);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
@@ -169,7 +169,7 @@ p, span,
 .lbrxt-body {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -182,7 +182,7 @@ b, strong,
 .lbrxt-strong {
   font-weight: bold;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -195,7 +195,7 @@ i, em,
 .lbrxt-em {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
@@ -208,7 +208,7 @@ a,
 .lbrxt-link {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -221,7 +221,7 @@ small,
 .lbrxt-small {
   font-weight: body;
   font-size: var(--typescale-small);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -233,7 +233,7 @@ small,
 .lbrxt-tiny {
   font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -246,7 +246,7 @@ sup,
 .lbrxt-super {
   font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -259,7 +259,7 @@ sub,
 .lbrxt-sub {
   font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -272,7 +272,7 @@ figcaption,
 .lbrxt-imgcap {
   font-weight: body;
   font-size: var(--typescale-small);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
@@ -285,7 +285,7 @@ code,
 .lbrxt-codein {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-monospace);
   font-style: normal;
 }
 
@@ -298,7 +298,7 @@ pre,
 .lbrxt-codeblk {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-monospace);
   font-style: normal;
 }
 
@@ -311,7 +311,7 @@ q,
 .lbrxt-quote {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
@@ -324,7 +324,7 @@ blockquote,
 .lbrxt-bquote {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
@@ -336,7 +336,7 @@ blockquote,
 .lbrxt-pquote {
   font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-display);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 

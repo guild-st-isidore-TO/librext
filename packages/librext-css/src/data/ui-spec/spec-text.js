@@ -50,7 +50,7 @@ const themeText = {
             }
         },
         headline: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
@@ -76,7 +76,7 @@ const themeText = {
             }
         },
         subtitle: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "body",
             lineHeight: 'body',
             fontSize: 6,
@@ -89,7 +89,7 @@ const themeText = {
             }
         },
         heading1: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
@@ -102,7 +102,7 @@ const themeText = {
             }
         },
         heading2: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 7,
@@ -115,7 +115,7 @@ const themeText = {
             }
         },
         heading3: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 6,
@@ -128,7 +128,7 @@ const themeText = {
             }
         },
         heading4: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 5,
@@ -141,7 +141,7 @@ const themeText = {
             }
         },
         heading5: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 4,
@@ -154,7 +154,7 @@ const themeText = {
             }
         },
         heading6: {
-            fontFamily: 'display',
+            fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 3,
@@ -167,7 +167,7 @@ const themeText = {
             }
         },
         body: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -180,7 +180,7 @@ const themeText = {
             }
         },
         strong: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 2,
@@ -193,7 +193,7 @@ const themeText = {
             }
         },
         em: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -208,7 +208,7 @@ const themeText = {
             }
         },
         link: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -221,7 +221,7 @@ const themeText = {
             }
         },
         small: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
@@ -234,7 +234,7 @@ const themeText = {
             }
         },
         tiny: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
@@ -247,7 +247,7 @@ const themeText = {
             }
         },
         superscript: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
@@ -260,7 +260,7 @@ const themeText = {
             }
         },
         subscript: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
@@ -273,7 +273,7 @@ const themeText = {
             }
         },
         imgcaption: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
@@ -286,7 +286,7 @@ const themeText = {
             }
         },
         codeinline: {
-            fontFamily: 'display',
+            fontFamily: 'monospace',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -299,7 +299,7 @@ const themeText = {
             }
         },
         codeblock: {
-            fontFamily: 'display',
+            fontFamily: 'monospace',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -312,7 +312,7 @@ const themeText = {
             }
         },
         quote: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -327,7 +327,7 @@ const themeText = {
             }
         },
         blockquote: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
@@ -342,7 +342,7 @@ const themeText = {
             }
         },
         pullquote: {
-            fontFamily: 'display',
+            fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
