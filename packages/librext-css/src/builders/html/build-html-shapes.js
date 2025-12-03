@@ -29,10 +29,10 @@ const buildHtmlShapes = () => {
 
     const dataCards = []
     for (const cardSize in uiSpec.cards) {
-        return {
+        dataCards.push({
             sizeCode: cardSize,
             specText: 'Cras in lacus a dui tristique rutrum id sed.',
-        }
+        })
     }
 
     const templatePayload = {
