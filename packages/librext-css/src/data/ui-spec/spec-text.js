@@ -1,8 +1,8 @@
 const themeText = {
     fonts: {
-        body: '"CrimsonText", "Times New Roman", Georgia, serif',
-        heading: '"CormorantGaramond", "Times New Roman", Georgia, serif',
-        monospace: '"Inconsolata", Courier, Monaco, monospace',
+        body: '"CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif',
+        heading: '"CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif',
+        monospace: 'Inconsolata, Courier, Monaco, monospace',
     },
     fontSizes: [
         '0.75rem',
