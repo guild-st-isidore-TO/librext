@@ -10,7 +10,7 @@ const thickLine = '================================================'
 
 
 const buildText = () => {
-    console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
+    // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
     let prefaceContent = '/* TEXT BUILDERS */\n'
 
     const styleVars = []
@@ -139,7 +139,7 @@ const buildText = () => {
     // for (const currentDocRole of textData.variables.docroles) {
     for (const docRoleName in uiSpec.docRoles) {
         const currentDocRole = uiSpec.docRoles[docRoleName]
-        console.log('[Text Builder] currentDocRole', currentDocRole)
+        // console.log('[Text Builder] currentDocRole', currentDocRole)
 
         let weightVal = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {

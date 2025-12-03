@@ -1,3 +1,5 @@
+const libRextCssUtil = require('../../builders/utils')
+
 const librextGreyscale = [
     "#ffffff",
     "#f6f8fa",
@@ -27,38 +29,46 @@ const librextTheme = {
     "navyBlue": "#053C5F",
     "deepBlue": "#00335E"
 }
+const themeProps = {}
+// librextGreyscale.forEach((col, idx) => {
+for (const themeColName in librextTheme) {
+    const formattedColName = libRextCssUtil.capitalizeFirstLetter(themeColName)
+    themeProps[`theme${formattedColName}`] = librextTheme[themeColName]
+    // })
+}
+
+
+const lightCols = {
+    ...greyProps,
+    ...themeProps,
+    text: librextGreyscale[11],
+    background: librextGreyscale[1],
+    primary: librextTheme.oceanBlue,
+    secondary: librextTheme.orange,
+    muted: librextTheme.lightBlue,
+}
+
+const darkCols = {
+    ...greyProps,
+    ...themeProps,
+    text: librextGreyscale[0],
+    background: librextGreyscale[10],
+    primary: librextTheme.oceanBlue,
+    secondary: librextTheme.orange,
+    muted: librextTheme.lightBlue,
+}
 
 const themeColour = {
     colors: {
-        palette: {
-            grey: librextGreyscale,
-            theme: librextTheme,
-        },
-        ...greyProps,
-        ...librextTheme,
-        text: librextGreyscale[11],
-        background: librextGreyscale[1],
-        primary: librextTheme.oceanBlue,
-        secondary: librextTheme.orange,
-        muted: librextTheme.lightBlue,
+        ...lightCols,
         modes: {
-            dark: {
-                palette: {
-                    grey: librextGreyscale,
-                    theme: librextTheme,
-                },
-                ...greyProps,
-                ...librextTheme,
-                text: librextGreyscale[0],
-                background: librextGreyscale[10],
-                primary: librextTheme.oceanBlue,
-                secondary: librextTheme.orange,
-                muted: librextTheme.lightBlue,
-            },
+            dark: darkCols,
         },
     },
 }
 
 module.exports = {
+    librextGreyscale,
+    librextTheme,
     theme: themeColour,
 }

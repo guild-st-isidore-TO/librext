@@ -92,6 +92,10 @@ const getPermutationsOfArrays = (array1, array2) => {
     return resultArray
 }
 
+const capitalizeFirstLetter = (val) => {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
 module.exports = {
     writeCssVarRule,
     writeCssRule,
@@ -103,4 +107,5 @@ module.exports = {
     fontData,
     ROOT_SELECTOR,
     getPermutationsOfArrays,
+    capitalizeFirstLetter
 }
