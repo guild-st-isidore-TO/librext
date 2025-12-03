@@ -2,6 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 const line = '------------------------------------'
 const boldLine = '===================================='
@@ -9,8 +10,8 @@ const thickLine = '================================================'
 
 
 const buildText = () => {
-    const textDataFile = `${libRextCssUtil.dataDir}/text.json`
-    const textData = libRextCssFileHandler.readJsonFile(textDataFile)
+    // const textDataFile = `${libRextCssUtil.dataDir}/text.json`
+    // const textData = libRextCssFileHandler.readJsonFile(textDataFile)
     // console.log('[LibRext CSS - TextBuilder] textData', textData)
 
     // let prefaceContent = '@import "../fonts/librext-fonts.css";\n'

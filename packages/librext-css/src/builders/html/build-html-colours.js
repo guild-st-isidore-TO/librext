@@ -1,15 +1,16 @@
 const ejs = require('ejs');
-
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 const buildHtmlColours = () => {
   const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`
   const template = libRextCssFileHandler.readTemplateFile(fPath);
+  // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
   // console.log('[LibRext CSS - Build HTML Colours] template', template);
 
-  const coloursDataFile = `${libRextCssUtil.dataDir}/colours.json`
-  const coloursData = libRextCssFileHandler.readJsonFile(coloursDataFile)
+  // const coloursDataFile = `${libRextCssUtil.dataDir}/colours.json`
+  // const coloursData = libRextCssFileHandler.readJsonFile(coloursDataFile)
 
   const dataThemeLight = []
   const dataPaletteItems = []

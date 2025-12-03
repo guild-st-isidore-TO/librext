@@ -1,14 +1,14 @@
 const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 const buildHtmlTypography = () => {
-
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
 
-    const textDataFile = `${libRextCssUtil.dataDir}/text.json`
-    const textData = libRextCssFileHandler.readJsonFile(textDataFile)
+    // const textDataFile = `${libRextCssUtil.dataDir}/text.json`
+    // const textData = libRextCssFileHandler.readJsonFile(textDataFile)
 
     const dataRoles = textData.variables.docroles.map(docrole => {
         return {

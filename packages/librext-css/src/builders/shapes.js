@@ -2,6 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -15,8 +16,8 @@ const buildShapes = () => {
         varsSelector = customLocalScope
     }
 
-    const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    const shapeData = libRextCssFileHandler.readJsonFile(shapeDataFile)
+    // const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
+    // const shapeData = libRextCssFileHandler.readJsonFile(shapeDataFile)
     // console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     const styleVars = []

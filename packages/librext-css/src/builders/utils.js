@@ -18,6 +18,7 @@ const writeCssRule = (selector, propList) => {
 }
 
 const dataDir = `${__dirname}/../data`
+const dataUiSpecDir = `${__dirname}/../data/ui-spec`
 const templatesDir = `${__dirname}/html`
 const htmlOutputDir = `${__dirname}/../../docs`
 const cssOutputDir = `${__dirname}/../../css`
@@ -95,6 +96,7 @@ module.exports = {
     writeCssVarRule,
     writeCssRule,
     dataDir,
+    dataUiSpecDir,
     templatesDir,
     htmlOutputDir,
     cssOutputDir,

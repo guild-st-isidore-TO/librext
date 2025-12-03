@@ -1,15 +1,14 @@
 const ejs = require('ejs');
-
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 const buildHtmlShapes = () => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
 
-    const shapesDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    const shapesData = libRextCssFileHandler.readJsonFile(shapesDataFile)
+    // const shapesDataFile = `${libRextCssUtil.dataDir}/shapes.json`
+    // const shapesData = libRextCssFileHandler.readJsonFile(shapesDataFile)
 
     const dataBorderRadSizes = []
     for (const cRadiusSize in shapesData.definitions.cornerRadiusScale) {

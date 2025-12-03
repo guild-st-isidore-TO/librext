@@ -1,9 +1,9 @@
 "use strict"
 
-const base = require('./base').theme
-const colours = require('./colours').theme
-const shapes = require('./shapes').theme
-const text = require('./text').theme
+const base = require('./spec-base').theme
+const colours = require('./spec-colours').theme
+const shapes = require('./spec-shapes').theme
+const text = require('./spec-text').theme
 
 /**
  * Librext UI Data (conforms to Theme-UI spec)

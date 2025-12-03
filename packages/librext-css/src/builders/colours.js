@@ -2,6 +2,7 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
+const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -15,8 +16,8 @@ const buildColours = () => {
         varsSelector = customLocalScope
     }
 
-    const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
-    const colourData = libRextCssFileHandler.readJsonFile(colourDataFile)
+    // const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
+    // const colourData = libRextCssFileHandler.readJsonFile(colourDataFile)
     // console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
 
     const styleVars = []
