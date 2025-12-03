@@ -1,4 +1,4 @@
-const libRextCssUtil = require('../../builders/utils')
+const libRextCssUtil = require('../builders/utils')
 
 const librextGreyscale = [
     "#ffffff",

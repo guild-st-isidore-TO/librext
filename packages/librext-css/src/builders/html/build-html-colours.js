@@ -1,7 +1,7 @@
 const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
 const buildHtmlColours = () => {
@@ -56,7 +56,7 @@ const buildHtmlColours = () => {
     colourLayersLight: dataCollayersLight,
     colourLayersDark: dataColLayersDark,
   };
-  console.log(templatePayload);
+  // console.log(templatePayload);
 
   const output = ejs.render(template, templatePayload);
 

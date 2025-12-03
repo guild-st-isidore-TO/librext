@@ -8,7 +8,6 @@ const buildHtmlTypography = () => {
     const template = libRextCssFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
 
-    // const dataRoles = textData.variables.docroles.map(docrole => {
     const dataRoles = []
     for (const dataRole in uiSpec.docRoles) {
         const docrole = uiSpec.docRoles[dataRole]
@@ -27,7 +26,6 @@ const buildHtmlTypography = () => {
         roles: dataRoles,
     };
     const filledTemplate = ejs.render(template, templatePayload);
-    // console.log(filledTemplate);
 
     const outfilePath = `${libRextCssUtil.htmlOutputDir}/typography.html`;
     libRextCssFileHandler.writeFile(outfilePath, filledTemplate);

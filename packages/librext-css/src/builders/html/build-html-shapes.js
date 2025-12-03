@@ -17,8 +17,6 @@ const buildHtmlShapes = () => {
         })
     }
 
-    const dataElementHeightSizes = []
-
     const dataBoxShadowSizes = []
     for (const bShadowSize in uiSpec.shadows) {
         const currentShadowSize = uiSpec.shadows[bShadowSize];
@@ -29,24 +27,11 @@ const buildHtmlShapes = () => {
         })
     }
 
-    const dataWidgetSizes = []
-
-    // const cardDefinitions = shapesData.variables.shapeDefinitions.filter(shapeDef => shapeDef.name.startsWith('card'))
     const dataCards = []
     for (const cardSize in uiSpec.cards) {
-        const shapeDef = uiSpec.cards[cardSize]
-        // const nameParts = shapeDef.name.split('.')
-        // const sizeSuffix = nameParts[1]
-
         return {
             sizeCode: cardSize,
             specText: 'Cras in lacus a dui tristique rutrum id sed.',
-            // name: shapeDef.name,
-            // height: shapeDef.height,
-            // background: shapeDef.background,
-            // padding: shapeDef.padding,
-            // boxShadow: shapeDef.boxShadow,
-            // cornerRadius: shapeDef.cornerRadius,
         }
     }
 
@@ -58,8 +43,6 @@ const buildHtmlShapes = () => {
     };
 
     const output = ejs.render(template, templatePayload);
-
-    // console.log(output);
     const outfilePath = `${libRextCssUtil.htmlOutputDir}/shapes.html`;
     libRextCssFileHandler.writeFile(outfilePath, output);
 }

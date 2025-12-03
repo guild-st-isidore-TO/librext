@@ -25,8 +25,6 @@ const buildShapes = () => {
 
     let shapesContent = ''
 
-    // const cRadiusScale = shapeData.definitions.cornerRadiusScale
-    // for (const [key, value] of Object.entries(cRadiusScale)) {
     uiSpec.radii.forEach((radVal, idx) => {
         const cRadiusEntry = {
             property: `cor-radius-${idx + 1}`,
@@ -42,23 +40,10 @@ const buildShapes = () => {
         }
         styleVars.push(heightEntry);
     }
-
-    // console.log('[LibRext CSS - ShapesBuilder] styleVars', styleVars)
-
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
-    // uiSpec.cards.forEach((shapeDef, idx) => {
     for (const [cardType, cardData] of Object.entries(uiSpec.cards)) {
-        console.log('[LibRext CSS - ShapesBuilder] cardType', cardType)
-        console.log('[LibRext CSS - ShapesBuilder] cardData', cardData)
-        // const selectorParts = shapeDef.name.split('.')
-        // const selectorBase = selectorParts[0]
-        // const selectorSize = cardType
-
         const selector = `.card.${cardType}`
-        // const shadowScaleVal = shapeData.definitions.boxShadowScale[cardData.boxShadow]
-        // const boxShadowVal = `${shadowScaleVal.len} ${shadowScaleVal.len} ${shadowScaleVal.blur} var(--grey-10)`
-
         const props = [
             {
                 property: 'height',
