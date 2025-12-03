@@ -10,8 +10,12 @@ const librextGreyscale = [
     "#424a53",
     "#32383f",
     "#24292f",
-    "#000000"
+    "#000000",
 ]
+const greyProps = {}
+librextGreyscale.forEach((col, idx) => {
+    greyProps[`grey${idx}`] = col
+})
 
 const librextTheme = {
     "khaki": "#EADFB4",
@@ -30,22 +34,26 @@ const themeColour = {
             grey: librextGreyscale,
             theme: librextTheme,
         },
-        text: '#000',
-        background: '#fff',
-        primary: '#07c',
-        secondary: '#05a',
-        muted: '#f6f6f6',
+        ...greyProps,
+        ...librextTheme,
+        text: librextGreyscale[11],
+        background: librextGreyscale[1],
+        primary: librextTheme.oceanBlue,
+        secondary: librextTheme.orange,
+        muted: librextTheme.lightBlue,
         modes: {
             dark: {
                 palette: {
                     grey: librextGreyscale,
                     theme: librextTheme,
                 },
-                text: '#fff',
-                background: '#000',
-                primary: '#0cf',
-                secondary: '#09c',
-                muted: '#111',
+                ...greyProps,
+                ...librextTheme,
+                text: librextGreyscale[0],
+                background: librextGreyscale[10],
+                primary: librextTheme.oceanBlue,
+                secondary: librextTheme.orange,
+                muted: librextTheme.lightBlue,
             },
         },
     },
