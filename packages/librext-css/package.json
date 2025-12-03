@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node src/build.js",
-    "build-html": "node src/builders/html/test.js",
     "dev": "npx http-server . -c-1"
   },
   "author": "R. J. Salvador",

@@ -1,45 +1,33 @@
 /* TEXT BUILDERS */
 
 :root {
-  --fontfam-serif-1: "CrimsonText", "Times New Roman", Georgia, serif;
-  --fontfam-serif-2: "CormorantGaramond", "Times New Roman", Georgia, serif;
-  --fontfam-serif-3: "Cinzel", "Times New Roman", Georgia, serif;
-  --fontfam-sans-1: "OpenSans", Arial, Helvetica, sans-serif;
-  --fontfam-sans-2: "Lato", Arial, Helvetica, sans-serif;
-  --fontfam-monospace-1: "Inconsolata", Courier, Monaco, monospace;
-  --fontfam-monospace-2: "Inconsolata", Courier, Monaco, monospace;
-  --typescale-1: 2.986rem;
-  --typescale-h1: 2.986rem;
-  --typescale-2: 2.488rem;
-  --typescale-h2: 2.488rem;
-  --typescale-3: 2.074rem;
-  --typescale-h3: 2.074rem;
-  --typescale-4: 1.728rem;
-  --typescale-h4: 1.728rem;
+  --fontfam-body: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+  --fontfam-bodyAlt: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --fontfam-heading: "CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --fontfam-headingAlt: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+  --fontfam-display: "Cinzel", "Times New Roman", Georgia, serif;
+  --fontfam-monospace: "Inconsolata", Courier, "Monaco", monospace;
+  --fontfam-label: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --fontfam-uiHeading: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --fontfam-uiBody: "Lato", Arial, Helvetica, sans-serif;
+  --typescale-1: 0.75rem;
+  --typescale-2: 0.833rem;
+  --typescale-3: 1rem;
+  --typescale-4: 1.2rem;
   --typescale-5: 1.44rem;
+  --typescale-6: 1.728rem;
+  --typescale-7: 2.074rem;
+  --typescale-8: 2.488rem;
+  --typescale-9: 2.986rem;
+  --typescale-h1: 2.986rem;
+  --typescale-h2: 2.488rem;
+  --typescale-h3: 2.074rem;
+  --typescale-h4: 1.728rem;
   --typescale-h5: 1.44rem;
-  --typescale-6: 1.2rem;
   --typescale-h6: 1.2rem;
-  --typescale-7: 1rem;
   --typescale-body: 1rem;
-  --typescale-8: 0.833rem;
   --typescale-small: 0.833rem;
-  --typescale-9: 0.75rem;
   --typescale-tiny: 0.75rem;
-  --fontfam-display-1: var(--fontfam-serif-3);
-  --fontfam-display-2: var(--fontfam-serif-2);
-  --fontfam-title-1: var(--fontfam-serif-2);
-  --fontfam-title-2: var(--fontfam-serif-3);
-  --fontfam-label-1: var(--fontfam-sans-2);
-  --fontfam-label-2: var(--fontfam-sans-1);
-  --fontfam-heading-1: var(--fontfam-serif-2);
-  --fontfam-heading-2: var(--fontfam-serif-1);
-  --fontfam-body-1: var(--fontfam-serif-1);
-  --fontfam-body-2: var(--fontfam-sans-1);
-  --fontfam-code-1: var(--fontfam-monospace-1);
-  --fontfam-code-2: var(--fontfam-monospace-1);
-  --fontfam-ui-1: var(--fontfam-sans-1);
-  --fontfam-ui-2: var(--fontfam-monospace-1);
 }
 
 /* ================================================ *\
@@ -49,330 +37,306 @@
 /* ==================================== *\
  *  hero
  * ------------------------------------
- *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-hero {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display-1);
+  font-family: var(--fontfam-display);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  headline
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-headline {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  title
  * ------------------------------------
- *    typerole = display.1
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-title {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display-1);
+  font-family: var(--fontfam-display);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  subtitle
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
 .lbrxt-subtitle {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-h3);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading1
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h1
 \* ------------------------------------ */
 h1,
 .lbrxt-h1 {
   font-weight: bold;
   font-size: var(--typescale-h1);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading2
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h2
 \* ------------------------------------ */
 h2,
 .lbrxt-h2 {
   font-weight: bold;
   font-size: var(--typescale-h2);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading3
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h3
 \* ------------------------------------ */
 h3,
 .lbrxt-h3 {
   font-weight: bold;
   font-size: var(--typescale-h3);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading4
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h4
 \* ------------------------------------ */
 h4,
 .lbrxt-h4 {
   font-weight: bold;
   font-size: var(--typescale-h4);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading5
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h5
 \* ------------------------------------ */
 h5,
 .lbrxt-h5 {
   font-weight: bold;
   font-size: var(--typescale-h5);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  heading6
  * ------------------------------------
- *    typerole = heading.1
  *    typescale size = h6
 \* ------------------------------------ */
 h6,
 .lbrxt-h6 {
   font-weight: bold;
   font-size: var(--typescale-h6);
-  font-family: var(--fontfam-heading-1);
+  font-family: var(--fontfam-heading);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  body
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 p, span,
 .lbrxt-body {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  strong
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 b, strong,
 .lbrxt-strong {
   font-weight: bold;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  em
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 i, em,
 .lbrxt-em {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
 /* ==================================== *\
  *  link
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 a,
 .lbrxt-link {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  small
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
 small,
 .lbrxt-small {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-small);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  tiny
  * ------------------------------------
- *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 .lbrxt-tiny {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body-2);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  superscript
  * ------------------------------------
- *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 sup,
 .lbrxt-super {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body-2);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  subscript
  * ------------------------------------
- *    typerole = body.2
  *    typescale size = tiny
 \* ------------------------------------ */
 sub,
 .lbrxt-sub {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body-2);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  imgcaption
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = small
 \* ------------------------------------ */
 figcaption,
 .lbrxt-imgcap {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-small);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  codeinline
  * ------------------------------------
- *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
 code,
 .lbrxt-codein {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-code-1);
+  font-family: var(--fontfam-monospace);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  codeblock
  * ------------------------------------
- *    typerole = code.1.1
  *    typescale size = body
 \* ------------------------------------ */
 pre,
 .lbrxt-codeblk {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-code-1);
+  font-family: var(--fontfam-monospace);
   font-style: normal;
 }
 
 /* ==================================== *\
  *  quote
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 q,
 .lbrxt-quote {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
 /* ==================================== *\
  *  blockquote
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 blockquote,
 .lbrxt-bquote {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 
 /* ==================================== *\
  *  pullquote
  * ------------------------------------
- *    typerole = body.1
  *    typescale size = body
 \* ------------------------------------ */
 .lbrxt-pquote {
-  font-weight: normal;
+  font-weight: body;
   font-size: var(--typescale-body);
-  font-family: var(--fontfam-body-1);
+  font-family: var(--fontfam-body);
   font-style: italic;
 }
 

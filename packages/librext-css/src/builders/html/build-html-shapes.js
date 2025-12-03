@@ -1,30 +1,25 @@
 const ejs = require('ejs');
-
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const buildHtmlShapes = () => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
-
-    const shapesDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    const shapesData = libRextCssFileHandler.readJsonFile(shapesDataFile)
+    // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
 
     const dataBorderRadSizes = []
-    for (const cRadiusSize in shapesData.definitions.cornerRadiusScale) {
-        const currentRadSize = shapesData.definitions.cornerRadiusScale[cRadiusSize];
+    for (const cRadiusSize in uiSpec.radii) {
+        const currentRadSize = uiSpec.radii[cRadiusSize];
         dataBorderRadSizes.push({
             sizeCode: cRadiusSize,
             lenVar: currentRadSize,
         })
     }
 
-    const dataElementHeightSizes = []
-
     const dataBoxShadowSizes = []
-    for (const bShadowSize in shapesData.definitions.boxShadowScale) {
-        const currentShadowSize = shapesData.definitions.boxShadowScale[bShadowSize];
+    for (const bShadowSize in uiSpec.shadows) {
+        const currentShadowSize = uiSpec.shadows[bShadowSize];
         dataBoxShadowSizes.push({
             sizeCode: bShadowSize,
             len: currentShadowSize.len,
@@ -32,23 +27,13 @@ const buildHtmlShapes = () => {
         })
     }
 
-    const dataWidgetSizes = []
-
-    const cardDefinitions = shapesData.variables.shapeDefinitions.filter(shapeDef => shapeDef.name.startsWith('card'))
-    const dataCards = cardDefinitions.map(shapeDef => {
-        const nameParts = shapeDef.name.split('.')
-        const sizeSuffix = nameParts[1]
-        return {
-            sizeCode: sizeSuffix,
+    const dataCards = []
+    for (const cardSize in uiSpec.cards) {
+        dataCards.push({
+            sizeCode: cardSize,
             specText: 'Cras in lacus a dui tristique rutrum id sed.',
-            name: shapeDef.name,
-            height: shapeDef.height,
-            background: shapeDef.background,
-            padding: shapeDef.padding,
-            boxShadow: shapeDef.boxShadow,
-            cornerRadius: shapeDef.cornerRadius,
-        }
-    })
+        })
+    }
 
     const templatePayload = {
         borderRadiusSizes: dataBorderRadSizes,
@@ -58,8 +43,6 @@ const buildHtmlShapes = () => {
     };
 
     const output = ejs.render(template, templatePayload);
-
-    // console.log(output);
     const outfilePath = `${libRextCssUtil.htmlOutputDir}/shapes.html`;
     libRextCssFileHandler.writeFile(outfilePath, output);
 }

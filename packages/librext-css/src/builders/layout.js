@@ -2,11 +2,10 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
+const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const buildLayout = () => {
-    const layoutDataFile = `${libRextCssUtil.dataDir}/layout.json`
-    const layoutData = libRextCssFileHandler.readJsonFile(layoutDataFile)
-    // console.log('[LibRext CSS - LayoutBuilder] layoutData', layoutData)
+    // console.log('[LibRext CSS - LayoutBuilder] uiSpec', uiSpec);
 
     let layoutContent = '';
     const styleVars = []

@@ -20,4 +20,25 @@
   --librext-scale-19: 72px;
   --librext-scale-20: 84px;
   --librext-scale-21: 96px;
+  --librext-space-1: 4px;
+  --librext-space-2: 6px;
+  --librext-space-3: 8px;
+  --librext-space-4: 9px;
+  --librext-space-5: 10px;
+  --librext-space-6: 12px;
+  --librext-space-7: 14px;
+  --librext-space-8: 16px;
+  --librext-space-9: 18px;
+  --librext-space-10: 20px;
+  --librext-space-11: 24px;
+  --librext-space-12: 28px;
+  --librext-space-13: 32px;
+  --librext-space-14: 36px;
+  --librext-space-15: 42px;
+  --librext-space-16: 48px;
+  --librext-space-17: 60px;
+  --librext-space-18: 60px;
+  --librext-space-19: 72px;
+  --librext-space-20: 84px;
+  --librext-space-21: 96px;
 }

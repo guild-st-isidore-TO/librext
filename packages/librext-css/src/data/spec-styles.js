@@ -1,4 +1,4 @@
-const themeBase = {
+const themeStyles = {
     styles: {
         root: {
             fontFamily: 'body',
@@ -9,5 +9,5 @@ const themeBase = {
 }
 
 module.exports = {
-    theme: themeBase,
+    theme: themeStyles,
 }

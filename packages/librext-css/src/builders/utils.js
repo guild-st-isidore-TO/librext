@@ -18,6 +18,7 @@ const writeCssRule = (selector, propList) => {
 }
 
 const dataDir = `${__dirname}/../data`
+const dataUiSpecDir = dataDir
 const templatesDir = `${__dirname}/html`
 const htmlOutputDir = `${__dirname}/../../docs`
 const cssOutputDir = `${__dirname}/../../css`
@@ -91,14 +92,20 @@ const getPermutationsOfArrays = (array1, array2) => {
     return resultArray
 }
 
+const capitalizeFirstLetter = (val) => {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
 module.exports = {
     writeCssVarRule,
     writeCssRule,
     dataDir,
+    dataUiSpecDir,
     templatesDir,
     htmlOutputDir,
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
     getPermutationsOfArrays,
+    capitalizeFirstLetter
 }
