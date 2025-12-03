@@ -6,9 +6,7 @@ const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 const buildHtmlShapes = () => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
-
-    // const shapesDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    // const shapesData = libRextCssFileHandler.readJsonFile(shapesDataFile)
+    // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
 
     const dataBorderRadSizes = []
     for (const cRadiusSize in shapesData.definitions.cornerRadiusScale) {

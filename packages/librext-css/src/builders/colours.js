@@ -9,6 +9,7 @@ const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
 const buildColours = () => {
+    // console.log('[LibRext CSS - ColourBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {
         varsSelector = defaultLocalScope
@@ -16,14 +17,9 @@ const buildColours = () => {
         varsSelector = customLocalScope
     }
 
-    // const colourDataFile = `${libRextCssUtil.dataDir}/colours.json`
-    // const colourData = libRextCssFileHandler.readJsonFile(colourDataFile)
-    // console.log('[LibRext CSS - ColourBuilder] colourData', colourData)
-
     const styleVars = []
 
     const greyPalette = colourData.variables.palette.grey
-    // for (const [key, value] of Object.entries(greyPalette)) {
     greyPalette.forEach((val, idx) => {
         const greyEntry = {
             property: `grey-${idx}`,

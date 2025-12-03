@@ -9,16 +9,13 @@ const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
 const buildShapes = () => {
+    // console.log('[LibRext CSS - ShapesBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {
         varsSelector = defaultLocalScope
     } else if (scope == 'custom') {
         varsSelector = customLocalScope
     }
-
-    // const shapeDataFile = `${libRextCssUtil.dataDir}/shapes.json`
-    // const shapeData = libRextCssFileHandler.readJsonFile(shapeDataFile)
-    // console.log('[LibRext CSS - ShapesBuilder] shapeData', shapeData)
 
     const styleVars = []
 

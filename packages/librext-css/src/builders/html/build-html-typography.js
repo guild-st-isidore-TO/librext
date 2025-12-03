@@ -6,9 +6,7 @@ const uiSpec = require(libRextCssUtil.dataUiSpecDir)
 const buildHtmlTypography = () => {
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
-
-    // const textDataFile = `${libRextCssUtil.dataDir}/text.json`
-    // const textData = libRextCssFileHandler.readJsonFile(textDataFile)
+    // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
 
     const dataRoles = textData.variables.docroles.map(docrole => {
         return {
@@ -21,18 +19,6 @@ const buildHtmlTypography = () => {
             spec: 'The quick brown fox jumps over the lazy dog.',
         }
     })
-
-    // const outRoles = dataRoles.map(role => {
-    //     let infoString = `${role.name}<br/>`
-    //     infoString += `Weight: ${role.weight}<br/>`
-    //     infoString += `Typescale: ${role.typescale}<br/>`
-    //     infoString += `HTML Tags: ${role.htmlTags}<br/>`
-    //     infoString += `CSS Class: ${role.htmlClass}<br/>`
-    //     return {
-    //         spec: 'Vivamus semper facilisis massa sit',
-    //         info: infoString
-    //     }
-    // })
 
     const templatePayload = {
         roles: dataRoles,
