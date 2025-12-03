@@ -3,64 +3,52 @@
 @import "./librext-colours.css";
 
 :root {
-  --cor-radius-xs: var(--librext-scale-1);
-  --cor-radius-sm: var(--librext-scale-3);
-  --cor-radius-md: var(--librext-scale-6);
-  --cor-radius-lg: var(--librext-scale-8);
-  --cor-radius-xl: var(--librext-scale-10);
-  --cor-radius-xxl: var(--librext-scale-12);
-  --cor-radius-xxxl: var(--librext-scale-13);
-  --cor-radius-4xl: var(--librext-scale-16);
-  --height-xs: var(--librext-scale-6);
-  --height-sm: var(--librext-scale-8);
-  --height-md: var(--librext-scale-10);
-  --height-lg: var(--librext-scale-12);
-  --height-xl: var(--librext-scale-14);
-  --height-xxl: var(--librext-scale-16);
-  --height-xxxl: var(--librext-scale-18);
-  --height-4xl: var(--librext-scale-20);
-  --height-5xl: var(--librext-scale-21);
+  --cor-radius-1: 0;
+  --cor-radius-2: 2px;
+  --cor-radius-3: 4px;
+  --cor-radius-4: 6px;
+  --cor-radius-5: 8px;
+  --cor-radius-6: 10px;
+  --widget-ht-xs: 5px;
+  --widget-ht-sm: 7px;
+  --widget-ht-md: 9px;
+  --widget-ht-lg: 11px;
+  --widget-ht-xl: 13px;
 }
 
 .card.xs {
-  height: var(--height-xs);
-  border-radius: var(--cor-radius-xs);
-  padding: var(--space-xs);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 1px 1px 2px var(--grey-10);
+  height: 12px;
+  border-radius: 2px;
+  padding: 4px;
+  box-shadow: 1px 1px 2px #24292f;
 }
 .card.sm {
-  height: var(--height-sm);
-  border-radius: var(--cor-radius-sm);
-  padding: var(--space-sm);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 2px 2px 2px var(--grey-10);
+  height: 16px;
+  border-radius: 4px;
+  padding: 6px;
+  box-shadow: 2px 2px 2px #24292f;
 }
 .card.md {
-  height: var(--height-md);
-  border-radius: var(--cor-radius-md);
-  padding: var(--space-md);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 3px 3px 3px var(--grey-10);
+  height: 20px;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 3px 3px 3px #24292f;
 }
 .card {
-  height: var(--height-md);
-  border-radius: var(--cor-radius-md);
-  padding: var(--space-md);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 3px 3px 3px var(--grey-10);
+  height: 20px;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 3px 3px 3px #24292f;
 }
 .card.lg {
-  height: var(--height-lg);
-  border-radius: var(--cor-radius-lg);
-  padding: var(--space-lg);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 4px 4px 4px var(--grey-10);
+  height: 28px;
+  border-radius: 8px;
+  padding: 9px;
+  box-shadow: 4px 4px 4px #24292f;
 }
 .card.xl {
-  height: var(--height-xl);
-  border-radius: var(--cor-radius-xl);
-  padding: var(--space-xl);
-  background-color: var(--col-altsurface-light);
-  box-shadow: 5px 5px 4px var(--grey-10);
+  height: 36px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 4px #24292f;
 }

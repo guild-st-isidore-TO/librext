@@ -9,7 +9,7 @@ const build = () => {
         base: require('./base').build(),
         text: require('./text').build(),
         colours: require('./colours').build(),
-        // shapes: require('./shapes').build(),
+        shapes: require('./shapes').build(),
     }
 }
 

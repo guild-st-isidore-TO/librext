@@ -26,6 +26,14 @@ const buildBase = () => {
         }
         styleVars.push(scaleVar);
     })
+    
+    uiSpec.space.forEach((spaceNum, idx) => {
+        const scaleVar = {
+            property: `librext-space-${idx + 1}`,
+            value: `${spaceNum}px`,
+        }
+        styleVars.push(scaleVar);
+    })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
     libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-base.css`, variablesContent)

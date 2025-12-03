@@ -4,6 +4,7 @@ const base = require('./spec-base').theme
 const colours = require('./spec-colours').theme
 const shapes = require('./spec-shapes').theme
 const text = require('./spec-text').theme
+const styles = require('./spec-styles').theme
 const librext = require('./spec-librext').theme
 
 /**
@@ -11,10 +12,11 @@ const librext = require('./spec-librext').theme
  * @namespace uiSpec
  */
 const uiSpec = {
+    ...base,
     ...text,
     ...colours,
     ...shapes,
-    ...base,
+    ...styles,
     ...librext,
 }
 

@@ -25,19 +25,20 @@ const buildShapes = () => {
 
     let shapesContent = ''
 
-    const cRadiusScale = shapeData.definitions.cornerRadiusScale
-    for (const [key, value] of Object.entries(cRadiusScale)) {
+    // const cRadiusScale = shapeData.definitions.cornerRadiusScale
+    // for (const [key, value] of Object.entries(cRadiusScale)) {
+    uiSpec.radii.forEach((radVal, idx) => {
         const cRadiusEntry = {
-            property: `cor-radius-${key}`,
-            value: `var(--librext-scale-${value.replace('ls', '')})`,
+            property: `cor-radius-${idx + 1}`,
+            value: radVal,
         }
         styleVars.push(cRadiusEntry);
-    }
+    })
 
-    for (const [key, value] of Object.entries(shapeData.definitions.elementHeightScale)) {
+    for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
-            property: `height-${key}`,
-            value: `var(--librext-scale-${value.replace('ls', '')})`,
+            property: `widget-ht-${widgetHtKey}`,
+            value: `${widgetHtVars.height}px`,
         }
         styleVars.push(heightEntry);
     }
@@ -46,45 +47,42 @@ const buildShapes = () => {
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
-    shapeData.variables.shapeDefinitions.forEach((shapeDef, idx) => {
-        const selectorParts = shapeDef.name.split('.')
-        const selectorBase = selectorParts[0]
-        const selectorSize = selectorParts[1]
+    // uiSpec.cards.forEach((shapeDef, idx) => {
+    for (const [cardType, cardData] of Object.entries(uiSpec.cards)) {
+        console.log('[LibRext CSS - ShapesBuilder] cardType', cardType)
+        console.log('[LibRext CSS - ShapesBuilder] cardData', cardData)
+        // const selectorParts = shapeDef.name.split('.')
+        // const selectorBase = selectorParts[0]
+        // const selectorSize = cardType
 
-        const selector = `.${shapeDef.name}`
-
-        const shadowScaleVal = shapeData.definitions.boxShadowScale[shapeDef.boxShadow]
-        const boxShadowVal = `${shadowScaleVal.len} ${shadowScaleVal.len} ${shadowScaleVal.blur} var(--grey-10)`
+        const selector = `.card.${cardType}`
+        // const shadowScaleVal = shapeData.definitions.boxShadowScale[cardData.boxShadow]
+        // const boxShadowVal = `${shadowScaleVal.len} ${shadowScaleVal.len} ${shadowScaleVal.blur} var(--grey-10)`
 
         const props = [
             {
                 property: 'height',
-                value: `var(--height-${shapeDef.height})`,
+                value: `${uiSpec.sizes[cardData.height]}px`,
             },
             {
                 property: 'border-radius',
-                value: `var(--cor-radius-${shapeDef.cornerRadius})`,
+                value: uiSpec.radii[cardData.borderRadius],
             },
             {
                 property: 'padding',
-                value: `var(--space-${shapeDef.padding})`,
-            },
-            {
-                property: 'background-color',
-                value: `var(--col-${shapeDef.background}-light)`,
+                value: `${uiSpec.space[cardData.padding]}px`,
             },
             {
                 property: 'box-shadow',
-                value: boxShadowVal,
+                value: uiSpec.shadows[cardData.boxShadow],
             },
         ]
         shapesContent += libRextCssUtil.writeCssRule(selector, props)
 
-        if (selectorSize && selectorSize == 'md') {
-            shapesContent += libRextCssUtil.writeCssRule(`.${selectorBase}`, props)
+        if (cardType == 'md') {
+            shapesContent += libRextCssUtil.writeCssRule('.card', props)
         }
-
-    })
+    }
 
     const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent
 
