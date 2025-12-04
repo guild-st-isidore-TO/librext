@@ -1,4 +1,4 @@
-const libRextCssUtil = require('../builders/utils')
+import libRextCssUtil from './utils.js'
 
 const librextGreyscale = [
     "#ffffff",
@@ -67,8 +67,11 @@ const themeColour = {
     },
 }
 
-module.exports = {
-    librextGreyscale,
-    librextTheme,
-    theme: themeColour,
-}
+// module.exports = {
+//     librextGreyscale,
+//     librextTheme,
+//     theme: themeColour,
+// }
+
+export default themeColour
+export { themeColour as theme, librextGreyscale, librextTheme }

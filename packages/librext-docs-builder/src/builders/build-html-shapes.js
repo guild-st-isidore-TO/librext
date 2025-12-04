@@ -1,7 +1,6 @@
-const ejs = require('ejs');
-const libRextCssFileHandler = require('../file-handler')
-const libRextCssUtil = require('../utils')
-// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+import ejs from 'ejs';
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 const buildHtmlShapes = (uiSpec, outputDir) => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
@@ -47,4 +46,5 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
     libRextCssFileHandler.writeFile(outfilePath, output);
 }
 
-module.exports = { build: buildHtmlShapes };
+// module.exports = { build: buildHtmlShapes };
+export default buildHtmlShapes

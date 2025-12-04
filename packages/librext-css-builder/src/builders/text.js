@@ -1,8 +1,7 @@
 "use strict"
 
-const libRextCssFileHandler = require('./file-handler')
-const libRextCssUtil = require('./utils')
-// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 const line = '------------------------------------'
 const boldLine = '===================================='
@@ -85,4 +84,5 @@ const buildText = (uiSpec, outputDir) => {
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-text.css`, allContent)
 }
 
-module.exports = { build: buildText };
+// module.exports = { build: buildText };
+export default buildText

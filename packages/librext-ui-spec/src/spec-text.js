@@ -359,7 +359,10 @@ const themeText = {
     }
 }
 
-module.exports = {
-    fontSizes,
-    theme: themeText,
-}
+// module.exports = {
+//     fontSizes,
+//     theme: themeText,
+// }
+
+export default themeText
+export { themeText as theme, fontSizes }

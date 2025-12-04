@@ -1,7 +1,6 @@
-const ejs = require('ejs');
-const libRextCssFileHandler = require('../file-handler')
-const libRextCssUtil = require('../utils')
-// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+import ejs from 'ejs';
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 const buildHtmlTypography = (uiSpec, outputDir) => {
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
@@ -31,4 +30,5 @@ const buildHtmlTypography = (uiSpec, outputDir) => {
     libRextCssFileHandler.writeFile(outfilePath, filledTemplate);
 }
 
-module.exports = { build: buildHtmlTypography };
+// module.exports = { build: buildHtmlTypography };
+export default buildHtmlTypography

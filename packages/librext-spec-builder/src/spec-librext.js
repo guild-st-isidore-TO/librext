@@ -1,6 +1,6 @@
-const fontSizes = require('./spec-text').fontSizes
-const librextGreyscale = require('./spec-colours').librextGreyscale
-const librextTheme = require('./spec-colours').librextTheme
+import { fontSizes } from './spec-text.js'
+import { librextGreyscale } from './spec-colours.js'
+import { librextTheme } from './spec-colours.js'
 
 const themeLibRext = {
     /**
@@ -25,6 +25,8 @@ const themeLibRext = {
     }
 }
 
-module.exports = {
-    theme: themeLibRext,
-}
+// module.exports = {
+//     theme: themeLibRext,
+// }
+
+export default themeLibRext

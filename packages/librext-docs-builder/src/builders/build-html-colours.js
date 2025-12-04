@@ -1,8 +1,6 @@
-const ejs = require('ejs');
-const libRextCssFileHandler = require('../file-handler')
-const libRextCssUtil = require('../utils')
-// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
-// const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
+import ejs from 'ejs';
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 const buildHtmlColours = (uiSpec, outputDir) => {
   const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`
@@ -67,4 +65,5 @@ const buildHtmlColours = (uiSpec, outputDir) => {
 
 }
 
-module.exports = { build: buildHtmlColours };
+// module.exports = { build: buildHtmlColours };
+export default buildHtmlColours

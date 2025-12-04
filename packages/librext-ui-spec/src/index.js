@@ -1,11 +1,11 @@
 "use strict"
 
-import { theme as base } from './spec-base'
-import { theme as colours } from './spec-colours'
-import { theme as shapes } from './spec-shapes'
-import { theme as text } from './spec-text'
-import { theme as styles } from './spec-styles'
-import { theme as librext } from './spec-librext'
+import base from './spec-base.js'
+import colours from './spec-colours.js'
+import shapes from './spec-shapes.js'
+import text from './spec-text.js'
+import styles from './spec-styles.js'
+import librext from './spec-librext.js'
 
 /**
  * Librext UI Data (conforms to Theme-UI spec)

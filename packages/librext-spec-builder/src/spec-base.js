@@ -48,6 +48,8 @@ const themeBase = {
     ],
 }
 
-module.exports = {
-    theme: themeBase,
-}
+// module.exports = {
+//     theme: themeBase,
+// }
+
+export default themeBase

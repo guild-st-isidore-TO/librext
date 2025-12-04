@@ -1,8 +1,11 @@
 "use strict"
 
-const libRextCssFileHandler = require('./file-handler')
-const libRextCssUtil = require('./utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 const buildLayout = () => {
     // console.log('[LibRext CSS - LayoutBuilder] uiSpec', uiSpec);

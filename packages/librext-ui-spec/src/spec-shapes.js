@@ -64,6 +64,8 @@ const themeShape = {
     }
 }
 
-module.exports = {
-    theme: themeShape,
-}
+// module.exports = {
+//     theme: themeShape,
+// }
+
+export default themeShape

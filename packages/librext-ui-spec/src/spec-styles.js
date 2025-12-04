@@ -8,6 +8,7 @@ const themeStyles = {
     },
 }
 
-module.exports = {
-    theme: themeStyles,
-}
+// module.exports = {
+//     theme: themeStyles,
+// }
+export default themeStyles

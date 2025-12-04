@@ -1,8 +1,11 @@
 "use strict"
-
-import buildHtmlColours from './build-html-colours'
-import buildHtmlShapes from './build-html-shapes'
-import buildHtmlTypography from './build-html-typography'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+import buildHtmlColours from './build-html-colours.js'
+import buildHtmlShapes from './build-html-shapes.js'
+import buildHtmlTypography from './build-html-typography.js'
 
 const defaultOutputDir = `${__dirname}/../../dist`
 

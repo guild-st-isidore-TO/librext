@@ -1,9 +1,13 @@
 "use strict"
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-import baseBuilder from './base'
-import textBuilder from './text'
-import coloursBuilder from './colours'
-import shapesBuilder from './shapes'
+import baseBuilder from './base.js'
+import textBuilder from './text.js'
+import coloursBuilder from './colours.js'
+import shapesBuilder from './shapes.js'
 
 const defaultOutputDir = `${__dirname}/../../dist`
 

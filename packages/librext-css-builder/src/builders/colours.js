@@ -1,8 +1,7 @@
 "use strict"
 
-const libRextCssFileHandler = require('./file-handler')
-const libRextCssUtil = require('./utils')
-// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+import libRextCssFileHandler from './file-handler.js'
+import libRextCssUtil from './utils.js'
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -49,4 +48,5 @@ const buildColours = (uiSpec, outputDir) => {
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-colours.css`, allContent)
 }
 
-module.exports = { build: buildColours };
+// module.exports = { build: buildColours };
+export default buildColours
