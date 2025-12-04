@@ -1,9 +1,9 @@
 const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
-const buildHtmlShapes = () => {
+const buildHtmlShapes = (uiSpec, outputDir) => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
@@ -43,7 +43,7 @@ const buildHtmlShapes = () => {
     };
 
     const output = ejs.render(template, templatePayload);
-    const outfilePath = `${libRextCssUtil.htmlOutputDir}/shapes.html`;
+    const outfilePath = `${outputDir}/shapes.html`;
     libRextCssFileHandler.writeFile(outfilePath, output);
 }
 

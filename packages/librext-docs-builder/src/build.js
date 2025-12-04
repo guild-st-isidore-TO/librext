@@ -4,6 +4,6 @@ import libRextDocsBuilder from './builders'
 
 const outDir = `${__dirname}/../../../docs`
 
-libRextCssBuilder(outDir, libRextUiSpec)
+libRextCssBuilder(libRextUiSpec, outDir)
 
-libRextDocsBuilder(outDir, libRextUiSpec)
+libRextDocsBuilder(libRextUiSpec, outDir)

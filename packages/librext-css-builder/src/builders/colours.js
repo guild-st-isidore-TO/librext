@@ -2,13 +2,13 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildColours = () => {
+const buildColours = (uiSpec, outputDir) => {
     // console.log('[LibRext CSS - ColourBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {
@@ -46,7 +46,7 @@ const buildColours = () => {
 
     const allContent = variablesContent + baseContent
 
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-colours.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-colours.css`, allContent)
 }
 
 module.exports = { build: buildColours };

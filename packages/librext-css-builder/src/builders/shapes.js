@@ -2,13 +2,13 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildShapes = () => {
+const buildShapes = (uiSpec, outputDir) => {
     // console.log('[LibRext CSS - ShapesBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {
@@ -71,7 +71,7 @@ const buildShapes = () => {
 
     const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent
 
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-shapes.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-shapes.css`, allContent)
 }
 
 module.exports = { build: buildShapes };

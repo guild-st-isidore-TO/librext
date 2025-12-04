@@ -2,14 +2,14 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 const line = '------------------------------------'
 const boldLine = '===================================='
 const thickLine = '================================================'
 
 
-const buildText = () => {
+const buildText = (uiSpec, outputDir) => {
     // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
     let prefaceContent = '/* TEXT BUILDERS */\n'
 
@@ -82,7 +82,7 @@ const buildText = () => {
     rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
     const allContent = prefaceContent + '\n' + rootCssVarContent + docRolesContent
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-text.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-text.css`, allContent)
 }
 
 module.exports = { build: buildText };

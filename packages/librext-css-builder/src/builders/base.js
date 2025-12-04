@@ -2,13 +2,13 @@
 
 const libRextCssFileHandler = require('./file-handler')
 const libRextCssUtil = require('./utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildBase = () => {
+const buildBase = (uiSpec, outputDir) => {
     // console.log('[LibRext CSS - BaseBuilder] uiSpec', uiSpec);
 
     let varsSelector = ':root'
@@ -36,7 +36,7 @@ const buildBase = () => {
     })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${__dirname}/../../css/librext-base.css`, variablesContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-base.css`, variablesContent)
 }
 
 module.exports = { build: buildBase };

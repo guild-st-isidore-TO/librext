@@ -1,9 +1,9 @@
 const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
-const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
+// const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
 
-const buildHtmlTypography = () => {
+const buildHtmlTypography = (uiSpec, outputDir) => {
     const fPath = `${libRextCssUtil.templatesDir}/typography.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
@@ -27,7 +27,7 @@ const buildHtmlTypography = () => {
     };
     const filledTemplate = ejs.render(template, templatePayload);
 
-    const outfilePath = `${libRextCssUtil.htmlOutputDir}/typography.html`;
+    const outfilePath = `${outputDir}/typography.html`;
     libRextCssFileHandler.writeFile(outfilePath, filledTemplate);
 }
 

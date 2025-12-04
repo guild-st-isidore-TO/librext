@@ -2,9 +2,9 @@ const ejs = require('ejs');
 const libRextCssFileHandler = require('../file-handler')
 const libRextCssUtil = require('../utils')
 // const { uiSpec } = require(libRextCssUtil.dataUiSpecDir)
-const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
+// const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
-const buildHtmlColours = () => {
+const buildHtmlColours = (uiSpec, outputDir) => {
   const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`
   const template = libRextCssFileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
@@ -62,7 +62,7 @@ const buildHtmlColours = () => {
 
   // console.log(output);
 
-  const outfilePath = `${libRextCssUtil.htmlOutputDir}/colours.html`;
+  const outfilePath = `${outputDir}/colours.html`;
   libRextCssFileHandler.writeFile(outfilePath, output);
 
 }
