@@ -31,6 +31,15 @@
     --typ-box-shadow-in: inset 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.25); */
 
     /* --typ-border-radius: 3px; */
+
+    --layers-total-ht: 30rem;
+    --layers-padding: 2.25rem;
+    --layers-inner-ht: calc(var(--layers-total-ht) - var(--layers-padding) - var(--layers-padding));
+
+    --layers-layer-ht: calc(var(--layers-inner-ht) / 2);
+    --layers-layer-ht-offset: calc(var(--layers-layer-ht) / 3);
+    
+    --layers-layer-wd-offset: calc(var(--layers-layer-ht) / 2);
 }
 
 
@@ -135,7 +144,7 @@
 }
 
 .palette-box {
-    height: 100px;
+    height: 8rem;
     margin: 0;
     background-color: #bbbbbb;
 }
@@ -158,13 +167,13 @@
 
 .palette-cell {
     display: flex;
-    margin: 0;
+    margin: 2.25rem 0;
     justify-content: space-around;
 }
 
 .palette-cell .palette-row {
     flex: 1 1 auto;
-    margin: 2rem;
+    margin: 2.25rem;
 }
 
 /* ------------------------------------ *\
@@ -172,22 +181,27 @@
 \* ------------------------------------ */
 
 .colour-details {
-    margin: 2rem 0;
+    margin: 2.25rem 0;
 }
 
 .colour-detail {
     /* margin-top: 4rem; */
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0;
 }
 
 .colour-detail-desc {
-    flex: 1 1 33%;
+    flex: 1 0 100%;
     padding-top: 2rem;
 }
 
+.colour-detail-desc .colour-detail-title {
+    text-transform: uppercase;
+}
+
 .colour-detail-swatch {
-    flex: 3 3 67%;
+    flex: 1 0 100%;
     display: flex;
 }
 
@@ -197,12 +211,13 @@
 }
 
 .colour-detail-swatch .palette-cell {
+    margin: 0;
     flex: 1 1 auto;
 }
 
 .colour-detail .palette-cell .palette-box {
     flex: 1 1 auto;
-    margin: 2rem;
+    margin: 2.25rem;
 }
 
 .colour-bg-light {
@@ -213,43 +228,61 @@
     background-color: #181818;
 }
 
+@media (min-width: 961px) {
+    .colour-detail-desc {
+        flex: 1 0 calc(33% - 1rem);
+    }
+
+    .colour-detail-swatch {
+        flex: 1 0 67%;
+    }
+
+    .colour-detail {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+}
+
 /* ------------------------------------ *\
  * Colour Layers display
 \* ------------------------------------ */
 
+
+
 .colour-layers {
-    height: 25rem;
+    height: var(--layers-total-ht);
     width: 100%;
     position: relative;
 }
 
 .colour-layer {
-    height: 12.5rem;
-    width: calc(100% - 9.375rem);
+    height: var(--layers-layer-ht);
+    width: calc(var(--layers-layer-ht) * 1.618033);
     position: absolute;
     background-color: #bbbbbb;
 }
 
 .colour-layer.layer-1 {
-    bottom: 0;
-    left: 0;
+    bottom: var(--layers-padding);
+    left: var(--layers-padding);
 }
 
 .colour-layer.layer-2 {
-    bottom: 3.125rem;
-    left: 3.125rem;
+    bottom: calc(var(--layers-padding) + var(--layers-layer-ht-offset));
+    left: calc(var(--layers-padding) + var(--layers-layer-wd-offset));
 }
 
 .colour-layer.layer-3 {
-    bottom: 6.25rem;
-    left: 6.25rem;
+    bottom: calc(var(--layers-layer-ht-offset) * 2 + var(--layers-padding));
+    left: calc(var(--layers-layer-wd-offset) * 2 + var(--layers-padding));
 }
 
 .colour-layer.layer-4 {
-    bottom: 9.375rem;
-    left: 9.375rem;
+    bottom: calc(var(--layers-layer-ht-offset) * 3 + var(--layers-padding));
+    left: calc(var(--layers-layer-wd-offset) * 3 + var(--layers-padding));
 }
 
+/* 
 .colour-layers-light .layer-1 {
     background-color: #bbbbbb;
 }
@@ -280,7 +313,7 @@
 
 .colour-layers-dark .layer-4 {
     background-color: #555555;
-}
+} */
 
 
 
