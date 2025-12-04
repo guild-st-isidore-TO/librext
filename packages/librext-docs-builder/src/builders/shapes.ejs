@@ -66,7 +66,7 @@
     <div class="shape-box-set border-radius">
       <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
       <div class="shape-box-wrapper">
-        <div class="shape-box border-radius size-<%= borderRadiusSizes[i].sizeCode %>"></div>
+        <div class="shape-box b-radius <%= borderRadiusSizes[i].sizeCode %>"></div>
       </div>
       <% } %>
     </div>
@@ -85,7 +85,7 @@
     <div class="shape-box-set box-shadow">
       <% for(var i=0; i < boxShadowSizes.length; i++) { %>
       <div class="shape-box-wrapper">
-        <div class="shape-box box-shadow size-<%= boxShadowSizes[i].sizeCode %>"></div>
+        <div class="shape-box b-shadow <%= boxShadowSizes[i].sizeCode %>"></div>
       </div>
       <% } %>
     </div>
@@ -101,11 +101,9 @@
       a velit ante. Praesent id blandit nisi. </p>
 
 
-    <div class="shape-box-set widget">
+    <div class="widget-set">
       <% for(var i=0; i < widgetSizes.length; i++) { %>
-      <div class="shape-box-wrapper">
-        <div class="shape-box widget size-<%= widgetSizes[i].sizeCode %>"></div>
-      </div>
+      <div class="widget <%= widgetSizes[i].sizeCode %>"></div>
       <% } %>
     </div>
 

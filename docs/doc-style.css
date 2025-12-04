@@ -38,7 +38,7 @@
 
     --layers-layer-ht: calc(var(--layers-inner-ht) / 2);
     --layers-layer-ht-offset: calc(var(--layers-layer-ht) / 3);
-    
+
     --layers-layer-wd-offset: calc(var(--layers-layer-ht) / 2);
 }
 
@@ -121,6 +121,7 @@
 
 .card {
     margin: 4rem 0;
+    background-color: var(--col-grey3);
 }
 
 .shape-box {
@@ -327,25 +328,39 @@
 }
 
 .shape-box-wrapper {
-    flex: 1 1 33%;
+    flex: 0 0 100%;
     display: flex;
 }
 
 .shape-box {
     flex: 1 1 auto;
-    height: 12.5rem;
+    height: 10rem;
     margin: 1.5rem;
     background-color: #bbbbbb;
+}
+
+@media (min-width: 481px) {
+    .shape-box-wrapper {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 961px) {
+    .shape-box-wrapper {
+        flex: 0 0 33%;
+    }
 }
 
 /* ------------------------------------ *\
  * Widgets display
 \* ------------------------------------ */
 
-.shape-box-set.widget .shape-box-wrapper {
-    flex: 1 1 50%;
+.widget-set .widget {
+    background-color: var(--col-grey4);
+    width: 100%;
+    margin: 2rem 0;
 }
-
+/* 
 .widget.size-xs {
     height: var(--height-xs);
 }
@@ -380,4 +395,4 @@
 
 .widget.size-5xl {
     height: var(--height-5xl);
-}
+} */
