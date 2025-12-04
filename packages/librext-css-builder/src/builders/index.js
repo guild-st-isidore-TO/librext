@@ -1,16 +1,21 @@
 "use strict"
 
+import baseBuilder from './base'
+import textBuilder from './text'
+import coloursBuilder from './colours'
+import shapesBuilder from './shapes'
+
 /**
  * CSS builder scripts
  * @namespace builders
  */
 const build = () => {
     return {
-        base: require('./base').build(),
-        text: require('./text').build(),
-        colours: require('./colours').build(),
-        shapes: require('./shapes').build(),
+        base: baseBuilder(),
+        text: textBuilder(),
+        colours: coloursBuilder(),
+        shapes: shapesBuilder(),
     }
 }
 
-module.exports = { build };
+export default build

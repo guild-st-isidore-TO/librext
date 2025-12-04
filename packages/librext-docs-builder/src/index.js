@@ -1,16 +1,19 @@
 "use strict"
 
+import buildHtmlColours from './build-html-colours'
+import buildHtmlShapes from './build-html-shapes'
+import buildHtmlTypography from './build-html-typography'
+
 /**
- * CSS builder scripts
- * @namespace builders
+ * HTML builder scripts
+ * @namespace templateBuilders
  */
 const build = () => {
     return {
-        base: require('./base').build(),
-        text: require('./text').build(),
-        colours: require('./colours').build(),
-        shapes: require('./shapes').build(),
+        htmlColours: buildHtmlColours(),
+        htmlShapes: buildHtmlShapes(),
+        htmlTypography: buildHtmlTypography(),
     }
 }
 
-module.exports = { build };
+export default build

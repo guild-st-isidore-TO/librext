@@ -1,11 +1,11 @@
 "use strict"
 
-const base = require('./spec-base').theme
-const colours = require('./spec-colours').theme
-const shapes = require('./spec-shapes').theme
-const text = require('./spec-text').theme
-const styles = require('./spec-styles').theme
-const librext = require('./spec-librext').theme
+import { theme as base } from './spec-base'
+import { theme as colours } from './spec-colours'
+import { theme as shapes } from './spec-shapes'
+import { theme as text } from './spec-text'
+import { theme as styles } from './spec-styles'
+import { theme as librext } from './spec-librext'
 
 /**
  * Librext UI Data (conforms to Theme-UI spec)
@@ -20,4 +20,4 @@ const uiSpec = {
     ...librext,
 }
 
-module.exports = { uiSpec };
+export default uiSpec;

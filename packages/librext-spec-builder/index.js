@@ -1,3 +1,3 @@
-const librextSpecBuilder = {}
+import librextSpecBuilder from './src'
 
 export default librextSpecBuilder
