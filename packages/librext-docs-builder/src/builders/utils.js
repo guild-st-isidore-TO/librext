@@ -23,7 +23,7 @@ const writeCssRule = (selector, propList) => {
 
 const dataDir = `${__dirname}/../data`
 const dataUiSpecDir = dataDir
-const templatesDir = `${__dirname}/html`
+const templatesDir = `${__dirname}`
 const htmlOutputDir = `${__dirname}/../../docs`
 const cssOutputDir = `${__dirname}/../../css`
 

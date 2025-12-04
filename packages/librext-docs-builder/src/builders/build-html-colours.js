@@ -2,15 +2,20 @@ import ejs from 'ejs';
 import libRextCssFileHandler from './file-handler.js'
 import libRextCssUtil from './utils.js'
 
+// const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
+
 const buildHtmlColours = (uiSpec, outputDir) => {
   const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`
   const template = libRextCssFileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
+  const librextGreyscale = uiSpec.libRextData.palette.grey
+  const librextTheme = uiSpec.libRextData.palette.theme
+
   const dataThemeLight = []
   const dataPaletteItems = []
   for (const themeColName in librextTheme) {
-    currentThemeCol = librextTheme[themeColName]
+    const currentThemeCol = librextTheme[themeColName]
     dataThemeLight.push({
       colour: currentThemeCol,
     })
