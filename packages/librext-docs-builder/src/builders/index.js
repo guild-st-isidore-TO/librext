@@ -10,11 +10,11 @@ const defaultOutputDir = `${__dirname}/../../dist`
  * HTML builder scripts
  * @namespace templateBuilders
  */
-const build = (outputDir = defaultOutputDir) => {
+const build = (outputDir = defaultOutputDir, uiSpec) => {
     return {
-        htmlColours: buildHtmlColours(outputDir),
-        htmlShapes: buildHtmlShapes(outputDir),
-        htmlTypography: buildHtmlTypography(outputDir),
+        htmlColours: buildHtmlColours(outputDir, uiSpec),
+        htmlShapes: buildHtmlShapes(outputDir, uiSpec),
+        htmlTypography: buildHtmlTypography(outputDir, uiSpec),
     }
 }
 
