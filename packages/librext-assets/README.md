@@ -1,3 +1,0 @@
-# librext-assets
-
-...

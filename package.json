@@ -1,0 +1,28 @@
+{
+  "name": "librext",
+  "version": "0.1.2",
+  "description": "GSI's UI design system and component library",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:docs",
+    "build:css": "cd packages/librext-css-builder && npm run build",
+    "build:docs": "cd packages/librext-docs-builder && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guild-st-isidore-TO/librext.git"
+  },
+  "keywords": [
+    "css",
+    "ui",
+    "design-system"
+  ],
+  "author": "RJ Salvador <salvador.workshop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guild-st-isidore-TO/librext/issues"
+  },
+  "homepage": "https://guild-st-isidore-to.github.io/librext/"
+}
