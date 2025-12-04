@@ -107,8 +107,10 @@
       <% for(var i=0; i < paletteDetailItems.length; i++) { %>
       <div class="colour-detail">
         <div class="colour-detail-desc">
-          <%= paletteDetailItems[i].colour %>
-          <%= paletteDetailItems[i].description %>
+          <h5><%= paletteDetailItems[i].colour %></h5>
+          <p>
+            <%= paletteDetailItems[i].description %>
+          </p>
         </div>
         <div class="colour-detail-swatch">
           <div class="palette-cell colour-bg-light">
