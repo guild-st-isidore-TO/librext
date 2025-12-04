@@ -5,16 +5,18 @@ import textBuilder from './text'
 import coloursBuilder from './colours'
 import shapesBuilder from './shapes'
 
+const defaultOutputDir = `${__dirname}/../../dist`
+
 /**
  * CSS builder scripts
  * @namespace builders
  */
-const build = () => {
+const build = (outputDir = defaultOutputDir) => {
     return {
-        base: baseBuilder(),
-        text: textBuilder(),
-        colours: coloursBuilder(),
-        shapes: shapesBuilder(),
+        base: baseBuilder(outputDir),
+        text: textBuilder(outputDir),
+        colours: coloursBuilder(outputDir),
+        shapes: shapesBuilder(outputDir),
     }
 }
 
