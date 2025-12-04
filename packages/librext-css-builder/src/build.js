@@ -1,6 +1,3 @@
-const libRextCssBuilder = require('./builders')
-const libRextHtmlSpecBuilder = require('./builders/html')
+import libRextCssBuilder from './builders'
 
-libRextCssBuilder.build()
-
-libRextHtmlSpecBuilder.build()
+libRextCssBuilder()

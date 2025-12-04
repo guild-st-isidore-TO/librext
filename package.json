@@ -6,14 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build-spec && npm run build-code",
-    "build-spec": "npm run build:librext-ui-spec && npm run build:librext-spec-builder",
-    "build-code": "npm run build:librext-css-builder && npm run build:librext-md-builder && npm run build:librext-docs-builder",
-    "build:librext-ui-spec": "cd packages/librext-ui-spec && npm run build",
-    "build:librext-spec-builder": "cd packages/librext-spec-builder && npm run build",
-    "build:librext-css-builder": "cd packages/librext-css-builder && npm run build",
-    "build:librext-md-builder": "cd packages/librext-md-builder && npm run build",
-    "build:librext-docs-builder": "cd packages/librext-docs-builder && npm run build"
+    "build": "npm run build-code",
+    "build-code": "npm run build:css && npm run build:docs",
+    "build:css": "cd packages/librext-css-builder && npm run build",
+    "build:docs": "cd packages/librext-docs-builder && npm run build"
   },
   "repository": {
     "type": "git",
