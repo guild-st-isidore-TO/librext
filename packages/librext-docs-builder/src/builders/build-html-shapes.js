@@ -6,12 +6,20 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
     const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
+    const cRadiusPrefixes = [
+        'none',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+    ]
 
     const dataBorderRadSizes = []
     for (const cRadiusSize in uiSpec.radii) {
         const currentRadSize = uiSpec.radii[cRadiusSize];
         dataBorderRadSizes.push({
-            sizeCode: cRadiusSize,
+            sizeCode: cRadiusPrefixes[cRadiusSize],
             lenVar: currentRadSize,
         })
     }
@@ -26,6 +34,13 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
         })
     }
 
+    const dataWidgets = []
+    for (const widgetSize in uiSpec.widgetHeights) {
+        dataWidgets.push({
+            sizeCode: widgetSize,
+        })
+    }
+
     const dataCards = []
     for (const cardSize in uiSpec.cards) {
         dataCards.push({
@@ -37,7 +52,7 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
     const templatePayload = {
         borderRadiusSizes: dataBorderRadSizes,
         boxShadowSizes: dataBoxShadowSizes,
-        widgetSizes: [],
+        widgetSizes: dataWidgets,
         cards: dataCards,
     };
 

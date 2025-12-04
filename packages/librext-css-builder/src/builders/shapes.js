@@ -17,7 +17,14 @@ const buildShapes = (uiSpec, outputDir) => {
     }
 
     const styleVars = []
-
+    const cRadiusPrefixes = [
+        'none',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+    ]
     let prefaceContent = '@import "./librext-base.css";\n'
     prefaceContent += '@import "./librext-spacing.css";\n'
     prefaceContent += '@import "./librext-colours.css";\n'
@@ -25,12 +32,39 @@ const buildShapes = (uiSpec, outputDir) => {
     let shapesContent = ''
 
     uiSpec.radii.forEach((radVal, idx) => {
+        const cPrefix = cRadiusPrefixes[idx]
         const cRadiusEntry = {
-            property: `cor-radius-${idx + 1}`,
+            property: `cor-radius-${cPrefix}`,
             value: radVal,
         }
         styleVars.push(cRadiusEntry);
+        const selector = `.b-radius.${cPrefix}`
+        const props = [
+            {
+                property: 'border-radius',
+                value: radVal,
+            },
+        ]
+        shapesContent += libRextCssUtil.writeCssRule(selector, props)
     })
+
+    // uiSpec.shadows.forEach((shadowVal, idx) => {
+    for (const [shadowSize, shadowVal] of Object.entries(uiSpec.shadows)) {
+        // const sPrefix = cRadiusPrefixes[idx]
+        const sRadiusEntry = {
+            property: `box-shadow-${shadowSize}`,
+            value: shadowVal,
+        }
+        styleVars.push(sRadiusEntry);
+        const selector = `.b-shadow.${shadowSize}`
+        const props = [
+            {
+                property: 'box-shadow',
+                value: shadowVal,
+            },
+        ]
+        shapesContent += libRextCssUtil.writeCssRule(selector, props)
+    }
 
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
@@ -38,6 +72,15 @@ const buildShapes = (uiSpec, outputDir) => {
             value: `${widgetHtVars.height}px`,
         }
         styleVars.push(heightEntry);
+
+        const selector = `.widget.${widgetHtKey}`
+        const props = [
+            {
+                property: 'height',
+                value: `${widgetHtVars.height}px`,
+            },
+        ]
+        shapesContent += libRextCssUtil.writeCssRule(selector, props)
     }
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 

@@ -3,12 +3,17 @@
 @import "./librext-colours.css";
 
 :root {
-  --cor-radius-1: 0;
-  --cor-radius-2: 2px;
-  --cor-radius-3: 4px;
-  --cor-radius-4: 6px;
-  --cor-radius-5: 8px;
-  --cor-radius-6: 10px;
+  --cor-radius-none: 0;
+  --cor-radius-xs: 2px;
+  --cor-radius-sm: 4px;
+  --cor-radius-md: 6px;
+  --cor-radius-lg: 8px;
+  --cor-radius-xl: 10px;
+  --box-shadow-xs: 1px 1px 2px #24292f;
+  --box-shadow-sm: 2px 2px 2px #24292f;
+  --box-shadow-md: 3px 3px 3px #24292f;
+  --box-shadow-lg: 4px 4px 4px #24292f;
+  --box-shadow-xl: 5px 5px 4px #24292f;
   --widget-ht-xs: 5px;
   --widget-ht-sm: 7px;
   --widget-ht-md: 9px;
@@ -16,6 +21,54 @@
   --widget-ht-xl: 13px;
 }
 
+.b-radius.none {
+  border-radius: 0;
+}
+.b-radius.xs {
+  border-radius: 2px;
+}
+.b-radius.sm {
+  border-radius: 4px;
+}
+.b-radius.md {
+  border-radius: 6px;
+}
+.b-radius.lg {
+  border-radius: 8px;
+}
+.b-radius.xl {
+  border-radius: 10px;
+}
+.b-shadow.xs {
+  box-shadow: 1px 1px 2px #24292f;
+}
+.b-shadow.sm {
+  box-shadow: 2px 2px 2px #24292f;
+}
+.b-shadow.md {
+  box-shadow: 3px 3px 3px #24292f;
+}
+.b-shadow.lg {
+  box-shadow: 4px 4px 4px #24292f;
+}
+.b-shadow.xl {
+  box-shadow: 5px 5px 4px #24292f;
+}
+.widget.xs {
+  height: 5px;
+}
+.widget.sm {
+  height: 7px;
+}
+.widget.md {
+  height: 9px;
+}
+.widget.lg {
+  height: 11px;
+}
+.widget.xl {
+  height: 13px;
+}
 .card.xs {
   height: 12px;
   border-radius: 2px;
