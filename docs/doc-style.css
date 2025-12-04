@@ -78,15 +78,30 @@
 .type-role {
     margin-top: 4rem;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .type-role-specimen {
-    flex: 3 3 auto
+    flex: 1 0 100%
 }
 
 .type-role-info {
-    flex: 1 1 auto
+    flex: 1 0 100%
+}
+
+@media (min-width: 961px) {
+    .type-role {
+        flex-wrap: nowrap;
+    }
+
+    .type-role-specimen {
+        flex: 1 0 80%
+    }
+
+    .type-role-info {
+        flex: 1 0 20%
+    }
 }
 
 
