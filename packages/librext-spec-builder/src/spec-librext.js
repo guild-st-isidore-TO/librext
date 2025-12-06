@@ -230,18 +230,18 @@ const themeLibRext = {
                 colName: '...',
             },
             primary: {
-                roleName: 'Primary',
-                desc: 'Primary colour',
+                roleName: 'Primary Accent',
+                desc: 'Primary Accent colour',
                 colName: '...',
             },
             secondary: {
-                roleName: 'Secondary',
-                desc: 'Secondary colour',
+                roleName: 'Secondary Accent',
+                desc: 'Secondary Accent colour',
                 colName: '...',
             },
             tertiary: {
-                roleName: 'Tertiary',
-                desc: 'Tertiary colour',
+                roleName: 'Tertiary Accent',
+                desc: 'Tertiary Accent colour',
                 colName: '...',
             },
             indicatorOk: {

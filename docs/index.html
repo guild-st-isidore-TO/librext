@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/librext-base.css">
   <link rel="stylesheet" href="./fonts/librext-fonts.css">
   <link rel="stylesheet" href="./css/librext-text.css">
-  
+
   <link rel="stylesheet" href="./css/librext-colours.css">
   <link rel="stylesheet" href="./css/librext-shapes.css">
   <link rel="stylesheet" href="./doc-style.css">
@@ -41,11 +41,23 @@
 
     <h1>LibRext Documentation & Specimens</h1>
 
-    <p>LibRext is inspired primarily by printed texts during the era of the Incunabula, the first century after Gutenberg's press changed Europe and the world. This was a time when old manuscript production methods were giving way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of scribes writing huge manuscripts.</p>
+    <p>LibRext <em>(Librarium Textuum / Library of Frameworks)</em> is a UI design system and component library
+      developed by the
+      <a href="https://github.com/guild-st-isidore-TO" target="_blank">Guild of St. Isidore (TO)</a>.
+    </p>
+
+    <p>LibRext is inspired primarily by printed texts during the era of the Incunabula, the first century after
+      Gutenberg's press changed Europe and the world. This was a time when old manuscript production methods were giving
+      way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of
+      scribes writing huge manuscripts.</p>
+
+    <p>Code repository and design docs available <a href="https://github.com/guild-st-isidore-TO/librext"
+        target="_blank">on GitHub</a></p>
 
     <h4>Use Cases</h4>
 
-    <p>As a system, LibRext aims to look consistent on Print, E-Reader, and Screen. This can present a challenge, since these media have some key differences:</p>
+    <p>As a design system, LibRext aims to look consistent on Print, E-Reader, and Screen. This can present a challenge,
+      since these media have some key differences:</p>
 
     <h5>Print</h5>
 
@@ -70,21 +82,139 @@
       <li>more advanced (expensive) ones are bigger, with a quicker refresh rate</li>
     </ul>
 
-    <p>Code repository <a href="https://github.com/guild-st-isidore-TO/librext" target="_blank">on GitHub</a></p>
-
     <h2>Typography</h2>
 
-    <p>LibRext has a heavy focus on old-style serif fonts, as it looks to early Renaissance printed works as inspiration. The design system’s text styles are organized by "Font Roles" and "Document Roles”</p>
+    <p>LibRext has a heavy focus on old-style serif fonts, as it looks to early Renaissance printed works as
+      inspiration. The design system’s text styles are organized by "Font Roles" and "Document Roles”</p>
 
     <p>Font Roles are functional roles that can be shared by multiple elements.</p>
 
     <p>Document Roles correspond to common document styles and HTML/Markdown structure</p>
 
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <span class="lbrxt-title">
+          The quick brown fox jumps over the lazy dog.
+        </span>
+
+      </div>
+      <div class="type-role-info">
+        <h4>title</h4>
+        <span>weight: bold</span><br />
+        <span>typescale: h1</span><br />
+        <span>htmlTags: </span><br />
+        <span>htmlClass: lbrxt-title</span>
+      </div>
+    </div>
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <h1>
+          The quick brown fox jumps over the lazy dog.
+        </h1><br />
+
+      </div>
+      <div class="type-role-info">
+        <h4>heading1</h4>
+        <span>weight: bold</span><br />
+        <span>typescale: h1</span><br />
+        <span>htmlTags: h1</span><br />
+        <span>htmlClass: lbrxt-h1</span>
+      </div>
+    </div>
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <h2>
+          The quick brown fox jumps over the lazy dog.
+        </h2><br />
+
+      </div>
+      <div class="type-role-info">
+        <h4>heading2</h4>
+        <span>weight: bold</span><br />
+        <span>typescale: h2</span><br />
+        <span>htmlTags: h2</span><br />
+        <span>htmlClass: lbrxt-h2</span>
+      </div>
+    </div>
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <p>
+          The quick brown fox jumps over the lazy dog.
+        </p><br />
+
+        <span>
+          The quick brown fox jumps over the lazy dog.
+        </span><br />
+
+      </div>
+      <div class="type-role-info">
+        <h4>body</h4>
+        <span>weight: body</span><br />
+        <span>typescale: body</span><br />
+        <span>htmlTags: p, span</span><br />
+        <span>htmlClass: lbrxt-body</span>
+      </div>
+    </div>
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <b>
+          The quick brown fox jumps over the lazy dog.
+        </b><br />
+
+        <strong>
+          The quick brown fox jumps over the lazy dog.
+        </strong><br />
+
+      </div>
+      <div class="type-role-info">
+        <h4>strong</h4>
+        <span>weight: bold</span><br />
+        <span>typescale: body</span><br />
+        <span>htmlTags: b, strong</span><br />
+        <span>htmlClass: lbrxt-strong</span>
+      </div>
+    </div>
+
+    <div class="type-role">
+      <div class="type-role-specimen">
+
+        <i>
+          The quick brown fox jumps over the lazy dog.
+        </i><br />
+
+        <em>
+          The quick brown fox jumps over the lazy dog.
+        </em><br />
+
+      </div>
+      <div class="type-role-info">
+        <h4>em</h4>
+        <span>weight: body</span><br />
+        <span>typescale: body</span><br />
+        <span>htmlTags: i, em</span><br />
+        <span>htmlClass: lbrxt-em</span>
+      </div>
+    </div>
+
     <p>See <a href="./typography.html">Typography Specimens</a></p>
 
     <h2>Colours</h2>
 
-    <p>As a classicist design system, LibRext looks to old-school naturalistic hues for inspiration. The palettes were chosen to approximate colours that could’ve been available to scribes and publishers in previous centuries. And of course, adjusted a bit towards modern tech and tastes. For example, some colour selections have come from scans of texts, atlases and astronomical prints. The design system’s colour styles are organized by “Colour Role”, “Indicators”, and “Mode”</p>
+    <p>As a classicist design system, LibRext looks to old-school naturalistic hues for inspiration. The palettes were
+      chosen to approximate colours that could’ve been available to scribes and publishers in previous centuries. And of
+      course, adjusted a bit towards modern tech and tastes. For example, some colour selections have come from scans of
+      texts, atlases and astronomical prints. The design system’s colour styles are organized by “Colour Role”,
+      “Indicators”, and “Mode”</p>
 
     <p>Colour Roles include functions like like background, text, rubric, primary, secondary, etc.</p>
 
@@ -92,15 +222,153 @@
 
     <p>Mode refers to light (default) or dark.</p>
 
+
+    <div class="palette-cell colour-bg-light">
+      <div class="palette-row">
+
+        <div class="palette-item six palette-box" style="background-color: #fdf9f0;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #f2ede5;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #e1dbd4;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #cfcac3;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #b1aba6;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #918b88;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #676261;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #3f3c3c;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #2e2b2b;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #1b1818;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #110e0e;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #050404;">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="palette-cell colour-bg-dark">
+      <div class="palette-row">
+
+        <div class="palette-item six palette-box" style="background-color: #fdf9f0;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #f2ede5;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #e1dbd4;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #cfcac3;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #b1aba6;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #918b88;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #676261;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #3f3c3c;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #2e2b2b;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #1b1818;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #110e0e;">
+        </div>
+
+        <div class="palette-item six palette-box" style="background-color: #050404;">
+        </div>
+
+      </div>
+    </div>
+
     <p>See <a href="./colours.html">Colour Specimens</a></p>
 
     <h2>Shapes</h2>
 
-    <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow, widget heights, and card styles</p>
+    <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow,
+      widget heights, and card styles</p>
 
     <p>Border Radius -- A larger radius fits with larger boxes</p>
 
+
+    <div class="shape-box-set border-radius">
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius none"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius xs"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius sm"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius md"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius lg"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-radius xl"></div>
+      </div>
+
+    </div>
     <p>Box Shadow -- Larger sizes imply more distance between box layer and parent layer</p>
+
+    <div class="shape-box-set box-shadow">
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-shadow xs"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-shadow sm"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-shadow md"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-shadow lg"></div>
+      </div>
+
+      <div class="shape-box-wrapper">
+        <div class="shape-box b-shadow xl"></div>
+      </div>
+
+    </div>
 
     <p>Widget Heights -- Presets for common/consistent UX elements. Like inputs, buttons, chips, etc.</p>
 
