@@ -1,19 +1,21 @@
 import libRextCssUtil from './utils.js'
 
+
 const librextGreyscale = [
     "#ffffff",
-    "#f6f8fa",
-    "#eaeef2",
-    "#d0d7de",
-    "#afb8c1",
-    "#8c959f",
-    "#6e7781",
-    "#57606a",
-    "#424a53",
-    "#32383f",
-    "#24292f",
+    "#fdf9f0",
+    "#e7e3da",
+    "#d2ccc4", 
+    "#bcb5af", 
+    "#a49d98", 
+    "#8c8480", 
+    "#726a68", 
+    "#554f4d", 
+    "#363030", 
+    "#100c0c", 
     "#000000",
 ]
+
 const greyProps = {}
 librextGreyscale.forEach((col, idx) => {
     greyProps[`grey${idx}`] = col

@@ -234,11 +234,11 @@
 }
 
 .colour-bg-light {
-    background-color: #e6e6e6;
+    background-color: #e9e5dd;
 }
 
 .colour-bg-dark {
-    background-color: #181818;
+    background-color: #272424;
 }
 
 @media (min-width: 961px) {

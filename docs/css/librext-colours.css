@@ -1,15 +1,15 @@
 :root {
   --col-grey0: #ffffff;
-  --col-grey1: #f6f8fa;
-  --col-grey2: #eaeef2;
-  --col-grey3: #d0d7de;
-  --col-grey4: #afb8c1;
-  --col-grey5: #8c959f;
-  --col-grey6: #6e7781;
-  --col-grey7: #57606a;
-  --col-grey8: #424a53;
-  --col-grey9: #32383f;
-  --col-grey10: #24292f;
+  --col-grey1: #fdf9f0;
+  --col-grey2: #e7e3da;
+  --col-grey3: #d2ccc4;
+  --col-grey4: #bcb5af;
+  --col-grey5: #a49d98;
+  --col-grey6: #8c8480;
+  --col-grey7: #726a68;
+  --col-grey8: #554f4d;
+  --col-grey9: #363030;
+  --col-grey10: #100c0c;
   --col-grey11: #000000;
   --col-themeRubricRed: #881403;
   --col-themeOkGreen: #77A265;
@@ -21,7 +21,7 @@
   --col-themeBrown3: #C29775;
   --col-text: #000000;
   --col-textRubric: #881403;
-  --col-background: #f6f8fa;
+  --col-background: #fdf9f0;
   --col-primary: #885743;
   --col-secondary: #A67257;
   --col-tertiary: #C29775;
@@ -29,18 +29,18 @@
   --col-indicatorWarn: #F6BF17;
   --col-indicatorInfo: #2471B8;
   --col-indicatorError: #AC4945;
-  --col-indicatorNull: #6e7781;
+  --col-indicatorNull: #8c8480;
   --col-dark-grey0: #ffffff;
-  --col-dark-grey1: #f6f8fa;
-  --col-dark-grey2: #eaeef2;
-  --col-dark-grey3: #d0d7de;
-  --col-dark-grey4: #afb8c1;
-  --col-dark-grey5: #8c959f;
-  --col-dark-grey6: #6e7781;
-  --col-dark-grey7: #57606a;
-  --col-dark-grey8: #424a53;
-  --col-dark-grey9: #32383f;
-  --col-dark-grey10: #24292f;
+  --col-dark-grey1: #fdf9f0;
+  --col-dark-grey2: #e7e3da;
+  --col-dark-grey3: #d2ccc4;
+  --col-dark-grey4: #bcb5af;
+  --col-dark-grey5: #a49d98;
+  --col-dark-grey6: #8c8480;
+  --col-dark-grey7: #726a68;
+  --col-dark-grey8: #554f4d;
+  --col-dark-grey9: #363030;
+  --col-dark-grey10: #100c0c;
   --col-dark-grey11: #000000;
   --col-dark-themeRubricRed: #881403;
   --col-dark-themeOkGreen: #77A265;
@@ -52,7 +52,7 @@
   --col-dark-themeBrown3: #C29775;
   --col-dark-text: #ffffff;
   --col-dark-textRubric: #881403;
-  --col-dark-background: #24292f;
+  --col-dark-background: #100c0c;
   --col-dark-primary: #885743;
   --col-dark-secondary: #A67257;
   --col-dark-tertiary: #C29775;
@@ -60,7 +60,7 @@
   --col-dark-indicatorWarn: #F6BF17;
   --col-dark-indicatorInfo: #2471B8;
   --col-dark-indicatorError: #AC4945;
-  --col-dark-indicatorNull: #6e7781;
+  --col-dark-indicatorNull: #8c8480;
 }
 
 body {
