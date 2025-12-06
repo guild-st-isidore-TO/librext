@@ -33,6 +33,18 @@ const themeText = {
         heading: 1.125,
     },
     /**
+     * VARIANTS - Margin presets
+     */
+    marginPresets: {
+        body: {
+            marginBottom: '1.25rem',
+        },
+        heading: {
+            marginTop: '2.5rem',
+            marginBottom: '1.25rem',
+        }
+    },
+    /**
      * VARIANTS - LibRext Document Roles
      */
     docRoles: {
