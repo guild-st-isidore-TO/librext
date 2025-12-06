@@ -31,6 +31,7 @@ const themeText = {
     lineHeights: {
         body: 1.5,
         heading: 1.25,
+        list: 1.5,
     },
     letterSpacings: {
         body: '0.02rem',
@@ -51,6 +52,10 @@ const themeText = {
         heading: {
             marginTop: '2.5rem',
             marginBottom: '1.25rem',
+        },
+        list: {
+            marginTop: '0',
+            marginBottom: '0',
         }
     },
     /**
@@ -147,6 +152,13 @@ const themeText = {
             lineHeight: 'body',
             letterSpacing: 'body',
             fontSize: 2
+        },
+        li: {
+            fontFamily: 'body',
+            weight: "body",
+            lineHeight: 'list',
+            letterSpacing: 'body',
+            fontSize: 2,
         },
         link: {
             fontFamily: 'body',

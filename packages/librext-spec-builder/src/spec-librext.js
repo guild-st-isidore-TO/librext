@@ -122,6 +122,13 @@ const themeLibRext = {
                     "italic"
                 ]
             },
+            li: {
+                desc: 'List item text style',
+                typescale: "body",
+                html: "li",
+                class: "lbrxt-li",
+                styles: []
+            },
             link: {
                 desc: 'Link text style',
                 typescale: "body",

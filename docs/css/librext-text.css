@@ -252,6 +252,23 @@ i, em,
 }
 
 /* ==================================== *\
+ *  li
+ * ------------------------------------
+ *    typescale size = body
+\* ------------------------------------ */
+li,
+.lbrxt-li {
+  font-weight: 400;
+  font-size: var(--typescale-body);
+  font-family: var(--fontfam-body);
+  font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ==================================== *\
  *  link
  * ------------------------------------
  *    typescale size = body
