@@ -41,320 +41,144 @@ const themeText = {
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            libRextData: {
-                name: "hero",
-                typescale: "h1",
-                html: "",
-                class: "lbrxt-hero",
-                styles: []
-            }
         },
         headline: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            libRextData: {
-                name: "headline",
-                typescale: "h1",
-                html: "",
-                class: "lbrxt-headline",
-                styles: []
-            }
         },
         title: {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            libRextData: {
-                name: "title",
-                typescale: "h1",
-                html: "",
-                class: "lbrxt-title",
-                styles: []
-            }
         },
         subtitle: {
             fontFamily: 'heading',
             weight: "body",
             lineHeight: 'body',
             fontSize: 6,
-            libRextData: {
-                name: "subtitle",
-                typescale: "h3",
-                html: "",
-                class: "lbrxt-subtitle",
-                styles: []
-            }
         },
         heading1: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 8,
-            libRextData: {
-                name: "heading1",
-                typescale: "h1",
-                html: "h1",
-                class: "lbrxt-h1",
-                styles: []
-            }
         },
         heading2: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 7,
-            libRextData: {
-                name: "heading2",
-                typescale: "h2",
-                html: "h2",
-                class: "lbrxt-h2",
-                styles: []
-            }
         },
         heading3: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 6,
-            libRextData: {
-                name: "heading3",
-                typescale: "h3",
-                html: "h3",
-                class: "lbrxt-h3",
-                styles: []
-            }
         },
         heading4: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 5,
-            libRextData: {
-                name: "heading4",
-                typescale: "h4",
-                html: "h4",
-                class: "lbrxt-h4",
-                styles: []
-            }
         },
         heading5: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 4,
-            libRextData: {
-                name: "heading5",
-                typescale: "h5",
-                html: "h5",
-                class: "lbrxt-h5",
-                styles: []
-            }
         },
         heading6: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 3,
-            libRextData: {
-                name: "heading6",
-                typescale: "h6",
-                html: "h6",
-                class: "lbrxt-h6",
-                styles: []
-            }
         },
         body: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            libRextData: {
-                name: "body",
-                typescale: "body",
-                html: "p, span",
-                class: "lbrxt-body",
-                styles: []
-            }
         },
         strong: {
             fontFamily: 'body',
             weight: "bold",
             lineHeight: 'heading',
             fontSize: 2,
-            libRextData: {
-                name: "strong",
-                typescale: "body",
-                html: "b, strong",
-                class: "lbrxt-strong",
-                styles: []
-            }
         },
         em: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
-            fontSize: 2,
-            libRextData: {
-                name: "em",
-                typescale: "body",
-                html: "i, em",
-                class: "lbrxt-em",
-                styles: [
-                    "italic"
-                ]
-            }
+            fontSize: 2
         },
         link: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            libRextData: {
-                name: "link",
-                typescale: "body",
-                html: "a",
-                class: "lbrxt-link",
-                styles: []
-            }
         },
         small: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
-            libRextData: {
-                name: "small",
-                typescale: "small",
-                html: "small",
-                class: "lbrxt-small",
-                styles: []
-            }
         },
         tiny: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            libRextData: {
-                name: "tiny",
-                typescale: "tiny",
-                html: "",
-                class: "lbrxt-tiny",
-                styles: []
-            }
         },
         superscript: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            libRextData: {
-                name: "superscript",
-                typescale: "tiny",
-                html: "sup",
-                class: "lbrxt-super",
-                styles: []
-            }
         },
         subscript: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 0,
-            libRextData: {
-                name: "subscript",
-                typescale: "tiny",
-                html: "sub",
-                class: "lbrxt-sub",
-                styles: []
-            }
         },
         imgcaption: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
             fontSize: 1,
-            libRextData: {
-                name: "imgcaption",
-                typescale: "small",
-                html: "figcaption",
-                class: "lbrxt-imgcap",
-                styles: []
-            }
         },
         codeinline: {
             fontFamily: 'monospace',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            libRextData: {
-                name: "codeinline",
-                typescale: "body",
-                html: "code",
-                class: "lbrxt-codein",
-                styles: []
-            }
         },
         codeblock: {
             fontFamily: 'monospace',
             weight: "body",
             lineHeight: 'body',
             fontSize: 2,
-            libRextData: {
-                name: "codeblock",
-                typescale: "body",
-                html: "pre",
-                class: "lbrxt-codeblk",
-                styles: []
-            }
         },
         quote: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
-            fontSize: 2,
-            libRextData: {
-                name: "quote",
-                typescale: "body",
-                html: "q",
-                class: "lbrxt-quote",
-                styles: [
-                    "italic"
-                ]
-            }
+            fontSize: 2
         },
         blockquote: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
-            fontSize: 2,
-            libRextData: {
-                name: "blockquote",
-                typescale: "body",
-                html: "blockquote",
-                class: "lbrxt-bquote",
-                styles: [
-                    "italic"
-                ]
-            }
+            fontSize: 2
         },
         pullquote: {
             fontFamily: 'body',
             weight: "body",
             lineHeight: 'body',
-            fontSize: 2,
-            libRextData: {
-                name: "pullquote",
-                typescale: "body",
-                html: "",
-                class: "lbrxt-pquote",
-                styles: [
-                    "italic"
-                ]
-            }
+            fontSize: 2
         },
     }
 }

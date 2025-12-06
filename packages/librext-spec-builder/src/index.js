@@ -1,23 +1,17 @@
 "use strict"
 
-import base from './spec-base'
-import colours from './spec-colours'
-import shapes from './spec-shapes'
-import text from './spec-text'
-import styles from './spec-styles'
 import librext from './spec-librext'
 
 /**
- * Librext UI Data (conforms to Theme-UI spec)
- * @namespace uiSpec
+ * Custom Librext UI Data (doesn't conform to Theme-UI spec)
+ * @namespace buildSpec
  */
-const uiSpec = {
-    ...base,
-    ...text,
-    ...colours,
-    ...shapes,
-    ...styles,
-    ...librext,
+const buildSpec = (uiSpec) => {
+    const outSpec = {
+        ...uiSpec,
+        ...librext,
+    }
+    return outSpec
 }
 
-export default uiSpec;
+export default buildSpec;
