@@ -43,7 +43,7 @@ const buildHtmlColours = (uiSpec, outputDir) => {
     const currentColDark = uiSpec.colors.modes.dark[colRole]
 
     dataPaletteItems.push({
-      title: colRole,
+      title: currentColRole.roleName,
       colour: currentColRole.colName,
       description: currentColRole.desc,
       valueLight: currentColLight,

@@ -208,42 +208,57 @@ const themeLibRext = {
         },
         colourRoles: {
             text: {
+                roleName: 'Text',
+                desc: 'Text colour',
+                colName: '...',
+            },
+            textRubric: {
+                roleName: 'Rubric Text',
                 desc: 'Text colour',
                 colName: '...',
             },
             background: {
+                roleName: 'Background',
                 desc: 'Background colour',
                 colName: '...',
             },
             primary: {
+                roleName: 'Primary',
                 desc: 'Primary colour',
                 colName: '...',
             },
             secondary: {
+                roleName: 'Secondary',
                 desc: 'Secondary colour',
                 colName: '...',
             },
             tertiary: {
+                roleName: 'Tertiary',
                 desc: 'Tertiary colour',
                 colName: '...',
             },
             indicatorOk: {
+                roleName: 'Indicator Ok',
                 desc: 'Indicator Ok colour',
                 colName: '...',
             },
             indicatorWarn: {
+                roleName: 'Indicator Warn',
                 desc: 'Indicator Warn colour',
                 colName: '...',
             },
             indicatorError: {
+                roleName: 'Indicator Error',
                 desc: 'Indicator Error colour',
                 colName: '...',
             },
             indicatorInfo: {
+                roleName: 'Indicator Info',
                 desc: 'Indicator Info colour',
                 colName: '...',
             },
             indicatorNull: {
+                roleName: 'Indicator Null',
                 desc: 'Indicator Null colour',
                 colName: '...',
             },
