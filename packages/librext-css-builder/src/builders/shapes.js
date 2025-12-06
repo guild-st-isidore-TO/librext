@@ -26,7 +26,6 @@ const buildShapes = (uiSpec, outputDir) => {
         'xl',
     ]
     let prefaceContent = '@import "./librext-base.css";\n'
-    prefaceContent += '@import "./librext-spacing.css";\n'
     prefaceContent += '@import "./librext-colours.css";\n'
 
     let shapesContent = ''
