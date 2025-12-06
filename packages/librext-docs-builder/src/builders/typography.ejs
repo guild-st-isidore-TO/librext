@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/librext-base.css">
   <link rel="stylesheet" href="./fonts/librext-fonts.css">
   <link rel="stylesheet" href="./css/librext-text.css">
-  
+
   <link rel="stylesheet" href="./css/librext-colours.css">
   <link rel="stylesheet" href="./css/librext-shapes.css">
   <link rel="stylesheet" href="./doc-style.css">
@@ -69,7 +69,7 @@
     <h2>Document Roles</h2>
 
     <p>
-      Font definitions for text within a document. These are defined by specific roles in a page or screen. Such as titles, subtitles, headings, etc.<br/>
+      Font definitions for text within a document. These are defined by specific roles in a page or screen. Such as titles, subtitles, headings, etc.<br />
       The document roles defined in the system include:
     </p>
 
@@ -80,7 +80,7 @@
                 for(var j=0; j < roles[i].htmlTags.length; j++) {%>
         <<%- roles[i].htmlTags[j].trim() %>>
           <%= roles[i].spec %>
-        </<%- roles[i].htmlTags[j].trim() %>>
+        </<%- roles[i].htmlTags[j].trim() %>><br/>
         <% }
         } else { %>
         <span class="<%- roles[i].htmlClass %>">

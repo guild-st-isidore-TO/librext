@@ -36,8 +36,8 @@ const themeText = {
         body: '0.02rem',
         heading: '0.04rem',
         headingLg: '0.06rem',
-        headingXl: '0.08rem',
-        display: 'normal',
+        headingXl: '0.012rem',
+        display: '0.2rem',
         monospace: 'normal',
     },
     /**
@@ -45,6 +45,7 @@ const themeText = {
      */
     marginPresets: {
         body: {
+            marginTop: '0',
             marginBottom: '1.25rem',
         },
         heading: {
@@ -60,7 +61,7 @@ const themeText = {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'headingXl',
+            letterSpacing: 'display',
             fontSize: 8,
         },
         headline: {
@@ -74,7 +75,7 @@ const themeText = {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'headingXl',
+            letterSpacing: 'display',
             fontSize: 8,
         },
         subtitle: {
