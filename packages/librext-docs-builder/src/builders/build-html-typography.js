@@ -10,13 +10,14 @@ const buildHtmlTypography = (uiSpec, outputDir) => {
     const dataRoles = []
     for (const dataRole in uiSpec.docRoles) {
         const docrole = uiSpec.docRoles[dataRole]
+        const docRoleData = uiSpec.libRextData.docRoles[dataRole]
         dataRoles.push({
-            name: docrole.libRextData.name,
-            htmlTags: docrole.libRextData.html.split(','),
-            htmlClass: docrole.libRextData.class,
-            typescale: docrole.libRextData.typescale,
+            name: dataRole,
+            htmlTags: docRoleData.html.split(','),
+            htmlClass: docRoleData.class,
+            typescale: docRoleData.typescale,
             weight: docrole.weight,
-            styles: JSON.stringify(docrole.libRextData.styles),
+            styles: JSON.stringify(docRoleData.styles),
             spec: 'The quick brown fox jumps over the lazy dog.',
         })
     }
