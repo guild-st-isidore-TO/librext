@@ -35,7 +35,7 @@
 \* ================================================ */
 
 /* ==================================== *\
- *  undefined
+ *  hero
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
@@ -44,10 +44,12 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  headline
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
@@ -56,10 +58,12 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  title
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
@@ -68,10 +72,12 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  subtitle
  * ------------------------------------
  *    typescale size = h3
 \* ------------------------------------ */
@@ -80,10 +86,12 @@
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading1
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
@@ -93,10 +101,12 @@ h1,
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading2
  * ------------------------------------
  *    typescale size = h2
 \* ------------------------------------ */
@@ -106,10 +116,12 @@ h2,
   font-size: var(--typescale-h2);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading3
  * ------------------------------------
  *    typescale size = h3
 \* ------------------------------------ */
@@ -119,10 +131,12 @@ h3,
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading4
  * ------------------------------------
  *    typescale size = h4
 \* ------------------------------------ */
@@ -132,10 +146,12 @@ h4,
   font-size: var(--typescale-h4);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading5
  * ------------------------------------
  *    typescale size = h5
 \* ------------------------------------ */
@@ -145,10 +161,12 @@ h5,
   font-size: var(--typescale-h5);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading6
  * ------------------------------------
  *    typescale size = h6
 \* ------------------------------------ */
@@ -158,10 +176,12 @@ h6,
   font-size: var(--typescale-h6);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  body
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -171,10 +191,12 @@ p, span,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  strong
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -184,10 +206,12 @@ b, strong,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  em
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -197,10 +221,12 @@ i, em,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  link
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -210,10 +236,12 @@ a,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  small
  * ------------------------------------
  *    typescale size = small
 \* ------------------------------------ */
@@ -223,10 +251,12 @@ small,
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  tiny
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
@@ -235,10 +265,12 @@ small,
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  superscript
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
@@ -248,10 +280,12 @@ sup,
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  subscript
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
@@ -261,10 +295,12 @@ sub,
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  imgcaption
  * ------------------------------------
  *    typescale size = small
 \* ------------------------------------ */
@@ -274,10 +310,12 @@ figcaption,
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  codeinline
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -287,10 +325,12 @@ code,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-monospace);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  codeblock
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -300,10 +340,12 @@ pre,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-monospace);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  quote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -313,10 +355,12 @@ q,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  blockquote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -326,10 +370,12 @@ blockquote,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  pullquote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
@@ -338,5 +384,7 @@ blockquote,
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 

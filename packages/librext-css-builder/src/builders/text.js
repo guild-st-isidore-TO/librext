@@ -51,8 +51,8 @@ const buildText = (uiSpec, outputDir) => {
     for (const docRoleName in uiSpec.docRoles) {
         const currentDocRole = uiSpec.docRoles[docRoleName]
         const docRoleData = uiSpec.libRextData.docRoles[docRoleName]
-        console.log('[LibRext CSS - TextBuilder] currentDocRole', currentDocRole)
-        console.log('[LibRext CSS - TextBuilder] docRoleData', docRoleData)
+        // console.log('[LibRext CSS - TextBuilder] currentDocRole', currentDocRole)
+        // console.log('[LibRext CSS - TextBuilder] docRoleData', docRoleData)
 
         let weightType = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {
@@ -64,19 +64,23 @@ const buildText = (uiSpec, outputDir) => {
         const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
         const weightVal = uiSpec.fontWeights[weightType]
+        const letterSpacingVal = uiSpec.letterSpacings[currentDocRole.letterSpacing];
+        const lineHeightVal = uiSpec.lineHeights[currentDocRole.lineHeight];
 
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
             { property: 'font-size', value: sizeVal, },
             { property: 'font-family', value: fontFamVal, },
             { property: 'font-style', value: fontStyleVal, },
+            { property: 'letter-spacing', value: letterSpacingVal },
+            { property: 'line-height', value: lineHeightVal },
         ]
 
         const selectorHtml = docRoleData.html.length == 0 ? '' : `${docRoleData.html},\n`
         let docRoleSelector = `${selectorHtml}.${docRoleData.class}`
 
         const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
-        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${docRoleData.name}\n * ${line}\n`
+        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${docRoleName}\n * ${line}\n`
         const docRoleComment3 = ` *    typescale size = ${docRoleData.typescale}\n\\* ${line} */\n`
 
         docRolesContent += docRoleComment1 + docRoleComment3 + docRoleRule + '\n'
