@@ -35,308 +35,356 @@
 \* ================================================ */
 
 /* ==================================== *\
- *  undefined
+ *  hero
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-hero {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  headline
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-headline {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  title
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
 .lbrxt-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  subtitle
  * ------------------------------------
  *    typescale size = h3
 \* ------------------------------------ */
 .lbrxt-subtitle {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading1
  * ------------------------------------
  *    typescale size = h1
 \* ------------------------------------ */
 h1,
 .lbrxt-h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading2
  * ------------------------------------
  *    typescale size = h2
 \* ------------------------------------ */
 h2,
 .lbrxt-h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h2);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading3
  * ------------------------------------
  *    typescale size = h3
 \* ------------------------------------ */
 h3,
 .lbrxt-h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading4
  * ------------------------------------
  *    typescale size = h4
 \* ------------------------------------ */
 h4,
 .lbrxt-h4 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h4);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading5
  * ------------------------------------
  *    typescale size = h5
 \* ------------------------------------ */
 h5,
 .lbrxt-h5 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h5);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  heading6
  * ------------------------------------
  *    typescale size = h6
 \* ------------------------------------ */
 h6,
 .lbrxt-h6 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-h6);
   font-family: var(--fontfam-heading);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  body
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 p, span,
 .lbrxt-body {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  strong
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 b, strong,
 .lbrxt-strong {
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 1.125;
 }
 
 /* ==================================== *\
- *  undefined
+ *  em
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 i, em,
 .lbrxt-em {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  link
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 a,
 .lbrxt-link {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  small
  * ------------------------------------
  *    typescale size = small
 \* ------------------------------------ */
 small,
 .lbrxt-small {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  tiny
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
 .lbrxt-tiny {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  superscript
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
 sup,
 .lbrxt-super {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  subscript
  * ------------------------------------
  *    typescale size = tiny
 \* ------------------------------------ */
 sub,
 .lbrxt-sub {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-tiny);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  imgcaption
  * ------------------------------------
  *    typescale size = small
 \* ------------------------------------ */
 figcaption,
 .lbrxt-imgcap {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-small);
   font-family: var(--fontfam-body);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  codeinline
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 code,
 .lbrxt-codein {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-monospace);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  codeblock
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 pre,
 .lbrxt-codeblk {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-monospace);
   font-style: normal;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  quote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 q,
 .lbrxt-quote {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  blockquote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 blockquote,
 .lbrxt-bquote {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
- *  undefined
+ *  pullquote
  * ------------------------------------
  *    typescale size = body
 \* ------------------------------------ */
 .lbrxt-pquote {
-  font-weight: body;
+  font-weight: 400;
   font-size: var(--typescale-body);
   font-family: var(--fontfam-body);
   font-style: italic;
+  letter-spacing: 0.02rem;
+  line-height: 1.25;
 }
 

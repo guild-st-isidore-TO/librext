@@ -82,6 +82,7 @@
 .page-container {
     width: var(--page-container-width);
     margin: 0 auto;
+    padding: 3rem 0;
 }
 
 .type-role {
