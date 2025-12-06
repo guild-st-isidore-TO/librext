@@ -82,7 +82,7 @@
 .page-container {
     width: var(--page-container-width);
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .type-role {
@@ -98,6 +98,12 @@
 
 .type-role-info {
     flex: 1 0 100%
+}
+
+.type-role-specimen > *,
+.type-role-info > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 @media (min-width: 961px) {
@@ -200,6 +206,11 @@
 
 .colour-detail-desc .colour-detail-title {
     text-transform: uppercase;
+}
+
+.colour-detail-desc > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .colour-detail-swatch {

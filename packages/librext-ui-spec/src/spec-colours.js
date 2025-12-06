@@ -20,14 +20,14 @@ librextGreyscale.forEach((col, idx) => {
 })
 
 const librextTheme = {
-    "khaki": "#EADFB4",
-    "powderBlue": "#9BB0C1",
-    "cerulean": "#51829b",
-    "orange": "#F6995C",
-    "lightBlue": "#E6FAFF",
-    "oceanBlue": "#1B628F",
-    "navyBlue": "#053C5F",
-    "deepBlue": "#00335E"
+    rubricRed: '#881403',
+    okGreen: '#77A265',
+    warnYellow: '#F6BF17',
+    errorRed: '#AC4945',
+    infoBlue: '#2471B8',
+    brown1: "#885743",
+    brown2: "#A67257",
+    brown3: "#C29775",
 }
 const themeProps = {}
 for (const themeColName in librextTheme) {
@@ -40,30 +40,32 @@ const lightCols = {
     ...greyProps,
     ...themeProps,
     text: librextGreyscale[11],
+    textRubric: librextTheme.rubricRed,
     background: librextGreyscale[1],
-    primary: librextTheme.oceanBlue,
-    secondary: librextTheme.orange,
-    tertiary: librextTheme.khaki,
-    indicatorOk: librextTheme.lightBlue,
-    indicatorWarn: librextTheme.lightBlue,
-    indicatorError: librextTheme.lightBlue,
-    indicatorInfo: librextTheme.lightBlue,
-    indicatorNull: librextTheme.lightBlue,
+    primary: librextTheme.brown1,
+    secondary: librextTheme.brown2,
+    tertiary: librextTheme.brown3,
+    indicatorOk: librextTheme.okGreen,
+    indicatorWarn: librextTheme.warnYellow,
+    indicatorInfo: librextTheme.infoBlue,
+    indicatorError: librextTheme.errorRed,
+    indicatorNull: librextGreyscale[6],
 }
 
 const darkCols = {
     ...greyProps,
     ...themeProps,
     text: librextGreyscale[0],
+    textRubric: librextTheme.rubricRed,
     background: librextGreyscale[10],
-    primary: librextTheme.oceanBlue,
-    secondary: librextTheme.orange,
-    tertiary: librextTheme.khaki,
-    indicatorOk: librextTheme.lightBlue,
-    indicatorWarn: librextTheme.lightBlue,
-    indicatorError: librextTheme.lightBlue,
-    indicatorInfo: librextTheme.lightBlue,
-    indicatorNull: librextTheme.lightBlue,
+    primary: librextTheme.brown1,
+    secondary: librextTheme.brown2,
+    tertiary: librextTheme.brown3,
+    indicatorOk: librextTheme.okGreen,
+    indicatorWarn: librextTheme.warnYellow,
+    indicatorInfo: librextTheme.infoBlue,
+    indicatorError: librextTheme.errorRed,
+    indicatorNull: librextGreyscale[6],
 }
 
 const themeColour = {
@@ -71,15 +73,12 @@ const themeColour = {
         ...lightCols,
         modes: {
             dark: darkCols,
+            indicatorNull: librextGreyscale[6],
+            indicatorError: librextTheme.errorRed,
+            tertiary: librextTheme.brown3,
         },
     },
 }
-
-// module.exports = {
-//     librextGreyscale,
-//     librextTheme,
-//     theme: themeColour,
-// }
 
 export default themeColour
 export { themeColour as theme, librextGreyscale, librextTheme }

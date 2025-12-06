@@ -29,13 +29,15 @@ const themeText = {
         bold: 700,
     },
     lineHeights: {
-        body: 1.25,
-        heading: 1.125,
+        body: 1.5,
+        heading: 1.25,
     },
     letterSpacings: {
         body: '0.02rem',
         heading: '0.04rem',
-        display: 'normal',
+        headingLg: '0.06rem',
+        headingXl: '0.012rem',
+        display: '0.2rem',
         monospace: 'normal',
     },
     /**
@@ -43,6 +45,7 @@ const themeText = {
      */
     marginPresets: {
         body: {
+            marginTop: '0',
             marginBottom: '1.25rem',
         },
         heading: {
@@ -58,21 +61,21 @@ const themeText = {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'display',
             fontSize: 8,
         },
         headline: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'headingXl',
             fontSize: 8,
         },
         title: {
             fontFamily: 'display',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'display',
             fontSize: 8,
         },
         subtitle: {
@@ -86,28 +89,28 @@ const themeText = {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'headingXl',
             fontSize: 8,
         },
         heading2: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'headingXl',
             fontSize: 7,
         },
         heading3: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'headingLg',
             fontSize: 6,
         },
         heading4: {
             fontFamily: 'heading',
             weight: "bold",
             lineHeight: 'heading',
-            letterSpacing: 'heading',
+            letterSpacing: 'headingLg',
             fontSize: 5,
         },
         heading5: {
