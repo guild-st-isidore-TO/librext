@@ -69,7 +69,7 @@ const buildShapes = (uiSpec, outputDir) => {
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
             property: `widget-ht-${widgetHtKey}`,
-            value: `${widgetHtVars.height}px`,
+            value: widgetHtVars.height,
         }
         styleVars.push(heightEntry);
 
@@ -77,7 +77,7 @@ const buildShapes = (uiSpec, outputDir) => {
         const props = [
             {
                 property: 'height',
-                value: `${widgetHtVars.height}px`,
+                value: widgetHtVars.height,
             },
         ]
         shapesContent += libRextCssUtil.writeCssRule(selector, props)

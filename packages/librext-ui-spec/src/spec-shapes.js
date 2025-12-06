@@ -11,20 +11,25 @@ const themeShape = {
      * VARIANTS - Standard sizes for widget/input elements
      */
     widgetHeights: {
+        /** Tiny font size * line height + 0.75rem space */
         xs: {
-            height: 5,
+            height: '1.6875rem',
         },
+        /** Small font size * line height + 1rem space */
         sm: {
-            height: 7,
+            height: '2.04125rem',
         },
+        /** Body font size * line height + 1.5rem space */
         md: {
-            height: 9,
+            height: '2.75rem',
         },
+        /** 2 lines of Body text * line height + 1.5rem space */
         lg: {
-            height: 11,
+            height: '4rem',
         },
+        /** 3 lines of Body text * line height + 1.5rem space */
         xl: {
-            height: 13,
+            height: '5.25rem',
         }
     },
     /**

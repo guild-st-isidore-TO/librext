@@ -14,11 +14,11 @@
   --box-shadow-md: 3px 3px 3px #24292f;
   --box-shadow-lg: 4px 4px 4px #24292f;
   --box-shadow-xl: 5px 5px 4px #24292f;
-  --widget-ht-xs: 5px;
-  --widget-ht-sm: 7px;
-  --widget-ht-md: 9px;
-  --widget-ht-lg: 11px;
-  --widget-ht-xl: 13px;
+  --widget-ht-xs: 1.6875rem;
+  --widget-ht-sm: 2.04125rem;
+  --widget-ht-md: 2.75rem;
+  --widget-ht-lg: 4rem;
+  --widget-ht-xl: 5.25rem;
 }
 
 .b-radius.none {
@@ -55,19 +55,19 @@
   box-shadow: 5px 5px 4px #24292f;
 }
 .widget.xs {
-  height: 5px;
+  height: 1.6875rem;
 }
 .widget.sm {
-  height: 7px;
+  height: 2.04125rem;
 }
 .widget.md {
-  height: 9px;
+  height: 2.75rem;
 }
 .widget.lg {
-  height: 11px;
+  height: 4rem;
 }
 .widget.xl {
-  height: 13px;
+  height: 5.25rem;
 }
 .card.xs {
   height: 12px;
