@@ -2,18 +2,18 @@ import libRextCssUtil from './utils.js'
 
 
 const librextGreyscale = [
-    "#ffffff",
-    "#fdf9f0",
-    "#e7e3da",
-    "#d2ccc4", 
-    "#bcb5af", 
-    "#a49d98", 
-    "#8c8480", 
-    "#726a68", 
-    "#554f4d", 
-    "#363030", 
-    "#100c0c", 
-    "#000000",
+    "#fdf9f0", // "#ffffff",
+    "#f2ede5", // "#fdf9f0",
+    "#e1dbd4", // "#e7e3da",
+    "#cfcac3", // "#d2ccc4", 
+    "#b1aba6", // "#bcb5af", 
+    "#918b88", // "#a49d98", 
+    "#676261", // "#8c8480", 
+    "#3f3c3c", // "#726a68", 
+    "#2e2b2b", // "#554f4d", 
+    "#1b1818", // "#363030", 
+    "#110e0e", // "#100c0c", 
+    "#050404", // "#000000",
 ]
 
 const greyProps = {}
