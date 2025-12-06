@@ -209,33 +209,43 @@ const themeLibRext = {
         colourRoles: {
             text: {
                 desc: 'Text colour',
+                colName: '...',
             },
             background: {
                 desc: 'Background colour',
+                colName: '...',
             },
             primary: {
                 desc: 'Primary colour',
+                colName: '...',
             },
             secondary: {
                 desc: 'Secondary colour',
+                colName: '...',
             },
             tertiary: {
                 desc: 'Tertiary colour',
+                colName: '...',
             },
             indicatorOk: {
                 desc: 'Indicator Ok colour',
+                colName: '...',
             },
             indicatorWarn: {
                 desc: 'Indicator Warn colour',
+                colName: '...',
             },
             indicatorError: {
                 desc: 'Indicator Error colour',
+                colName: '...',
             },
             indicatorInfo: {
                 desc: 'Indicator Info colour',
+                colName: '...',
             },
             indicatorNull: {
                 desc: 'Indicator Null colour',
+                colName: '...',
             },
         }
     }

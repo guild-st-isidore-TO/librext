@@ -16,13 +16,15 @@ const buildHtmlColours = (uiSpec, outputDir) => {
   const dataPaletteItems = []
   for (const themeColName in librextTheme) {
     const currentThemeCol = librextTheme[themeColName]
+    // const currentThemeData = librextTheme[themeColName]
+
     dataThemeLight.push({
       colour: currentThemeCol,
     })
-    dataPaletteItems.push({
-      colour: currentThemeCol,
-      description: 'Sed pretium orci eros, quis feugiat'
-    })
+    // dataPaletteItems.push({
+    //   colour: currentThemeCol,
+    //   description: 'Sed pretium orci eros, quis feugiat'
+    // })
   }
 
   const dataThemeDark = dataThemeLight
@@ -35,6 +37,19 @@ const buildHtmlColours = (uiSpec, outputDir) => {
 
   const dataGreyscaleDark = dataGreyscaleLight
 
+  for (const colRole in uiSpec.libRextData.colourRoles) {
+    const currentColRole = uiSpec.libRextData.colourRoles[colRole]
+    const currentColLight = uiSpec.colors[colRole]
+    const currentColDark = uiSpec.colors.modes.dark[colRole]
+
+    dataPaletteItems.push({
+      title: colRole,
+      colour: currentColRole.colName,
+      description: currentColRole.desc,
+      valueLight: currentColLight,
+      valueDark: currentColDark,
+    })
+  }
 
   const dataCollayersLight = [
     dataGreyscaleLight[2],
