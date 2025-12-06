@@ -44,8 +44,8 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.08rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -58,8 +58,8 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.08rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -72,8 +72,8 @@
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-display);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.08rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -87,7 +87,7 @@
   font-family: var(--fontfam-heading);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -101,8 +101,8 @@ h1,
   font-size: var(--typescale-h1);
   font-family: var(--fontfam-heading);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.08rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -116,8 +116,8 @@ h2,
   font-size: var(--typescale-h2);
   font-family: var(--fontfam-heading);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.08rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -131,8 +131,8 @@ h3,
   font-size: var(--typescale-h3);
   font-family: var(--fontfam-heading);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.06rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -146,8 +146,8 @@ h4,
   font-size: var(--typescale-h4);
   font-family: var(--fontfam-heading);
   font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 1.125;
+  letter-spacing: 0.06rem;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -162,7 +162,7 @@ h5,
   font-family: var(--fontfam-heading);
   font-style: normal;
   letter-spacing: 0.04rem;
-  line-height: 1.125;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -177,7 +177,7 @@ h6,
   font-family: var(--fontfam-heading);
   font-style: normal;
   letter-spacing: 0.04rem;
-  line-height: 1.125;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -192,7 +192,7 @@ p, span,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -207,7 +207,7 @@ b, strong,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.04rem;
-  line-height: 1.125;
+  line-height: 1.25;
 }
 
 /* ==================================== *\
@@ -222,7 +222,7 @@ i, em,
   font-family: var(--fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -237,7 +237,7 @@ a,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -252,7 +252,7 @@ small,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -266,7 +266,7 @@ small,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -281,7 +281,7 @@ sup,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -296,7 +296,7 @@ sub,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -311,7 +311,7 @@ figcaption,
   font-family: var(--fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -326,7 +326,7 @@ code,
   font-family: var(--fontfam-monospace);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -341,7 +341,7 @@ pre,
   font-family: var(--fontfam-monospace);
   font-style: normal;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -356,7 +356,7 @@ q,
   font-family: var(--fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -371,7 +371,7 @@ blockquote,
   font-family: var(--fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ==================================== *\
@@ -385,6 +385,6 @@ blockquote,
   font-family: var(--fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
