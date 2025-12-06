@@ -50,14 +50,15 @@ const buildText = (uiSpec, outputDir) => {
 
     for (const docRoleName in uiSpec.docRoles) {
         const currentDocRole = uiSpec.docRoles[docRoleName]
+        const docRoleData = uiSpec.libRextData.docRoles[docRoleName]
         let weightVal = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {
             weightVal = 'normal'
         }
-        const sizeVal = `var(--typescale-${currentDocRole.libRextData.typescale})`
+        const sizeVal = `var(--typescale-${docRoleData.typescale})`
 
         const fontFamVal = `var(--fontfam-${currentDocRole.fontFamily})`
-        const isItalic = currentDocRole.libRextData.styles.includes('italic')
+        const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
 
         const docRoleVars = [
@@ -67,12 +68,12 @@ const buildText = (uiSpec, outputDir) => {
             { property: 'font-style', value: fontStyleVal, },
         ]
 
-        const selectorHtml = currentDocRole.libRextData.html.length == 0 ? '' : `${currentDocRole.libRextData.html},\n`
-        let docRoleSelector = `${selectorHtml}.${currentDocRole.libRextData.class}`
+        const selectorHtml = docRoleData.html.length == 0 ? '' : `${docRoleData.html},\n`
+        let docRoleSelector = `${selectorHtml}.${docRoleData.class}`
 
         const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
-        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${currentDocRole.libRextData.name}\n * ${line}\n`
-        const docRoleComment3 = ` *    typescale size = ${currentDocRole.libRextData.typescale}\n\\* ${line} */\n`
+        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${docRoleData.name}\n * ${line}\n`
+        const docRoleComment3 = ` *    typescale size = ${docRoleData.typescale}\n\\* ${line} */\n`
 
         docRolesContent += docRoleComment1 + docRoleComment3 + docRoleRule + '\n'
     }

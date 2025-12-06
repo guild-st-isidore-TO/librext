@@ -28,7 +28,7 @@ const themeLibRext = {
             grey: librextGreyscale,
             theme: librextTheme,
         },
-        colourRoles: {
+        docRoles: {
             hero: {
                 typescale: "h1",
                 html: "",
