@@ -1,6 +1,6 @@
 "use strict"
 
-import librext from './spec-librext'
+import librext from './spec-librext.js'
 
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)

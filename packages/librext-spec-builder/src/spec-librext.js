@@ -1,6 +1,12 @@
-import { fontSizes } from './spec-text.js'
-import { librextGreyscale } from './spec-colours.js'
-import { librextTheme } from './spec-colours.js'
+import {
+    librextGreyscale,
+    librextTheme,
+    fontSizes,
+} from 'librext-ui-spec'
+
+// import { fontSizes } from './spec-text.js'
+// import { librextGreyscale } from './spec-colours.js'
+// import { librextTheme } from './spec-colours.js'
 
 const themeLibRext = {
     /**
