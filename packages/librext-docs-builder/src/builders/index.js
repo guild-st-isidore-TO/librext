@@ -14,8 +14,8 @@ const defaultOutputDir = `${__dirname}/../../dist`
  * @namespace templateBuilders
 */
 const build = (uiSpec, outputDir = defaultOutputDir) => {
-    console.log('[LibRext Docs Builder] uiSpec', uiSpec);
-    console.log('[LibRext Docs Builder] outputDir', outputDir);
+    // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
+    // console.log('[LibRext Docs Builder] outputDir', outputDir);
     return {
         htmlColours: buildHtmlColours(uiSpec, outputDir),
         htmlShapes: buildHtmlShapes(uiSpec, outputDir),

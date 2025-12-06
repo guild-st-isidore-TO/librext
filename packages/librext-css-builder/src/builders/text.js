@@ -51,15 +51,19 @@ const buildText = (uiSpec, outputDir) => {
     for (const docRoleName in uiSpec.docRoles) {
         const currentDocRole = uiSpec.docRoles[docRoleName]
         const docRoleData = uiSpec.libRextData.docRoles[docRoleName]
-        let weightVal = currentDocRole.weight
+        console.log('[LibRext CSS - TextBuilder] currentDocRole', currentDocRole)
+        console.log('[LibRext CSS - TextBuilder] docRoleData', docRoleData)
+
+        let weightType = currentDocRole.weight
         if (currentDocRole.weight == 'regular') {
-            weightVal = 'normal'
+            weightType = 'normal'
         }
         const sizeVal = `var(--typescale-${docRoleData.typescale})`
 
         const fontFamVal = `var(--fontfam-${currentDocRole.fontFamily})`
         const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
+        const weightVal = uiSpec.fontWeights[weightType]
 
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
