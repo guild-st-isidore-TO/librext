@@ -23,7 +23,12 @@
   --col-background: #f6f8fa;
   --col-primary: #1B628F;
   --col-secondary: #F6995C;
-  --col-muted: #E6FAFF;
+  --col-tertiary: #EADFB4;
+  --col-indicatorOk: #E6FAFF;
+  --col-indicatorWarn: #E6FAFF;
+  --col-indicatorError: #E6FAFF;
+  --col-indicatorInfo: #E6FAFF;
+  --col-indicatorNull: #E6FAFF;
   --col-dark-grey0: #ffffff;
   --col-dark-grey1: #f6f8fa;
   --col-dark-grey2: #eaeef2;
@@ -48,7 +53,12 @@
   --col-dark-background: #24292f;
   --col-dark-primary: #1B628F;
   --col-dark-secondary: #F6995C;
-  --col-dark-muted: #E6FAFF;
+  --col-dark-tertiary: #EADFB4;
+  --col-dark-indicatorOk: #E6FAFF;
+  --col-dark-indicatorWarn: #E6FAFF;
+  --col-dark-indicatorError: #E6FAFF;
+  --col-dark-indicatorInfo: #E6FAFF;
+  --col-dark-indicatorNull: #E6FAFF;
 }
 
 body {

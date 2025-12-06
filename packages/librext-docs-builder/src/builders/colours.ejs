@@ -113,17 +113,20 @@
       <% for(var i=0; i < paletteDetailItems.length; i++) { %>
       <div class="colour-detail">
         <div class="colour-detail-desc">
-          <h5 class="colour-detail-title"><%= paletteDetailItems[i].colour %></h5>
+          <h5 class="colour-detail-title"><%= paletteDetailItems[i].title %></h5>
           <p>
+            <%= paletteDetailItems[i].colour %><br/>
+            LIGHT: <%= paletteDetailItems[i].valueLight %><br/>
+            DARK: <%= paletteDetailItems[i].valueDark %><br/>
             <%= paletteDetailItems[i].description %>
           </p>
         </div>
         <div class="colour-detail-swatch">
           <div class="palette-cell colour-bg-light">
-            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].colour %>;"></div>
+            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueLight %>;"></div>
           </div>
           <div class="palette-cell colour-bg-dark">
-            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].colour %>;"></div>
+            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueDark %>;"></div>
           </div>
         </div>
       </div>

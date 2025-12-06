@@ -30,13 +30,11 @@ const librextTheme = {
     "deepBlue": "#00335E"
 }
 const themeProps = {}
-// librextGreyscale.forEach((col, idx) => {
 for (const themeColName in librextTheme) {
     const formattedColName = libRextCssUtil.capitalizeFirstLetter(themeColName)
     themeProps[`theme${formattedColName}`] = librextTheme[themeColName]
-    // })
-}
 
+}
 
 const lightCols = {
     ...greyProps,
@@ -45,7 +43,12 @@ const lightCols = {
     background: librextGreyscale[1],
     primary: librextTheme.oceanBlue,
     secondary: librextTheme.orange,
-    muted: librextTheme.lightBlue,
+    tertiary: librextTheme.khaki,
+    indicatorOk: librextTheme.lightBlue,
+    indicatorWarn: librextTheme.lightBlue,
+    indicatorError: librextTheme.lightBlue,
+    indicatorInfo: librextTheme.lightBlue,
+    indicatorNull: librextTheme.lightBlue,
 }
 
 const darkCols = {
@@ -55,7 +58,12 @@ const darkCols = {
     background: librextGreyscale[10],
     primary: librextTheme.oceanBlue,
     secondary: librextTheme.orange,
-    muted: librextTheme.lightBlue,
+    tertiary: librextTheme.khaki,
+    indicatorOk: librextTheme.lightBlue,
+    indicatorWarn: librextTheme.lightBlue,
+    indicatorError: librextTheme.lightBlue,
+    indicatorInfo: librextTheme.lightBlue,
+    indicatorNull: librextTheme.lightBlue,
 }
 
 const themeColour = {
