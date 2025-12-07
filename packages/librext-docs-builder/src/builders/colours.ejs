@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/librext-base.css">
   <link rel="stylesheet" href="./fonts/librext-fonts.css">
   <link rel="stylesheet" href="./css/librext-text.css">
-  
+
   <link rel="stylesheet" href="./css/librext-colours.css">
   <link rel="stylesheet" href="./css/librext-shapes.css">
   <link rel="stylesheet" href="./doc-style.css">
@@ -54,7 +54,9 @@
     <div class="palette-cell colour-bg-light">
       <div class="palette-row">
         <% for(var i=0; i < themePaletteLight.length; i++) { %>
-        <div class="palette-item four palette-box" style="background-color: <%= themePaletteLight[i].colour %>;">
+        <div class="palette-item palette-box" style="background-color: <%= themePaletteLight[i].colour %>;">
+          <span class="box-text box-heading"><%= themePaletteLight[i].heading %></span><br />
+          <span class="box-text box-body"><%= themePaletteLight[i].body %></span>
         </div>
         <% } %>
       </div>
@@ -63,7 +65,9 @@
     <div class="palette-cell colour-bg-dark">
       <div class="palette-row">
         <% for(var i=0; i < themePaletteDark.length; i++) { %>
-        <div class="palette-item four palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
+        <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
+          <span class="box-text box-heading"><%= themePaletteDark[i].heading %></span><br />
+          <span class="box-text box-body"><%= themePaletteDark[i].body %></span>
         </div>
         <% } %>
       </div>
@@ -90,7 +94,9 @@
     <div class="palette-cell colour-bg-light">
       <div class="palette-row">
         <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
-        <div class="palette-item six palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
+        <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
+          <span class="box-text box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
+          <span class="box-text box-body"><%= greyscalePaletteLight[i].body %></span>
         </div>
         <% } %>
       </div>
@@ -99,7 +105,9 @@
     <div class="palette-cell colour-bg-dark">
       <div class="palette-row">
         <% for(var i=0; i < greyscalePaletteDark.length; i++) { %>
-        <div class="palette-item six palette-box" style="background-color: <%= greyscalePaletteDark[i].colour %>;">
+        <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteDark[i].colour %>;">
+          <span class="box-text box-heading"><%= greyscalePaletteDark[i].heading %></span><br />
+          <span class="box-text box-body"><%= greyscalePaletteDark[i].body %></span>
         </div>
         <% } %>
       </div>
@@ -115,24 +123,30 @@
         <div class="colour-detail-desc">
           <h5 class="colour-detail-title"><%= paletteDetailItems[i].title %></h5>
           <p>
-            <%= paletteDetailItems[i].colour %><br/>
-            LIGHT: <%= paletteDetailItems[i].valueLight %><br/>
-            DARK: <%= paletteDetailItems[i].valueDark %><br/>
+            <%= paletteDetailItems[i].colour %><br />
+            LIGHT: <%= paletteDetailItems[i].valueLight %><br />
+            DARK: <%= paletteDetailItems[i].valueDark %><br />
             <%= paletteDetailItems[i].description %>
           </p>
         </div>
         <div class="colour-detail-swatch">
           <div class="palette-cell colour-bg-light">
-            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueLight %>;"></div>
+            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueLight %>;">
+              <span class="box-text box-heading"><%= paletteDetailItems[i].heading %></span><br />
+              <span class="box-text box-body"><%= paletteDetailItems[i].body %></span>
+            </div>
           </div>
           <div class="palette-cell colour-bg-dark">
-            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueDark %>;"></div>
+            <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueDark %>;">
+              <span class="box-text box-heading"><%= paletteDetailItems[i].heading %></span><br />
+              <span class="box-text box-body"><%= paletteDetailItems[i].body %></span>
+            </div>
           </div>
         </div>
       </div>
       <% } %>
     </div>
-<!-- 
+    <!-- 
     <h2>Layers</h2>
 
     <div class="palette-cell colour-bg-light">

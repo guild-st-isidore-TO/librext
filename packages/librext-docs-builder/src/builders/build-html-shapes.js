@@ -21,6 +21,8 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
         dataBorderRadSizes.push({
             sizeCode: cRadiusPrefixes[cRadiusSize],
             lenVar: currentRadSize,
+            heading: 'testy',
+            body: 'testy',
         })
     }
 
@@ -31,6 +33,8 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
             sizeCode: bShadowSize,
             len: currentShadowSize.len,
             blur: currentShadowSize.blur,
+            heading: 'testy',
+            body: 'testy',
         })
     }
 
@@ -38,6 +42,8 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
     for (const widgetSize in uiSpec.widgetHeights) {
         dataWidgets.push({
             sizeCode: widgetSize,
+            heading: 'testy',
+            body: 'testy',
         })
     }
 
@@ -46,6 +52,8 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
         dataCards.push({
             sizeCode: cardSize,
             specText: 'Cras in lacus a dui tristique rutrum id sed.',
+            heading: 'testy',
+            body: 'testy',
         })
     }
 

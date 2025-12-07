@@ -137,6 +137,7 @@ hr.section-divider {
 
 .shape-box {
     border-radius: 0;
+    text-align: center;
     background-color: #cccccc;
 }
 
@@ -158,8 +159,9 @@ hr.section-divider {
 }
 
 .palette-box {
-    height: 8rem;
+    height: calc(var(--lbrxt-widget-ht-xl) * 1.25);
     margin: 0;
+    text-align: center;
     background-color: #bbbbbb;
 }
 
@@ -358,4 +360,15 @@ hr.section-divider {
     background-color: var(--lbrxt-col-grey4);
     width: 100%;
     margin: 2rem 0;
+    text-align: center;
+}
+
+.box-text {
+    /* display: block; */
+    margin: 0;
+    /* text-align: center; */
+}
+
+.box-text.box-heading {
+    font-weight: bold;
 }
