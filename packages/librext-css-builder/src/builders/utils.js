@@ -91,15 +91,6 @@ function cartesian(...args) {
     return r;
 }
 
-const getPermutationsOfArrays = (array1, array2) => {
-    var resultArray = cartesian(array1, array2)
-    return resultArray
-}
-
-const capitalizeFirstLetter = (val) => {
-    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
-}
-
 const util = {
     writeCssVarRule,
     writeCssRule,
@@ -110,8 +101,6 @@ const util = {
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
-    capitalizeFirstLetter
 }
 
 export default util
@@ -125,6 +114,4 @@ export {
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
-    capitalizeFirstLetter
 }

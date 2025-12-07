@@ -4,23 +4,6 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const writeCssVarRule = (selector, propList) => {
-    let variablesContent = `${selector} {\n`;
-    propList.forEach(sProp => {
-        variablesContent += `  --${sProp.property}: ${sProp.value};\n`
-    })
-    variablesContent += `}\n`
-    return variablesContent
-}
-const writeCssRule = (selector, propList) => {
-    let variablesContent = `${selector} {\n`;
-    propList.forEach(sProp => {
-        variablesContent += `  ${sProp.property}: ${sProp.value};\n`
-    })
-    variablesContent += `}\n`
-    return variablesContent
-}
-
 const dataDir = `${__dirname}/../data`
 const dataUiSpecDir = dataDir
 const templatesDir = `${__dirname}/html`
@@ -91,33 +74,22 @@ function cartesian(...args) {
     return r;
 }
 
-const getPermutationsOfArrays = (array1, array2) => {
-    var resultArray = cartesian(array1, array2)
-    return resultArray
-}
-
 const capitalizeFirstLetter = (val) => {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
 
-const util = {
-    writeCssVarRule,
-    writeCssRule,
-    dataDir,
+const util = {    dataDir,
     dataUiSpecDir,
     templatesDir,
     htmlOutputDir,
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
     capitalizeFirstLetter
 }
 
 export default util
 export {
-    writeCssVarRule,
-    writeCssRule,
     dataDir,
     dataUiSpecDir,
     templatesDir,
@@ -125,6 +97,5 @@ export {
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
     capitalizeFirstLetter
 }

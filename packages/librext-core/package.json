@@ -1,0 +1,12 @@
+{
+  "name": "librext-core",
+  "version": "0.1.6",
+  "description": "...",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RJ Salvador <salvador.workshop@gmail.com>",
+  "license": "MIT"
+}

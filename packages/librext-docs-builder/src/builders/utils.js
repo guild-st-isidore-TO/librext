@@ -4,23 +4,6 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const writeCssVarRule = (selector, propList) => {
-    let variablesContent = `${selector} {\n`;
-    propList.forEach(sProp => {
-        variablesContent += `  --${sProp.property}: ${sProp.value};\n`
-    })
-    variablesContent += `}\n`
-    return variablesContent
-}
-const writeCssRule = (selector, propList) => {
-    let variablesContent = `${selector} {\n`;
-    propList.forEach(sProp => {
-        variablesContent += `  ${sProp.property}: ${sProp.value};\n`
-    })
-    variablesContent += `}\n`
-    return variablesContent
-}
-
 const dataDir = `${__dirname}/../data`
 const dataUiSpecDir = dataDir
 const templatesDir = `${__dirname}`
@@ -75,34 +58,7 @@ const fontData = {
 
 const ROOT_SELECTOR = ':root'
 
-function cartesian(...args) {
-    var r = [], max = args.length - 1;
-    function helper(arr, i) {
-        for (var j = 0, l = args[i].length; j < l; j++) {
-            var a = arr.slice(0); // clone arr
-            a.push(args[i][j]);
-            if (i == max)
-                r.push(a);
-            else
-                helper(a, i + 1);
-        }
-    }
-    helper([], 0);
-    return r;
-}
-
-const getPermutationsOfArrays = (array1, array2) => {
-    var resultArray = cartesian(array1, array2)
-    return resultArray
-}
-
-const capitalizeFirstLetter = (val) => {
-    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
-}
-
 const util = {
-    writeCssVarRule,
-    writeCssRule,
     dataDir,
     dataUiSpecDir,
     templatesDir,
@@ -110,14 +66,10 @@ const util = {
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
-    capitalizeFirstLetter
 }
 
 export default util
 export {
-    writeCssVarRule,
-    writeCssRule,
     dataDir,
     dataUiSpecDir,
     templatesDir,
@@ -125,6 +77,4 @@ export {
     cssOutputDir,
     fontData,
     ROOT_SELECTOR,
-    getPermutationsOfArrays,
-    capitalizeFirstLetter
 }
