@@ -14,7 +14,8 @@ const buildText = (uiSpec, outputDir) => {
 
     const rootCssVars = []
     let rootCssVarContent = ''
-
+    let fontFamContent = ''
+    let fontScaleContent = ''
     let docRolesContent = ''
 
     let typeScaleComment = `/* ${thickLine} *\\\n`
@@ -27,6 +28,11 @@ const buildText = (uiSpec, outputDir) => {
             property: `lbrxt-fontfam-${fontRole}`,
             value: currentFontFamily,
         })
+        const fontRoleVars = [
+            { property: 'font-family', value: currentFontFamily, },
+        ]
+        const fontRoleRule = libRextCssUtil.writeCssRule(`.lbrxt-fontfam-${fontRole}`, fontRoleVars);
+        fontFamContent += fontRoleRule + '\n'
     }
 
     uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
@@ -34,6 +40,11 @@ const buildText = (uiSpec, outputDir) => {
             property: `lbrxt-typescale-${idx + 1}`,
             value: fontSizeVal,
         })
+        const fontSizeVars = [
+            { property: 'font-size', value: fontSizeVal, },
+        ]
+        const fontSizeRule = libRextCssUtil.writeCssRule(`.lbrxt-typescale-${idx + 1}`, fontSizeVars);
+        fontScaleContent += fontSizeRule + '\n'
     })
 
     for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
@@ -41,6 +52,11 @@ const buildText = (uiSpec, outputDir) => {
             property: `lbrxt-typescale-${fontSizeRole}`,
             value: uiSpec.libRextData.fontSizes[fontSizeRole],
         })
+        const fontSizeVars = [
+            { property: 'font-size', value: uiSpec.libRextData.fontSizes[fontSizeRole], },
+        ]
+        const fontSizeRule = libRextCssUtil.writeCssRule(`.lbrxt-typescale-${fontSizeRole}`, fontSizeVars);
+        fontScaleContent += fontSizeRule + '\n'
     }
 
     let docRoleHeadingComment = `/* ${thickLine} *\\\n`
@@ -92,7 +108,7 @@ const buildText = (uiSpec, outputDir) => {
     const rootCssVarRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, rootCssVars);
     rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
-    const allContent = prefaceContent + '\n' + rootCssVarContent + docRolesContent
+    const allContent = prefaceContent + '\n' + rootCssVarContent + fontFamContent + fontScaleContent + docRolesContent
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-text.css`, allContent)
 }
 

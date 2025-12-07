@@ -30,6 +30,114 @@
   --lbrxt-typescale-tiny: 0.75rem;
 }
 
+.lbrxt-fontfam-body {
+  font-family: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-bodyAlt {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-heading {
+  font-family: "CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-headingAlt {
+  font-family: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-display {
+  font-family: "Cinzel", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-monospace {
+  font-family: "Inconsolata", Courier, "Monaco", monospace;
+}
+
+.lbrxt-fontfam-label {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiHeading {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiBody {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-typescale-1 {
+  font-size: 0.75rem;
+}
+
+.lbrxt-typescale-2 {
+  font-size: 0.833rem;
+}
+
+.lbrxt-typescale-3 {
+  font-size: 1rem;
+}
+
+.lbrxt-typescale-4 {
+  font-size: 1.2rem;
+}
+
+.lbrxt-typescale-5 {
+  font-size: 1.44rem;
+}
+
+.lbrxt-typescale-6 {
+  font-size: 1.728rem;
+}
+
+.lbrxt-typescale-7 {
+  font-size: 2.074rem;
+}
+
+.lbrxt-typescale-8 {
+  font-size: 2.488rem;
+}
+
+.lbrxt-typescale-9 {
+  font-size: 2.986rem;
+}
+
+.lbrxt-typescale-h1 {
+  font-size: 2.986rem;
+}
+
+.lbrxt-typescale-h2 {
+  font-size: 2.488rem;
+}
+
+.lbrxt-typescale-h3 {
+  font-size: 2.074rem;
+}
+
+.lbrxt-typescale-h4 {
+  font-size: 1.728rem;
+}
+
+.lbrxt-typescale-h5 {
+  font-size: 1.44rem;
+}
+
+.lbrxt-typescale-h6 {
+  font-size: 1.2rem;
+}
+
+.lbrxt-typescale-body {
+  font-size: 1rem;
+}
+
+.lbrxt-typescale-small {
+  font-size: 0.833rem;
+}
+
+.lbrxt-typescale-tiny {
+  font-size: 0.75rem;
+}
+
 /* ================================================ *\
  * DOCUMENT ROLES
 \* ================================================ */
