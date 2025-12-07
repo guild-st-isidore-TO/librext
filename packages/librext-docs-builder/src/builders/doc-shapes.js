@@ -38,7 +38,7 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
             body: currentShadowSize,
         })
     }
-    
+
     const dataWidgets = []
     for (const widgetSize in uiSpec.widgetHeights) {
         const currentWidgetSize = uiSpec.widgetHeights[widgetSize]
