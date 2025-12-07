@@ -14,7 +14,8 @@ const buildText = (uiSpec, outputDir) => {
 
     const rootCssVars = []
     let rootCssVarContent = ''
-
+    let fontFamContent = ''
+    let fontScaleContent = ''
     let docRolesContent = ''
 
     let typeScaleComment = `/* ${thickLine} *\\\n`
@@ -24,23 +25,38 @@ const buildText = (uiSpec, outputDir) => {
     for (const fontRole in uiSpec.fonts) {
         const currentFontFamily = uiSpec.fonts[fontRole]
         rootCssVars.push({
-            property: `fontfam-${fontRole}`,
+            property: `lbrxt-fontfam-${fontRole}`,
             value: currentFontFamily,
         })
+        const fontRoleVars = [
+            { property: 'font-family', value: currentFontFamily, },
+        ]
+        const fontRoleRule = libRextCssUtil.writeCssRule(`.lbrxt-fontfam-${fontRole}`, fontRoleVars);
+        fontFamContent += fontRoleRule + '\n'
     }
 
     uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
         rootCssVars.push({
-            property: `typescale-${idx + 1}`,
+            property: `lbrxt-typescale-${idx + 1}`,
             value: fontSizeVal,
         })
+        const fontSizeVars = [
+            { property: 'font-size', value: fontSizeVal, },
+        ]
+        const fontSizeRule = libRextCssUtil.writeCssRule(`.lbrxt-typescale-${idx + 1}`, fontSizeVars);
+        fontScaleContent += fontSizeRule + '\n'
     })
 
     for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
         rootCssVars.push({
-            property: `typescale-${fontSizeRole}`,
+            property: `lbrxt-typescale-${fontSizeRole}`,
             value: uiSpec.libRextData.fontSizes[fontSizeRole],
         })
+        const fontSizeVars = [
+            { property: 'font-size', value: uiSpec.libRextData.fontSizes[fontSizeRole], },
+        ]
+        const fontSizeRule = libRextCssUtil.writeCssRule(`.lbrxt-typescale-${fontSizeRole}`, fontSizeVars);
+        fontScaleContent += fontSizeRule + '\n'
     }
 
     let docRoleHeadingComment = `/* ${thickLine} *\\\n`
@@ -58,9 +74,9 @@ const buildText = (uiSpec, outputDir) => {
         if (currentDocRole.weight == 'regular') {
             weightType = 'normal'
         }
-        const sizeVal = `var(--typescale-${docRoleData.typescale})`
+        const sizeVal = `var(--lbrxt-typescale-${docRoleData.typescale})`
 
-        const fontFamVal = `var(--fontfam-${currentDocRole.fontFamily})`
+        const fontFamVal = `var(--lbrxt-fontfam-${currentDocRole.fontFamily})`
         const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
         const weightVal = uiSpec.fontWeights[weightType]
@@ -92,7 +108,7 @@ const buildText = (uiSpec, outputDir) => {
     const rootCssVarRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, rootCssVars);
     rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
-    const allContent = prefaceContent + '\n' + rootCssVarContent + docRolesContent
+    const allContent = prefaceContent + '\n' + rootCssVarContent + fontFamContent + fontScaleContent + docRolesContent
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-text.css`, allContent)
 }
 

@@ -128,7 +128,7 @@
 
 .card {
     margin: 4rem 0;
-    background-color: var(--col-grey3);
+    background-color: var(--lbrxt-col-grey3);
 }
 
 .shape-box {
@@ -329,7 +329,7 @@
     flex: 1 1 auto;
     height: 10rem;
     margin: 1.5rem;
-    background-color: var(--col-grey4);
+    background-color: var(--lbrxt-col-grey4);
 }
 
 @media (min-width: 481px) {
@@ -349,7 +349,7 @@
 \* ------------------------------------ */
 
 .widget-set .widget {
-    background-color: var(--col-grey4);
+    background-color: var(--lbrxt-col-grey4);
     width: 100%;
     margin: 2rem 0;
 }

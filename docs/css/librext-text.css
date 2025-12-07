@@ -1,33 +1,141 @@
 /* TEXT BUILDERS */
 
 :root {
-  --fontfam-body: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
-  --fontfam-bodyAlt: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
-  --fontfam-heading: "CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif;
-  --fontfam-headingAlt: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
-  --fontfam-display: "Cinzel", "Times New Roman", Georgia, serif;
-  --fontfam-monospace: "Inconsolata", Courier, "Monaco", monospace;
-  --fontfam-label: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
-  --fontfam-uiHeading: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
-  --fontfam-uiBody: "Lato", Arial, Helvetica, sans-serif;
-  --typescale-1: 0.75rem;
-  --typescale-2: 0.833rem;
-  --typescale-3: 1rem;
-  --typescale-4: 1.2rem;
-  --typescale-5: 1.44rem;
-  --typescale-6: 1.728rem;
-  --typescale-7: 2.074rem;
-  --typescale-8: 2.488rem;
-  --typescale-9: 2.986rem;
-  --typescale-h1: 2.986rem;
-  --typescale-h2: 2.488rem;
-  --typescale-h3: 2.074rem;
-  --typescale-h4: 1.728rem;
-  --typescale-h5: 1.44rem;
-  --typescale-h6: 1.2rem;
-  --typescale-body: 1rem;
-  --typescale-small: 0.833rem;
-  --typescale-tiny: 0.75rem;
+  --lbrxt-fontfam-body: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+  --lbrxt-fontfam-bodyAlt: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --lbrxt-fontfam-heading: "CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --lbrxt-fontfam-headingAlt: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+  --lbrxt-fontfam-display: "Cinzel", "Times New Roman", Georgia, serif;
+  --lbrxt-fontfam-monospace: "Inconsolata", Courier, "Monaco", monospace;
+  --lbrxt-fontfam-label: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --lbrxt-fontfam-uiHeading: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --lbrxt-fontfam-uiBody: "Lato", Arial, Helvetica, sans-serif;
+  --lbrxt-typescale-1: 0.75rem;
+  --lbrxt-typescale-2: 0.833rem;
+  --lbrxt-typescale-3: 1rem;
+  --lbrxt-typescale-4: 1.2rem;
+  --lbrxt-typescale-5: 1.44rem;
+  --lbrxt-typescale-6: 1.728rem;
+  --lbrxt-typescale-7: 2.074rem;
+  --lbrxt-typescale-8: 2.488rem;
+  --lbrxt-typescale-9: 2.986rem;
+  --lbrxt-typescale-h1: 2.986rem;
+  --lbrxt-typescale-h2: 2.488rem;
+  --lbrxt-typescale-h3: 2.074rem;
+  --lbrxt-typescale-h4: 1.728rem;
+  --lbrxt-typescale-h5: 1.44rem;
+  --lbrxt-typescale-h6: 1.2rem;
+  --lbrxt-typescale-body: 1rem;
+  --lbrxt-typescale-small: 0.833rem;
+  --lbrxt-typescale-tiny: 0.75rem;
+}
+
+.lbrxt-fontfam-body {
+  font-family: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-bodyAlt {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-heading {
+  font-family: "CormorantGaramond", "Cormorant Garamond", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-headingAlt {
+  font-family: "CrimsonText", "Crimson Text", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-display {
+  font-family: "Cinzel", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-monospace {
+  font-family: "Inconsolata", Courier, "Monaco", monospace;
+}
+
+.lbrxt-fontfam-label {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiHeading {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiBody {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-typescale-1 {
+  font-size: 0.75rem;
+}
+
+.lbrxt-typescale-2 {
+  font-size: 0.833rem;
+}
+
+.lbrxt-typescale-3 {
+  font-size: 1rem;
+}
+
+.lbrxt-typescale-4 {
+  font-size: 1.2rem;
+}
+
+.lbrxt-typescale-5 {
+  font-size: 1.44rem;
+}
+
+.lbrxt-typescale-6 {
+  font-size: 1.728rem;
+}
+
+.lbrxt-typescale-7 {
+  font-size: 2.074rem;
+}
+
+.lbrxt-typescale-8 {
+  font-size: 2.488rem;
+}
+
+.lbrxt-typescale-9 {
+  font-size: 2.986rem;
+}
+
+.lbrxt-typescale-h1 {
+  font-size: 2.986rem;
+}
+
+.lbrxt-typescale-h2 {
+  font-size: 2.488rem;
+}
+
+.lbrxt-typescale-h3 {
+  font-size: 2.074rem;
+}
+
+.lbrxt-typescale-h4 {
+  font-size: 1.728rem;
+}
+
+.lbrxt-typescale-h5 {
+  font-size: 1.44rem;
+}
+
+.lbrxt-typescale-h6 {
+  font-size: 1.2rem;
+}
+
+.lbrxt-typescale-body {
+  font-size: 1rem;
+}
+
+.lbrxt-typescale-small {
+  font-size: 0.833rem;
+}
+
+.lbrxt-typescale-tiny {
+  font-size: 0.75rem;
 }
 
 /* ================================================ *\
@@ -41,8 +149,8 @@
 \* ------------------------------------ */
 .lbrxt-hero {
   font-weight: 700;
-  font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display);
+  font-size: var(--lbrxt-typescale-h1);
+  font-family: var(--lbrxt-fontfam-display);
   font-style: normal;
   letter-spacing: 0.2rem;
   line-height: 1.25;
@@ -57,8 +165,8 @@
 \* ------------------------------------ */
 .lbrxt-headline {
   font-weight: 700;
-  font-size: var(--typescale-h1);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h1);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.012rem;
   line-height: 1.25;
@@ -73,8 +181,8 @@
 \* ------------------------------------ */
 .lbrxt-title {
   font-weight: 700;
-  font-size: var(--typescale-h1);
-  font-family: var(--fontfam-display);
+  font-size: var(--lbrxt-typescale-h1);
+  font-family: var(--lbrxt-fontfam-display);
   font-style: normal;
   letter-spacing: 0.2rem;
   line-height: 1.25;
@@ -89,8 +197,8 @@
 \* ------------------------------------ */
 .lbrxt-subtitle {
   font-weight: 400;
-  font-size: var(--typescale-h3);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h3);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -106,8 +214,8 @@
 h1,
 .lbrxt-h1 {
   font-weight: 700;
-  font-size: var(--typescale-h1);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h1);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.012rem;
   line-height: 1.25;
@@ -123,8 +231,8 @@ h1,
 h2,
 .lbrxt-h2 {
   font-weight: 700;
-  font-size: var(--typescale-h2);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h2);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.012rem;
   line-height: 1.25;
@@ -140,8 +248,8 @@ h2,
 h3,
 .lbrxt-h3 {
   font-weight: 700;
-  font-size: var(--typescale-h3);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h3);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.06rem;
   line-height: 1.25;
@@ -157,8 +265,8 @@ h3,
 h4,
 .lbrxt-h4 {
   font-weight: 700;
-  font-size: var(--typescale-h4);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h4);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.06rem;
   line-height: 1.25;
@@ -174,8 +282,8 @@ h4,
 h5,
 .lbrxt-h5 {
   font-weight: 700;
-  font-size: var(--typescale-h5);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h5);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.04rem;
   line-height: 1.25;
@@ -191,8 +299,8 @@ h5,
 h6,
 .lbrxt-h6 {
   font-weight: 700;
-  font-size: var(--typescale-h6);
-  font-family: var(--fontfam-heading);
+  font-size: var(--lbrxt-typescale-h6);
+  font-family: var(--lbrxt-fontfam-heading);
   font-style: normal;
   letter-spacing: 0.04rem;
   line-height: 1.25;
@@ -208,8 +316,8 @@ h6,
 p, span,
 .lbrxt-body {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -225,8 +333,8 @@ p, span,
 b, strong,
 .lbrxt-strong {
   font-weight: 700;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.04rem;
   line-height: 1.25;
@@ -242,8 +350,8 @@ b, strong,
 i, em,
 .lbrxt-em {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -259,8 +367,8 @@ i, em,
 li,
 .lbrxt-li {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -276,8 +384,8 @@ li,
 a,
 .lbrxt-link {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -293,8 +401,8 @@ a,
 small,
 .lbrxt-small {
   font-weight: 400;
-  font-size: var(--typescale-small);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-small);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -309,8 +417,8 @@ small,
 \* ------------------------------------ */
 .lbrxt-tiny {
   font-weight: 400;
-  font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-tiny);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -326,8 +434,8 @@ small,
 sup,
 .lbrxt-super {
   font-weight: 400;
-  font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-tiny);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -343,8 +451,8 @@ sup,
 sub,
 .lbrxt-sub {
   font-weight: 400;
-  font-size: var(--typescale-tiny);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-tiny);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -360,8 +468,8 @@ sub,
 figcaption,
 .lbrxt-imgcap {
   font-weight: 400;
-  font-size: var(--typescale-small);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-small);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -377,8 +485,8 @@ figcaption,
 code,
 .lbrxt-codein {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-monospace);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-monospace);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -394,8 +502,8 @@ code,
 pre,
 .lbrxt-codeblk {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-monospace);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-monospace);
   font-style: normal;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -411,8 +519,8 @@ pre,
 q,
 .lbrxt-quote {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -428,8 +536,8 @@ q,
 blockquote,
 .lbrxt-bquote {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
   line-height: 1.5;
@@ -444,8 +552,8 @@ blockquote,
 \* ------------------------------------ */
 .lbrxt-pquote {
   font-weight: 400;
-  font-size: var(--typescale-body);
-  font-family: var(--fontfam-body);
+  font-size: var(--lbrxt-typescale-body);
+  font-family: var(--lbrxt-fontfam-body);
   font-style: italic;
   letter-spacing: 0.02rem;
   line-height: 1.5;

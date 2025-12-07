@@ -20,7 +20,7 @@ const buildBase = (uiSpec, outputDir) => {
     const styleVars = []
     uiSpec.sizes.forEach((sizeNum, idx) => {
         const scaleVar = {
-            property: `librext-scale-${idx + 1}`,
+            property: `lbrxt-scale-${idx + 1}`,
             value: `${sizeNum}px`,
         }
         styleVars.push(scaleVar);
@@ -28,7 +28,7 @@ const buildBase = (uiSpec, outputDir) => {
     
     uiSpec.space.forEach((spaceNum, idx) => {
         const scaleVar = {
-            property: `librext-space-${idx + 1}`,
+            property: `lbrxt-space-${idx + 1}`,
             value: `${spaceNum}px`,
         }
         styleVars.push(scaleVar);
