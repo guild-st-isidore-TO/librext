@@ -10,36 +10,36 @@
   --lbrxt-fontfam-label: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
   --lbrxt-fontfam-uiHeading: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
   --lbrxt-fontfam-uiBody: "Lato", Arial, Helvetica, sans-serif;
-  --lbrxt-typescale-1: 1.09375rem;
-  --lbrxt-typescale-2: 1.171875rem;
+  --lbrxt-typescale-1: 1.015625rem;
+  --lbrxt-typescale-2: 1.09375rem;
   --lbrxt-typescale-3: 1.25rem;
-  --lbrxt-typescale-4: 1.328125rem;
-  --lbrxt-typescale-5: 1.40625rem;
-  --lbrxt-typescale-6: 1.484375rem;
-  --lbrxt-typescale-7: 1.5625rem;
-  --lbrxt-typescale-8: 1.640625rem;
-  --lbrxt-typescale-9: 1.796875rem;
-  --lbrxt-typescale-10: 1.875rem;
-  --lbrxt-typescale-11: 1.953125rem;
-  --lbrxt-typescale-12: 2.109375rem;
-  --lbrxt-typescale-13: 2.265625rem;
-  --lbrxt-typescale-14: 2.34375rem;
-  --lbrxt-typescale-15: 2.5rem;
-  --lbrxt-typescale-tiny: 1.09375rem;
-  --lbrxt-typescale-small: 1.171875rem;
+  --lbrxt-typescale-4: 1.40625rem;
+  --lbrxt-typescale-5: 1.5625rem;
+  --lbrxt-typescale-6: 1.796875rem;
+  --lbrxt-typescale-7: 1.953125rem;
+  --lbrxt-typescale-8: 2.265625rem;
+  --lbrxt-typescale-9: 2.5rem;
+  --lbrxt-typescale-10: 2.8125rem;
+  --lbrxt-typescale-11: 3.125rem;
+  --lbrxt-typescale-12: 3.515625rem;
+  --lbrxt-typescale-13: 3.984375rem;
+  --lbrxt-typescale-14: 4.453125rem;
+  --lbrxt-typescale-15: 5rem;
+  --lbrxt-typescale-tiny: 1.015625rem;
+  --lbrxt-typescale-small: 1.09375rem;
   --lbrxt-typescale-body: 1.25rem;
-  --lbrxt-typescale-h6: 1.328125rem;
-  --lbrxt-typescale-h5: 1.40625rem;
-  --lbrxt-typescale-h4: 1.484375rem;
-  --lbrxt-typescale-h3: 1.5625rem;
-  --lbrxt-typescale-h2: 1.640625rem;
-  --lbrxt-typescale-h1: 1.796875rem;
-  --lbrxt-typescale-d6: 1.875rem;
-  --lbrxt-typescale-d5: 1.953125rem;
-  --lbrxt-typescale-d4: 2.109375rem;
-  --lbrxt-typescale-d3: 2.265625rem;
-  --lbrxt-typescale-d2: 2.34375rem;
-  --lbrxt-typescale-d1: 2.5rem;
+  --lbrxt-typescale-h6: 1.40625rem;
+  --lbrxt-typescale-h5: 1.5625rem;
+  --lbrxt-typescale-h4: 1.796875rem;
+  --lbrxt-typescale-h3: 1.953125rem;
+  --lbrxt-typescale-h2: 2.265625rem;
+  --lbrxt-typescale-h1: 2.5rem;
+  --lbrxt-typescale-d6: 2.8125rem;
+  --lbrxt-typescale-d5: 3.125rem;
+  --lbrxt-typescale-d4: 3.515625rem;
+  --lbrxt-typescale-d3: 3.984375rem;
+  --lbrxt-typescale-d2: 4.453125rem;
+  --lbrxt-typescale-d1: 5rem;
 }
 
 .lbrxt-fontfam-body {
@@ -79,11 +79,11 @@
 }
 
 .lbrxt-typescale-1 {
-  font-size: 1.09375rem;
+  font-size: 1.015625rem;
 }
 
 .lbrxt-typescale-2 {
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
 }
 
 .lbrxt-typescale-3 {
@@ -91,59 +91,59 @@
 }
 
 .lbrxt-typescale-4 {
-  font-size: 1.328125rem;
-}
-
-.lbrxt-typescale-5 {
   font-size: 1.40625rem;
 }
 
-.lbrxt-typescale-6 {
-  font-size: 1.484375rem;
-}
-
-.lbrxt-typescale-7 {
+.lbrxt-typescale-5 {
   font-size: 1.5625rem;
 }
 
-.lbrxt-typescale-8 {
-  font-size: 1.640625rem;
-}
-
-.lbrxt-typescale-9 {
+.lbrxt-typescale-6 {
   font-size: 1.796875rem;
 }
 
-.lbrxt-typescale-10 {
-  font-size: 1.875rem;
-}
-
-.lbrxt-typescale-11 {
+.lbrxt-typescale-7 {
   font-size: 1.953125rem;
 }
 
-.lbrxt-typescale-12 {
-  font-size: 2.109375rem;
-}
-
-.lbrxt-typescale-13 {
+.lbrxt-typescale-8 {
   font-size: 2.265625rem;
 }
 
-.lbrxt-typescale-14 {
-  font-size: 2.34375rem;
-}
-
-.lbrxt-typescale-15 {
+.lbrxt-typescale-9 {
   font-size: 2.5rem;
 }
 
+.lbrxt-typescale-10 {
+  font-size: 2.8125rem;
+}
+
+.lbrxt-typescale-11 {
+  font-size: 3.125rem;
+}
+
+.lbrxt-typescale-12 {
+  font-size: 3.515625rem;
+}
+
+.lbrxt-typescale-13 {
+  font-size: 3.984375rem;
+}
+
+.lbrxt-typescale-14 {
+  font-size: 4.453125rem;
+}
+
+.lbrxt-typescale-15 {
+  font-size: 5rem;
+}
+
 .lbrxt-typescale-tiny {
-  font-size: 1.09375rem;
+  font-size: 1.015625rem;
 }
 
 .lbrxt-typescale-small {
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
 }
 
 .lbrxt-typescale-body {
@@ -151,51 +151,51 @@
 }
 
 .lbrxt-typescale-h6 {
-  font-size: 1.328125rem;
-}
-
-.lbrxt-typescale-h5 {
   font-size: 1.40625rem;
 }
 
-.lbrxt-typescale-h4 {
-  font-size: 1.484375rem;
-}
-
-.lbrxt-typescale-h3 {
+.lbrxt-typescale-h5 {
   font-size: 1.5625rem;
 }
 
-.lbrxt-typescale-h2 {
-  font-size: 1.640625rem;
-}
-
-.lbrxt-typescale-h1 {
+.lbrxt-typescale-h4 {
   font-size: 1.796875rem;
 }
 
-.lbrxt-typescale-d6 {
-  font-size: 1.875rem;
-}
-
-.lbrxt-typescale-d5 {
+.lbrxt-typescale-h3 {
   font-size: 1.953125rem;
 }
 
-.lbrxt-typescale-d4 {
-  font-size: 2.109375rem;
-}
-
-.lbrxt-typescale-d3 {
+.lbrxt-typescale-h2 {
   font-size: 2.265625rem;
 }
 
+.lbrxt-typescale-h1 {
+  font-size: 2.5rem;
+}
+
+.lbrxt-typescale-d6 {
+  font-size: 2.8125rem;
+}
+
+.lbrxt-typescale-d5 {
+  font-size: 3.125rem;
+}
+
+.lbrxt-typescale-d4 {
+  font-size: 3.515625rem;
+}
+
+.lbrxt-typescale-d3 {
+  font-size: 3.984375rem;
+}
+
 .lbrxt-typescale-d2 {
-  font-size: 2.34375rem;
+  font-size: 4.453125rem;
 }
 
 .lbrxt-typescale-d1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 /* ================================================ *\

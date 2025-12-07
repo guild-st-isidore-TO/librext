@@ -32,6 +32,6 @@
     },
     "defaults": {
         "typeScaleFactor": "md",
-        "typeScaleRatio": "min2nd"
+        "typeScaleRatio": "maj2nd"
     }
 }
