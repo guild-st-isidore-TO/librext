@@ -1,9 +1,9 @@
 import ejs from 'ejs';
 import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import libRextDocsUtil from './utils.js'
 
 const buildHtmlShapes = (uiSpec, outputDir) => {
-    const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
+    const fPath = `${libRextDocsUtil.templatesDir}/shapes.ejs`
     const template = libRextCssFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
     const cRadiusPrefixes = [

@@ -1,11 +1,11 @@
 import ejs from 'ejs';
 import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import libRextDocsUtil from './utils.js'
 
 // const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
 const buildHtmlColours = (uiSpec, outputDir) => {
-  const fPath = `${libRextCssUtil.templatesDir}/colours.ejs`
+  const fPath = `${libRextDocsUtil.templatesDir}/colours.ejs`
   const template = libRextCssFileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
