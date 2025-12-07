@@ -1,16 +1,31 @@
 "use strict"
 
-import librext from './spec-librext.js'
+import specLibRext from './spec-librext.js'
+import { buildTypeScale, buildTypeScaleData } from './type-scale.js'
 
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)
  * @namespace buildSpec
  */
 const buildSpec = (uiSpec) => {
-    const outSpec = {
+
+    const libRextTypeScale = buildTypeScale()
+    let newSpec = {
         ...uiSpec,
-        ...librext,
+        fontSizes: libRextTypeScale
     }
+
+    const libRextTypeScaleData = buildTypeScaleData()
+    const newLibRextSpec = {
+        ...specLibRext.libRextData,
+        fontSizes: libRextTypeScaleData
+    }
+
+    const outSpec = {
+        ...newSpec,
+        libRextData: newLibRextSpec,
+    }
+    // console.log('[LibRext Spec Builder] outSpec', outSpec)
     return outSpec
 }
 

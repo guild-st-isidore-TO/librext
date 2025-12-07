@@ -1,0 +1,37 @@
+{
+    "typeScaleLevels": [
+        "tiny",
+        "small",
+        "body",
+        "h6",
+        "h5",
+        "h4",
+        "h3",
+        "h2",
+        "h1",
+        "d6",
+        "d5",
+        "d4",
+        "d3",
+        "d2",
+        "d1"
+    ],
+    "typeScaleFactor": {
+        "none": 1,
+        "xs": 1.0833,
+        "sm": 1.1667,
+        "md": 1.25,
+        "lg": 1.3333,
+        "xl": 1.4167
+    },
+    "typeScaleRatio": {
+        "min2nd": 1.067,
+        "maj2nd": 1.125,
+        "min3rd": 1.200,
+        "maj3rd": 1.250
+    },
+    "defaults": {
+        "typeScaleFactor": "md",
+        "typeScaleRatio": "min2nd"
+    }
+}
