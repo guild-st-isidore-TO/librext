@@ -85,6 +85,10 @@
     padding: 2rem 0;
 }
 
+hr.section-divider {
+    margin: 8rem 0;
+}
+
 .type-role {
     margin-top: 4rem;
     display: flex;
