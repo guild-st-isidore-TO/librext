@@ -24,21 +24,21 @@ const buildText = (uiSpec, outputDir) => {
     for (const fontRole in uiSpec.fonts) {
         const currentFontFamily = uiSpec.fonts[fontRole]
         rootCssVars.push({
-            property: `fontfam-${fontRole}`,
+            property: `lbrxt-fontfam-${fontRole}`,
             value: currentFontFamily,
         })
     }
 
     uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
         rootCssVars.push({
-            property: `typescale-${idx + 1}`,
+            property: `lbrxt-typescale-${idx + 1}`,
             value: fontSizeVal,
         })
     })
 
     for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
         rootCssVars.push({
-            property: `typescale-${fontSizeRole}`,
+            property: `lbrxt-typescale-${fontSizeRole}`,
             value: uiSpec.libRextData.fontSizes[fontSizeRole],
         })
     }
@@ -58,9 +58,9 @@ const buildText = (uiSpec, outputDir) => {
         if (currentDocRole.weight == 'regular') {
             weightType = 'normal'
         }
-        const sizeVal = `var(--typescale-${docRoleData.typescale})`
+        const sizeVal = `var(--lbrxt-typescale-${docRoleData.typescale})`
 
-        const fontFamVal = `var(--fontfam-${currentDocRole.fontFamily})`
+        const fontFamVal = `var(--lbrxt-fontfam-${currentDocRole.fontFamily})`
         const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
         const weightVal = uiSpec.fontWeights[weightType]

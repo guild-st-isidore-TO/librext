@@ -22,13 +22,13 @@ const buildColours = (uiSpec, outputDir) => {
         // console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
         if (colName != 'modes') {
             styleVars.push({
-                property: `col-${colName}`,
+                property: `lbrxt-col-${colName}`,
                 value: colValue,
             });
         } else {
             for (const [darkColName, darkColValue] of Object.entries(uiSpec.colors.modes.dark)) {
                 styleVars.push({
-                    property: `col-dark-${darkColName}`,
+                    property: `lbrxt-col-dark-${darkColName}`,
                     value: darkColValue,
                 });
             }
@@ -39,7 +39,7 @@ const buildColours = (uiSpec, outputDir) => {
     variablesContent += '\n'
 
     const baseRules = [
-        { property: 'background-color', value: 'var(--col-background)' }
+        { property: 'background-color', value: 'var(--lbrxt-col-background)' }
     ]
     let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
 

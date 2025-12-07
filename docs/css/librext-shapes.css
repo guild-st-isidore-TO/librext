@@ -2,103 +2,103 @@
 @import "./librext-colours.css";
 
 :root {
-  --cor-radius-none: 0;
-  --cor-radius-xs: 2px;
-  --cor-radius-sm: 4px;
-  --cor-radius-md: 6px;
-  --cor-radius-lg: 8px;
-  --cor-radius-xl: 10px;
-  --box-shadow-xs: 1px 1px 2px #24292f;
-  --box-shadow-sm: 2px 2px 2px #24292f;
-  --box-shadow-md: 3px 3px 3px #24292f;
-  --box-shadow-lg: 4px 4px 4px #24292f;
-  --box-shadow-xl: 5px 5px 4px #24292f;
-  --widget-ht-xs: 1.6875rem;
-  --widget-ht-sm: 2.04125rem;
-  --widget-ht-md: 2.75rem;
-  --widget-ht-lg: 4rem;
-  --widget-ht-xl: 5.25rem;
+  --lbrxt-cor-radius-none: 0;
+  --lbrxt-cor-radius-xs: 2px;
+  --lbrxt-cor-radius-sm: 4px;
+  --lbrxt-cor-radius-md: 6px;
+  --lbrxt-cor-radius-lg: 8px;
+  --lbrxt-cor-radius-xl: 10px;
+  --lbrxt-box-shadow-xs: 1px 1px 2px #24292f;
+  --lbrxt-box-shadow-sm: 2px 2px 2px #24292f;
+  --lbrxt-box-shadow-md: 3px 3px 3px #24292f;
+  --lbrxt-box-shadow-lg: 4px 4px 4px #24292f;
+  --lbrxt-box-shadow-xl: 5px 5px 4px #24292f;
+  --lbrxt-widget-ht-xs: 1.6875rem;
+  --lbrxt-widget-ht-sm: 2.04125rem;
+  --lbrxt-widget-ht-md: 2.75rem;
+  --lbrxt-widget-ht-lg: 4rem;
+  --lbrxt-widget-ht-xl: 5.25rem;
 }
 
-.b-radius.none {
+.lbrxt-b-radius.none {
   border-radius: 0;
 }
-.b-radius.xs {
+.lbrxt-b-radius.xs {
   border-radius: 2px;
 }
-.b-radius.sm {
+.lbrxt-b-radius.sm {
   border-radius: 4px;
 }
-.b-radius.md {
+.lbrxt-b-radius.md {
   border-radius: 6px;
 }
-.b-radius.lg {
+.lbrxt-b-radius.lg {
   border-radius: 8px;
 }
-.b-radius.xl {
+.lbrxt-b-radius.xl {
   border-radius: 10px;
 }
-.b-shadow.xs {
+.lbrxt-b-shadow.xs {
   box-shadow: 1px 1px 2px #24292f;
 }
-.b-shadow.sm {
+.lbrxt-b-shadow.sm {
   box-shadow: 2px 2px 2px #24292f;
 }
-.b-shadow.md {
+.lbrxt-b-shadow.md {
   box-shadow: 3px 3px 3px #24292f;
 }
-.b-shadow.lg {
+.lbrxt-b-shadow.lg {
   box-shadow: 4px 4px 4px #24292f;
 }
-.b-shadow.xl {
+.lbrxt-b-shadow.xl {
   box-shadow: 5px 5px 4px #24292f;
 }
-.widget.xs {
+.lbrxt-widget.xs {
   height: 1.6875rem;
 }
-.widget.sm {
+.lbrxt-widget.sm {
   height: 2.04125rem;
 }
-.widget.md {
+.lbrxt-widget.md {
   height: 2.75rem;
 }
-.widget.lg {
+.lbrxt-widget.lg {
   height: 4rem;
 }
-.widget.xl {
+.lbrxt-widget.xl {
   height: 5.25rem;
 }
-.card.xs {
+.lbrxt-card.xs {
   height: 12px;
   border-radius: 2px;
   padding: 4px;
   box-shadow: 1px 1px 2px #24292f;
 }
-.card.sm {
+.lbrxt-card.sm {
   height: 16px;
   border-radius: 4px;
   padding: 6px;
   box-shadow: 2px 2px 2px #24292f;
 }
-.card.md {
+.lbrxt-card.md {
   height: 20px;
   border-radius: 6px;
   padding: 8px;
   box-shadow: 3px 3px 3px #24292f;
 }
-.card {
+.lbrxt-card {
   height: 20px;
   border-radius: 6px;
   padding: 8px;
   box-shadow: 3px 3px 3px #24292f;
 }
-.card.lg {
+.lbrxt-card.lg {
   height: 28px;
   border-radius: 8px;
   padding: 9px;
   box-shadow: 4px 4px 4px #24292f;
 }
-.card.xl {
+.lbrxt-card.xl {
   height: 36px;
   border-radius: 10px;
   padding: 10px;
