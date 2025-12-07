@@ -114,11 +114,13 @@
     </ul>
 
 
-    <div class="widget-set">
+    <div class="shape-box-set widget">
       <% for(var i=0; i < widgetSizes.length; i++) { %>
-      <div class="widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
-        <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
-        <span class="box-text box-body"><%= widgetSizes[i].body %></span>
+      <div class="shape-box-wrapper">
+        <div class="shape-box widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
+          <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
+          <span class="box-text box-body"><%= widgetSizes[i].body %></span>
+        </div>
       </div>
       <% } %>
     </div>

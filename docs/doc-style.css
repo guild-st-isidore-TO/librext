@@ -40,6 +40,9 @@
     --layers-layer-ht-offset: calc(var(--layers-layer-ht) / 3);
 
     --layers-layer-wd-offset: calc(var(--layers-layer-ht) / 2);
+
+    --typ-palette-gap: 2.25rem;
+    --typ-shape-box-gap: 2.25rem;
 }
 
 
@@ -325,6 +328,8 @@ hr.section-divider {
 
 .shape-box-set {
     display: flex;
+    margin: var(--typ-shape-box-gap) 0;
+    gap: var(--typ-shape-box-gap);
     flex-wrap: wrap;
 }
 
@@ -336,25 +341,29 @@ hr.section-divider {
 .shape-box {
     flex: 1 1 auto;
     height: 10rem;
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     background-color: var(--lbrxt-col-grey4);
 }
 
 @media (min-width: 481px) {
     .shape-box-wrapper {
-        flex: 0 0 50%;
+        flex: 0 0 calc(50% - (var(--typ-shape-box-gap) * 0.5 ));
     }
 }
 
 @media (min-width: 961px) {
     .shape-box-wrapper {
-        flex: 0 0 33%;
+        flex: 0 0 calc(33% - (var(--typ-shape-box-gap) * 0.58 ));
     }
 }
 
 /* ------------------------------------ *\
  * Widgets display
 \* ------------------------------------ */
+
+.widget-set {
+    margin: var(--typ-shape-box-gap) 0;
+}
 
 .widget-set .widget {
     background-color: var(--lbrxt-col-grey4);
