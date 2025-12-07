@@ -89,13 +89,25 @@
     padding: 2rem 0;
 }
 
+.page-section {
+    margin-bottom: 6rem;
+}
+
+.page-example {
+    margin: 3rem 0;
+}
+
+.homepage-heading {
+    margin-bottom: 3rem;
+}
+
 .section-heading {
     margin-bottom: 3rem;
     font-weight: bold;
 }
 
 hr.section-divider {
-    margin: 8rem 0;
+    margin-bottom: 6rem;
 }
 
 .type-role {
@@ -397,9 +409,12 @@ hr.section-divider {
 
 .text-example {
     padding: 0;
+    margin: 6rem 0;
 }
 
-
+.text-example-divider {
+    margin-top: 6rem;
+}
 
 @media (min-width: 481px) {
     .text-example {
