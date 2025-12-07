@@ -1,4 +1,4 @@
-import libRextCssUtil from './utils.js'
+import libRextUiSpecUtil from './utils.js'
 
 
 const librextGreyscale = [
@@ -33,7 +33,7 @@ const librextTheme = {
 }
 const themeProps = {}
 for (const themeColName in librextTheme) {
-    const formattedColName = libRextCssUtil.capitalizeFirstLetter(themeColName)
+    const formattedColName = libRextUiSpecUtil.capitalizeFirstLetter(themeColName)
     themeProps[`theme${formattedColName}`] = librextTheme[themeColName]
 
 }

@@ -1,10 +1,10 @@
 import ejs from 'ejs';
-import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import libRextDocsFileHandler from './file-handler.js'
+import libRextDocsUtil from './utils.js'
 
 const buildHtmlShapes = (uiSpec, outputDir) => {
-    const fPath = `${libRextCssUtil.templatesDir}/shapes.ejs`
-    const template = libRextCssFileHandler.readTemplateFile(fPath);
+    const fPath = `${libRextDocsUtil.templatesDir}/shapes.ejs`
+    const template = libRextDocsFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
     const cRadiusPrefixes = [
         'none',
@@ -58,7 +58,7 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
 
     const output = ejs.render(template, templatePayload);
     const outfilePath = `${outputDir}/shapes.html`;
-    libRextCssFileHandler.writeFile(outfilePath, output);
+    libRextDocsFileHandler.writeFile(outfilePath, output);
 }
 
 // module.exports = { build: buildHtmlShapes };
