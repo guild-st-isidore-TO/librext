@@ -1,13 +1,13 @@
 # LibRext
 
-LibRext (Librarium Textuum / Library of Frameworks) - GSI's UI design system and component library
+LibRext (Librarium Textuum / Library of Frameworks) is a UI design system and component library developed by the Guild of St. Isidore (TO).
 
-> STATUS (XXVIII Octobris MMXXV)  
+> STATUS (VII Decembris MMXXV)  
 Active -- High priority, work ongoing
 
 ## INSPIRATION
 
-LibRext is inspired primarily by printed texts during the [era of the Incunabula](https://en.wikipedia.org/wiki/Incunable), the [first century after Gutenberg's press](https://www.britannica.com/topic/incunabula) changed Europe and the world. This was a time when the old manuscript production methods were giving way to the next phase of bookmaking. New processes were being explored, but these printmakers still weren't far from the era of scribes writing huge volumes by hand.
+LibRext is inspired primarily by printed texts during the [era of the Incunabula](https://en.wikipedia.org/wiki/Incunable), the [first century after Gutenberg's press](https://www.britannica.com/topic/incunabula) changed Europe and the world. This was a time when old manuscript production methods were giving way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of scribes writing huge manuscripts.
 
 **BELOW**: Valerius Maximus. Mainz: Peter Schöffer, 18. kal. Jul. 1471
 
