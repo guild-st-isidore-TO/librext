@@ -415,7 +415,7 @@
 @font-face {
   font-family: 'OpenSans';
   src: url('Open_Sans/OpenSans-Bold.ttf');
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @font-face {
