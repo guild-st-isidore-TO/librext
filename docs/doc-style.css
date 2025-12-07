@@ -340,7 +340,7 @@ hr.section-divider {
 
 .shape-box {
     flex: 1 1 auto;
-    height: 10rem;
+    height: calc(var(--lbrxt-widget-ht-xl) * 1.25);
     /* margin: 1.5rem; */
     background-color: var(--lbrxt-col-grey4);
 }
@@ -379,5 +379,12 @@ hr.section-divider {
 }
 
 .box-text.box-heading {
+    display: inline-block;
+    margin-top: 1rem;
     font-weight: bold;
+}
+
+.widget .box-text.box-heading {
+    display: inline;
+    margin-top: 0;
 }
