@@ -83,6 +83,8 @@ const buildText = (uiSpec, outputDir) => {
         const letterSpacingVal = uiSpec.letterSpacings[currentDocRole.letterSpacing];
         const lineHeightVal = uiSpec.lineHeights[currentDocRole.lineHeight];
         const marginPreset = uiSpec.marginPresets[currentDocRole.lineHeight];
+        const textColourRole = uiSpec.docRoleColours[docRoleName];
+        const textColour = uiSpec.colors[textColourRole]
 
         const docRoleVars = [
             { property: 'font-weight', value: weightVal, },
@@ -93,6 +95,7 @@ const buildText = (uiSpec, outputDir) => {
             { property: 'line-height', value: lineHeightVal },
             { property: 'margin-top', value: marginPreset.marginTop },
             { property: 'margin-bottom', value: marginPreset.marginBottom },
+            { property: 'color', value: textColour },
         ]
 
         const selectorHtml = docRoleData.html.length == 0 ? '' : `${docRoleData.html},\n`

@@ -21,6 +21,7 @@ const buildColours = (uiSpec, outputDir) => {
     let bgColClassContent = ''
     let colDarkClassContent = ''
     let bgColDarkClassContent = ''
+    let linkColoursContent = ''
 
     for (const [colName, colValue] of Object.entries(uiSpec.colors)) {
         // console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
@@ -71,7 +72,36 @@ const buildColours = (uiSpec, outputDir) => {
     ]
     let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
 
-    const allContent = variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent
+    const linkRuleCol = uiSpec.colors.primary
+    const linkRules = [
+        { property: 'color', value: linkRuleCol },
+        { property: 'text-decoration-color', value: linkRuleCol }
+    ]
+    linkColoursContent += libRextCssUtil.writeCssRule('a:link, .lbrxt-link:link', linkRules) + '\n'
+
+    const visitedRuleCol = uiSpec.colors.secondary
+    const visitedRules = [
+        { property: 'color', value: visitedRuleCol },
+        { property: 'text-decoration-color', value: visitedRuleCol }
+    ]
+    linkColoursContent += libRextCssUtil.writeCssRule('a:visited, .lbrxt-link:visited', visitedRules) + '\n'
+
+    const hoverRuleCol = uiSpec.colors.tertiary
+    const hoverRules = [
+        { property: 'color', value: hoverRuleCol },
+        { property: 'text-decoration-color', value: hoverRuleCol }
+    ]
+    linkColoursContent += libRextCssUtil.writeCssRule('a:hover, .lbrxt-link:hover', hoverRules) + '\n'
+
+    const activeRuleCol = uiSpec.colors.tertiary
+    const activeRules = [
+        { property: 'color', value: activeRuleCol },
+        { property: 'text-decoration-color', value: activeRuleCol }
+    ]
+    linkColoursContent += libRextCssUtil.writeCssRule('a:active, .lbrxt-link:active', activeRules) + '\n'
+
+
+    const allContent = variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent + linkColoursContent
 
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-colours.css`, allContent)
 }

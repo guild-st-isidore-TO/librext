@@ -153,6 +153,13 @@ const themeText = {
             letterSpacing: 'body',
             fontSize: 2
         },
+        rubric: {
+            fontFamily: 'body',
+            weight: "body",
+            lineHeight: 'body',
+            letterSpacing: 'body',
+            fontSize: 2
+        },
         li: {
             fontFamily: 'body',
             weight: "body",
