@@ -20,8 +20,8 @@ const buildHtmlColours = (uiSpec, outputDir) => {
 
     dataThemeLight.push({
       colour: currentThemeCol,
-      heading: 'testy',
-      body: 'testy',
+      heading: themeColName,
+      body: currentThemeCol,
     })
     // dataPaletteItems.push({
     //   colour: currentThemeCol,
@@ -31,11 +31,11 @@ const buildHtmlColours = (uiSpec, outputDir) => {
 
   const dataThemeDark = dataThemeLight
 
-  const dataGreyscaleLight = librextGreyscale.map(greyCol => {
+  const dataGreyscaleLight = librextGreyscale.map((greyCol, idx) => {
     return {
       colour: greyCol,
-      heading: 'testy',
-      body: 'testy',
+      heading: `grey${idx + 1}`,
+      body: greyCol,
     }
   })
 
@@ -51,9 +51,9 @@ const buildHtmlColours = (uiSpec, outputDir) => {
       colour: currentColRole.colName,
       description: currentColRole.desc,
       valueLight: currentColLight,
+      hslLight: '—',
       valueDark: currentColDark,
-      heading: 'testy',
-      body: 'testy',
+      hslDark: '—',
     })
   }
 

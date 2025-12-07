@@ -21,29 +21,32 @@ const buildHtmlShapes = (uiSpec, outputDir) => {
         dataBorderRadSizes.push({
             sizeCode: cRadiusPrefixes[cRadiusSize],
             lenVar: currentRadSize,
-            heading: 'testy',
-            body: 'testy',
+            heading: cRadiusPrefixes[cRadiusSize],
+            body: currentRadSize,
         })
     }
 
     const dataBoxShadowSizes = []
     for (const bShadowSize in uiSpec.shadows) {
         const currentShadowSize = uiSpec.shadows[bShadowSize];
+        // console.log(currentShadowSize)
+        // console.log('[LibRext CSS - Build HTML Shapes] bShadowSize', bShadowSize);
+        // console.log('[LibRext CSS - Build HTML Shapes] currentShadowSize', currentShadowSize);
         dataBoxShadowSizes.push({
             sizeCode: bShadowSize,
-            len: currentShadowSize.len,
-            blur: currentShadowSize.blur,
-            heading: 'testy',
-            body: 'testy',
+            heading: bShadowSize,
+            body: currentShadowSize,
         })
     }
-
+    
     const dataWidgets = []
     for (const widgetSize in uiSpec.widgetHeights) {
+        const currentWidgetSize = uiSpec.widgetHeights[widgetSize]
+        // console.log('[LibRext CSS - Build HTML Shapes] currentWidgetSize', currentWidgetSize);
         dataWidgets.push({
             sizeCode: widgetSize,
-            heading: 'testy',
-            body: 'testy',
+            heading: widgetSize,
+            body: currentWidgetSize.height,
         })
     }
 
