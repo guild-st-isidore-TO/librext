@@ -4,7 +4,7 @@ import libRextDocsUtil from './utils.js'
 
 // const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
-const buildHtmlColours = (uiSpec, outputDir) => {
+const docColours = (uiSpec, outputDir) => {
   const fPath = `${libRextDocsUtil.templatesDir}/colours.ejs`
   const template = libRextDocsFileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
@@ -16,22 +16,20 @@ const buildHtmlColours = (uiSpec, outputDir) => {
   const dataPaletteItems = []
   for (const themeColName in librextTheme) {
     const currentThemeCol = librextTheme[themeColName]
-    // const currentThemeData = librextTheme[themeColName]
-
     dataThemeLight.push({
       colour: currentThemeCol,
+      heading: themeColName,
+      body: currentThemeCol,
     })
-    // dataPaletteItems.push({
-    //   colour: currentThemeCol,
-    //   description: 'Sed pretium orci eros, quis feugiat'
-    // })
   }
 
   const dataThemeDark = dataThemeLight
 
-  const dataGreyscaleLight = librextGreyscale.map(greyCol => {
+  const dataGreyscaleLight = librextGreyscale.map((greyCol, idx) => {
     return {
       colour: greyCol,
+      heading: `grey${idx + 1}`,
+      body: greyCol,
     }
   })
 
@@ -47,7 +45,9 @@ const buildHtmlColours = (uiSpec, outputDir) => {
       colour: currentColRole.colName,
       description: currentColRole.desc,
       valueLight: currentColLight,
+      hslLight: '—',
       valueDark: currentColDark,
+      hslDark: '—',
     })
   }
 
@@ -85,5 +85,4 @@ const buildHtmlColours = (uiSpec, outputDir) => {
 
 }
 
-// module.exports = { build: buildHtmlColours };
-export default buildHtmlColours
+export default docColours
