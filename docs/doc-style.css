@@ -148,16 +148,13 @@ hr.section-divider {
 
 .palette-row {
     display: flex;
-    margin: 2rem 0;
+    margin: 2.25rem 0;
+    row-gap: 2.25rem;
     flex-wrap: wrap;
 }
 
-.palette-item.six {
-    flex: 1 1 16.66%;
-}
-
-.palette-item.four {
-    flex: 1 1 25%;
+.palette-item {
+    flex: 0 0 50%;
 }
 
 .palette-box {
@@ -250,6 +247,12 @@ hr.section-divider {
     background-color: #272424;
 }
 
+@media (min-width: 769px) {
+    .palette-item {
+        flex: 0 0 33%;
+    }
+}
+
 @media (min-width: 961px) {
     .colour-detail-desc {
         flex: 1 0 calc(30% - 1rem);
@@ -263,13 +266,12 @@ hr.section-divider {
         flex-wrap: nowrap;
     }
 
-    .palette-row {
+    /* .palette-row {
         flex-wrap: nowrap;
-    }
+    } */
 
-    .palette-item.six,
-    .palette-item.eight {
-        flex: 1 1 auto;
+    .palette-item {
+        flex: 0 0 25%;
     }
 }
 
