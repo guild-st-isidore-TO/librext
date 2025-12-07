@@ -66,3 +66,379 @@
 body {
   background-color: var(--lbrxt-col-background);
 }
+.lbrxt-col-grey0 {
+  color: #fdf9f0;
+}
+.lbrxt-col-grey1 {
+  color: #f2ede5;
+}
+.lbrxt-col-grey2 {
+  color: #e1dbd4;
+}
+.lbrxt-col-grey3 {
+  color: #cfcac3;
+}
+.lbrxt-col-grey4 {
+  color: #b1aba6;
+}
+.lbrxt-col-grey5 {
+  color: #918b88;
+}
+.lbrxt-col-grey6 {
+  color: #676261;
+}
+.lbrxt-col-grey7 {
+  color: #3f3c3c;
+}
+.lbrxt-col-grey8 {
+  color: #2e2b2b;
+}
+.lbrxt-col-grey9 {
+  color: #1b1818;
+}
+.lbrxt-col-grey10 {
+  color: #110e0e;
+}
+.lbrxt-col-grey11 {
+  color: #050404;
+}
+.lbrxt-col-themeRubricRed {
+  color: #881403;
+}
+.lbrxt-col-themeOkGreen {
+  color: #77A265;
+}
+.lbrxt-col-themeWarnYellow {
+  color: #F6BF17;
+}
+.lbrxt-col-themeErrorRed {
+  color: #AC4945;
+}
+.lbrxt-col-themeInfoBlue {
+  color: #2471B8;
+}
+.lbrxt-col-themeBrown1 {
+  color: #885743;
+}
+.lbrxt-col-themeBrown2 {
+  color: #A67257;
+}
+.lbrxt-col-themeBrown3 {
+  color: #C29775;
+}
+.lbrxt-col-text {
+  color: #050404;
+}
+.lbrxt-col-textRubric {
+  color: #881403;
+}
+.lbrxt-col-background {
+  color: #f2ede5;
+}
+.lbrxt-col-primary {
+  color: #885743;
+}
+.lbrxt-col-secondary {
+  color: #A67257;
+}
+.lbrxt-col-tertiary {
+  color: #C29775;
+}
+.lbrxt-col-indicatorOk {
+  color: #77A265;
+}
+.lbrxt-col-indicatorWarn {
+  color: #F6BF17;
+}
+.lbrxt-col-indicatorInfo {
+  color: #2471B8;
+}
+.lbrxt-col-indicatorError {
+  color: #AC4945;
+}
+.lbrxt-col-indicatorNull {
+  color: #676261;
+}
+
+.lbrxt-bgcol-grey0 {
+  background-color: #fdf9f0;
+}
+.lbrxt-bgcol-grey1 {
+  background-color: #f2ede5;
+}
+.lbrxt-bgcol-grey2 {
+  background-color: #e1dbd4;
+}
+.lbrxt-bgcol-grey3 {
+  background-color: #cfcac3;
+}
+.lbrxt-bgcol-grey4 {
+  background-color: #b1aba6;
+}
+.lbrxt-bgcol-grey5 {
+  background-color: #918b88;
+}
+.lbrxt-bgcol-grey6 {
+  background-color: #676261;
+}
+.lbrxt-bgcol-grey7 {
+  background-color: #3f3c3c;
+}
+.lbrxt-bgcol-grey8 {
+  background-color: #2e2b2b;
+}
+.lbrxt-bgcol-grey9 {
+  background-color: #1b1818;
+}
+.lbrxt-bgcol-grey10 {
+  background-color: #110e0e;
+}
+.lbrxt-bgcol-grey11 {
+  background-color: #050404;
+}
+.lbrxt-bgcol-themeRubricRed {
+  background-color: #881403;
+}
+.lbrxt-bgcol-themeOkGreen {
+  background-color: #77A265;
+}
+.lbrxt-bgcol-themeWarnYellow {
+  background-color: #F6BF17;
+}
+.lbrxt-bgcol-themeErrorRed {
+  background-color: #AC4945;
+}
+.lbrxt-bgcol-themeInfoBlue {
+  background-color: #2471B8;
+}
+.lbrxt-bgcol-themeBrown1 {
+  background-color: #885743;
+}
+.lbrxt-bgcol-themeBrown2 {
+  background-color: #A67257;
+}
+.lbrxt-bgcol-themeBrown3 {
+  background-color: #C29775;
+}
+.lbrxt-bgcol-text {
+  background-color: #050404;
+}
+.lbrxt-bgcol-textRubric {
+  background-color: #881403;
+}
+.lbrxt-bgcol-background {
+  background-color: #f2ede5;
+}
+.lbrxt-bgcol-primary {
+  background-color: #885743;
+}
+.lbrxt-bgcol-secondary {
+  background-color: #A67257;
+}
+.lbrxt-bgcol-tertiary {
+  background-color: #C29775;
+}
+.lbrxt-bgcol-indicatorOk {
+  background-color: #77A265;
+}
+.lbrxt-bgcol-indicatorWarn {
+  background-color: #F6BF17;
+}
+.lbrxt-bgcol-indicatorInfo {
+  background-color: #2471B8;
+}
+.lbrxt-bgcol-indicatorError {
+  background-color: #AC4945;
+}
+.lbrxt-bgcol-indicatorNull {
+  background-color: #676261;
+}
+
+.lbrxt-col-dark-grey0 {
+  color: #fdf9f0;
+}
+.lbrxt-col-dark-grey1 {
+  color: #f2ede5;
+}
+.lbrxt-col-dark-grey2 {
+  color: #e1dbd4;
+}
+.lbrxt-col-dark-grey3 {
+  color: #cfcac3;
+}
+.lbrxt-col-dark-grey4 {
+  color: #b1aba6;
+}
+.lbrxt-col-dark-grey5 {
+  color: #918b88;
+}
+.lbrxt-col-dark-grey6 {
+  color: #676261;
+}
+.lbrxt-col-dark-grey7 {
+  color: #3f3c3c;
+}
+.lbrxt-col-dark-grey8 {
+  color: #2e2b2b;
+}
+.lbrxt-col-dark-grey9 {
+  color: #1b1818;
+}
+.lbrxt-col-dark-grey10 {
+  color: #110e0e;
+}
+.lbrxt-col-dark-grey11 {
+  color: #050404;
+}
+.lbrxt-col-dark-themeRubricRed {
+  color: #881403;
+}
+.lbrxt-col-dark-themeOkGreen {
+  color: #77A265;
+}
+.lbrxt-col-dark-themeWarnYellow {
+  color: #F6BF17;
+}
+.lbrxt-col-dark-themeErrorRed {
+  color: #AC4945;
+}
+.lbrxt-col-dark-themeInfoBlue {
+  color: #2471B8;
+}
+.lbrxt-col-dark-themeBrown1 {
+  color: #885743;
+}
+.lbrxt-col-dark-themeBrown2 {
+  color: #A67257;
+}
+.lbrxt-col-dark-themeBrown3 {
+  color: #C29775;
+}
+.lbrxt-col-dark-text {
+  color: #fdf9f0;
+}
+.lbrxt-col-dark-textRubric {
+  color: #881403;
+}
+.lbrxt-col-dark-background {
+  color: #110e0e;
+}
+.lbrxt-col-dark-primary {
+  color: #885743;
+}
+.lbrxt-col-dark-secondary {
+  color: #A67257;
+}
+.lbrxt-col-dark-tertiary {
+  color: #C29775;
+}
+.lbrxt-col-dark-indicatorOk {
+  color: #77A265;
+}
+.lbrxt-col-dark-indicatorWarn {
+  color: #F6BF17;
+}
+.lbrxt-col-dark-indicatorInfo {
+  color: #2471B8;
+}
+.lbrxt-col-dark-indicatorError {
+  color: #AC4945;
+}
+.lbrxt-col-dark-indicatorNull {
+  color: #676261;
+}
+
+.lbrxt-bgcol-dark-grey0 {
+  background-color: #fdf9f0;
+}
+.lbrxt-bgcol-dark-grey1 {
+  background-color: #f2ede5;
+}
+.lbrxt-bgcol-dark-grey2 {
+  background-color: #e1dbd4;
+}
+.lbrxt-bgcol-dark-grey3 {
+  background-color: #cfcac3;
+}
+.lbrxt-bgcol-dark-grey4 {
+  background-color: #b1aba6;
+}
+.lbrxt-bgcol-dark-grey5 {
+  background-color: #918b88;
+}
+.lbrxt-bgcol-dark-grey6 {
+  background-color: #676261;
+}
+.lbrxt-bgcol-dark-grey7 {
+  background-color: #3f3c3c;
+}
+.lbrxt-bgcol-dark-grey8 {
+  background-color: #2e2b2b;
+}
+.lbrxt-bgcol-dark-grey9 {
+  background-color: #1b1818;
+}
+.lbrxt-bgcol-dark-grey10 {
+  background-color: #110e0e;
+}
+.lbrxt-bgcol-dark-grey11 {
+  background-color: #050404;
+}
+.lbrxt-bgcol-dark-themeRubricRed {
+  background-color: #881403;
+}
+.lbrxt-bgcol-dark-themeOkGreen {
+  background-color: #77A265;
+}
+.lbrxt-bgcol-dark-themeWarnYellow {
+  background-color: #F6BF17;
+}
+.lbrxt-bgcol-dark-themeErrorRed {
+  background-color: #AC4945;
+}
+.lbrxt-bgcol-dark-themeInfoBlue {
+  background-color: #2471B8;
+}
+.lbrxt-bgcol-dark-themeBrown1 {
+  background-color: #885743;
+}
+.lbrxt-bgcol-dark-themeBrown2 {
+  background-color: #A67257;
+}
+.lbrxt-bgcol-dark-themeBrown3 {
+  background-color: #C29775;
+}
+.lbrxt-bgcol-dark-text {
+  background-color: #fdf9f0;
+}
+.lbrxt-bgcol-dark-textRubric {
+  background-color: #881403;
+}
+.lbrxt-bgcol-dark-background {
+  background-color: #110e0e;
+}
+.lbrxt-bgcol-dark-primary {
+  background-color: #885743;
+}
+.lbrxt-bgcol-dark-secondary {
+  background-color: #A67257;
+}
+.lbrxt-bgcol-dark-tertiary {
+  background-color: #C29775;
+}
+.lbrxt-bgcol-dark-indicatorOk {
+  background-color: #77A265;
+}
+.lbrxt-bgcol-dark-indicatorWarn {
+  background-color: #F6BF17;
+}
+.lbrxt-bgcol-dark-indicatorInfo {
+  background-color: #2471B8;
+}
+.lbrxt-bgcol-dark-indicatorError {
+  background-color: #AC4945;
+}
+.lbrxt-bgcol-dark-indicatorNull {
+  background-color: #676261;
+}
+

@@ -16,34 +16,62 @@ const buildColours = (uiSpec, outputDir) => {
         varsSelector = customLocalScope
     }
 
-    const styleVars = []
+    const varProps = []
+    let colClassContent = ''
+    let bgColClassContent = ''
+    let colDarkClassContent = ''
+    let bgColDarkClassContent = ''
 
     for (const [colName, colValue] of Object.entries(uiSpec.colors)) {
         // console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
         if (colName != 'modes') {
-            styleVars.push({
+            varProps.push({
                 property: `lbrxt-col-${colName}`,
                 value: colValue,
             });
+            const colClassProps = [{
+                property: `color`,
+                value: colValue,
+            }]
+            const bgColClassProps = [{
+                property: `background-color`,
+                value: colValue,
+            }]
+            colClassContent += libRextCssUtil.writeCssRule(`.lbrxt-col-${colName}`, colClassProps)
+            bgColClassContent += libRextCssUtil.writeCssRule(`.lbrxt-bgcol-${colName}`, bgColClassProps)
         } else {
             for (const [darkColName, darkColValue] of Object.entries(uiSpec.colors.modes.dark)) {
-                styleVars.push({
+                varProps.push({
                     property: `lbrxt-col-dark-${darkColName}`,
                     value: darkColValue,
                 });
+                const colDarkClassProps = [{
+                    property: `color`,
+                    value: darkColValue,
+                }]
+                const bgColDarkClassProps = [{
+                    property: `background-color`,
+                    value: darkColValue,
+                }]
+                colDarkClassContent += libRextCssUtil.writeCssRule(`.lbrxt-col-dark-${darkColName}`, colDarkClassProps)
+                bgColDarkClassContent += libRextCssUtil.writeCssRule(`.lbrxt-bgcol-dark-${darkColName}`, bgColDarkClassProps)
             }
         }
     }
 
-    let variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    let variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, varProps);
     variablesContent += '\n'
+    colClassContent += '\n'
+    bgColClassContent += '\n'
+    colDarkClassContent += '\n'
+    bgColDarkClassContent += '\n'
 
     const baseRules = [
         { property: 'background-color', value: 'var(--lbrxt-col-background)' }
     ]
     let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
 
-    const allContent = variablesContent + baseContent
+    const allContent = variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent
 
     libRextCssFileHandler.writeFile(`${outputDir}/css/librext-colours.css`, allContent)
 }
