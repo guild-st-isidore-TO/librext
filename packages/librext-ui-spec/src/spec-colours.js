@@ -27,9 +27,10 @@ const librextTheme = {
     warnYellow: '#F6BF17',
     errorRed: '#AC4945',
     infoBlue: '#2471B8',
-    brown1: "#885743",
-    brown2: "#A67257",
-    brown3: "#C29775",
+    forestGreen: "#2F4739",
+    rustBrown: "#693628",
+    darkWine: "#513041",
+    blueSlate: "#383F46",
 }
 const themeProps = {}
 for (const themeColName in librextTheme) {
@@ -44,9 +45,9 @@ const lightCols = {
     text: librextGreyscale[11],
     textRubric: librextTheme.rubricRed,
     background: librextGreyscale[1],
-    primary: librextTheme.brown1,
-    secondary: librextTheme.brown2,
-    tertiary: librextTheme.brown3,
+    primary: librextTheme.rustBrown,
+    secondary: librextTheme.forestGreen,
+    tertiary: librextTheme.darkWine,
     indicatorOk: librextTheme.okGreen,
     indicatorWarn: librextTheme.warnYellow,
     indicatorInfo: librextTheme.infoBlue,
@@ -60,9 +61,9 @@ const darkCols = {
     text: librextGreyscale[0],
     textRubric: librextTheme.rubricRed,
     background: librextGreyscale[10],
-    primary: librextTheme.brown1,
-    secondary: librextTheme.brown2,
-    tertiary: librextTheme.brown3,
+    primary: librextTheme.rustBrown,
+    secondary: librextTheme.forestGreen,
+    tertiary: librextTheme.darkWine,
     indicatorOk: librextTheme.okGreen,
     indicatorWarn: librextTheme.warnYellow,
     indicatorInfo: librextTheme.infoBlue,
@@ -75,11 +76,39 @@ const themeColour = {
         ...lightCols,
         modes: {
             dark: darkCols,
-            indicatorNull: librextGreyscale[6],
-            indicatorError: librextTheme.errorRed,
-            tertiary: librextTheme.brown3,
         },
     },
+    /**
+     * VARIANTS - LibRext Document Role Colours
+     */
+    docRoleColours: {
+        hero: 'primary',
+        headline: 'primary',
+        title: 'primary',
+        subtitle: 'text',
+        heading1: 'primary',
+        heading2: 'primary',
+        heading3: 'primary',
+        heading4: 'primary',
+        heading5: 'primary',
+        heading6: 'primary',
+        body: 'text',
+        strong: 'text',
+        em: 'text',
+        rubric: 'textRubric',
+        li: 'text',
+        link: 'text',
+        small: 'text',
+        tiny: 'text',
+        superscript: 'text',
+        subscript: 'text',
+        imgcaption: 'text',
+        codeinline: 'text',
+        codeblock: 'text',
+        quote: 'text',
+        blockquote: 'text',
+        pullquote: 'text',
+    }
 }
 
 export default themeColour

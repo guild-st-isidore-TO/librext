@@ -171,6 +171,13 @@ const themeLibRext = {
                     "italic"
                 ]
             },
+            rubric: {
+                desc: 'Rubric text style',
+                typescale: "body",
+                html: "",
+                class: "lbrxt-rubric",
+                styles: []
+            },
             li: {
                 desc: 'List item text style',
                 typescale: "body",
