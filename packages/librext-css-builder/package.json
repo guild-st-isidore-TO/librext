@@ -1,6 +1,6 @@
 {
   "name": "librext-css-builder",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "LibRext's CSS stylesheets builder",
   "main": "index.js",
   "type": "module",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "librext-ui-spec": "0.1.6",
-    "librext-spec-builder": "0.1.6"
+    "librext-ui-spec": "0.1.7",
+    "librext-spec-builder": "0.1.7"
   }
 }
