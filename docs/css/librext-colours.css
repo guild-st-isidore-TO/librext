@@ -456,3 +456,23 @@ body {
   background-color: #676261;
 }
 
+a:link, .lbrxt-link:link {
+  color: #693628;
+  text-decoration-color: #693628;
+}
+
+a:visited, .lbrxt-link:visited {
+  color: #2F4739;
+  text-decoration-color: #2F4739;
+}
+
+a:hover, .lbrxt-link:hover {
+  color: #513041;
+  text-decoration-color: #513041;
+}
+
+a:active, .lbrxt-link:active {
+  color: #513041;
+  text-decoration-color: #513041;
+}
+
