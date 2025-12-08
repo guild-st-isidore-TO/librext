@@ -35,86 +35,72 @@
 <body>
 
   <div class="page-container">
-    <!-- Add your site or application content here -->
+    <section class="page-section">
+      <h1 class="section-heading lbrxt-typescale-d4">LibRext — Shapes</h1>
 
-    <h1 class="section-heading lbrxt-typescale-d4">LibRext — Shapes</h1>
+      <p>Back to <a href="./index.html">Specimens</a></p>
 
-    <p>Back to <a href="./index.html">Specimens</a></p>
+      <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow, widget heights, and card styles</p>
 
-    <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow, widget heights, and card styles</p>
+      <p>Border Radius — A larger radius fits with larger boxes</p>
 
-    <p>Border Radius — A larger radius fits with larger boxes</p>
+      <p>Box Shadow — Larger sizes imply more distance between box layer and parent layer</p>
 
-    <p>Box Shadow — Larger sizes imply more distance between box layer and parent layer</p>
+      <p>Widget Heights — Presets for common/consistent UX elements. Like inputs, buttons, chips, etc.</p>
+    </section>
 
-    <p>Widget Heights — Presets for common/consistent UX elements. Like inputs, buttons, chips, etc.</p>
+    <hr class="section-divider" />
 
-    <h2>Border Radii</h2>
+    <section class="page-section">
+      <h2>Border Radii</h2>
 
-    <p>The system has six border radius styles:</p>
+      <p>The system has six border radius styles:</p>
 
-    <div class="shape-box-set border-radius">
-      <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
-      <div class="shape-box-wrapper">
-        <div class="shape-box lbrxt-b-radius <%= borderRadiusSizes[i].sizeCode %>">
-          <span class="box-text box-heading"><%= borderRadiusSizes[i].heading %></span><br />
-          <span class="box-text box-body"><%= borderRadiusSizes[i].body %></span>
+      <div class="shape-box-set border-radius">
+        <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
+        <div class="shape-box-wrapper">
+          <div class="shape-box lbrxt-b-radius <%= borderRadiusSizes[i].sizeCode %>">
+            <span class="box-text box-heading"><%= borderRadiusSizes[i].heading %></span><br />
+            <span class="box-text box-body"><%= borderRadiusSizes[i].body %></span>
+          </div>
         </div>
+        <% } %>
       </div>
-      <% } %>
-    </div>
 
-    <h2>Box Shadows</h2>
+      <hr class="section-divider page-example-divider" />
 
-    <p>The system has five box shadow styles available:</p>
+      <h2>Box Shadows</h2>
 
-    <div class="shape-box-set box-shadow">
-      <% for(var i=0; i < boxShadowSizes.length; i++) { %>
-      <div class="shape-box-wrapper">
-        <div class="shape-box lbrxt-b-shadow <%= boxShadowSizes[i].sizeCode %>">
-          <span class="box-text box-heading"><%= boxShadowSizes[i].heading %></span><br />
-          <span class="box-text box-body"><%= boxShadowSizes[i].body %></span>
+      <p>The system has five box shadow styles available:</p>
+
+      <div class="shape-box-set box-shadow">
+        <% for(var i=0; i < boxShadowSizes.length; i++) { %>
+        <div class="shape-box-wrapper">
+          <div class="shape-box lbrxt-b-shadow <%= boxShadowSizes[i].sizeCode %>">
+            <span class="box-text box-heading"><%= boxShadowSizes[i].heading %></span><br />
+            <span class="box-text box-body"><%= boxShadowSizes[i].body %></span>
+          </div>
         </div>
+        <% } %>
       </div>
-      <% } %>
-    </div>
 
+      <hr class="section-divider page-example-divider" />
 
-    <h2>Widgets & Inputs</h2>
+      <h2>Widgets & Inputs</h2>
 
-    <p>The system has five available widget heights:</p>
+      <p>The system has five available widget heights:</p>
 
-    <div class="shape-box-set widget">
-      <% for(var i=0; i < widgetSizes.length; i++) { %>
-      <div class="shape-box-wrapper">
-        <div class="shape-box widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
-          <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
-          <span class="box-text box-body"><%= widgetSizes[i].body %></span>
+      <div class="shape-box-set widget">
+        <% for(var i=0; i < widgetSizes.length; i++) { %>
+        <div class="shape-box-wrapper">
+          <div class="shape-box widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
+            <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
+            <span class="box-text box-body"><%= widgetSizes[i].body %></span>
+          </div>
         </div>
+        <% } %>
       </div>
-      <% } %>
-    </div>
-
-    <!-- 
-    <h2>Cards</h2>
-
-    <p>The system has five card styles available for use :</p>
-
-    <ul>
-      <li>xs</li>
-      <li>sm</li>
-      <li>md</li>
-      <li>lg</li>
-      <li>xl</li>
-    </ul>
-
-    <div class="cards-set">
-      <% for(var i=0; i < cards.length; i++) { %>
-      <div class="lbrxt-card <%= cards[i].sizeCode %>">
-        <p><%= cards[i].specText %></p>
-      </div>
-      <% } %>
-    </div> -->
+    </section>
 
   </div>
   <!-- <script src="js/app.js"></script> -->
