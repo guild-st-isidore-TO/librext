@@ -5,7 +5,7 @@ import libRextDocsUtil from './utils.js'
 const docHome = (uiSpec, outputDir) => {
   const fPath = `${libRextDocsUtil.templatesDir}/home.ejs`
   const template = libRextDocsFileHandler.readTemplateFile(fPath);
-  console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
+  // console.log('[LibRext CSS - Build HTML Home] uiSpec', uiSpec);
   const cRadiusPrefixes = [
     'none',
     'xs',
@@ -42,8 +42,9 @@ const docHome = (uiSpec, outputDir) => {
   const dataGreyscaleLight = librextGreyscale.map((greyCol, idx) => {
     return {
       colour: greyCol,
-      heading: `grey${idx + 1}`,
+      heading: `grey${idx}`,
       body: greyCol,
+      labelMode: libRextDocsUtil.colourLabelModes[`grey${idx}`],
     }
   })
   const dataThemeLight = []
@@ -54,6 +55,7 @@ const docHome = (uiSpec, outputDir) => {
       colour: currentThemeCol,
       heading: themeColName,
       body: currentThemeCol,
+      labelMode: libRextDocsUtil.colourLabelModes[themeColName],
     })
   }
   const dataThemeDark = dataThemeLight
@@ -63,7 +65,6 @@ const docHome = (uiSpec, outputDir) => {
     boxShadowSizes: dataBoxShadowSizes,
     greyscalePaletteLight: dataGreyscaleLight,
     themePaletteDark: dataThemeDark,
-
   };
 
   const output = ejs.render(template, templatePayload);
