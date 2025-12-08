@@ -277,7 +277,7 @@ const themeLibRext = {
             },
             textRubric: {
                 roleName: 'Rubric Text',
-                desc: 'Text colour',
+                desc: 'Rubric text colour',
                 colName: '...',
             },
             background: {

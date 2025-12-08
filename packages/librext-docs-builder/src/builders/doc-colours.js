@@ -44,7 +44,7 @@ const docColours = (uiSpec, outputDir) => {
 
     dataPaletteItems.push({
       title: currentColRole.roleName,
-      colour: currentColRole.colName,
+      colour: colRole,
       description: currentColRole.desc,
       valueLight: currentColLight,
       hslLight: '—',
