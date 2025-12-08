@@ -187,8 +187,8 @@
           <div class="palette-row">
             <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
-              <span class="box-text box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
-              <span class="box-text box-body"><%= greyscalePaletteLight[i].body %></span>
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-body"><%= greyscalePaletteLight[i].body %></span>
             </div>
             <% } %>
           </div>
@@ -198,8 +198,8 @@
           <div class="palette-row">
             <% for(var i=0; i < themePaletteDark.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
-              <span class="box-text box-heading"><%= themePaletteDark[i].heading %></span><br />
-              <span class="box-text box-body"><%= themePaletteDark[i].body %></span>
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-heading"><%= themePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-body"><%= themePaletteDark[i].body %></span>
             </div>
             <% } %>
           </div>

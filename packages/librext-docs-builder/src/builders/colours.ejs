@@ -53,8 +53,8 @@
           <div class="palette-row">
             <% for(var i=0; i < themePaletteLight.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= themePaletteLight[i].colour %>;">
-              <span class="box-text box-heading"><%= themePaletteLight[i].heading %></span><br />
-              <span class="box-text box-body"><%= themePaletteLight[i].body %></span>
+              <span class="box-text <%= themePaletteLight[i].labelMode %> box-heading"><%= themePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= themePaletteLight[i].labelMode %> box-body"><%= themePaletteLight[i].body %></span>
             </div>
             <% } %>
           </div>
@@ -64,8 +64,8 @@
           <div class="palette-row">
             <% for(var i=0; i < themePaletteDark.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
-              <span class="box-text box-heading"><%= themePaletteDark[i].heading %></span><br />
-              <span class="box-text box-body"><%= themePaletteDark[i].body %></span>
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-heading"><%= themePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-body"><%= themePaletteDark[i].body %></span>
             </div>
             <% } %>
           </div>
@@ -99,8 +99,8 @@
           <div class="palette-row">
             <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
-              <span class="box-text box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
-              <span class="box-text box-body"><%= greyscalePaletteLight[i].body %></span>
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-body"><%= greyscalePaletteLight[i].body %></span>
             </div>
             <% } %>
           </div>
@@ -110,8 +110,8 @@
           <div class="palette-row">
             <% for(var i=0; i < greyscalePaletteDark.length; i++) { %>
             <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteDark[i].colour %>;">
-              <span class="box-text box-heading"><%= greyscalePaletteDark[i].heading %></span><br />
-              <span class="box-text box-body"><%= greyscalePaletteDark[i].body %></span>
+              <span class="box-text <%= greyscalePaletteDark[i].labelMode %> box-heading"><%= greyscalePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteDark[i].labelMode %> box-body"><%= greyscalePaletteDark[i].body %></span>
             </div>
             <% } %>
           </div>
@@ -141,14 +141,14 @@
           <div class="colour-detail-swatch">
             <div class="palette-cell colour-bg-light">
               <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueLight %>;">
-                <span class="box-text box-heading"><%= paletteDetailItems[i].valueLight %></span><br />
-                <span class="box-text box-body"><%= paletteDetailItems[i].hslLight %></span>
+                <span class="box-text <%= paletteDetailItems[i].labelModeLight %> box-heading"><%= paletteDetailItems[i].valueLight %></span><br />
+                <span class="box-text <%= paletteDetailItems[i].labelModeLight %> box-body"><%= paletteDetailItems[i].hslLight %></span>
               </div>
             </div>
             <div class="palette-cell colour-bg-dark">
               <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueDark %>;">
-                <span class="box-text box-heading"><%= paletteDetailItems[i].valueDark %></span><br />
-                <span class="box-text box-body"><%= paletteDetailItems[i].hslDark %></span>
+                <span class="box-text <%= paletteDetailItems[i].labelModeDark %> box-heading"><%= paletteDetailItems[i].valueDark %></span><br />
+                <span class="box-text <%= paletteDetailItems[i].labelModeDark %> box-body"><%= paletteDetailItems[i].hslDark %></span>
               </div>
             </div>
           </div>

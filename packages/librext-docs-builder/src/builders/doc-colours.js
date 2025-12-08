@@ -20,6 +20,7 @@ const docColours = (uiSpec, outputDir) => {
       colour: currentThemeCol,
       heading: themeColName,
       body: currentThemeCol,
+      labelMode: libRextDocsUtil.colourLabelModes[themeColName],
     })
   }
 
@@ -28,8 +29,9 @@ const docColours = (uiSpec, outputDir) => {
   const dataGreyscaleLight = librextGreyscale.map((greyCol, idx) => {
     return {
       colour: greyCol,
-      heading: `grey${idx + 1}`,
+      heading: `grey${idx}`,
       body: greyCol,
+      labelMode: libRextDocsUtil.colourLabelModes[`grey${idx}`],
     }
   })
 
@@ -46,8 +48,10 @@ const docColours = (uiSpec, outputDir) => {
       description: currentColRole.desc,
       valueLight: currentColLight,
       hslLight: '—',
+      labelModeLight: libRextDocsUtil.colourLabelModes[colRole],
       valueDark: currentColDark,
       hslDark: '—',
+      labelModeDark: libRextDocsUtil.colourLabelModes[`${colRole}Dark`],
     })
   }
 
@@ -74,7 +78,7 @@ const docColours = (uiSpec, outputDir) => {
     colourLayersLight: dataCollayersLight,
     colourLayersDark: dataColLayersDark,
   };
-  // console.log(templatePayload);
+  console.log(templatePayload);
 
   const output = ejs.render(template, templatePayload);
 

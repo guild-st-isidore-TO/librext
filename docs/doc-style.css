@@ -396,6 +396,10 @@ hr.section-divider {
     /* text-align: center; */
 }
 
+.box-text.dark {
+    color: var(--lbrxt-col-grey1);
+}
+
 .box-text.box-heading {
     display: inline-block;
     margin-top: 1rem;
