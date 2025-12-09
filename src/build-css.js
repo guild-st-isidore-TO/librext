@@ -3,11 +3,13 @@
  */
 
 import { join } from 'path'
+
+import { config as coreConfig } from 'librext-core'
 import libRextUiSpec from 'librext-ui-spec'
 import librextSpecBuilder from 'librext-spec-builder'
-import { config as coreConfig } from 'librext-core'
-import libRextCssBuilder from './builders/index.js'
-import { projectRootDir } from './css-builder-util.js'
+import libRextCssBuilder from 'librext-css-builder'
+
+import { projectRootDir } from './builder-util.js'
 
 const config = coreConfig
 const assetOutDir = coreConfig.assetOutDirectory
@@ -15,5 +17,5 @@ const cssOutDir = join(projectRootDir, assetOutDir)
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, config)
 
-console.log('[LibRext CSS Builder] LibRext Documentation/Specs\nCSS output directory', cssOutDir)
+console.log('[LibRext Documentation/Specs]\nCSS output directory', cssOutDir)
 libRextCssBuilder(uiSpec, cssOutDir, config)
