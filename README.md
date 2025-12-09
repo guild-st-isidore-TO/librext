@@ -65,6 +65,10 @@ npm run build
 npm run dev
 ```
 
+### Project Roadmap
+
+If you're interested in what's coming up, you can see the [roadmap here](./docs/roadmap/README.md)
+
 ## DESIGN
 
 Check the [LibRext Design (Overview)](./docs/design/README.md), or more specific topics:
