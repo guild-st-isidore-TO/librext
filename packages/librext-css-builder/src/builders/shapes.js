@@ -7,7 +7,7 @@ let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildShapes = (uiSpec, outputDir) => {
+const buildShapes = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - ShapesBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {

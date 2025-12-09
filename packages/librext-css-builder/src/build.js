@@ -9,7 +9,8 @@ import libRextCore from 'librext-core'
 import libRextCssBuilder from './builders/index.js'
 
 const outDir = `${__dirname}/../../../docs`
+const config = {}
 
-const uiSpec = librextSpecBuilder(libRextUiSpec)
+const uiSpec = librextSpecBuilder(libRextUiSpec, config)
 
-libRextCssBuilder(uiSpec, outDir)
+libRextCssBuilder(uiSpec, outDir, config)

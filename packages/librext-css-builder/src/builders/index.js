@@ -15,12 +15,12 @@ const defaultOutputDir = `${__dirname}/../../dist`
  * CSS builder scripts
  * @namespace builders
  */
-const build = (uiSpec, outputDir = defaultOutputDir) => {
+const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     return {
-        base: baseBuilder(uiSpec, outputDir),
-        text: textBuilder(uiSpec, outputDir),
-        colours: coloursBuilder(uiSpec, outputDir),
-        shapes: shapesBuilder(uiSpec, outputDir),
+        base: baseBuilder(uiSpec, outputDir, config),
+        text: textBuilder(uiSpec, outputDir, config),
+        colours: coloursBuilder(uiSpec, outputDir, config),
+        shapes: shapesBuilder(uiSpec, outputDir, config),
     }
 }
 

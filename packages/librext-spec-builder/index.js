@@ -1,3 +1,3 @@
-import librextSpecBuilder from './src/index.js'
+import librextSpecBuilder from './src/build.js'
 
 export default librextSpecBuilder

@@ -7,7 +7,7 @@ let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildColours = (uiSpec, outputDir) => {
+const buildColours = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - ColourBuilder] uiSpec', uiSpec);
     let varsSelector = ':root'
     if (scope == 'local') {

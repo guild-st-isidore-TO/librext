@@ -8,7 +8,7 @@ const boldLine = '===================================='
 const thickLine = '================================================'
 
 
-const buildText = (uiSpec, outputDir) => {
+const buildText = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
     let prefaceContent = '/* TEXT BUILDERS */\n'
 

@@ -15,14 +15,14 @@ const defaultOutputDir = `${__dirname}/../../dist`
  * HTML builder scripts
  * @namespace templateBuilders
 */
-const build = (uiSpec, outputDir = defaultOutputDir) => {
+const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
     // console.log('[LibRext Docs Builder] outputDir', outputDir);
     return {
-        htmlHome: docHome(uiSpec, outputDir),
-        htmlColours: docColours(uiSpec, outputDir),
-        htmlShapes: docShapes(uiSpec, outputDir),
-        htmlTypography: docTypography(uiSpec, outputDir),
+        htmlHome: docHome(uiSpec, outputDir, config),
+        htmlColours: docColours(uiSpec, outputDir, config),
+        htmlShapes: docShapes(uiSpec, outputDir, config),
+        htmlTypography: docTypography(uiSpec, outputDir, config),
     }
 }
 
