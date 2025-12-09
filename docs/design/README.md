@@ -46,29 +46,6 @@ More about [GSI Style Guide v2.0](./gsi-style-guide.md)
 
 &nbsp;
 
-## Markdown Elements
-
-LibRext designs around core HTML elements rendered by Markdown processors, such as:
-
-### Headings
-
-| Element | Markdown | HTML | LibRext |
-| --- | --- | --- | --- |
-| ... | `#` to `######` | `<h1>` to `<h6>` | `<Heading level="h1">` |
-
-### Body Text
-
-| Element | Markdown | HTML | LibRext |
-| --- | --- | --- | --- |
-| ... | `content` | `<p>` | `<Paragraph>` |
-| ... | `**content**` | `<strong>` | `<Text style="bold">` |
-| ... | `_content_` | `<em>` | `<Text style="italic">` |
-| ... | \`content\` | `<code>` | `<Text style="monospace">` |
-
-More about [Markdown Elements](./markdown-elements.md)
-
-&nbsp;
-
 ## Scripture Elements
 
 The system also seeks to model typographic and design elements of biblical and liturgical books. Things like:

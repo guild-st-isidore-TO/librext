@@ -27,6 +27,5 @@ Check the [LibRext Design (Overview)](./docs/design/README.md), or more specific
 
 - [System Design](./docs/design/system-design.md)
 - [Aesthetic Principles](./docs/design/aesthetic-principles.md)
-- [Markdown Elements](./docs/design/markdown-elements.md)
 - [Scripture Elements](./docs/design/scripture-elements.md)
 - [GSI Style Guide v2.0](./docs/design/gsi-style-guide.md)

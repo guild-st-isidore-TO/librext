@@ -66,7 +66,7 @@ https://dev.to/evanwinter/create-your-own-css-utility-library-582d
 
 React component library using Base-UI and LibRext design system.
 
-- Builds around the core [Markdown Elements](./markdown-elements.md) set
+- Builds around the core Markdown elements set
 - main export: React components
 
 #### Base-UI
