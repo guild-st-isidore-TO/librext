@@ -1,0 +1,85 @@
+digraph {
+    label = "\nLibRext CSS\nDesign v2.0";
+    node [shape = box;];
+    
+    // outputFonts -> cssBuilder;
+    // styleDefs -> cssBuilder;
+    
+    // Dependencies
+    
+    specBuilder -> uiSpec [style = "dashed"; arrowhead = vee;];
+    
+    cssBuilder -> specBuilder [style = "dashed"; arrowhead = vee;];
+    docsBuilder -> specBuilder [style = "dashed"; arrowhead = vee;];
+    imgBuilder -> specBuilder [style = "dashed"; arrowhead = vee;];
+    fontsBuilder -> specBuilder [style = "dashed"; arrowhead = vee;];
+    
+    cssBuilder -> core [style = "dashed"; arrowhead = vee;];
+    docsBuilder -> core [style = "dashed"; arrowhead = vee;];
+    imgBuilder -> core [style = "dashed"; arrowhead = vee;];
+    fontsBuilder -> core [style = "dashed"; arrowhead = vee;];
+    
+    cssBuilder -> workingUiSpec [style = "dashed"; arrowhead = vee;];
+    docsBuilder -> workingUiSpec [style = "dashed"; arrowhead = vee;];
+    
+    // Generation
+    
+    specBuilder -> workingUiSpec [label = "generates"; style = "solid"; arrowhead = normal;];
+    
+    cssBuilder -> outputCss [label = "generates"; style = "solid"; arrowhead = normal;];
+    docsBuilder -> outputDocs [label = "generates"; style = "solid"; arrowhead = normal;];
+    imgBuilder -> outputImages [label = "generates"; style = "solid"; arrowhead = normal;];
+    fontsBuilder -> outputFonts [label = "generates"; style = "solid"; arrowhead = normal;];
+    
+    
+    
+    subgraph cluster_0 {
+        label = "LibRext System";
+        fontcolor = 1;
+        colorscheme = set19;
+        color = 1;
+        penwidth = 2;
+        node [bgcolor = white;];
+        
+        core [label = "Librext-core";colorscheme = set19;color = 1;fontcolor = 1;];
+        uiSpec [label = "Librext-ui-spec\n(base UI spec)";colorscheme = set19;color = 1;fontcolor = 1;];
+        specBuilder [label = "Librext-spec-builder";colorscheme = set19;color = 1;fontcolor = 1;];
+        
+        subgraph cluster_1 {
+            label = "LibRext Builders";
+            cssBuilder [label = "Librext-css-builder";colorscheme = set19;color = 1;fontcolor = 1;];
+            docsBuilder [label = "Librext-docs-builder";colorscheme = set19;color = 1;fontcolor = 1;];
+            imgBuilder [label = "Librext-img-builder?";colorscheme = set19;color = 1;fontcolor = 1;];
+            fontsBuilder [label = "Librext-fonts-builder?";colorscheme = set19;color = 1;fontcolor = 1;];
+        }
+        
+        subgraph cluster_2 {
+            label = "LibRext Intermediate Data";
+            fontcolor = 4;
+            colorscheme = set19;
+            color = 4;
+            penwidth = 2;
+            node [bgcolor = white;];
+            
+            workingUiSpec [label = "Working UI Spec\n(base UI Spec + transforms)";colorscheme = set19;color = 4;fontcolor = 4;];
+        }
+    }
+    
+    subgraph cluster_3 {
+        label = "Output Files";
+        fontcolor = 2;
+        colorscheme = set19;
+        color = 2;
+        penwidth = 2;
+        node [bgcolor = white;];
+        
+        outputFonts [label = "Font files";colorscheme = set19;color = 2;fontcolor = 2;];
+        outputImages [label = "Image files\n(SVG icons, logos)";colorscheme = set19;color = 2;fontcolor = 2;];
+        outputDocs [label = "HTML files\n(Styling documentation)";colorscheme = set19;color = 2;fontcolor = 2;];
+        outputCss [label = "Generated CSS\n(for web apps, e-books, printed docs)";colorscheme = set19;color = 2;fontcolor = 2;];
+    }
+    
+    // libRextCSSBuilder [label = "other FaVirtu module";];
+    
+    // libRextCSSBuilder [label = "libRextCSSBuilder";colorscheme = set19;color = 1;fontcolor = 1;];
+}
