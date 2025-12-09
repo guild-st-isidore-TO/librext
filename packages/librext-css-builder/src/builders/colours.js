@@ -103,7 +103,7 @@ const buildColours = (uiSpec, outputDir, config) => {
 
     const allContent = variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent + linkColoursContent
 
-    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-colours.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-colours.css`, allContent)
 }
 
 // module.exports = { build: buildColours };

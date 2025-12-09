@@ -112,7 +112,7 @@ const buildText = (uiSpec, outputDir, config) => {
     rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
     const allContent = prefaceContent + '\n' + rootCssVarContent + fontFamContent + fontScaleContent + docRolesContent
-    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-text.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-text.css`, allContent)
 }
 
 // module.exports = { build: buildText };

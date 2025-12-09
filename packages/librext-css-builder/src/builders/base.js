@@ -35,7 +35,7 @@ const buildBase = (uiSpec, outputDir, config) => {
     })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-base.css`, variablesContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-base.css`, variablesContent)
 }
 
 // module.exports = { build: buildBase };

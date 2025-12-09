@@ -112,7 +112,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
 
     const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent
 
-    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-shapes.css`, allContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-shapes.css`, allContent)
 }
 
 // module.exports = { build: buildShapes };
