@@ -72,28 +72,28 @@ const buildColours = (uiSpec, outputDir, config) => {
     ]
     let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
 
-    const linkRuleCol = uiSpec.colors.primary
+    const linkRuleCol = uiSpec.colors[config.linkColour]
     const linkRules = [
         { property: 'color', value: linkRuleCol },
         { property: 'text-decoration-color', value: linkRuleCol }
     ]
     linkColoursContent += libRextCssUtil.writeCssRule('a:link, .${config.tokenPrefix}-link:link', linkRules) + '\n'
 
-    const visitedRuleCol = uiSpec.colors.secondary
+    const visitedRuleCol = uiSpec.colors[config.linkColourVisited]
     const visitedRules = [
         { property: 'color', value: visitedRuleCol },
         { property: 'text-decoration-color', value: visitedRuleCol }
     ]
     linkColoursContent += libRextCssUtil.writeCssRule('a:visited, .${config.tokenPrefix}-link:visited', visitedRules) + '\n'
 
-    const hoverRuleCol = uiSpec.colors.tertiary
+    const hoverRuleCol = uiSpec.colors[config.linkColourHover]
     const hoverRules = [
         { property: 'color', value: hoverRuleCol },
         { property: 'text-decoration-color', value: hoverRuleCol }
     ]
     linkColoursContent += libRextCssUtil.writeCssRule('a:hover, .${config.tokenPrefix}-link:hover', hoverRules) + '\n'
 
-    const activeRuleCol = uiSpec.colors.tertiary
+    const activeRuleCol = uiSpec.colors[config.linkColourActive]
     const activeRules = [
         { property: 'color', value: activeRuleCol },
         { property: 'text-decoration-color', value: activeRuleCol }

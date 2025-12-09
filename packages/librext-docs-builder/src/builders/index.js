@@ -1,15 +1,11 @@
 "use strict"
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 import docHome from './doc-home.js'
 import docColours from './doc-colours.js'
 import docShapes from './doc-shapes.js'
 import docTypography from './doc-typography.js'
 
-const defaultOutputDir = `${__dirname}/../../dist`
+const defaultOutputDir = ''
 
 /**
  * HTML builder scripts

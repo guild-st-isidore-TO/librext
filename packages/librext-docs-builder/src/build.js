@@ -1,19 +1,25 @@
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+/**
+ * @file Builds HTML For the LibRext Documentation/Specs page
+ */
 
+import { join } from 'path'
 import libRextCssBuilder from 'librext-css-builder'
 import libRextUiSpec from 'librext-ui-spec'
 import librextSpecBuilder from 'librext-spec-builder'
 import { config as coreConfig } from 'librext-core'
 import libRextDocsBuilder from './builders/index.js'
-
-const outDir = `${__dirname}/../../../docs`
-const config = coreConfig
+import { projectRootDir } from './docs-builder-util.js'
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, config)
 
-libRextCssBuilder(uiSpec, outDir, config)
+const config = coreConfig
+const outDir = coreConfig.outDirectory
+const assetOutDir = coreConfig.assetOutDirectory
+const cssOutDir = join(projectRootDir, assetOutDir, 'css')
+const htmlOutDir = join(projectRootDir, outDir)
 
-libRextDocsBuilder(uiSpec, outDir, config)
+console.log('[LibRext Docs Builder] LibRext Documentation/Specs\nCSS output directory', cssOutDir)
+libRextCssBuilder(uiSpec, cssOutDir, config)
+
+console.log('[LibRext Docs Builder] LibRext Documentation/Specs\nHTML output directory', htmlOutDir)
+libRextDocsBuilder(uiSpec, htmlOutDir, config)
