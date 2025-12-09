@@ -45,17 +45,3 @@ Some partially-complete work I did back in September. Still using a lot of _Lore
 More about [GSI Style Guide v2.0](./gsi-style-guide.md)
 
 &nbsp;
-
-## Scripture Elements
-
-The system also seeks to model typographic and design elements of biblical and liturgical books. Things like:
-
-| Element | LibRext | HTML 
-| --- | --- | --- |
-| Book/Chapter/Verse markings | `<BookHeading location="wis-9-6">`, `<BookLocator type="chapter" location="wis-9-6">` | ... |
-| Footnotes, references to other parts of text | `<BookFootnote location="wis-9-6">` |   ... |
-| Typographic flair (ligatures, ornamentations) | `<Ornament type="corner" variant="modern" direction="top-left">` | ... |
-| ornate capitals, Illuminations | `<IlluminatedText style="">` |   ... |
-| Music scores | `<MusicScore ... >` |   ... |
-
-More about [Scripture Elements](./scripture-elements.md)
