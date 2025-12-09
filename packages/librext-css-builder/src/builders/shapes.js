@@ -33,11 +33,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
     uiSpec.radii.forEach((radVal, idx) => {
         const cPrefix = cRadiusPrefixes[idx]
         const cRadiusEntry = {
-            property: `lbrxt-cor-radius-${cPrefix}`,
+            property: `${config.tokenPrefix}-cor-radius-${cPrefix}`,
             value: radVal,
         }
         styleVars.push(cRadiusEntry);
-        const selector = `.lbrxt-b-radius.${cPrefix}`
+        const selector = `.${config.tokenPrefix}-b-radius.${cPrefix}`
         const props = [
             {
                 property: 'border-radius',
@@ -51,11 +51,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
     for (const [shadowSize, shadowVal] of Object.entries(uiSpec.shadows)) {
         // const sPrefix = cRadiusPrefixes[idx]
         const sRadiusEntry = {
-            property: `lbrxt-box-shadow-${shadowSize}`,
+            property: `${config.tokenPrefix}-box-shadow-${shadowSize}`,
             value: shadowVal,
         }
         styleVars.push(sRadiusEntry);
-        const selector = `.lbrxt-b-shadow.${shadowSize}`
+        const selector = `.${config.tokenPrefix}-b-shadow.${shadowSize}`
         const props = [
             {
                 property: 'box-shadow',
@@ -67,12 +67,12 @@ const buildShapes = (uiSpec, outputDir, config) => {
 
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
-            property: `lbrxt-widget-ht-${widgetHtKey}`,
+            property: `${config.tokenPrefix}-widget-ht-${widgetHtKey}`,
             value: widgetHtVars.height,
         }
         styleVars.push(heightEntry);
 
-        const selector = `.lbrxt-widget.${widgetHtKey}`
+        const selector = `.${config.tokenPrefix}-widget.${widgetHtKey}`
         const props = [
             {
                 property: 'height',
@@ -84,7 +84,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
 
     for (const [cardType, cardData] of Object.entries(uiSpec.cards)) {
-        const selector = `.lbrxt-card.${cardType}`
+        const selector = `.${config.tokenPrefix}-card.${cardType}`
         const props = [
             {
                 property: 'height',
@@ -106,7 +106,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
         shapesContent += libRextCssUtil.writeCssRule(selector, props)
 
         if (cardType == 'md') {
-            shapesContent += libRextCssUtil.writeCssRule('.lbrxt-card', props)
+            shapesContent += libRextCssUtil.writeCssRule('.${config.tokenPrefix}-card', props)
         }
     }
 
