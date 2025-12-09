@@ -10,7 +10,7 @@
   "author": "RJ Salvador <salvador.workshop@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "librext-ui-core": "0.2.0",
+    "librext-core": "0.2.0",
     "librext-ui-spec": "0.1.8"
   }
 }

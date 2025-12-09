@@ -1,5 +1,6 @@
 "use strict"
 
+import libRextCore from 'librext-core'
 import specLibRext from './spec-librext.js'
 import { buildTypeScale, buildTypeScaleData } from './type-scale.js'
 
