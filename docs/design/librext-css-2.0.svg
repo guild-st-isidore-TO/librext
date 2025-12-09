@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1288pt" height="545pt" viewBox="0.00 0.00 1288.00 544.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 540.6)">
+<title>%0</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-540.6 1284,-540.6 1284,4 -4,4"/>
+<text text-anchor="middle" x="640" y="-25" font-family="Times,serif" font-size="14.00" fill="#000000">LibRext CSS</text>
+<text text-anchor="middle" x="640" y="-8.2" font-family="Times,serif" font-size="14.00" fill="#000000">Design v2.0</text>
+<g id="clust1" class="cluster">
+<title>cluster_0</title>
+<polygon fill="none" stroke="#e41a1c" stroke-width="2" points="8,-65.6 8,-528.6 624,-528.6 624,-65.6 8,-65.6"/>
+<text text-anchor="middle" x="316" y="-512" font-family="Times,serif" font-size="14.00" fill="#e41a1c">LibRext System</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1</title>
+<polygon fill="none" stroke="#e41a1c" stroke-width="2" points="16,-419 16,-495.8 616,-495.8 616,-419 16,-419"/>
+<text text-anchor="middle" x="316" y="-479.2" font-family="Times,serif" font-size="14.00" fill="#e41a1c">LibRext Builders</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="#984ea3" stroke-width="2" points="234,-73.6 234,-156 424,-156 424,-73.6 234,-73.6"/>
+<text text-anchor="middle" x="329" y="-139.4" font-family="Times,serif" font-size="14.00" fill="#984ea3">LibRext Intermediate Data</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_3</title>
+<polygon fill="none" stroke="#377eb8" stroke-width="2" points="632,-301.8 632,-384.2 1272,-384.2 1272,-301.8 632,-301.8"/>
+<text text-anchor="middle" x="952" y="-367.6" font-family="Times,serif" font-size="14.00" fill="#377eb8">Output Files</text>
+</g>
+<!-- specBuilder -->
+<g id="node1" class="node">
+<title>specBuilder</title>
+<polygon fill="none" stroke="#e41a1c" points="394.5604,-272.8 263.4396,-272.8 263.4396,-236.8 394.5604,-236.8 394.5604,-272.8"/>
+<text text-anchor="middle" x="329" y="-250.6" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-spec-builder</text>
+</g>
+<!-- uiSpec -->
+<g id="node2" class="node">
+<title>uiSpec</title>
+<polygon fill="none" stroke="#e41a1c" points="211.295,-123.0019 108.705,-123.0019 108.705,-81.7981 211.295,-81.7981 211.295,-123.0019"/>
+<text text-anchor="middle" x="160" y="-106.6" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-ui-spec</text>
+<text text-anchor="middle" x="160" y="-89.8" font-family="Times,serif" font-size="14.00" fill="#e41a1c">(base UI spec)</text>
+</g>
+<!-- specBuilder&#45;&gt;uiSpec -->
+<g id="edge1" class="edge">
+<title>specBuilder-&gt;uiSpec</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M308.9498,-236.7193C279.7287,-210.3684 225.1911,-161.1877 190.8381,-130.209"/>
+<polygon fill="#000000" stroke="#000000" points="182.9886,-123.1306 193.4287,-126.4856 186.7018,-126.479 190.415,-129.8275 190.415,-129.8275 190.415,-129.8275 186.7018,-126.479 187.4014,-133.1694 182.9886,-123.1306 182.9886,-123.1306"/>
+</g>
+<!-- workingUiSpec -->
+<g id="node8" class="node">
+<title>workingUiSpec</title>
+<polygon fill="none" stroke="#984ea3" points="415.9354,-123.0019 242.0646,-123.0019 242.0646,-81.7981 415.9354,-81.7981 415.9354,-123.0019"/>
+<text text-anchor="middle" x="329" y="-106.6" font-family="Times,serif" font-size="14.00" fill="#984ea3">Working UI Spec</text>
+<text text-anchor="middle" x="329" y="-89.8" font-family="Times,serif" font-size="14.00" fill="#984ea3">(base UI Spec + transforms)</text>
+</g>
+<!-- specBuilder&#45;&gt;workingUiSpec -->
+<g id="edge12" class="edge">
+<title>specBuilder-&gt;workingUiSpec</title>
+<path fill="none" stroke="#000000" d="M329,-236.7193C329,-211.3284 329,-164.7409 329,-133.6654"/>
+<polygon fill="#000000" stroke="#000000" points="332.5001,-133.3806 329,-123.3807 325.5001,-133.3807 332.5001,-133.3806"/>
+<text text-anchor="middle" x="355.4271" y="-187.2" font-family="Times,serif" font-size="14.00" fill="#000000">generates</text>
+</g>
+<!-- cssBuilder -->
+<g id="node3" class="node">
+<title>cssBuilder</title>
+<polygon fill="none" stroke="#e41a1c" points="455.7907,-463 332.2093,-463 332.2093,-427 455.7907,-427 455.7907,-463"/>
+<text text-anchor="middle" x="394" y="-440.8" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-css-builder</text>
+</g>
+<!-- cssBuilder&#45;&gt;specBuilder -->
+<g id="edge2" class="edge">
+<title>cssBuilder-&gt;specBuilder</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M387.7675,-426.7628C376.3383,-393.3191 351.9639,-321.9958 338.4734,-282.5208"/>
+<polygon fill="#000000" stroke="#000000" points="335.2136,-272.982 342.7057,-280.9894 336.8306,-277.7133 338.4475,-282.4446 338.4475,-282.4446 338.4475,-282.4446 336.8306,-277.7133 334.1893,-283.8999 335.2136,-272.982 335.2136,-272.982"/>
+</g>
+<!-- core -->
+<g id="node7" class="node">
+<title>core</title>
+<polygon fill="none" stroke="#e41a1c" points="244.9594,-272.8 159.0406,-272.8 159.0406,-236.8 244.9594,-236.8 244.9594,-272.8"/>
+<text text-anchor="middle" x="202" y="-250.6" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-core</text>
+</g>
+<!-- cssBuilder&#45;&gt;core -->
+<g id="edge6" class="edge">
+<title>cssBuilder-&gt;core</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M375.5902,-426.7628C341.1849,-392.68 267.0663,-319.2563 227.7345,-280.2932"/>
+<polygon fill="#000000" stroke="#000000" points="220.354,-272.982 230.6253,-276.8227 223.9062,-276.5008 227.4583,-280.0197 227.4583,-280.0197 227.4583,-280.0197 223.9062,-276.5008 224.2914,-283.2166 220.354,-272.982 220.354,-272.982"/>
+</g>
+<!-- cssBuilder&#45;&gt;workingUiSpec -->
+<g id="edge10" class="edge">
+<title>cssBuilder-&gt;workingUiSpec</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M400.8138,-426.6856C417.0002,-379.995 453.2202,-253.8599 409,-164 402.0796,-149.937 390.234,-138.183 377.748,-128.8405"/>
+<polygon fill="#000000" stroke="#000000" points="369.4958,-123.0494 380.2663,-125.1103 373.5886,-125.9216 377.6813,-128.7938 377.6813,-128.7938 377.6813,-128.7938 373.5886,-125.9216 375.0964,-132.4773 369.4958,-123.0494 369.4958,-123.0494"/>
+</g>
+<!-- outputCss -->
+<g id="node9" class="node">
+<title>outputCss</title>
+<polygon fill="none" stroke="#377eb8" points="1122.2583,-351.2019 897.7417,-351.2019 897.7417,-309.9981 1122.2583,-309.9981 1122.2583,-351.2019"/>
+<text text-anchor="middle" x="1010" y="-334.8" font-family="Times,serif" font-size="14.00" fill="#377eb8">Generated CSS</text>
+<text text-anchor="middle" x="1010" y="-318" font-family="Times,serif" font-size="14.00" fill="#377eb8">(for web apps, e-books, printed docs)</text>
+</g>
+<!-- cssBuilder&#45;&gt;outputCss -->
+<g id="edge13" class="edge">
+<title>cssBuilder-&gt;outputCss</title>
+<path fill="none" stroke="#000000" d="M436.5437,-426.895C445.7702,-423.6865 455.5878,-420.7992 465,-419 546.6621,-403.3895 758.0166,-427.8172 839,-409 884.7974,-398.3586 933.1644,-374.8917 966.7273,-356.3898"/>
+<polygon fill="#000000" stroke="#000000" points="968.771,-359.2569 975.7868,-351.3178 965.3514,-353.149 968.771,-359.2569"/>
+<text text-anchor="middle" x="914.4271" y="-396.4" font-family="Times,serif" font-size="14.00" fill="#000000">generates</text>
+</g>
+<!-- docsBuilder -->
+<g id="node4" class="node">
+<title>docsBuilder</title>
+<polygon fill="none" stroke="#e41a1c" points="155.8459,-463 24.1541,-463 24.1541,-427 155.8459,-427 155.8459,-463"/>
+<text text-anchor="middle" x="90" y="-440.8" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-docs-builder</text>
+</g>
+<!-- docsBuilder&#45;&gt;specBuilder -->
+<g id="edge3" class="edge">
+<title>docsBuilder-&gt;specBuilder</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M126.9271,-426.9132C136.6711,-421.5943 146.9781,-415.4565 156,-409 169.2503,-399.5175 171.1825,-395.4177 183,-384.2 220.9294,-348.1955 227.4156,-335.9766 267,-301.8 276.0145,-294.017 286.1742,-286.0199 295.621,-278.8793"/>
+<polygon fill="#000000" stroke="#000000" points="303.6924,-272.8518 298.3726,-282.4408 299.6862,-275.8435 295.68,-278.8353 295.68,-278.8353 295.68,-278.8353 299.6862,-275.8435 292.9874,-275.2297 303.6924,-272.8518 303.6924,-272.8518"/>
+</g>
+<!-- docsBuilder&#45;&gt;core -->
+<g id="edge7" class="edge">
+<title>docsBuilder-&gt;core</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M125.0354,-426.8926C132.3676,-421.8687 139.5249,-415.8733 145,-409 175.0067,-371.3305 190.2206,-316.3262 197.106,-283.2047"/>
+<polygon fill="#000000" stroke="#000000" points="199.057,-273.2696 201.5456,-283.9494 198.0935,-278.1759 197.1299,-283.0822 197.1299,-283.0822 197.1299,-283.0822 198.0935,-278.1759 192.7143,-282.215 199.057,-273.2696 199.057,-273.2696"/>
+</g>
+<!-- docsBuilder&#45;&gt;workingUiSpec -->
+<g id="edge11" class="edge">
+<title>docsBuilder-&gt;workingUiSpec</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M103.6627,-426.6483C118.4668,-404.9029 140,-367.0144 140,-330.6 140,-330.6 140,-330.6 140,-218.3 140,-202.4545 136.7293,-196.5157 145,-183 167.4652,-146.2882 197.2332,-169.8027 238,-156 257.0495,-149.5503 276.4809,-138.7875 292.4699,-128.5916"/>
+<polygon fill="#000000" stroke="#000000" points="300.9742,-123.0166 295.0782,-132.2626 296.7926,-125.7579 292.611,-128.4992 292.611,-128.4992 292.611,-128.4992 296.7926,-125.7579 290.1439,-124.7357 300.9742,-123.0166 300.9742,-123.0166"/>
+</g>
+<!-- outputDocs -->
+<g id="node10" class="node">
+<title>outputDocs</title>
+<polygon fill="none" stroke="#377eb8" points="792.4826,-351.2019 639.5174,-351.2019 639.5174,-309.9981 792.4826,-309.9981 792.4826,-351.2019"/>
+<text text-anchor="middle" x="716" y="-334.8" font-family="Times,serif" font-size="14.00" fill="#377eb8">HTML files</text>
+<text text-anchor="middle" x="716" y="-318" font-family="Times,serif" font-size="14.00" fill="#377eb8">(Styling documentation)</text>
+</g>
+<!-- docsBuilder&#45;&gt;outputDocs -->
+<g id="edge14" class="edge">
+<title>docsBuilder-&gt;outputDocs</title>
+<path fill="none" stroke="#000000" d="M135.0075,-426.8879C144.7493,-423.6799 155.1012,-420.7946 165,-419 252.4905,-403.1383 477.8559,-426.6657 565,-409 607.1077,-400.464 650.1127,-376.3185 679.4019,-357.057"/>
+<polygon fill="#000000" stroke="#000000" points="681.6851,-359.7398 688.0352,-351.2588 677.7822,-353.9287 681.6851,-359.7398"/>
+<text text-anchor="middle" x="639.4271" y="-396.4" font-family="Times,serif" font-size="14.00" fill="#000000">generates</text>
+</g>
+<!-- imgBuilder -->
+<g id="node5" class="node">
+<title>imgBuilder</title>
+<polygon fill="none" stroke="#e41a1c" points="608.1825,-463 473.8175,-463 473.8175,-427 608.1825,-427 608.1825,-463"/>
+<text text-anchor="middle" x="541" y="-440.8" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-img-builder?</text>
+</g>
+<!-- imgBuilder&#45;&gt;specBuilder -->
+<g id="edge4" class="edge">
+<title>imgBuilder-&gt;specBuilder</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M528.9535,-426.7586C508.915,-397.4804 466.2387,-339.473 419,-301.8 407.4667,-292.6022 393.856,-284.3952 380.7587,-277.5143"/>
+<polygon fill="#000000" stroke="#000000" points="371.8051,-272.9665 382.7588,-273.483 376.263,-275.2308 380.7209,-277.4951 380.7209,-277.4951 380.7209,-277.4951 376.263,-275.2308 378.683,-281.5073 371.8051,-272.9665 371.8051,-272.9665"/>
+</g>
+<!-- imgBuilder&#45;&gt;core -->
+<g id="edge8" class="edge">
+<title>imgBuilder-&gt;core</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M501.594,-426.9384C477.3633,-415.4475 445.9083,-399.8323 419,-384.2 362.1044,-351.1466 352.8739,-334.8907 296,-301.8 281.3728,-293.2895 265.0057,-284.7764 250.0795,-277.3796"/>
+<polygon fill="#000000" stroke="#000000" points="241.0005,-272.9283 251.9604,-273.2901 245.49,-275.1295 249.9794,-277.3306 249.9794,-277.3306 249.9794,-277.3306 245.49,-275.1295 247.9984,-281.3711 241.0005,-272.9283 241.0005,-272.9283"/>
+</g>
+<!-- outputImages -->
+<g id="node11" class="node">
+<title>outputImages</title>
+<polygon fill="none" stroke="#377eb8" points="1263.7024,-351.2019 1140.2976,-351.2019 1140.2976,-309.9981 1263.7024,-309.9981 1263.7024,-351.2019"/>
+<text text-anchor="middle" x="1202" y="-334.8" font-family="Times,serif" font-size="14.00" fill="#377eb8">Image files</text>
+<text text-anchor="middle" x="1202" y="-318" font-family="Times,serif" font-size="14.00" fill="#377eb8">(SVG icons, logos)</text>
+</g>
+<!-- imgBuilder&#45;&gt;outputImages -->
+<g id="edge15" class="edge">
+<title>imgBuilder-&gt;outputImages</title>
+<path fill="none" stroke="#000000" d="M608.1657,-442.843C742.1499,-437.7675 1037.7679,-422.4799 1131,-384.2 1146.0908,-378.0039 1160.8155,-367.7961 1172.9073,-357.9419"/>
+<polygon fill="#000000" stroke="#000000" points="1175.4624,-360.3644 1180.83,-351.2298 1170.9376,-355.0234 1175.4624,-360.3644"/>
+<text text-anchor="middle" x="1131.4271" y="-396.4" font-family="Times,serif" font-size="14.00" fill="#000000">generates</text>
+</g>
+<!-- fontsBuilder -->
+<g id="node6" class="node">
+<title>fontsBuilder</title>
+<polygon fill="none" stroke="#e41a1c" points="314.3976,-463 173.6024,-463 173.6024,-427 314.3976,-427 314.3976,-463"/>
+<text text-anchor="middle" x="244" y="-440.8" font-family="Times,serif" font-size="14.00" fill="#e41a1c">Librext-fonts-builder?</text>
+</g>
+<!-- fontsBuilder&#45;&gt;specBuilder -->
+<g id="edge5" class="edge">
+<title>fontsBuilder-&gt;specBuilder</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M252.1502,-426.7628C267.1278,-393.2481 299.1057,-321.6928 316.7238,-282.2698"/>
+<polygon fill="#000000" stroke="#000000" points="320.8745,-272.982 320.9028,-283.9478 318.8344,-277.5469 316.7944,-282.1118 316.7944,-282.1118 316.7944,-282.1118 318.8344,-277.5469 312.686,-280.2757 320.8745,-272.982 320.8745,-272.982"/>
+</g>
+<!-- fontsBuilder&#45;&gt;core -->
+<g id="edge9" class="edge">
+<title>fontsBuilder-&gt;core</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M239.9729,-426.7628C232.6035,-393.3901 216.905,-322.2985 208.1769,-282.7726"/>
+<polygon fill="#000000" stroke="#000000" points="206.0149,-272.982 212.5654,-281.7764 207.0931,-277.8643 208.1713,-282.7467 208.1713,-282.7467 208.1713,-282.7467 207.0931,-277.8643 203.7771,-283.7171 206.0149,-272.982 206.0149,-272.982"/>
+</g>
+<!-- outputFonts -->
+<g id="node12" class="node">
+<title>outputFonts</title>
+<polygon fill="none" stroke="#377eb8" points="879.7747,-348.6 810.2253,-348.6 810.2253,-312.6 879.7747,-312.6 879.7747,-348.6"/>
+<text text-anchor="middle" x="845" y="-326.4" font-family="Times,serif" font-size="14.00" fill="#377eb8">Font files</text>
+</g>
+<!-- fontsBuilder&#45;&gt;outputFonts -->
+<g id="edge16" class="edge">
+<title>fontsBuilder-&gt;outputFonts</title>
+<path fill="none" stroke="#000000" d="M291.4791,-426.9429C301.7356,-423.7312 312.6197,-420.8305 323,-419 427.8851,-400.5046 708.5773,-437.1245 801,-384.2 812.232,-377.7681 821.7901,-367.2855 829.0992,-357.2887"/>
+<polygon fill="#000000" stroke="#000000" points="832.185,-358.9761 834.9291,-348.7428 826.4023,-355.0313 832.185,-358.9761"/>
+<text text-anchor="middle" x="808.4271" y="-396.4" font-family="Times,serif" font-size="14.00" fill="#000000">generates</text>
+</g>
+</g>
+</svg>

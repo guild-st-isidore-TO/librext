@@ -55,7 +55,15 @@ or HTML class names:
 
 ## DEVELOPMENT
 
-...
+Quickstart from the repo root:
+
+```
+npm install
+
+npm run build
+
+npm run dev
+```
 
 ## DESIGN
 
