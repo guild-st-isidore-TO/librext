@@ -15,7 +15,7 @@ const uiSpec = librextSpecBuilder(libRextUiSpec, config)
 const config = coreConfig
 const outDir = coreConfig.outDirectory
 const assetOutDir = coreConfig.assetOutDirectory
-const cssOutDir = join(projectRootDir, assetOutDir, 'css')
+const cssOutDir = join(projectRootDir, assetOutDir)
 const htmlOutDir = join(projectRootDir, outDir)
 
 console.log('[LibRext Docs Builder] LibRext Documentation/Specs\nCSS output directory', cssOutDir)

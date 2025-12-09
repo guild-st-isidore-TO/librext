@@ -1,3 +1,7 @@
+/**
+ * @file LibRext Spec Builder
+ */
+
 "use strict"
 
 import { config as coreConfig } from 'librext-core'
@@ -5,7 +9,7 @@ import buildThemeLibRext from './spec-librext.js'
 import { buildTypeScale, buildTypeScaleData } from './type-scale.js'
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)
- * @namespace buildSpec
+ * @namespace libRextSpecBuilder
  */
 const buildSpec = (uiSpec, config = coreConfig) => {
 

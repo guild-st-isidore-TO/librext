@@ -1,3 +1,6 @@
+/**
+ * @file LibRext Core
+ */
 "use strict"
 
 import coreConfig from "./core-config"

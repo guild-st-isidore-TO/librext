@@ -11,7 +11,7 @@ import { projectRootDir } from './css-builder-util.js'
 
 const config = coreConfig
 const assetOutDir = coreConfig.assetOutDirectory
-const cssOutDir = join(projectRootDir, assetOutDir, 'css')
+const cssOutDir = join(projectRootDir, assetOutDir)
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, config)
 
