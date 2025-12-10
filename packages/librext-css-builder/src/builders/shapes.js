@@ -1,7 +1,7 @@
 "use strict"
 
-import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import fileHandler from '../file-handler.js'
+import cssHandler from '../css-handler.js'
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -44,7 +44,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
                 value: radVal,
             },
         ]
-        shapesContent += libRextCssUtil.writeCssRule(selector, props)
+        shapesContent += cssHandler.writeCssRule(selector, props)
     })
 
     // uiSpec.shadows.forEach((shadowVal, idx) => {
@@ -62,7 +62,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
                 value: shadowVal,
             },
         ]
-        shapesContent += libRextCssUtil.writeCssRule(selector, props)
+        shapesContent += cssHandler.writeCssRule(selector, props)
     }
 
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
@@ -79,9 +79,9 @@ const buildShapes = (uiSpec, outputDir, config) => {
                 value: widgetHtVars.height,
             },
         ]
-        shapesContent += libRextCssUtil.writeCssRule(selector, props)
+        shapesContent += cssHandler.writeCssRule(selector, props)
     }
-    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
+    const variablesContent = cssHandler.writeCssVarRule(varsSelector, styleVars);
 
     for (const [cardType, cardData] of Object.entries(uiSpec.cards)) {
         const selector = `.${config.tokenPrefix}-card.${cardType}`
@@ -103,16 +103,16 @@ const buildShapes = (uiSpec, outputDir, config) => {
                 value: uiSpec.shadows[cardData.boxShadow],
             },
         ]
-        shapesContent += libRextCssUtil.writeCssRule(selector, props)
+        shapesContent += cssHandler.writeCssRule(selector, props)
 
         if (cardType == 'md') {
-            shapesContent += libRextCssUtil.writeCssRule(`.${config.tokenPrefix}-card`, props)
+            shapesContent += cssHandler.writeCssRule(`.${config.tokenPrefix}-card`, props)
         }
     }
 
     const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent
 
-    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-shapes.css`, allContent)
+    fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-shapes.css`, allContent)
 }
 
 // module.exports = { build: buildShapes };

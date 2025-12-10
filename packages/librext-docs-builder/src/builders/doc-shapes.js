@@ -1,5 +1,5 @@
 import ejs from 'ejs';
-import libRextDocsFileHandler from './file-handler.js'
+import libRextDocsFileHandler from '../file-handler.js'
 import { templatesDir } from '../docs-builder-util.js'
 
 const buildHtmlShapes = (uiSpec, outputDir, config) => {

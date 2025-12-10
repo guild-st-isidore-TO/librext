@@ -1,8 +1,8 @@
 "use strict"
 
 import { utils } from 'librext-core'
-import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import fileHandler from '../file-handler.js'
+import cssHandler from '../css-handler.js'
 
 const buildText = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
@@ -23,7 +23,7 @@ const buildText = (uiSpec, outputDir, config) => {
         const fontRoleVars = [
             { property: 'font-family', value: currentFontFamily, },
         ]
-        const fontRoleRule = libRextCssUtil.writeCssRule(`.${config.tokenPrefix}-fontfam-${fontRole}`, fontRoleVars);
+        const fontRoleRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-fontfam-${fontRole}`, fontRoleVars);
         fontFamContent += fontRoleRule + '\n'
     }
 
@@ -35,7 +35,7 @@ const buildText = (uiSpec, outputDir, config) => {
         const fontSizeVars = [
             { property: 'font-size', value: fontSizeVal, },
         ]
-        const fontSizeRule = libRextCssUtil.writeCssRule(`.${config.tokenPrefix}-typescale-${idx + 1}`, fontSizeVars);
+        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-typescale-${idx + 1}`, fontSizeVars);
         fontScaleContent += fontSizeRule + '\n'
     })
 
@@ -47,7 +47,7 @@ const buildText = (uiSpec, outputDir, config) => {
         const fontSizeVars = [
             { property: 'font-size', value: uiSpec.libRextData.fontSizes[fontSizeRole], },
         ]
-        const fontSizeRule = libRextCssUtil.writeCssRule(`.${config.tokenPrefix}-typescale-${fontSizeRole}`, fontSizeVars);
+        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-typescale-${fontSizeRole}`, fontSizeVars);
         fontScaleContent += fontSizeRule + '\n'
     }
 
@@ -90,17 +90,17 @@ const buildText = (uiSpec, outputDir, config) => {
         const selectorHtml = docRoleData.html.length == 0 ? '' : `${docRoleData.html},\n`
         let docRoleSelector = `${selectorHtml}.${docRoleData.class}`
 
-        const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
+        const docRoleRule = cssHandler.writeCssRule(docRoleSelector, docRoleVars);
         const docRoleComment = utils.codeComment(docRoleName, `typescale size = ${docRoleData.typescale}`)
 
         docRolesContent += docRoleComment + docRoleRule + '\n'
     }
 
-    const rootCssVarRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, rootCssVars);
+    const rootCssVarRule = cssHandler.writeCssVarRule(cssHandler.ROOT_SELECTOR, rootCssVars);
     rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
 
     const allContent = prefaceContent + '\n' + rootCssVarContent + fontFamContent + fontScaleContent + docRolesContent
-    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-text.css`, allContent)
+    fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-text.css`, allContent)
 }
 
 // module.exports = { build: buildText };

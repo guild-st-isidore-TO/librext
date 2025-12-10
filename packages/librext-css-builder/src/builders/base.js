@@ -1,7 +1,7 @@
 "use strict"
 
-import libRextCssFileHandler from './file-handler.js'
-import libRextCssUtil from './utils.js'
+import fileHandler from '../file-handler.js'
+import cssHandler from '../css-handler.js'
 
 let scope = 'global'
 const defaultLocalScope = '.librext *'
@@ -34,8 +34,8 @@ const buildBase = (uiSpec, outputDir, config) => {
         styleVars.push(scaleVar);
     })
 
-    const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-base.css`, variablesContent)
+    const variablesContent = cssHandler.writeCssVarRule(varsSelector, styleVars);
+    fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-base.css`, variablesContent)
 }
 
 // module.exports = { build: buildBase };

@@ -6,10 +6,9 @@ import {
     fontSizes,
 } from 'librext-ui-spec'
 
-// import { fontSizes } from './spec-text.js'
-// import { librextGreyscale } from './spec-colours.js'
-// import { librextTheme } from './spec-colours.js'
-
+/**
+ * @deprecated
+ */
 const fontCategories = [
     'serif',
     'sans',
@@ -18,6 +17,7 @@ const fontCategories = [
 ]
 
 /**
+ * @deprecated
  * For our purposes, "regular" is the counterpart of "italic".
  */
 const fontVariants = [
@@ -26,6 +26,7 @@ const fontVariants = [
 ]
 
 /**
+ * @deprecated
  * For our purposes, "medium" is a font weight
  */
 const fontWeights = [
@@ -35,6 +36,7 @@ const fontWeights = [
 ]
 
 /**
+ * @deprecated
  * The LibRext type system roles, organized with: display, title, label, heading, body.
  * Heading text will be categorized in body here
  * 
@@ -47,6 +49,7 @@ const fontWeights = [
 const fontRoles = ['display', 'title', 'label', 'heading', 'body']
 
 /**
+ * @deprecated
  * Data about fonts
  */
 const fontData = {
@@ -63,17 +66,6 @@ const buildThemeLibRext = (config) => {
          */
         libRextData: {
             ...fontData,
-            // fontSizes: {
-            //     h1: fontSizes[8],
-            //     h2: fontSizes[7],
-            //     h3: fontSizes[6],
-            //     h4: fontSizes[5],
-            //     h5: fontSizes[4],
-            //     h6: fontSizes[3],
-            //     body: fontSizes[2],
-            //     small: fontSizes[1],
-            //     tiny: fontSizes[0],
-            // },
             palette: {
                 grey: librextGreyscale,
                 theme: librextTheme,

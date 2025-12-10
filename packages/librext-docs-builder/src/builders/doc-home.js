@@ -1,7 +1,6 @@
 import ejs from 'ejs';
-import libRextDocsFileHandler from './file-handler.js'
-import libRextDocsUtil from './utils.js'
-import { templatesDir } from '../docs-builder-util.js'
+import libRextDocsFileHandler from '../file-handler.js'
+import { templatesDir, colourLabelModes } from '../docs-builder-util.js'
 
 const docHome = (uiSpec, outputDir, config) => {
   const fPath = `${templatesDir}/home.ejs`
@@ -45,7 +44,7 @@ const docHome = (uiSpec, outputDir, config) => {
       colour: greyCol,
       heading: `grey${idx}`,
       body: greyCol,
-      labelMode: libRextDocsUtil.colourLabelModes[`grey${idx}`],
+      labelMode: colourLabelModes[`grey${idx}`],
     }
   })
   const dataThemeLight = []
@@ -56,7 +55,7 @@ const docHome = (uiSpec, outputDir, config) => {
       colour: currentThemeCol,
       heading: themeColName,
       body: currentThemeCol,
-      labelMode: libRextDocsUtil.colourLabelModes[themeColName],
+      labelMode: colourLabelModes[themeColName],
     })
   }
   const dataThemeDark = dataThemeLight
