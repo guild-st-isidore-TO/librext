@@ -1,14 +1,14 @@
 {
   "name": "librext",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "GSI's UI design system and component library",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "build": "npm run build:docs",
-    "build:css": "cd packages/librext-css-builder && npm run build",
-    "build:docs": "cd packages/librext-docs-builder && npm run build",
+    "build:css": "node src/build-css.js",
+    "build:docs": "node src/build-docs.js",
     "dev": "cd packages/librext-docs-builder && npm run dev"
   },
   "repository": {

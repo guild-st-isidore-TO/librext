@@ -1,34 +1,14 @@
 "use strict"
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const dataDir = `${__dirname}/../data`
-const dataUiSpecDir = dataDir
-const templatesDir = `${__dirname}/html`
-const htmlOutputDir = `${__dirname}/../../docs`
-const cssOutputDir = `${__dirname}/../../css`
-
 
 const capitalizeFirstLetter = (val) => {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
 
-const util = {    dataDir,
-    dataUiSpecDir,
-    templatesDir,
-    htmlOutputDir,
-    cssOutputDir,
+const util = {
     capitalizeFirstLetter
 }
 
 export default util
 export {
-    dataDir,
-    dataUiSpecDir,
-    templatesDir,
-    htmlOutputDir,
-    cssOutputDir,
     capitalizeFirstLetter
 }

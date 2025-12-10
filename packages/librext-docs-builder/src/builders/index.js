@@ -1,28 +1,31 @@
-"use strict"
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+/**
+ * @file LibRext Docs Builder
+ */
 
+"use strict"
+
+import { join } from 'path'
+import { config } from 'librext-core'
+import { projectRootDir } from '../docs-builder-util.js'
 import docHome from './doc-home.js'
 import docColours from './doc-colours.js'
 import docShapes from './doc-shapes.js'
 import docTypography from './doc-typography.js'
 
-const defaultOutputDir = `${__dirname}/../../dist`
+const defaultOutputDir = join(projectRootDir, config.outDirectory)
 
 /**
  * HTML builder scripts
- * @namespace templateBuilders
+ * @namespace libRextDocsBuilder
 */
-const build = (uiSpec, outputDir = defaultOutputDir) => {
+const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
     // console.log('[LibRext Docs Builder] outputDir', outputDir);
     return {
-        htmlHome: docHome(uiSpec, outputDir),
-        htmlColours: docColours(uiSpec, outputDir),
-        htmlShapes: docShapes(uiSpec, outputDir),
-        htmlTypography: docTypography(uiSpec, outputDir),
+        htmlColours: docColours(uiSpec, outputDir, config),
+        htmlHome: docHome(uiSpec, outputDir, config),
+        htmlShapes: docShapes(uiSpec, outputDir, config),
+        htmlTypography: docTypography(uiSpec, outputDir, config),
     }
 }
 

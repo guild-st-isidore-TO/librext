@@ -1,9 +1,10 @@
 import ejs from 'ejs';
 import libRextDocsFileHandler from './file-handler.js'
 import libRextDocsUtil from './utils.js'
+import { templatesDir } from '../docs-builder-util.js'
 
-const docHome = (uiSpec, outputDir) => {
-  const fPath = `${libRextDocsUtil.templatesDir}/home.ejs`
+const docHome = (uiSpec, outputDir, config) => {
+  const fPath = `${templatesDir}/home.ejs`
   const template = libRextDocsFileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Home] uiSpec', uiSpec);
   const cRadiusPrefixes = [

@@ -7,7 +7,7 @@ let scope = 'global'
 const defaultLocalScope = '.librext *'
 let customLocalScope = '.placeholder *'
 
-const buildBase = (uiSpec, outputDir) => {
+const buildBase = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - BaseBuilder] uiSpec', uiSpec);
 
     let varsSelector = ':root'
@@ -20,7 +20,7 @@ const buildBase = (uiSpec, outputDir) => {
     const styleVars = []
     uiSpec.sizes.forEach((sizeNum, idx) => {
         const scaleVar = {
-            property: `lbrxt-scale-${idx + 1}`,
+            property: `${config.tokenPrefix}-scale-${idx + 1}`,
             value: `${sizeNum}px`,
         }
         styleVars.push(scaleVar);
@@ -28,14 +28,14 @@ const buildBase = (uiSpec, outputDir) => {
     
     uiSpec.space.forEach((spaceNum, idx) => {
         const scaleVar = {
-            property: `lbrxt-space-${idx + 1}`,
+            property: `${config.tokenPrefix}-space-${idx + 1}`,
             value: `${spaceNum}px`,
         }
         styleVars.push(scaleVar);
     })
 
     const variablesContent = libRextCssUtil.writeCssVarRule(varsSelector, styleVars);
-    libRextCssFileHandler.writeFile(`${outputDir}/css/librext-base.css`, variablesContent)
+    libRextCssFileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-base.css`, variablesContent)
 }
 
 // module.exports = { build: buildBase };

@@ -1,3 +1,7 @@
+/**
+ * @file LibRext UI Builder
+ */
+
 "use strict"
 
 import base from './spec-base.js'
@@ -8,7 +12,7 @@ import styles from './spec-styles.js'
 
 /**
  * Librext UI Data (conforms to Theme-UI spec)
- * @namespace uiSpec
+ * @namespace libRextUiSpec
  */
 const uiSpec = {
     ...base,

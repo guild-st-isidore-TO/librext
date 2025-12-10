@@ -1,6 +1,6 @@
 {
   "name": "librext-spec-builder",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "...",
   "main": "index.js",
   "type": "module",
@@ -10,6 +10,7 @@
   "author": "RJ Salvador <salvador.workshop@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "librext-core": "0.2.0",
     "librext-ui-spec": "0.1.8"
   }
 }

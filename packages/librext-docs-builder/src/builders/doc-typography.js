@@ -1,9 +1,9 @@
 import ejs from 'ejs';
 import libRextDocsFileHandler from './file-handler.js'
-import libRextDocsUtil from './utils.js'
+import { templatesDir } from '../docs-builder-util.js'
 
-const buildHtmlTypography = (uiSpec, outputDir) => {
-    const fPath = `${libRextDocsUtil.templatesDir}/typography.ejs`
+const buildHtmlTypography = (uiSpec, outputDir, config) => {
+    const fPath = `${templatesDir}/typography.ejs`
     const template = libRextDocsFileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
 
