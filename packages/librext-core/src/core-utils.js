@@ -32,6 +32,7 @@ const getPermutationsOfArrays = (array1, array2) => {
  */
 const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) => {
     let outComment = ''
+    const hasBody = !!body && (typeof body == 'string' && body.length > 0)
 
     // syntax for JS, CSS
     let delimOpen = '/* '
@@ -87,9 +88,10 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
 
     outComment += delimMid + heading + '\n'
 
-    outComment += delimMid + hrLine + '\n'
-
-    outComment += delimMid + body + '\n'
+    if (hasBody) {
+        outComment += delimMid + hrLine + '\n'
+        outComment += delimMid + body + '\n'
+    }
 
     outComment += delimMid + borderBottomLine + delimClose + '\n'
     outComment += spaceText

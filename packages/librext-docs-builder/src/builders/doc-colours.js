@@ -70,6 +70,7 @@ const docColours = (uiSpec, outputDir, config) => {
   ]
 
   const templatePayload = {
+    fonts: config.fonts,
     themePaletteLight: dataThemeLight,
     themePaletteDark: dataThemeDark,
     greyscalePaletteLight: dataGreyscaleLight,

@@ -10,7 +10,9 @@
   <!-- LIBREXT STYLESHEETS -->
   <!-- ================================================ -->
   <link rel="stylesheet" href="./css/librext-base.css">
-  <link rel="stylesheet" href="./fonts/librext-fonts.css">
+  <% for(var i=0; i < fonts.length; i++) { %>
+  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/librext-font.css">
+  <% } %>
   <link rel="stylesheet" href="./css/librext-text.css">
 
   <link rel="stylesheet" href="./css/librext-colours.css">

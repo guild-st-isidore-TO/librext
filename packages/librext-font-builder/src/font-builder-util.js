@@ -5,8 +5,10 @@ const __dirname = dirname(__filename);
 
 const srcDir = __dirname;
 const projectRootDir = join(srcDir, '..')
+const fontDir = join(projectRootDir, 'fonts')
 
 export {
     srcDir,
     projectRootDir,
+    fontDir
 }

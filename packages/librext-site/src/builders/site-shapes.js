@@ -3,7 +3,7 @@ import { fileHandler } from 'librext-core'
 import { templatesDir } from '../site-builder-util.js'
 
 const buildHtmlShapes = (uiSpec, outputDir, config) => {
-    const fPath = `${templatesDir}/shapes.ejs`
+    const fPath = `${templatesDir}/site-shapes.ejs`
     const template = fileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
     const cRadiusPrefixes = [
@@ -61,6 +61,7 @@ const buildHtmlShapes = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
+        fonts: config.fonts,
         borderRadiusSizes: dataBorderRadSizes,
         boxShadowSizes: dataBoxShadowSizes,
         widgetSizes: dataWidgets,

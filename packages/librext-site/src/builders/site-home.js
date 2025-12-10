@@ -3,7 +3,7 @@ import { fileHandler } from 'librext-core'
 import { templatesDir, colourLabelModes } from '../site-builder-util.js'
 
 const docHome = (uiSpec, outputDir, config) => {
-  const fPath = `${templatesDir}/home.ejs`
+  const fPath = `${templatesDir}/site-home.ejs`
   const template = fileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Home] uiSpec', uiSpec);
   const cRadiusPrefixes = [
@@ -61,6 +61,7 @@ const docHome = (uiSpec, outputDir, config) => {
   const dataThemeDark = dataThemeLight
 
   const templatePayload = {
+    fonts: config.fonts,
     borderRadiusSizes: dataBorderRadSizes,
     boxShadowSizes: dataBoxShadowSizes,
     greyscalePaletteLight: dataGreyscaleLight,
