@@ -11,50 +11,55 @@
 ==========*/
 
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Regular.ttf');
+  font-family: 'PTSerif';
+  src: url('PTSerif-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Regular.ttf');
+  font-family: 'PTSerif';
+  src: url('PTSerif-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Medium.ttf');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-SemiBold.ttf');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Bold.ttf');
+  font-family: 'PTSerif';
+  src: url('PTSerif-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Bold.ttf');
+  font-family: 'PTSerif';
+  src: url('PTSerif-Bold.ttf');
   font-weight: 700;
 }
 
+
+
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-ExtraBold.ttf');
-  font-weight: 800;
+  font-family: 'PTSerif';
+  src: url('PTSerif-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Cinzel';
-  src: url('Cinzel-Black.ttf');
-  font-weight: 900;
+  font-family: 'PTSerif';
+  src: url('PTSerif-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
 }
 
+@font-face {
+  font-family: 'PTSerif';
+  src: url('PTSerif-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('PTSerif-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
