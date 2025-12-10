@@ -1,4 +1,5 @@
 // DEFAULT VALUES
+const DEF_PROJECT_NAME = 'LibRext'
 const DEF_TOKEN_PREFIX = 'lbrxt'
 const DEF_FILENAME_PREFIX = 'librext'
 const DEF_OUT_DIRECTORY = '/dist' // relative to project root
@@ -9,6 +10,7 @@ const DEF_LINK_COLOUR_HOVER = 'tertiary'
 const DEF_LINK_COLOUR_ACTIVE = 'tertiary'
 const DEF_LINK_COLOUR_VISITED = 'secondary'
 
+const projectName = DEF_PROJECT_NAME;
 const tokenPrefix = DEF_TOKEN_PREFIX;
 const filenamePrefix = DEF_FILENAME_PREFIX;
 const outDirectory = DEF_OUT_DIRECTORY;
@@ -20,6 +22,7 @@ const linkColourActive = DEF_LINK_COLOUR_ACTIVE;
 const linkColourVisited = DEF_LINK_COLOUR_VISITED;
 
 const coreConfig = {
+    DEF_PROJECT_NAME,
     DEF_TOKEN_PREFIX,
     DEF_FILENAME_PREFIX,
     DEF_OUT_DIRECTORY,
@@ -29,6 +32,7 @@ const coreConfig = {
     DEF_LINK_COLOUR_HOVER,
     DEF_LINK_COLOUR_ACTIVE,
     DEF_LINK_COLOUR_VISITED,
+    projectName,
     tokenPrefix,
     filenamePrefix,
     outDirectory,
@@ -42,6 +46,7 @@ const coreConfig = {
 
 export default coreConfig
 export {
+    DEF_PROJECT_NAME,
     DEF_TOKEN_PREFIX,
     DEF_FILENAME_PREFIX,
     DEF_OUT_DIRECTORY,
@@ -51,6 +56,7 @@ export {
     DEF_LINK_COLOUR_HOVER,
     DEF_LINK_COLOUR_ACTIVE,
     DEF_LINK_COLOUR_VISITED,
+    projectName,
     tokenPrefix,
     filenamePrefix,
     outDirectory,
