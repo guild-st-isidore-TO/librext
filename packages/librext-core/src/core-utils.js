@@ -34,14 +34,14 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     let outComment = ''
 
     // syntax for JS, CSS
-    let delimOpen = '/**'
+    let delimOpen = '/* '
     let delimMid = ' * '
-    let delimClose = '**/'
+    let delimClose = ' */'
 
     if (lang == 'html') {
         // syntax for HTML
         delimOpen = '<!--'
-        delimMid = ' | '
+        delimMid = '   '
         delimClose = '-->'
     }
 
@@ -62,15 +62,17 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
         borderBottomChar = '#'
     }
 
-    const lineLength = 60;
+    const lineLength = 48;
     let borderTopLine = ''
     let borderBottomLine = ''
     let hrLine = ''
 
     for (let idx = 0; idx < lineLength; idx++) {
         borderTopLine += borderTopChar
-        borderBottomLine += borderBottomChar
         hrLine += hrChar
+        if (idx < lineLength - delimClose.length) {
+            borderBottomLine += borderBottomChar
+        }
     }
 
     const sLevel = spacingLevel > 4 ? 4 : spacingLevel
@@ -81,15 +83,15 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     }
 
     outComment += spaceText + '\n'
-    outComment += borderTopLine + '\n'
+    outComment += delimOpen + borderTopLine + '\n'
 
-    outComment += heading + '\n'
+    outComment += delimMid + heading + '\n'
 
-    outComment += hrLine + '\n'
+    outComment += delimMid + hrLine + '\n'
 
-    outComment += body + '\n'
+    outComment += delimMid + body + '\n'
 
-    outComment += borderBottomLine + '\n'
+    outComment += delimMid + borderBottomLine + delimClose + '\n'
     outComment += spaceText
 
     return outComment
