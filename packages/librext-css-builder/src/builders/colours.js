@@ -68,7 +68,7 @@ const buildColours = (uiSpec, outputDir, config) => {
     bgColDarkClassContent += '\n'
 
     const baseRules = [
-        { property: 'background-color', value: 'var(--fix-this-col-background)' }
+        { property: 'background-color', value: `var(--${config.tokenPrefix}-col-background)` }
     ]
     let baseContent = libRextCssUtil.writeCssRule('body', baseRules)
 

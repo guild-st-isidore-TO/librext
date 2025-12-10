@@ -74,9 +74,9 @@ const buildText = (uiSpec, outputDir, config) => {
         if (currentDocRole.weight == 'regular') {
             weightType = 'normal'
         }
-        const sizeVal = `var(--fix-this-thing-typescale-${docRoleData.typescale})`
+        const sizeVal = `var(--${config.tokenPrefix}-typescale-${docRoleData.typescale})`
 
-        const fontFamVal = `var(--fix-this-thing-fontfam-${currentDocRole.fontFamily})`
+        const fontFamVal = `var(--${config.tokenPrefix}-fontfam-${currentDocRole.fontFamily})`
         const isItalic = docRoleData.styles.includes('italic')
         const fontStyleVal = isItalic ? 'italic' : 'normal'
         const weightVal = uiSpec.fontWeights[weightType]
