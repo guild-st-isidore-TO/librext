@@ -1,6 +1,6 @@
 {
   "name": "librext-docs-builder",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "...",
   "main": "index.js",
   "type": "module",
@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "librext-core": "0.2.0",
+    "librext-core": "0.2.1",
     "librext-ui-spec": "0.1.8",
-    "librext-css-builder": "0.2.0",
-    "librext-spec-builder": "0.2.0"
+    "librext-css-builder": "0.2.1",
+    "librext-spec-builder": "0.2.1"
   }
 }
