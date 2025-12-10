@@ -1,6 +1,6 @@
 {
   "name": "librext-spec-builder",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "...",
   "main": "index.js",
   "type": "module",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "jsdoc": "^4.0.5",
-    "librext-core": "0.2.1",
-    "librext-ui-spec": "0.1.8"
+    "librext-core": "0.3.0",
+    "librext-ui-spec": "0.3.0"
   }
 }
