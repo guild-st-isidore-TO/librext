@@ -61,6 +61,7 @@ const docHome = (uiSpec, outputDir, config) => {
   const dataThemeDark = dataThemeLight
 
   const templatePayload = {
+    fonts: config.fonts,
     borderRadiusSizes: dataBorderRadSizes,
     boxShadowSizes: dataBoxShadowSizes,
     greyscalePaletteLight: dataGreyscaleLight,

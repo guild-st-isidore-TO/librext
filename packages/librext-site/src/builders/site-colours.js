@@ -5,7 +5,7 @@ import { templatesDir, colourLabelModes } from '../site-builder-util.js'
 // const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
 const docColours = (uiSpec, outputDir, config) => {
-  const fPath = `${templatesDir}/colours.ejs`
+  const fPath = `${templatesDir}/site-colours.ejs`
   const template = fileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
@@ -70,6 +70,7 @@ const docColours = (uiSpec, outputDir, config) => {
   ]
 
   const templatePayload = {
+    fonts: config.fonts,
     themePaletteLight: dataThemeLight,
     themePaletteDark: dataThemeDark,
     greyscalePaletteLight: dataGreyscaleLight,

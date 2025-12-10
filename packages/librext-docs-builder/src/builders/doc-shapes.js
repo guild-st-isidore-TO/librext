@@ -61,6 +61,7 @@ const buildHtmlShapes = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
+        fonts: config.fonts,
         borderRadiusSizes: dataBorderRadSizes,
         boxShadowSizes: dataBoxShadowSizes,
         widgetSizes: dataWidgets,

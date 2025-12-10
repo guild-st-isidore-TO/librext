@@ -3,7 +3,7 @@ import { fileHandler } from 'librext-core'
 import { templatesDir } from '../site-builder-util.js'
 
 const buildHtmlTypography = (uiSpec, outputDir, config) => {
-    const fPath = `${templatesDir}/typography.ejs`
+    const fPath = `${templatesDir}/site-typography.ejs`
     const template = fileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
 
@@ -23,6 +23,7 @@ const buildHtmlTypography = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
+        fonts: config.fonts,
         roles: dataRoles,
     };
     const filledTemplate = ejs.render(template, templatePayload);

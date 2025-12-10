@@ -23,6 +23,7 @@ const buildHtmlTypography = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
+        fonts: config.fonts,
         roles: dataRoles,
     };
     const filledTemplate = ejs.render(template, templatePayload);
