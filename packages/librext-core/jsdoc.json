@@ -17,11 +17,6 @@
         "cleverLinks": false,
         "monospaceLinks": false,
         "default": {
-            "staticFiles": {
-                "include": [
-                    "./static"
-                ]
-            },
             "useLongnameInNav": true
         }
     }
