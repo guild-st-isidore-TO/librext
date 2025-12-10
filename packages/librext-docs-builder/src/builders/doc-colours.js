@@ -1,7 +1,6 @@
 import ejs from 'ejs';
-import libRextDocsFileHandler from './file-handler.js'
-import libRextDocsUtil from './utils.js'
-import { templatesDir } from '../docs-builder-util.js'
+import libRextDocsFileHandler from '../file-handler.js'
+import { templatesDir, colourLabelModes } from '../docs-builder-util.js'
 
 // const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
@@ -21,7 +20,7 @@ const docColours = (uiSpec, outputDir, config) => {
       colour: currentThemeCol,
       heading: themeColName,
       body: currentThemeCol,
-      labelMode: libRextDocsUtil.colourLabelModes[themeColName],
+      labelMode: colourLabelModes[themeColName],
     })
   }
 
@@ -32,7 +31,7 @@ const docColours = (uiSpec, outputDir, config) => {
       colour: greyCol,
       heading: `grey${idx}`,
       body: greyCol,
-      labelMode: libRextDocsUtil.colourLabelModes[`grey${idx}`],
+      labelMode: colourLabelModes[`grey${idx}`],
     }
   })
 
@@ -49,10 +48,10 @@ const docColours = (uiSpec, outputDir, config) => {
       description: currentColRole.desc,
       valueLight: currentColLight,
       hslLight: '—',
-      labelModeLight: libRextDocsUtil.colourLabelModes[colRole],
+      labelModeLight: colourLabelModes[colRole],
       valueDark: currentColDark,
       hslDark: '—',
-      labelModeDark: libRextDocsUtil.colourLabelModes[`${colRole}Dark`],
+      labelModeDark: colourLabelModes[`${colRole}Dark`],
     })
   }
 
