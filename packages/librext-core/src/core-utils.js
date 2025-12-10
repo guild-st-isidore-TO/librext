@@ -48,6 +48,7 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     let borderTopChar = '-'
     let borderBottomChar = '-'
     let hrChar = '-'
+    let lineLength = 40 + (level * 4);
 
     if (level == 1) {
         borderTopChar = '='
@@ -62,7 +63,6 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
         borderBottomChar = '#'
     }
 
-    const lineLength = 48;
     let borderTopLine = ''
     let borderBottomLine = ''
     let hrLine = ''
@@ -76,7 +76,7 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     }
 
     const sLevel = spacingLevel > 4 ? 4 : spacingLevel
-    const spaceLines = 1 + sLevel
+    const spaceLines = sLevel
     let spaceText = ''
     for (let idx = 0; idx < spaceLines; idx++) {
         spaceText += '\n'

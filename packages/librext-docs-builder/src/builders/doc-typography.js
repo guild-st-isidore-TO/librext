@@ -1,10 +1,10 @@
 import ejs from 'ejs';
-import libRextDocsFileHandler from '../file-handler.js'
+import { fileHandler } from 'librext-core'
 import { templatesDir } from '../docs-builder-util.js'
 
 const buildHtmlTypography = (uiSpec, outputDir, config) => {
     const fPath = `${templatesDir}/typography.ejs`
-    const template = libRextDocsFileHandler.readTemplateFile(fPath);
+    const template = fileHandler.readTemplateFile(fPath);
     // console.log('[LibRext CSS - Build HTML Typography] uiSpec', uiSpec);
 
     const dataRoles = []
@@ -28,7 +28,7 @@ const buildHtmlTypography = (uiSpec, outputDir, config) => {
     const filledTemplate = ejs.render(template, templatePayload);
 
     const outfilePath = `${outputDir}/typography.html`;
-    libRextDocsFileHandler.writeFile(outfilePath, filledTemplate);
+    fileHandler.writeFile(outfilePath, filledTemplate);
 }
 
 // module.exports = { build: buildHtmlTypography };
