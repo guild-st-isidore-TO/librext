@@ -1,6 +1,6 @@
 {
   "name": "librext-site",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "...",
   "main": "index.js",
   "type": "module",
@@ -20,7 +20,7 @@
     "ejs": "^3.1.10",
     "librext-core": "0.3.0",
     "librext-ui-spec": "0.3.0",
-    "librext-css-builder": "0.3.0",
+    "librext-css-builder": "0.3.1",
     "librext-spec-builder": "0.3.0"
   }
 }
