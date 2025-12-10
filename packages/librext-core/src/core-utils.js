@@ -76,7 +76,7 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     }
 
     const sLevel = spacingLevel > 4 ? 4 : spacingLevel
-    const spaceLines = 1 + sLevel
+    const spaceLines = sLevel
     let spaceText = ''
     for (let idx = 0; idx < spaceLines; idx++) {
         spaceText += '\n'

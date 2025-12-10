@@ -1,12 +1,12 @@
 import ejs from 'ejs';
-import libRextDocsFileHandler from '../file-handler.js'
+import { fileHandler } from 'librext-core'
 import { templatesDir, colourLabelModes } from '../docs-builder-util.js'
 
 // const { librextGreyscale, librextTheme } = require(`${libRextCssUtil.dataUiSpecDir}/spec-colours`)
 
 const docColours = (uiSpec, outputDir, config) => {
   const fPath = `${templatesDir}/colours.ejs`
-  const template = libRextDocsFileHandler.readTemplateFile(fPath);
+  const template = fileHandler.readTemplateFile(fPath);
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
   const librextGreyscale = uiSpec.libRextData.palette.grey
@@ -85,7 +85,7 @@ const docColours = (uiSpec, outputDir, config) => {
   // console.log(output);
 
   const outfilePath = `${outputDir}/colours.html`;
-  libRextDocsFileHandler.writeFile(outfilePath, output);
+  fileHandler.writeFile(outfilePath, output);
 
 }
 
