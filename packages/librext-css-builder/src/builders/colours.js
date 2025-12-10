@@ -27,9 +27,16 @@ const buildColours = (uiSpec, outputDir, config) => {
     let bgColDarkClassContent = ''
     let linkColoursContent = ''
 
+    /* ================================================
+     * Colour Palette
+     * --------------------------------------------- */
+
     for (const [colName, colValue] of Object.entries(uiSpec.colors)) {
         // console.log('[LibRext CSS - ColourBuilder] basicRoles', basicRole)
         if (colName != 'modes') {
+            /* ================================================
+             * Colour Palette (Light)
+             * --------------------------------------------- */
             varProps.push({
                 property: `${config.tokenPrefix}-col-${colName}`,
                 value: colValue,
@@ -45,6 +52,9 @@ const buildColours = (uiSpec, outputDir, config) => {
             colClassContent += cssHandler.writeCssRule(`.${config.tokenPrefix}-col-${colName}`, colClassProps)
             bgColClassContent += cssHandler.writeCssRule(`.${config.tokenPrefix}-bgcol-${colName}`, bgColClassProps)
         } else {
+            /* ================================================
+             * Colour Palette (Dark)
+             * --------------------------------------------- */
             for (const [darkColName, darkColValue] of Object.entries(uiSpec.colors.modes.dark)) {
                 varProps.push({
                     property: `${config.tokenPrefix}-col-dark-${darkColName}`,
@@ -71,10 +81,18 @@ const buildColours = (uiSpec, outputDir, config) => {
     colDarkClassContent += '\n'
     bgColDarkClassContent += '\n'
 
+    /* ================================================
+     * Other Colours
+     * --------------------------------------------- */
+
     const baseRules = [
         { property: 'background-color', value: `var(--${config.tokenPrefix}-col-background)` }
     ]
     let baseContent = cssHandler.writeCssRule('body', baseRules)
+
+    /* ================================================
+     * Link Colours
+     * --------------------------------------------- */
 
     const linkRuleCol = uiSpec.colors[config.linkColour]
     const linkRules = [
@@ -104,9 +122,30 @@ const buildColours = (uiSpec, outputDir, config) => {
     ]
     linkColoursContent += cssHandler.writeCssRule(`a:active, .${config.tokenPrefix}-link:active`, activeRules) + '\n'
 
-    const prefaceContent = headerComment + '\n'
+    /* ================================================
+     * Text Formatting
+     * --------------------------------------------- */
 
-    const allContent = prefaceContent + variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent + linkColoursContent
+    const prefaceContent = headerComment + '\n'
+    let allContent = prefaceContent
+    const parts = [
+        { title: 'CSS Variables', subtitle: '', content: variablesContent },
+        { title: 'Colour Styles', subtitle: 'LIGHT', content: colClassContent },
+        { title: 'Background Colour Styles', subtitle: 'LIGHT', content: bgColClassContent },
+        { title: 'Colour Styles', subtitle: 'DARK', content: colDarkClassContent },
+        { title: 'Background Colour Styles', subtitle: 'DARK', content: bgColDarkClassContent },
+        { title: 'Link Colours', subtitle: '', content: linkColoursContent },
+    ]
+    parts.forEach(part => {
+        const partHeading = utils.codeComment(part.title, part.subtitle, 'css')
+        allContent += partHeading + part.content + '\n'
+    })
+
+    // const allContent = prefaceContent + variablesContent + baseContent + colClassContent + bgColClassContent + colDarkClassContent + bgColDarkClassContent + linkColoursContent
+
+    /* ================================================
+     * Output
+     * --------------------------------------------- */
 
     fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-colours.css`, allContent)
 }

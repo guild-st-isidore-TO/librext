@@ -31,10 +31,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
     ]
 
     let prefaceContent = headerComment + '\n'
-    prefaceContent += '@import "./librext-base.css";\n'
-    prefaceContent += '@import "./librext-colours.css";\n'
-
     let shapesContent = ''
+
+    /* ================================================
+     * Border Radii
+     * --------------------------------------------- */
 
     uiSpec.radii.forEach((radVal, idx) => {
         const cPrefix = cRadiusPrefixes[idx]
@@ -53,9 +54,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
         shapesContent += cssHandler.writeCssRule(selector, props)
     })
 
-    // uiSpec.shadows.forEach((shadowVal, idx) => {
+    /* ================================================
+     * Box Shadows
+     * --------------------------------------------- */
+
     for (const [shadowSize, shadowVal] of Object.entries(uiSpec.shadows)) {
-        // const sPrefix = cRadiusPrefixes[idx]
         const sRadiusEntry = {
             property: `${config.tokenPrefix}-box-shadow-${shadowSize}`,
             value: shadowVal,
@@ -70,6 +73,10 @@ const buildShapes = (uiSpec, outputDir, config) => {
         ]
         shapesContent += cssHandler.writeCssRule(selector, props)
     }
+
+    /* ================================================
+     * Widget Heights
+     * --------------------------------------------- */
 
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
@@ -88,6 +95,10 @@ const buildShapes = (uiSpec, outputDir, config) => {
         shapesContent += cssHandler.writeCssRule(selector, props)
     }
     const variablesContent = cssHandler.writeCssVarRule(varsSelector, styleVars);
+
+    /* ================================================
+     * Cards
+     * --------------------------------------------- */
 
     for (const [cardType, cardData] of Object.entries(uiSpec.cards)) {
         const selector = `.${config.tokenPrefix}-card.${cardType}`
@@ -116,7 +127,24 @@ const buildShapes = (uiSpec, outputDir, config) => {
         }
     }
 
-    const allContent = prefaceContent + '\n' + variablesContent + '\n' + shapesContent
+    /* ================================================
+     * Text Formatting
+     * --------------------------------------------- */
+
+    // const prefaceContent = headerComment + '\n'
+    let allContent = prefaceContent
+    const parts = [
+        { title: 'CSS Variables', subtitle: '', content: variablesContent },
+        { title: 'Shapes', subtitle: '', content: shapesContent },
+    ]
+    parts.forEach(part => {
+        const partHeading = utils.codeComment(part.title, part.subtitle, 'css')
+        allContent += partHeading + part.content + '\n'
+    })
+
+    /* ================================================
+     * Output
+     * --------------------------------------------- */
 
     fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-shapes.css`, allContent)
 }

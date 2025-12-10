@@ -19,8 +19,12 @@ const buildBase = (uiSpec, outputDir, config) => {
     } else if (scope == 'custom') {
         varsSelector = customLocalScope
     }
-
     const styleVars = []
+
+    /* ================================================
+     * Size Scale
+     * --------------------------------------------- */
+
     uiSpec.sizes.forEach((sizeNum, idx) => {
         const scaleVar = {
             property: `${config.tokenPrefix}-scale-${idx + 1}`,
@@ -28,6 +32,10 @@ const buildBase = (uiSpec, outputDir, config) => {
         }
         styleVars.push(scaleVar);
     })
+
+    /* ================================================
+     * Space Scale
+     * --------------------------------------------- */
 
     uiSpec.space.forEach((spaceNum, idx) => {
         const scaleVar = {
@@ -37,9 +45,25 @@ const buildBase = (uiSpec, outputDir, config) => {
         styleVars.push(scaleVar);
     })
 
-    const prefaceContent = headerComment + '\n'
+    /* ================================================
+     * Text Formatting
+     * --------------------------------------------- */
+
     const variablesContent = cssHandler.writeCssVarRule(varsSelector, styleVars);
-    const allContent = prefaceContent + variablesContent
+
+    const prefaceContent = headerComment + '\n'
+    let allContent = prefaceContent
+    const parts = [
+        { title: 'CSS Variables', subtitle: '', content: variablesContent },
+    ]
+    parts.forEach(part => {
+        const partHeading = utils.codeComment(part.title, part.subtitle, 'css')
+        allContent += partHeading + part.content + '\n'
+    })
+
+    /* ================================================
+     * Output
+     * --------------------------------------------- */
 
     fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-base.css`, allContent)
 }

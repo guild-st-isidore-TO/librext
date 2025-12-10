@@ -48,6 +48,7 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
     let borderTopChar = '-'
     let borderBottomChar = '-'
     let hrChar = '-'
+    let lineLength = 40 + (level * 4);
 
     if (level == 1) {
         borderTopChar = '='
@@ -62,7 +63,6 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
         borderBottomChar = '#'
     }
 
-    const lineLength = 48;
     let borderTopLine = ''
     let borderBottomLine = ''
     let hrLine = ''

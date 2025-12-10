@@ -17,6 +17,10 @@ const buildText = (uiSpec, outputDir, config) => {
     let fontScaleContent = ''
     let docRolesContent = ''
 
+    /* ================================================
+     * Font Family
+     * --------------------------------------------- */
+
     for (const fontRole in uiSpec.fonts) {
         const currentFontFamily = uiSpec.fonts[fontRole]
         rootCssVars.push({
@@ -30,6 +34,10 @@ const buildText = (uiSpec, outputDir, config) => {
         fontFamContent += fontRoleRule + '\n'
     }
 
+    /* ================================================
+     * Typescale (by index)
+     * --------------------------------------------- */
+
     uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
         rootCssVars.push({
             property: `${config.tokenPrefix}-typescale-${idx + 1}`,
@@ -42,6 +50,10 @@ const buildText = (uiSpec, outputDir, config) => {
         fontScaleContent += fontSizeRule + '\n'
     })
 
+    /* ================================================
+     * Typescale (by name)
+     * --------------------------------------------- */
+
     for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
         rootCssVars.push({
             property: `${config.tokenPrefix}-typescale-${fontSizeRole}`,
@@ -53,6 +65,10 @@ const buildText = (uiSpec, outputDir, config) => {
         const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-typescale-${fontSizeRole}`, fontSizeVars);
         fontScaleContent += fontSizeRule + '\n'
     }
+
+    /* ================================================
+     * Document Roles
+     * --------------------------------------------- */
 
     docRolesContent += utils.codeComment('DOCUMENT ROLES', '')
 
@@ -99,10 +115,26 @@ const buildText = (uiSpec, outputDir, config) => {
         docRolesContent += docRoleComment + docRoleRule + '\n'
     }
 
-    const rootCssVarRule = cssHandler.writeCssVarRule(cssHandler.ROOT_SELECTOR, rootCssVars);
-    rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
+    /* ================================================
+     * Text Formatting
+     * --------------------------------------------- */
 
-    const allContent = prefaceContent + rootCssVarContent + fontFamContent + fontScaleContent + docRolesContent
+    let allContent = prefaceContent
+    const parts = [
+        { title: 'CSS Variables', subtitle: '', content: rootCssVarContent },
+        { title: 'Font Families', subtitle: '', content: fontFamContent },
+        { title: 'Font Scale', subtitle: '', content: fontScaleContent },
+        { title: 'Document Roles', subtitle: '', content: docRolesContent },
+    ]
+    parts.forEach(part => {
+        const partHeading = utils.codeComment(part.title, part.subtitle, 'css')
+        allContent += partHeading + part.content + '\n'
+    })
+
+    /* ================================================
+     * Output
+     * --------------------------------------------- */
+
     fileHandler.writeFile(`${outputDir}/css/${config.filenamePrefix}-text.css`, allContent)
 }
 
