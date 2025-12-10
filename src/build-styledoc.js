@@ -28,16 +28,47 @@ if (!variants.includes(styleVariant)) {
 
 let config = coreConfig
 let configOverrides = {}
+let specOverrides = {
+    colors: {
+        modes: {
+            dark: {}
+        }
+    }
+}
 
 if (styleVariant == 'sw') {
     console.log('[LibRext Docs Builder] using SW styles')
-    configOverrides.fonts = config.fonts
+
+    specOverrides.colors.modes.dark.background = '#030D4F'
+
+    specOverrides.colors.primary = '#EE4603'
+    specOverrides.colors.secondary = '#061999'
+    specOverrides.colors.tertiary = '#FC8352'
+
+    specOverrides.colors.modes.dark.primary = '#FDC95C'
+    specOverrides.colors.modes.dark.secondary = '#FC8352'
+    specOverrides.colors.modes.dark.tertiary = '#061999'
 } else if (styleVariant == 'gsi') {
     console.log('[LibRext Docs Builder] using GSI styles')
-    configOverrides.fonts = config.fonts
+
+    specOverrides.colors.primary = '#B81626'
+    specOverrides.colors.secondary = '#FCDD09'
+    specOverrides.colors.tertiary = '#322928'
+
+    specOverrides.colors.modes.dark.primary = '#B81626'
+    specOverrides.colors.modes.dark.secondary = '#FCDD09'
+    specOverrides.colors.modes.dark.tertiary = '#322928'
+
 } else if (styleVariant == 'inc') {
     console.log('[LibRext Docs Builder] using INC styles')
-    configOverrides.fonts = config.fonts
+
+    specOverrides.colors.primary = '#B81626'
+    specOverrides.colors.secondary = '#FCDD09'
+    specOverrides.colors.tertiary = '#322928'
+
+    specOverrides.colors.modes.dark.primary = '#B81626'
+    specOverrides.colors.modes.dark.secondary = '#FCDD09'
+    specOverrides.colors.modes.dark.tertiary = '#322928'
 } else {
     console.log('[LibRext Docs Builder] using default styles')
 }
@@ -52,12 +83,16 @@ const cssOutDir = join(projectRootDir, 'docs')
 const htmlOutDir = join(projectRootDir, 'docs')
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, outConfig)
+const outSpec = {
+    ...uiSpec,
+    ...specOverrides,
+}
 
 console.log('[LibRext Documentation/Specs]\nFonts output directory', fontsOutDir)
-libRextFontBuilder(uiSpec, fontsOutDir, outConfig)
+libRextFontBuilder(outSpec, fontsOutDir, outConfig)
 
 console.log('[LibRext Documentation/Specs]\nCSS output directory', cssOutDir)
-libRextCssBuilder(uiSpec, cssOutDir, outConfig)
+libRextCssBuilder(outSpec, cssOutDir, outConfig)
 
 console.log('[LibRext Documentation/Specs]\nHTML output directory', htmlOutDir)
-libRextSiteBuilder(uiSpec, htmlOutDir, outConfig)
+libRextSiteBuilder(outSpec, htmlOutDir, outConfig)
