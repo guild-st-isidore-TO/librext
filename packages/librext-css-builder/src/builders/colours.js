@@ -134,6 +134,7 @@ const buildColours = (uiSpec, outputDir, config) => {
         { title: 'Background Colour Styles', subtitle: 'LIGHT', content: bgColClassContent },
         { title: 'Colour Styles', subtitle: 'DARK', content: colDarkClassContent },
         { title: 'Background Colour Styles', subtitle: 'DARK', content: bgColDarkClassContent },
+        { title: 'Other Colours', subtitle: '', content: baseContent },
         { title: 'Link Colours', subtitle: '', content: linkColoursContent },
     ]
     parts.forEach(part => {

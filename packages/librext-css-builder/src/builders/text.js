@@ -40,13 +40,13 @@ const buildText = (uiSpec, outputDir, config) => {
 
     uiSpec.fontSizes.forEach((fontSizeVal, idx) => {
         rootCssVars.push({
-            property: `${config.tokenPrefix}-typescale-${idx + 1}`,
+            property: `${config.tokenPrefix}-tscale-${idx + 1}`,
             value: fontSizeVal,
         })
         const fontSizeVars = [
             { property: 'font-size', value: fontSizeVal, },
         ]
-        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-typescale-${idx + 1}`, fontSizeVars);
+        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-tscale-${idx + 1}`, fontSizeVars);
         fontScaleContent += fontSizeRule + '\n'
     })
 
@@ -56,13 +56,13 @@ const buildText = (uiSpec, outputDir, config) => {
 
     for (const fontSizeRole in uiSpec.libRextData.fontSizes) {
         rootCssVars.push({
-            property: `${config.tokenPrefix}-typescale-${fontSizeRole}`,
+            property: `${config.tokenPrefix}-tscale-${fontSizeRole}`,
             value: uiSpec.libRextData.fontSizes[fontSizeRole],
         })
         const fontSizeVars = [
             { property: 'font-size', value: uiSpec.libRextData.fontSizes[fontSizeRole], },
         ]
-        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-typescale-${fontSizeRole}`, fontSizeVars);
+        const fontSizeRule = cssHandler.writeCssRule(`.${config.tokenPrefix}-tscale-${fontSizeRole}`, fontSizeVars);
         fontScaleContent += fontSizeRule + '\n'
     }
 
@@ -82,7 +82,7 @@ const buildText = (uiSpec, outputDir, config) => {
         if (currentDocRole.weight == 'regular') {
             weightType = 'normal'
         }
-        const sizeVal = `var(--${config.tokenPrefix}-typescale-${docRoleData.typescale})`
+        const sizeVal = `var(--${config.tokenPrefix}-tscale-${docRoleData.typescale})`
 
         const fontFamVal = `var(--${config.tokenPrefix}-fontfam-${currentDocRole.fontFamily})`
         const isItalic = docRoleData.styles.includes('italic')
@@ -120,6 +120,8 @@ const buildText = (uiSpec, outputDir, config) => {
      * --------------------------------------------- */
 
     let allContent = prefaceContent
+    const rootCssVarRule = cssHandler.writeCssVarRule(cssHandler.ROOT_SELECTOR, rootCssVars);
+    rootCssVarContent = rootCssVarContent + rootCssVarRule + '\n'
     const parts = [
         { title: 'CSS Variables', subtitle: '', content: rootCssVarContent },
         { title: 'Font Families', subtitle: '', content: fontFamContent },

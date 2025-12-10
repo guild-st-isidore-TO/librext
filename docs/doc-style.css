@@ -180,7 +180,7 @@ hr.section-divider {
 }
 
 .palette-box {
-    height: calc(var(--lbrxt-widget-ht-xl) * 1.25);
+    height: calc(var(--lbrxt-widget-xl) * 1.25);
     margin: 0;
     text-align: center;
     background-color: #bbbbbb;
@@ -358,7 +358,7 @@ hr.section-divider {
 
 .shape-box {
     flex: 1 1 auto;
-    height: calc(var(--lbrxt-widget-ht-xl) * 1.25);
+    height: calc(var(--lbrxt-widget-xl) * 1.25);
     /* margin: 1.5rem; */
     background-color: var(--lbrxt-col-grey4);
 }
