@@ -1,6 +1,6 @@
 {
   "name": "librext-font-builder",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "LibRext's CSS stylesheets builder",
   "main": "index.js",
   "type": "module",
@@ -17,7 +17,7 @@
   "dependencies": {
     "jsdoc": "^4.0.5",
     "ejs": "^3.1.10",
-    "librext-core": "0.3.0",
+    "librext-core": "0.5.0",
     "librext-ui-spec": "0.3.0",
     "librext-spec-builder": "0.3.0"
   }
