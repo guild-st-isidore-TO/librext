@@ -106,7 +106,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
         shapesContent += libRextCssUtil.writeCssRule(selector, props)
 
         if (cardType == 'md') {
-            shapesContent += libRextCssUtil.writeCssRule('.${config.tokenPrefix}-card', props)
+            shapesContent += libRextCssUtil.writeCssRule(`.${config.tokenPrefix}-card`, props)
         }
     }
 

@@ -3,7 +3,7 @@
  */
 "use strict"
 
-import coreConfig from "./core-config"
+import coreConfig from "./core-config.js"
 
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)

@@ -5,8 +5,10 @@ const __dirname = dirname(__filename);
 
 const srcDir = __dirname;
 const projectRootDir = join(srcDir, '..')
+const templatesDir = join(srcDir, 'builders')
 
 export {
     srcDir,
     projectRootDir,
+    templatesDir,
 }
