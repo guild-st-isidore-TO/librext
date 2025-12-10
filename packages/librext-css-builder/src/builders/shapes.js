@@ -40,11 +40,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
     uiSpec.radii.forEach((radVal, idx) => {
         const cPrefix = cRadiusPrefixes[idx]
         const cRadiusEntry = {
-            property: `${config.tokenPrefix}-cor-radius-${cPrefix}`,
+            property: `${config.tokenPrefix}-bradius-${cPrefix}`,
             value: radVal,
         }
         styleVars.push(cRadiusEntry);
-        const selector = `.${config.tokenPrefix}-b-radius.${cPrefix}`
+        const selector = `.${config.tokenPrefix}-bradius.${cPrefix}`
         const props = [
             {
                 property: 'border-radius',
@@ -60,11 +60,11 @@ const buildShapes = (uiSpec, outputDir, config) => {
 
     for (const [shadowSize, shadowVal] of Object.entries(uiSpec.shadows)) {
         const sRadiusEntry = {
-            property: `${config.tokenPrefix}-box-shadow-${shadowSize}`,
+            property: `${config.tokenPrefix}-bshadow-${shadowSize}`,
             value: shadowVal,
         }
         styleVars.push(sRadiusEntry);
-        const selector = `.${config.tokenPrefix}-b-shadow.${shadowSize}`
+        const selector = `.${config.tokenPrefix}-bshadow.${shadowSize}`
         const props = [
             {
                 property: 'box-shadow',
@@ -80,7 +80,7 @@ const buildShapes = (uiSpec, outputDir, config) => {
 
     for (const [widgetHtKey, widgetHtVars] of Object.entries(uiSpec.widgetHeights)) {
         const heightEntry = {
-            property: `${config.tokenPrefix}-widget-ht-${widgetHtKey}`,
+            property: `${config.tokenPrefix}-widget-${widgetHtKey}`,
             value: widgetHtVars.height,
         }
         styleVars.push(heightEntry);

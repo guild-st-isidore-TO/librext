@@ -12,22 +12,22 @@
  * 
  * ------------------------------------- */
 :root {
-  --lbrxt-cor-radius-none: 0;
-  --lbrxt-cor-radius-xs: 2px;
-  --lbrxt-cor-radius-sm: 4px;
-  --lbrxt-cor-radius-md: 6px;
-  --lbrxt-cor-radius-lg: 8px;
-  --lbrxt-cor-radius-xl: 10px;
-  --lbrxt-box-shadow-xs: 1px 1px 2px #24292f;
-  --lbrxt-box-shadow-sm: 2px 2px 2px #24292f;
-  --lbrxt-box-shadow-md: 3px 3px 3px #24292f;
-  --lbrxt-box-shadow-lg: 4px 4px 4px #24292f;
-  --lbrxt-box-shadow-xl: 5px 5px 4px #24292f;
-  --lbrxt-widget-ht-xs: 1.6875rem;
-  --lbrxt-widget-ht-sm: 2.04125rem;
-  --lbrxt-widget-ht-md: 2.75rem;
-  --lbrxt-widget-ht-lg: 4rem;
-  --lbrxt-widget-ht-xl: 5.25rem;
+  --lbrxt-bradius-none: 0;
+  --lbrxt-bradius-xs: 2px;
+  --lbrxt-bradius-sm: 4px;
+  --lbrxt-bradius-md: 6px;
+  --lbrxt-bradius-lg: 8px;
+  --lbrxt-bradius-xl: 10px;
+  --lbrxt-bshadow-xs: 1px 1px 2px #24292f;
+  --lbrxt-bshadow-sm: 2px 2px 2px #24292f;
+  --lbrxt-bshadow-md: 3px 3px 3px #24292f;
+  --lbrxt-bshadow-lg: 4px 4px 4px #24292f;
+  --lbrxt-bshadow-xl: 5px 5px 4px #24292f;
+  --lbrxt-widget-xs: 1.6875rem;
+  --lbrxt-widget-sm: 2.04125rem;
+  --lbrxt-widget-md: 2.75rem;
+  --lbrxt-widget-lg: 4rem;
+  --lbrxt-widget-xl: 5.25rem;
 }
 
 
@@ -36,37 +36,37 @@
  * ----------------------------------------
  * 
  * ------------------------------------- */
-.lbrxt-b-radius.none {
+.lbrxt-bradius.none {
   border-radius: 0;
 }
-.lbrxt-b-radius.xs {
+.lbrxt-bradius.xs {
   border-radius: 2px;
 }
-.lbrxt-b-radius.sm {
+.lbrxt-bradius.sm {
   border-radius: 4px;
 }
-.lbrxt-b-radius.md {
+.lbrxt-bradius.md {
   border-radius: 6px;
 }
-.lbrxt-b-radius.lg {
+.lbrxt-bradius.lg {
   border-radius: 8px;
 }
-.lbrxt-b-radius.xl {
+.lbrxt-bradius.xl {
   border-radius: 10px;
 }
-.lbrxt-b-shadow.xs {
+.lbrxt-bshadow.xs {
   box-shadow: 1px 1px 2px #24292f;
 }
-.lbrxt-b-shadow.sm {
+.lbrxt-bshadow.sm {
   box-shadow: 2px 2px 2px #24292f;
 }
-.lbrxt-b-shadow.md {
+.lbrxt-bshadow.md {
   box-shadow: 3px 3px 3px #24292f;
 }
-.lbrxt-b-shadow.lg {
+.lbrxt-bshadow.lg {
   box-shadow: 4px 4px 4px #24292f;
 }
-.lbrxt-b-shadow.xl {
+.lbrxt-bshadow.xl {
   box-shadow: 5px 5px 4px #24292f;
 }
 .lbrxt-widget.xs {
