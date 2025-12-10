@@ -8,6 +8,7 @@
   "scripts": {
     "build:css": "node src/build-css.js",
     "build:site": "node src/build-site.js",
+    "build:docs": "node src/build-styledoc.js",
     "build": "npm run build:site",
     "dev": "cd packages/librext-docs-builder && npm run dev",
     "docs:core": "cd packages/librext-core && npm run docs",
