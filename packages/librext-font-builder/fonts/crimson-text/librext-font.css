@@ -12,65 +12,65 @@
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Regular.ttf');
+  src: url('CrimsonText-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Regular.ttf');
+  src: url('CrimsonText-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-SemiBold.ttf');
+  src: url('CrimsonText-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Bold.ttf');
+  src: url('CrimsonText-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Bold.ttf');
+  src: url('CrimsonText-Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Italic.ttf');
+  src: url('CrimsonText-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-Italic.ttf');
+  src: url('CrimsonText-Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-SemiBoldItalic.ttf');
+  src: url('CrimsonText-SemiBoldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf');
+  src: url('CrimsonText-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CrimsonText';
-  src: url('Crimson_Text/CrimsonText-BoldItalic.ttf');
+  src: url('CrimsonText-BoldItalic.ttf');
   font-weight: bold;
   font-style: italic;
 }

@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "jsdoc src -r -d docs -c jsdoc.json --readme readme.md",
-    "build": "node src/build.js"
+    "docs": "jsdoc src -r -d docs -c jsdoc.json --readme readme.md"
   },
   "author": "RJ Salvador <salvador.workshop@gmail.com>",
   "license": "MIT",
