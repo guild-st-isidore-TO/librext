@@ -4,6 +4,7 @@
 "use strict"
 
 import coreConfig from "./core-config.js"
+import coreUtils from "./core-utils.js"
 
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)
@@ -12,16 +13,19 @@ import coreConfig from "./core-config.js"
 const buildLibRextCore = () => {
     const outCore = {
         config: coreConfig,
+        utils: coreUtils,
     }
     return outCore
 }
 
 const libRextCore = buildLibRextCore()
 const {
-    config
+    config,
+    utils,
 } = libRextCore
 
 export default libRextCore;
 export {
     config,
+    utils,
 }
