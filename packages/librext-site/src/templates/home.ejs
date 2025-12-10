@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LibRext — Documentation & Specimens</title>
+
+  <!-- ================================================ -->
+  <!-- LIBREXT STYLESHEETS -->
+  <!-- ================================================ -->
+  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./fonts/librext-fonts.css">
+  <link rel="stylesheet" href="./css/librext-text.css">
+
+  <link rel="stylesheet" href="./css/librext-colours.css">
+  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./doc-style.css">
+  <!-- ================================================ -->
+
+  <meta name="description" content="LibRext (Librarium Textuum) is a UI design system and component library developed by the Guild of St. Isidore (TO).">
+
+  <meta property="og:title" content="LibRext — Documentation & Specimens">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guild-st-isidore-to.github.io/librext/">
+
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="page-container">
+    <!-- Add your site or application content here -->
+    <section class="page-section">
+      <h1 class="homepage-heading"><span class="section-heading lbrxt-typescale-d3 lbrxt-col-primary lbrxt-fontfam-heading">LibRext</span><br />Documentation & Specimens</h1>
+
+      <p><strong class="lbrxt-col-grey10">LibRext</strong> <em>(Librarium Textuum / Library of Frameworks)</em> is a UI design system and component library
+        developed by the
+        <a href="https://github.com/guild-st-isidore-TO" target="_blank">Guild of St. Isidore (TO)</a>.
+      </p>
+
+      <p>LibRext is inspired primarily by printed texts during the era of the Incunabula, the first century after
+        Gutenberg's press changed Europe and the world. This was a time when old manuscript production methods were giving
+        way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of
+        scribes writing huge manuscripts.</p>
+
+      <p>Code repository and design docs available <a href="https://github.com/guild-st-isidore-TO/librext" target="_blank">on GitHub</a></p>
+
+      <h3>Use Cases</h3>
+
+      <p>As a design system, LibRext aims to look consistent on Print, E-Reader, and Screen. This can present a challenge,
+        since these media have some key differences:</p>
+
+      <h5>Print</h5>
+
+      <ul>
+        <li>has bounds</li>
+      </ul>
+
+      <h5>Screen</h5>
+
+      <ul>
+        <li>ever-shifting</li>
+        <li>interactive</li>
+        <li>animations</li>
+        <li>tactile feedback</li>
+      </ul>
+
+      <h5>E-Reader</h5>
+
+      <ul>
+        <li>something of a blend between the two</li>
+        <li>older E-Readers have a long update time and small screens</li>
+        <li>more advanced (expensive) ones are bigger, with a quicker refresh rate</li>
+      </ul>
+    </section>
+    <hr class="section-divider" />
+    <section class="page-section">
+
+      <h2 class="section-heading lbrxt-typescale-d4">Typography</h2>
+
+      <p>LibRext has a heavy focus on old-style serif fonts, as it looks to early Renaissance printed works as
+        inspiration. The design system’s text styles are organized by "Font Roles" and "Document Roles”</p>
+
+      <p>Font Roles are functional roles that can be shared by multiple elements.</p>
+
+      <p>Document Roles correspond to common document styles and HTML/Markdown structure</p>
+
+      <p>See <a href="./typography.html">Typography Specimens</a></p>
+
+      <div class="text-example">
+        <h1 class="lbrxt-title lbrxt-col-grey9">Universal Declaration of Human Rights</h1>
+
+        <span class="lbrxt-subtitle lbrxt-col-grey6">United Nations General Assembly resolution 217 A<br />(Paris, 10 December 1948)</span>
+
+        <hr />
+
+        <h3 class="lbrxt-col-grey9">Article 1</h3>
+        <p>
+          All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
+        </p>
+
+        <h3 class="lbrxt-col-grey9">Article 2</h3>
+        <p>
+          Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.
+        </p>
+
+        <h3 class="lbrxt-col-grey9">Article 3</h3>
+        <p>Everyone has the right to life, liberty and security of person.</p>
+
+        <h3 class="lbrxt-col-grey9">Article 4</h3>
+        <p>No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.</p>
+
+        <h3 class="lbrxt-col-grey9">Article 5</h3>
+        <p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
+
+        <h3 class="lbrxt-col-grey9">Article 6</h3>
+        <p>Everyone has the right to recognition everywhere as a person before the law.</p>
+
+        <hr class="section-divider text-example-divider" />
+      </div>
+
+      <div class="text-example">
+        <h1 class="lbrxt-title lbrxt-col-textRubric">Sancta Missa</h1>
+
+        <span class="lbrxt-subtitle lbrxt-col-grey6">ex "divinumofficium.com"</span>
+
+        <h2 class="lbrxt-col-textRubric">Introitus</h2>
+
+        <p>
+          <em class="lbrxt-col-textRubric">Ps 20:2-3</em><br />
+          <span class="lbrxt-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
+        </p>
+
+        <p>
+          <em class="lbrxt-col-textRubric">Ps 20:4</em><br />
+          Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite eius corónam de lápide pretióso.<br />
+          <span class="lbrxt-col-textRubric">℣.</span> Glória Patri, et Fílio, et Spirítui Sancto.<br />
+          <span class="lbrxt-col-textRubric">℟.</span> Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
+        </p>
+
+        <p>
+          <span class="lbrxt-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
+        </p>
+
+        <h2 class="lbrxt-col-textRubric">Gloria</h2>
+
+        <h2 class="lbrxt-col-textRubric">Oratio</h2>
+
+        <p><span class="lbrxt-col-textRubric">O</span>rémus.<br />
+          Deus, qui beátum Nicoláum Pontíficem innúmeris decorásti miráculis: tríbue, quǽsumus; ut eius méritis et précibus a gehénnæ incéndiis liberémur.</p>
+
+        <p><span class="lbrxt-col-textRubric">P</span>er Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.<br />
+          <span class="lbrxt-col-textRubric">℟.</span> Amen.
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="page-section">
+
+      <h2 class="section-heading lbrxt-typescale-d4">Colours</h2>
+
+      <p>As a classicist design system, LibRext looks to old-school naturalistic hues for inspiration. The palettes were
+        chosen to approximate colours that could’ve been available to scribes and publishers in previous centuries. And of
+        course, adjusted a bit towards modern tech and tastes. For example, some colour selections have come from scans of
+        texts, atlases and astronomical prints. The design system’s colour styles are organized by “Colour Role”,
+        “Indicators”, and “Mode”</p>
+
+      <p>Colour Roles include functions like like background, text, rubric, primary, secondary, etc.</p>
+
+      <p>Indicators are colours that indicate status such as: ok, warn, error, info, null</p>
+
+      <p>Mode refers to light (default) or dark.</p>
+
+      <p>See <a href="./colours.html">Colour Specimens</a></p>
+
+      <div class="page-example">
+        <div class="palette-cell colour-bg-light">
+          <div class="palette-row">
+            <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-body"><%= greyscalePaletteLight[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="palette-cell colour-bg-dark">
+          <div class="palette-row">
+            <% for(var i=0; i < themePaletteDark.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-heading"><%= themePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-body"><%= themePaletteDark[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="page-section">
+      <h2 class="section-heading lbrxt-typescale-d4">Shapes</h2>
+
+      <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow,
+        widget heights, and card styles</p>
+
+      <p>See <a href="./shapes.html">Shapes Specimens</a></p>
+
+      <h3>Border Radius</h3>
+
+      <p>A larger radius fits with larger boxes</p>
+
+      <div class="page-example">
+        <div class="shape-box-set border-radius">
+          <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
+          <div class="shape-box-wrapper">
+            <div class="shape-box lbrxt-b-radius <%= borderRadiusSizes[i].sizeCode %>">
+              <span class="box-text box-heading"><%= borderRadiusSizes[i].heading %></span><br />
+              <span class="box-text box-body"><%= borderRadiusSizes[i].body %></span>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+
+      <h3>Box Shadow</h3>
+
+      <p>Larger sizes imply more distance between box layer and parent layer</p>
+
+      <div class="page-example">
+        <div class="shape-box-set box-shadow">
+          <% for(var i=0; i < boxShadowSizes.length; i++) { %>
+          <div class="shape-box-wrapper">
+            <div class="shape-box lbrxt-b-shadow <%= boxShadowSizes[i].sizeCode %>">
+              <span class="box-text box-heading"><%= boxShadowSizes[i].heading %></span><br />
+              <span class="box-text box-body"><%= boxShadowSizes[i].body %></span>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- <script src="js/app.js"></script> -->
+
+</body>
+
+</html>

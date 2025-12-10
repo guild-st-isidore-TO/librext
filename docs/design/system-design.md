@@ -11,31 +11,43 @@ Back to [LibRext Design (Overview)](../design/README.md)
 
 ## PACKAGES
 
-### `librext-core` - Core
+### CORE
+
+#### `librext-core` - Core
 
 ...
 
-### `librext-ui-spec` - Ui Spec
+### UI SPECIFICATION
+
+#### `librext-ui-spec` - Ui Spec
 
 ...
 
-### `librext-spec-builder` - Spec Builder
+#### `librext-spec-builder` - Spec Builder
 
 ...
 
-### `librext-css-builder` - CSS Builder
+### BUILDERS
+
+#### `librext-css-builder` - CSS Builder
 
 ...
 
-### `librext-docs-builder` - Docs Builder
+#### `librext-img-builder` - Image Builder
 
 ...
 
-### `librext-img-builder` - Image Builder
+#### `librext-fonts-builder` - Fonts Builder
 
 ...
 
-### `librext-fonts-builder` - Fonts Builder
+#### `librext-docs-builder` - Docs Builder
+
+...
+
+### ETC.
+
+#### `librext-site` - LibRext Website / Docs
 
 ...
 

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LibRext — Colours</title>
+
+  <!-- ================================================ -->
+  <!-- LIBREXT STYLESHEETS -->
+  <!-- ================================================ -->
+  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./fonts/librext-fonts.css">
+  <link rel="stylesheet" href="./css/librext-text.css">
+
+  <link rel="stylesheet" href="./css/librext-colours.css">
+  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./doc-style.css">
+  <!-- ================================================ -->
+
+  <meta name="description" content="LibRext (Librarium Textuum) is a UI design system and component library developed by the Guild of St. Isidore (TO).">
+
+  <meta property="og:title" content="LibRext — Colours">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guild-st-isidore-to.github.io/librext/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="page-container">
+    <section class="page-section">
+      <h1 class="section-heading lbrxt-typescale-d4">LibRext — Colours</h1>
+
+      <p>Back to <a href="./index.html">Specimens</a></p>
+
+      <p>As a classicist design system, LibRext looks to old-school naturalistic hues for inspiration. The palettes were chosen to approximate colours that could’ve been available to scribes and publishers in previous centuries. And of course, adjusted a bit towards modern tech and tastes. For example, some colour selections have come from scans of texts, atlases and astronomical prints. The design system’s colour styles are organized by “Colour Role”, “Indicators”, and “Mode”</p>
+
+      <p>Colour Roles include functions like like background, text, rubric, primary, secondary, etc.</p>
+
+      <p>Indicators are colours that indicate status such as: ok, warn, error, info, null</p>
+
+      <p>Mode refers to light (default) or dark.</p>
+
+      <div class="page-example">
+        <div class="palette-cell colour-bg-light">
+          <div class="palette-row">
+            <% for(var i=0; i < themePaletteLight.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= themePaletteLight[i].colour %>;">
+              <span class="box-text <%= themePaletteLight[i].labelMode %> box-heading"><%= themePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= themePaletteLight[i].labelMode %> box-body"><%= themePaletteLight[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="palette-cell colour-bg-dark">
+          <div class="palette-row">
+            <% for(var i=0; i < themePaletteDark.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= themePaletteDark[i].colour %>;">
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-heading"><%= themePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= themePaletteDark[i].labelMode %> box-body"><%= themePaletteDark[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="page-section">
+      <h2>Colour Roles & Indicators</h2>
+
+      <p>Colour roles describe a colour by its function in the document (text, background, etc.)</p>
+
+      <p>Indicators describe a colour by status categories used in the tech industry and others. LibRext supports five:</p>
+
+      <ul>
+        <li>ok — system is in healthy condition</li>
+        <li>warn — system is slightly unstable</li>
+        <li>error — system is non-functional and/or extremely unstable</li>
+        <li>info — information/debugging details</li>
+        <li>null — missing/invalid details</li>
+      </ul>
+
+      <h2>Mode</h2>
+
+      <p>Every colour role has a Light (default) and Dark value. Often times, the same colour can work for both. But the system allows for necessary adjustments so things look perfect in both modes.</p>
+
+      <div class="page-example">
+        <div class="palette-cell colour-bg-light">
+          <div class="palette-row">
+            <% for(var i=0; i < greyscalePaletteLight.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteLight[i].colour %>;">
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-heading"><%= greyscalePaletteLight[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteLight[i].labelMode %> box-body"><%= greyscalePaletteLight[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="palette-cell colour-bg-dark">
+          <div class="palette-row">
+            <% for(var i=0; i < greyscalePaletteDark.length; i++) { %>
+            <div class="palette-item palette-box" style="background-color: <%= greyscalePaletteDark[i].colour %>;">
+              <span class="box-text <%= greyscalePaletteDark[i].labelMode %> box-heading"><%= greyscalePaletteDark[i].heading %></span><br />
+              <span class="box-text <%= greyscalePaletteDark[i].labelMode %> box-body"><%= greyscalePaletteDark[i].body %></span>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="page-section">
+      <h2>Colour Palette Details</h2>
+
+      <p>The colour roles defined in the system include:</p>
+
+      <div class="colour-details">
+        <% for(var i=0; i < paletteDetailItems.length; i++) { %>
+        <div class="colour-detail">
+          <div class="colour-detail-desc">
+            <h5 class="colour-detail-title"><%= paletteDetailItems[i].title %></h5>
+            <p>
+              <code><%= paletteDetailItems[i].colour %></code><br />
+              <%= paletteDetailItems[i].description %>
+            </p>
+          </div>
+          <div class="colour-detail-swatch">
+            <div class="palette-cell colour-bg-light">
+              <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueLight %>;">
+                <span class="box-text <%= paletteDetailItems[i].labelModeLight %> box-heading"><%= paletteDetailItems[i].valueLight %></span><br />
+                <span class="box-text <%= paletteDetailItems[i].labelModeLight %> box-body"><%= paletteDetailItems[i].hslLight %></span>
+              </div>
+            </div>
+            <div class="palette-cell colour-bg-dark">
+              <div class="palette-box" style="background-color: <%= paletteDetailItems[i].valueDark %>;">
+                <span class="box-text <%= paletteDetailItems[i].labelModeDark %> box-heading"><%= paletteDetailItems[i].valueDark %></span><br />
+                <span class="box-text <%= paletteDetailItems[i].labelModeDark %> box-body"><%= paletteDetailItems[i].hslDark %></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </section>
+  </div>
+  <!-- <script src="js/app.js"></script> -->
+
+</body>
+
+</html>
