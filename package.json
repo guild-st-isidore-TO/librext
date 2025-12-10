@@ -15,7 +15,7 @@
     "docs:docs": "cd packages/librext-docs-builder && npm run docs",
     "docs:spec": "cd packages/librext-spec-builder && npm run docs",
     "docs:ui": "cd packages/librext-ui-spec && npm run docs",
-    "docs": "npm run docs:core && npm run docs:css && npm run docs:docs && npm run docs:spec && npm run docs:ui"
+    "docs": "jsdoc packages -r -d docs/code -c jsdoc.json --readme readme.md"
   },
   "repository": {
     "type": "git",
