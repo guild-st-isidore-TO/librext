@@ -50,6 +50,22 @@ or HTML class names:
 <h1 class="lbrxt-title lbrxt-col-grey9">Universal Declaration of Human Rights</h1>
 ```
 
+### Building Style Kits
+
+This will generate a style kit using the default (`librext`) styles.
+
+```
+npm run build:docs
+```
+
+A few style presets are available for building:
+
+```
+npm run build:docs --variant="sw"
+npm run build:docs --variant="gsi"
+npm run build:docs --variant="inc"
+```
+
 ## DEVELOPMENT
 
 Quickstart from the repo root:
