@@ -1,12 +1,8 @@
 "use strict"
 
+import { utils } from 'librext-core'
 import libRextCssFileHandler from './file-handler.js'
 import libRextCssUtil from './utils.js'
-
-const line = '------------------------------------'
-const boldLine = '===================================='
-const thickLine = '================================================'
-
 
 const buildText = (uiSpec, outputDir, config) => {
     // console.log('[LibRext CSS - TextBuilder] uiSpec', uiSpec);
@@ -17,10 +13,6 @@ const buildText = (uiSpec, outputDir, config) => {
     let fontFamContent = ''
     let fontScaleContent = ''
     let docRolesContent = ''
-
-    let typeScaleComment = `/* ${thickLine} *\\\n`
-    typeScaleComment += ` * ROOT NAMESPACE\n`
-    typeScaleComment += `\\* ${thickLine} */\n\n`
 
     for (const fontRole in uiSpec.fonts) {
         const currentFontFamily = uiSpec.fonts[fontRole]
@@ -59,10 +51,7 @@ const buildText = (uiSpec, outputDir, config) => {
         fontScaleContent += fontSizeRule + '\n'
     }
 
-    let docRoleHeadingComment = `/* ${thickLine} *\\\n`
-    docRoleHeadingComment += ` * DOCUMENT ROLES\n`
-    docRoleHeadingComment += `\\* ${thickLine} */\n\n`
-    docRolesContent += docRoleHeadingComment
+    docRolesContent += utils.codeComment('DOCUMENT ROLES', '')
 
     for (const docRoleName in uiSpec.docRoles) {
         const currentDocRole = uiSpec.docRoles[docRoleName]
@@ -102,10 +91,9 @@ const buildText = (uiSpec, outputDir, config) => {
         let docRoleSelector = `${selectorHtml}.${docRoleData.class}`
 
         const docRoleRule = libRextCssUtil.writeCssRule(docRoleSelector, docRoleVars);
-        const docRoleComment1 = `/* ${boldLine} *\\\n *  ${docRoleName}\n * ${line}\n`
-        const docRoleComment3 = ` *    typescale size = ${docRoleData.typescale}\n\\* ${line} */\n`
+        const docRoleComment = utils.codeComment(docRoleName, `typescale size = ${docRoleData.typescale}`)
 
-        docRolesContent += docRoleComment1 + docRoleComment3 + docRoleRule + '\n'
+        docRolesContent += docRoleComment + docRoleRule + '\n'
     }
 
     const rootCssVarRule = libRextCssUtil.writeCssVarRule(libRextCssUtil.ROOT_SELECTOR, rootCssVars);
