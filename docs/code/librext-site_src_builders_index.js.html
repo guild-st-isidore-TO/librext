@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: librext-core/src/index.js</title>
+    <title>JSDoc: Source: librext-site/src/builders/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: librext-core/src/index.js</h1>
+    <h1 class="page-title">Source: librext-site/src/builders/index.js</h1>
 
     
 
@@ -27,36 +27,38 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @file LibRext Core
+ * @file LibRext Site Builder
  */
+
 "use strict"
 
-import coreConfig from "./core-config.js"
-import coreUtils from "./core-utils.js"
+import { join } from 'path'
+import { config } from 'librext-core'
+import { projectRootDir } from '../site-builder-util.js'
+import docHome from './doc-home.js'
+import docColours from './doc-colours.js'
+import docShapes from './doc-shapes.js'
+import docTypography from './doc-typography.js'
+
+const defaultOutputDir = join(projectRootDir, config.outDirectory)
 
 /**
- * Custom Librext UI Data (doesn't conform to Theme-UI spec)
- * @namespace libRextCore
- */
-const buildLibRextCore = () => {
-    const outCore = {
-        config: coreConfig,
-        utils: coreUtils,
+ * HTML builder scripts
+ * @namespace libRextSite
+*/
+const build = (uiSpec, outputDir = defaultOutputDir, config) => {
+    // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
+    // console.log('[LibRext Docs Builder] outputDir', outputDir);
+    return {
+        htmlColours: docColours(uiSpec, outputDir, config),
+        htmlHome: docHome(uiSpec, outputDir, config),
+        htmlShapes: docShapes(uiSpec, outputDir, config),
+        htmlTypography: docTypography(uiSpec, outputDir, config),
     }
-    return outCore
 }
 
-const libRextCore = buildLibRextCore()
-const {
-    config,
-    utils,
-} = libRextCore
-
-export default libRextCore;
-export {
-    config,
-    utils,
-}</code></pre>
+export default build
+</code></pre>
         </article>
     </section>
 

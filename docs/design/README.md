@@ -6,13 +6,7 @@ Design documentation for GSI's UI design system and component library.
 
 ## System Design
 
-LibRext will be implemented as a front-end focused monorepo (HTML, CSS, JS, etc.) Major sections of the design system / library include:
-
-- Style Guides
-- Assets and Icon Sets
-- Stylesheet Library
-- CSS Module Library
-- React Component Library
+LibRext will be implemented as a front-end focused monorepo (HTML, CSS, JS, etc.)
 
 ![LibRext CSS](./librext-css-2.0.svg)
 
@@ -22,7 +16,7 @@ More about [System Design](./system-design.md)
 
 ## Aesthetic Principles
 
-LibRext is inspired primarily by printed texts during the [era of the Incunabula](https://en.wikipedia.org/wiki/Incunable), the [first century after Gutenberg's press](https://www.britannica.com/topic/incunabula) changed Europe and the world. This was a time when the old manuscript production methods were giving way to the next phase of bookmaking. New processes were being explored, but these printmakers still weren't far from the era of scribes writing huge volumes by hand.
+LibRext is inspired primarily by printed texts during the [era of the Incunabula](https://en.wikipedia.org/wiki/Incunable), the [first century after Gutenberg's press](https://www.britannica.com/topic/incunabula) changed Europe and the world. This was a time when old manuscript production methods were giving way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of scribes writing huge manuscripts.
 
 **BELOW**: Valerius Maximus. Mainz: Peter Schöffer, 18. kal. Jul. 1471
 

@@ -2,16 +2,13 @@
 
 LibRext (Librarium Textuum / Library of Frameworks) is a UI design system and component library developed by the Guild of St. Isidore (TO).
 
-> STATUS (VII Decembris MMXXV)  
-Active -- High priority, work ongoing
+## DOCUMENTATION
 
-## INSPIRATION
+Code repository and design docs available [on GitHub](https://github.com/guild-st-isidore-TO/librext)
 
-LibRext is inspired primarily by printed texts during the [era of the Incunabula](https://en.wikipedia.org/wiki/Incunable), the [first century after Gutenberg's press](https://www.britannica.com/topic/incunabula) changed Europe and the world. This was a time when old manuscript production methods were giving way to the next phase of bookmaking. New processes were explored, but printmakers were not far from the era of scribes writing huge manuscripts.
+### Code Documentation
 
-**BELOW**: Valerius Maximus. Mainz: Peter Schöffer, 18. kal. Jul. 1471
-
-![Valerius Maximus. Mainz: Peter Schöffer, 18. kal. Jul. 1471](./docs/img/Inkunabel.ValMax.001.jpg "Valerius Maximus. Mainz: Peter Schöffer, 18. kal. Jul. 1471")
+Docs for specific functions or codebase features [can be found here](https://guild-st-isidore-to.github.io/librext/code/).
 
 ## USE CASES
 
@@ -67,12 +64,12 @@ npm run dev
 
 ### Project Roadmap
 
-If you're interested in what's coming up, you can see the [roadmap here](./docs/roadmap/README.md)
+If you're interested in what's coming up, you can see the [roadmap here](https://github.com/guild-st-isidore-TO/librext/blob/main/docs/roadmap/README.md)
 
 ## DESIGN
 
-Check the [LibRext Design (Overview)](./docs/design/README.md), or more specific topics:
+Check the [LibRext Design (Overview)](https://github.com/guild-st-isidore-TO/librext/blob/main/docs/design/README.md), or more specific topics:
 
-- [System Design](./docs/design/system-design.md)
-- [Aesthetic Principles](./docs/design/aesthetic-principles.md)
-- [GSI Style Guide v2.0](./docs/design/gsi-style-guide.md)
+- [System Design](https://github.com/guild-st-isidore-TO/librext/blob/main/docs/design/system-design.md)
+- [Aesthetic Principles](https://github.com/guild-st-isidore-TO/librext/blob/main/docs/design/aesthetic-principles.md)
+- [GSI Style Guide v2.0](https://github.com/guild-st-isidore-TO/librext/blob/main/docs/design/gsi-style-guide.md)

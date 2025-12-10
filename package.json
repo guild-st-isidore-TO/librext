@@ -10,7 +10,7 @@
     "build:site": "node src/build-site.js",
     "build:docs": "node src/build-styledoc.js",
     "build": "npm run build:site",
-    "dev": "cd packages/librext-docs-builder && npm run dev",
+    "dev": "cd packages/librext-site && npm run dev",
     "docs:core": "cd packages/librext-core && npm run docs",
     "docs:css": "cd packages/librext-css-builder && npm run docs",
     "docs:spec": "cd packages/librext-spec-builder && npm run docs",
