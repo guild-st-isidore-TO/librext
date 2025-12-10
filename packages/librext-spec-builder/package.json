@@ -5,11 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc src -r -d docs -c jsdoc.json --readme readme.md"
   },
   "author": "RJ Salvador <salvador.workshop@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "jsdoc": "^4.0.5",
     "librext-core": "0.2.1",
     "librext-ui-spec": "0.1.8"
   }
