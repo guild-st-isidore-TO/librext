@@ -30,7 +30,7 @@ const getPermutationsOfArrays = (array1, array2) => {
  * @param {number} spacingLevel spacing level
  * @returns code comment string
  */
-const codeComment = (heading, body, lang, level = 0, spacingLevel = 0) => {
+const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) => {
     let outComment = ''
 
     // syntax for JS, CSS
@@ -62,21 +62,34 @@ const codeComment = (heading, body, lang, level = 0, spacingLevel = 0) => {
         borderBottomChar = '#'
     }
 
+    const lineLength = 60;
+    let borderTopLine = ''
+    let borderBottomLine = ''
+    let hrLine = ''
+
+    for (let idx = 0; idx < lineLength; idx++) {
+        borderTopLine += borderTopChar
+        borderBottomLine += borderBottomChar
+        hrLine += hrChar
+    }
+
     const sLevel = spacingLevel > 4 ? 4 : spacingLevel
     const spaceLines = 1 + sLevel
     let spaceText = ''
-    for (let idx = 1; idx <= spaceLines; idx++) {
+    for (let idx = 0; idx < spaceLines; idx++) {
         spaceText += '\n'
     }
 
     outComment += spaceText + '\n'
-    outComment += borderTopChar + '\n'
+    outComment += borderTopLine + '\n'
 
     outComment += heading + '\n'
-    outComment += hrChar + '\n'
+
+    outComment += hrLine + '\n'
+
     outComment += body + '\n'
 
-    outComment += borderBottomChar + '\n'
+    outComment += borderBottomLine + '\n'
     outComment += spaceText
 
     return outComment
