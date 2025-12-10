@@ -12,10 +12,9 @@ import libRextDocsBuilder from 'librext-docs-builder'
 
 import { projectRootDir } from './builder-util.js'
 
-
 const config = coreConfig
-const outDir = coreConfig.outDirectory
-const assetOutDir = coreConfig.assetOutDirectory
+// const outDir = coreConfig.outDirectory
+// const assetOutDir = coreConfig.assetOutDirectory
 
 const cssOutDir = join(projectRootDir, 'docs')
 const htmlOutDir = join(projectRootDir, 'docs')

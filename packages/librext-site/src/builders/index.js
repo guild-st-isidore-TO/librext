@@ -1,5 +1,5 @@
 /**
- * @file LibRext Docs Builder
+ * @file LibRext Site Builder
  */
 
 "use strict"
@@ -16,7 +16,7 @@ const defaultOutputDir = join(projectRootDir, config.outDirectory)
 
 /**
  * HTML builder scripts
- * @namespace libRextDocsBuilder
+ * @namespace libRextSite
 */
 const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
