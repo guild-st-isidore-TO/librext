@@ -20,6 +20,8 @@ const buildSpec = (uiSpec, config = coreConfig) => {
         const fontFamValue = fontFamiliesData.fontFamilies[fontKey]
         libRextFonts[fontRole] = fontFamValue
     }
+    console.log('[LibRext Spec Builder] config.fonts', config.fonts)
+    console.log('[LibRext Spec Builder] libRextFonts', libRextFonts)
 
     const libRextTypeScale = buildTypeScale(config)
     let newSpec = {
@@ -39,7 +41,7 @@ const buildSpec = (uiSpec, config = coreConfig) => {
         ...newSpec,
         libRextData: newLibRextSpec,
     }
-    // console.log('[LibRext Spec Builder] outSpec', outSpec)
+    console.log('[LibRext Spec Builder] outSpec', outSpec)
     return outSpec
 }
 

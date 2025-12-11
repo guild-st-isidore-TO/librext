@@ -81,7 +81,8 @@ const docColours = (uiSpec, outputDir, config) => {
     colourLayersLight: dataCollayersLight,
     colourLayersDark: dataColLayersDark,
   };
-  console.log(templatePayload);
+
+  // console.log('[LibRext CSS - Build HTML Colours] templatePayload', templatePayload);
 
   const output = ejs.render(template, templatePayload);
 

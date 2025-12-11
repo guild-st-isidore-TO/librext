@@ -11,21 +11,21 @@ const buildBaseTypeScale = (
     typeScaleFactor = defaultTypeScaleFactor,
     typeScaleRatio = defaultTypeScaleRatio,
 ) => {
-    console.log('[LibRext Spec Builder] config', config)
-    console.log('[LibRext Spec Builder] typeScaleData', typeScaleData)
-    console.log('[LibRext Spec Builder] presetData', presetData)
+    // console.log('[LibRext Spec Builder] config', config)
+    // console.log('[LibRext Spec Builder] typeScaleData', typeScaleData)
+    // console.log('[LibRext Spec Builder] presetData', presetData)
     let outScale = []
     
-    console.log('[LibRext Spec Builder] typeScaleFactor', typeScaleFactor)
-    console.log('[LibRext Spec Builder] typeScaleRatio', typeScaleRatio)
+    // console.log('[LibRext Spec Builder] typeScaleFactor', typeScaleFactor)
+    // console.log('[LibRext Spec Builder] typeScaleRatio', typeScaleRatio)
     const baseTypeScale = typeScaleData[typeScaleRatio]
     const scaleFactor = presetData.typeScaleFactor[typeScaleFactor]
     
-    console.log('[LibRext Spec Builder] baseTypeScale', baseTypeScale)
+    // console.log('[LibRext Spec Builder] baseTypeScale', baseTypeScale)
     
     outScale = baseTypeScale.map(scaleVal => scaleVal * scaleFactor)
     outScale.sort((x, y) => x - y);
-    console.log('[LibRext Spec Builder] outScale', outScale)
+    // console.log('[LibRext Spec Builder] outScale', outScale)
 
     return outScale
 }

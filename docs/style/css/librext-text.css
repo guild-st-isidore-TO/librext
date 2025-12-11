@@ -15,6 +15,10 @@
   --lbrxt-fontfam-heading: "Aleo", "Times New Roman", Georgia, serif;
   --lbrxt-fontfam-headingAlt: "Yrsa", "Times New Roman", Georgia, serif;
   --lbrxt-fontfam-display: "Yrsa", "Times New Roman", Georgia, serif;
+  --lbrxt-fontfam-monospace: "Inconsolata", Courier, "Monaco", monospace;
+  --lbrxt-fontfam-label: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --lbrxt-fontfam-uiHeading: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+  --lbrxt-fontfam-uiBody: "Lato", Arial, Helvetica, sans-serif;
   --lbrxt-tscale-1: 1.015625rem;
   --lbrxt-tscale-2: 1.09375rem;
   --lbrxt-tscale-3: 1.25rem;
@@ -70,6 +74,22 @@
 
 .lbrxt-fontfam-display {
   font-family: "Yrsa", "Times New Roman", Georgia, serif;
+}
+
+.lbrxt-fontfam-monospace {
+  font-family: "Inconsolata", Courier, "Monaco", monospace;
+}
+
+.lbrxt-fontfam-label {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiHeading {
+  font-family: "OpenSans", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lbrxt-fontfam-uiBody {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 
@@ -221,7 +241,7 @@
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -239,7 +259,7 @@
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -257,7 +277,7 @@
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -275,7 +295,7 @@
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -294,7 +314,7 @@ h1,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -313,7 +333,7 @@ h2,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -332,7 +352,7 @@ h3,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -351,7 +371,7 @@ h4,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -370,7 +390,7 @@ h5,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -389,7 +409,7 @@ h6,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #EE4603;
 }
 
 
@@ -408,7 +428,7 @@ p, span,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -427,7 +447,7 @@ b, strong,
   line-height: 1.25;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -446,7 +466,7 @@ i, em,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -464,7 +484,7 @@ i, em,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #881403;
 }
 
 
@@ -483,7 +503,7 @@ li,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -502,7 +522,7 @@ a,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -521,7 +541,7 @@ small,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -539,7 +559,7 @@ small,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -558,7 +578,7 @@ sup,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -577,7 +597,7 @@ sub,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -596,7 +616,7 @@ figcaption,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -615,7 +635,7 @@ code,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -634,7 +654,7 @@ pre,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -653,7 +673,7 @@ q,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -672,7 +692,7 @@ blockquote,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 
@@ -690,7 +710,7 @@ blockquote,
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  color: undefined;
+  color: #050404;
 }
 
 

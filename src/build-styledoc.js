@@ -26,87 +26,15 @@ if (!variants.includes(styleVariant)) {
     styleVariant = defaultVariantz
 }
 
-let config = coreConfig
-let configOverrides = {}
-let specOverrides = {
-    colors: {
-        modes: {
-            dark: {}
-        }
-    }
-}
+let outConfig = { ...coreConfig }
 
 if (styleVariant == 'sw') {
-    console.log('[LibRext Docs Builder] using SW styles')
-
-    configOverrides = {
-        fonts: {
-            body: 'open-sans',
-            bodyAlt: 'crimson-text',
-            heading: 'aleo',
-            headingAlt: 'yrsa',
-            display: 'yrsa',
-        }
-    }
-
-    specOverrides = {
-        primary: '#EE4603',
-        secondary: '#061999',
-        tertiary: '#FC8352',
-        colors: {
-            modes: {
-                dark: {
-                    background: '#030D4F',
-                    primary: '#FDC95C',
-                    secondary: '#FC8352',
-                    tertiary: '#061999',
-                }
-            }
-        }
-    }
-} else if (styleVariant == 'gsi') {
-    console.log('[LibRext Docs Builder] using GSI styles')
-
-    specOverrides = {
-        primary: '#B81626',
-        secondary: '#FCDD09',
-        tertiary: '#322928',
-        colors: {
-            modes: {
-                dark: {
-                    primary: '#B81626',
-                    secondary: '#FCDD09',
-                    tertiary: '#322928',
-                }
-            }
-        }
-    }
-
-} else if (styleVariant == 'inc') {
-    console.log('[LibRext Docs Builder] using INC styles')
-
-    specOverrides = {
-        primary: '#EE4603',
-        secondary: '#061999',
-        tertiary: '#FC8352',
-        colors: {
-            modes: {
-                dark: {
-                    background: '#030D4F',
-                    primary: '#FDC95C',
-                    secondary: '#FC8352',
-                    tertiary: '#061999',
-                }
-            }
-        }
-    }
-} else {
-    console.log('[LibRext Docs Builder] using default styles')
-}
-
-const outConfig = {
-    ...config,
-    ...configOverrides,
+    console.log('[LibRext Docs Builder] using SW fonts')
+    outConfig.fonts.body = 'open-sans'
+    outConfig.fonts.bodyAlt = 'crimson-text'
+    outConfig.fonts.heading = 'aleo'
+    outConfig.fonts.headingAlt = 'yrsa'
+    outConfig.fonts.display = 'yrsa'
 }
 
 const fontsOutDir = join(projectRootDir, 'docs/style')
@@ -114,9 +42,45 @@ const cssOutDir = join(projectRootDir, 'docs/style')
 const htmlOutDir = join(projectRootDir, 'docs/style')
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, outConfig)
-const outSpec = {
+let outSpec = {
     ...uiSpec,
-    ...specOverrides,
+}
+console.log('[LibRext Docs Builder] outSpec', outSpec)
+
+if (styleVariant == 'sw') {
+    console.log('[LibRext Docs Builder] using SW styles')
+
+    outSpec.colors.modes.dark.background = '#030D4F'
+
+    outSpec.colors.primary = '#EE4603'
+    outSpec.colors.secondary = '#061999'
+    outSpec.colors.tertiary = '#FC8352'
+
+    outSpec.colors.modes.dark.primary = '#FDC95C'
+    outSpec.colors.modes.dark.secondary = '#FC8352'
+    outSpec.colors.modes.dark.tertiary = '#061999'
+} else if (styleVariant == 'gsi') {
+    console.log('[LibRext Docs Builder] using GSI styles')
+
+    outSpec.colors.primary = '#B81626'
+    outSpec.colors.secondary = '#FCDD09'
+    outSpec.colors.tertiary = '#322928'
+
+    outSpec.colors.modes.dark.primary = '#B81626'
+    outSpec.colors.modes.dark.secondary = '#FCDD09'
+    outSpec.colors.modes.dark.tertiary = '#322928'
+} else if (styleVariant == 'inc') {
+    console.log('[LibRext Docs Builder] using INC styles')
+
+    outSpec.colors.primary = '#B81626'
+    outSpec.colors.secondary = '#FCDD09'
+    outSpec.colors.tertiary = '#322928'
+
+    outSpec.colors.modes.dark.primary = '#B81626'
+    outSpec.colors.modes.dark.secondary = '#FCDD09'
+    outSpec.colors.modes.dark.tertiary = '#322928'
+} else {
+    console.log('[LibRext Docs Builder] using default styles')
 }
 
 console.log('[LibRext Documentation/Specs]\nFonts output directory', fontsOutDir)
