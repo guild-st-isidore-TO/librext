@@ -1,3 +1,5 @@
+import { utils } from "librext-core"
+
 const buildGreyscaleProps = (greyscale) => {
     const greyProps = {}
     greyscale.forEach((greyHexCol, idx) => {
@@ -11,7 +13,7 @@ const buildThemeProps = (themeObj) => {
     const themeProps = {}
 
     for (const themeColName in themeObj) {
-        const formattedColName = libRextUiSpecUtil.capitalizeFirstLetter(themeColName)
+        const formattedColName = utils.capitalizeFirstLetter(themeColName)
         const hexCol = themeObj[themeColName]
         themeProps[`theme${formattedColName}`] = hexCol
     }

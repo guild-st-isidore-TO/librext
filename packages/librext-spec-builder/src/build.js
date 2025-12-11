@@ -20,6 +20,7 @@ const buildSpec = (uiSpec, config = coreConfig) => {
     /* ----------------------------------------
      * Fonts
      * ------------------------------------- */
+
     let libRextFonts = {}
     for (const fontRole in config.fonts) {
         const fontKey = config.fonts[fontRole]
@@ -32,19 +33,31 @@ const buildSpec = (uiSpec, config = coreConfig) => {
     /* ----------------------------------------
      * Theme
      * ------------------------------------- */
-    // format theme data from config
 
-    // remove existing theme colours in default spec
+    // Format theme data from config
+    const configThemeProps = buildThemeProps(config.themeColours)
 
-    // replace defualt spec theme with config values
+    // Remove existing theme colours in default spec
+    let outColours = {};
+    for (const colRole in uiSpec.colors) {
+        if (!colRole.startsWith('theme')) {
+            outColours[colRole] = uiSpec.colors[colRole]
+        }
+    }
 
-    
+    // Replace defualt spec theme with config values
+    for (const colRole in configThemeProps) {
+        outColours[colRole] = configThemeProps[colRole]
+    }
+
     /* ----------------------------------------
      * UI Spec overrides
      * ------------------------------------- */
+
     const libRextTypeScale = buildTypeScale(config)
     let newSpec = {
         ...uiSpec,
+        colors: outColours,
         fonts: libRextFonts,
         fontSizes: libRextTypeScale
     }
@@ -52,6 +65,7 @@ const buildSpec = (uiSpec, config = coreConfig) => {
     /* ----------------------------------------
      * LibRext Spec overrides
      * ------------------------------------- */
+
     const libRextTypeScaleData = buildTypeScaleData(config)
     const specLibRext = buildThemeLibRext(config)
 
@@ -63,6 +77,7 @@ const buildSpec = (uiSpec, config = coreConfig) => {
     /* ----------------------------------------
      * Output Spec
      * ------------------------------------- */
+
     const outSpec = {
         ...newSpec,
         libRextData: newLibRextSpec,

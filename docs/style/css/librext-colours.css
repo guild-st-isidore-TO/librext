@@ -22,15 +22,6 @@
   --lbrxt-col-grey9: #1b1818;
   --lbrxt-col-grey10: #110e0e;
   --lbrxt-col-grey11: #050404;
-  --lbrxt-col-themeRubricRed: #881403;
-  --lbrxt-col-themeOkGreen: #77A265;
-  --lbrxt-col-themeWarnYellow: #F6BF17;
-  --lbrxt-col-themeErrorRed: #AC4945;
-  --lbrxt-col-themeInfoBlue: #2471B8;
-  --lbrxt-col-themeForestGreen: #2F4739;
-  --lbrxt-col-themeRustBrown: #693628;
-  --lbrxt-col-themeDarkWine: #513041;
-  --lbrxt-col-themeBlueSlate: #383F46;
   --lbrxt-col-text: #050404;
   --lbrxt-col-textRubric: #881403;
   --lbrxt-col-background: #f2ede5;
@@ -74,6 +65,11 @@
   --lbrxt-col-dark-indicatorInfo: #2471B8;
   --lbrxt-col-dark-indicatorError: #AC4945;
   --lbrxt-col-dark-indicatorNull: #676261;
+  --lbrxt-col-themeNightBlue: #030D4F;
+  --lbrxt-col-themeDeepOrange: #EE4603;
+  --lbrxt-col-themeCoolBlue: #061999;
+  --lbrxt-col-themeBrightOrange: #FC8352;
+  --lbrxt-col-themeGoldYellow: #FDC95C;
 }
 
 
@@ -119,33 +115,6 @@
 .lbrxt-col-grey11 {
   color: #050404;
 }
-.lbrxt-col-themeRubricRed {
-  color: #881403;
-}
-.lbrxt-col-themeOkGreen {
-  color: #77A265;
-}
-.lbrxt-col-themeWarnYellow {
-  color: #F6BF17;
-}
-.lbrxt-col-themeErrorRed {
-  color: #AC4945;
-}
-.lbrxt-col-themeInfoBlue {
-  color: #2471B8;
-}
-.lbrxt-col-themeForestGreen {
-  color: #2F4739;
-}
-.lbrxt-col-themeRustBrown {
-  color: #693628;
-}
-.lbrxt-col-themeDarkWine {
-  color: #513041;
-}
-.lbrxt-col-themeBlueSlate {
-  color: #383F46;
-}
 .lbrxt-col-text {
   color: #050404;
 }
@@ -178,6 +147,21 @@
 }
 .lbrxt-col-indicatorNull {
   color: #676261;
+}
+.lbrxt-col-themeNightBlue {
+  color: #030D4F;
+}
+.lbrxt-col-themeDeepOrange {
+  color: #EE4603;
+}
+.lbrxt-col-themeCoolBlue {
+  color: #061999;
+}
+.lbrxt-col-themeBrightOrange {
+  color: #FC8352;
+}
+.lbrxt-col-themeGoldYellow {
+  color: #FDC95C;
 }
 
 
@@ -223,33 +207,6 @@
 .lbrxt-bgcol-grey11 {
   background-color: #050404;
 }
-.lbrxt-bgcol-themeRubricRed {
-  background-color: #881403;
-}
-.lbrxt-bgcol-themeOkGreen {
-  background-color: #77A265;
-}
-.lbrxt-bgcol-themeWarnYellow {
-  background-color: #F6BF17;
-}
-.lbrxt-bgcol-themeErrorRed {
-  background-color: #AC4945;
-}
-.lbrxt-bgcol-themeInfoBlue {
-  background-color: #2471B8;
-}
-.lbrxt-bgcol-themeForestGreen {
-  background-color: #2F4739;
-}
-.lbrxt-bgcol-themeRustBrown {
-  background-color: #693628;
-}
-.lbrxt-bgcol-themeDarkWine {
-  background-color: #513041;
-}
-.lbrxt-bgcol-themeBlueSlate {
-  background-color: #383F46;
-}
 .lbrxt-bgcol-text {
   background-color: #050404;
 }
@@ -282,6 +239,21 @@
 }
 .lbrxt-bgcol-indicatorNull {
   background-color: #676261;
+}
+.lbrxt-bgcol-themeNightBlue {
+  background-color: #030D4F;
+}
+.lbrxt-bgcol-themeDeepOrange {
+  background-color: #EE4603;
+}
+.lbrxt-bgcol-themeCoolBlue {
+  background-color: #061999;
+}
+.lbrxt-bgcol-themeBrightOrange {
+  background-color: #FC8352;
+}
+.lbrxt-bgcol-themeGoldYellow {
+  background-color: #FDC95C;
 }
 
 

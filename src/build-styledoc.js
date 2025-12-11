@@ -35,6 +35,14 @@ if (styleVariant == 'sw') {
     outConfig.fonts.heading = 'aleo'
     outConfig.fonts.headingAlt = 'yrsa'
     outConfig.fonts.display = 'yrsa'
+
+    outConfig.themeColours = {
+        nightBlue: '#030D4F',
+        deepOrange: '#EE4603',
+        coolBlue: '#061999',
+        brightOrange: '#FC8352',
+        goldYellow: '#FDC95C',
+    }
 }
 
 const fontsOutDir = join(projectRootDir, 'docs/style')
