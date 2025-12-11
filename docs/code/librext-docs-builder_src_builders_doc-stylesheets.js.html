@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Namespace: libRextCore</title>
+    <title>JSDoc: Source: librext-docs-builder/src/builders/doc-stylesheets.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,99 +17,62 @@
 
 <div id="main">
 
-    <h1 class="page-title">Namespace: libRextCore</h1>
+    <h1 class="page-title">Source: librext-docs-builder/src/builders/doc-stylesheets.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        <h2>libRextCore</h2>
-        
-    
-</header>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { join } from 'path'
+import { cpSync, copyFileSync, readFileSync, writeFileSync } from 'fs';
+import ejs from 'ejs';
+import { fileHandler } from 'librext-core'
 
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description">Functions, constants, and configuration used by several packages throughout the system.</div>
-        
+import { templatesDir, srcDir, projectRootDir } from '../docs-builder-util.js'
 
-        
+/**
+ * Builds stylesheets for LibRext site
+ * @param {*} uiSpec 
+ * @param {*} outputDir 
+ * @param {*} config 
+ * @returns true if everything suceeded, false if not
+ */
+const docStylesheets = (uiSpec, outputDir, config) => {
+    const buildSuccess = false
 
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="librext-core_src_index.js.html">librext-core/src/index.js</a>, <a href="librext-core_src_index.js.html#line10">line 10</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
+    // Copy CSS from /src to the output
+    const sourceFile = `${srcDir}/docs-style.css`
+    const targetDir = join(outputDir, 'css')
+    const targetFile = `${targetDir}/docs-style.css`
 
 
-        
-    
-    </div>
 
-    
+    console.log('[LibRext CSS - Docs Stylesheets] sourceFile', sourceFile)
+    console.log('[LibRext CSS - Docs Stylesheets] targetDir', targetDir)
+    console.log('[LibRext CSS - Docs Stylesheets] targetFile', targetFile)
 
-    
+    try {
+        // cpSync(sourceFile, targetDir, { recursive: true })
+        // copyFileSync(sourceFile, targetFile)
 
-    
+        const baseStylesheet = readFileSync(sourceFile, { encoding: 'utf8' });
+        const outStylesheet = baseStylesheet.replaceAll('lbrxt-', `${config.tokenPrefix}-`)
+        writeFileSync(targetFile, outStylesheet);
+    } catch (err) {
+        console.error('[LibRext CSS - Docs Stylesheets] Stylesheet copying failed!')
+        console.error(err)
+        return false;
+    }
 
-    
+    return buildSuccess
+}
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+export default docStylesheets</code></pre>
+        </article>
+    </section>
 
 
 
