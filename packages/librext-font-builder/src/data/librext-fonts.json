@@ -9,16 +9,5 @@
         "open-sans",
         "pt-serif",
         "yrsa"
-    ],
-    "fontFamilies": {
-        "aleo": "\"Aleo\", \"Times New Roman\", Georgia, serif",
-        "cinzel": "\"Cinzel\", \"Times New Roman\", Georgia, serif",
-        "cormorant-garamond": "\"CormorantGaramond\", \"Cormorant Garamond\", \"Times New Roman\", Georgia, serif",
-        "crimson-text": "\"CrimsonText\", \"Crimson Text\", \"Times New Roman\", Georgia, serif",
-        "inconsolata": "\"Inconsolata\", Courier, \"Monaco\", monospace",
-        "lato": "\"Lato\", Arial, Helvetica, sans-serif",
-        "open-sans": "\"OpenSans\", \"Open Sans\", Arial, Helvetica, sans-serif",
-        "pt-serif": "\"PTSerif\", \"PT Serif\", \"Times New Roman\", Georgia, serif",
-        "yrsa": "\"Yrsa\", \"Times New Roman\", Georgia, serif"
-    }
+    ]
 }
