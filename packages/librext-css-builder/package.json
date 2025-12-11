@@ -17,8 +17,8 @@
   "dependencies": {
     "jsdoc": "^4.0.5",
     "ejs": "^3.1.10",
-    "librext-core": "0.5.1",
+    "librext-core": "0.5.2",
     "librext-ui-spec": "0.3.0",
-    "librext-spec-builder": "0.3.0"
+    "librext-spec-builder": "0.5.2"
   }
 }
