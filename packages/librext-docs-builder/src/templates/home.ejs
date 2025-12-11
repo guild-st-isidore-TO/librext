@@ -7,7 +7,7 @@
   <title><%= projectName %> — Style Documentation</title>
 
   <!-- ================================================ -->
-  <!-- LIBREXT STYLESHEETS -->
+  <!-- <%= projectName %> STYLESHEETS -->
   <!-- ================================================ -->
   <link rel="stylesheet" href="./css/<%= filenamePrefix %>-base.css">
   <% for(var i=0; i < fonts.length; i++) { %>
@@ -22,9 +22,8 @@
 
   <meta name="description" content="LibRext (Librarium Textuum) is a UI design system and component library developed by the Guild of St. Isidore (TO).">
 
-  <meta property="og:title" content="LibRext — Documentation & Specimens">
+  <meta property="og:title" content="<%= projectName %> — Documentation & Specimens">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://guild-st-isidore-to.github.io/librext/">
 
 
   <link rel="icon" href="/favicon.ico" sizes="any">

@@ -30,7 +30,12 @@ if (!variants.includes(styleVariant)) {
 let outConfig = { ...coreConfig }
 
 if (styleVariant == 'sw') {
-    console.log('[LibRext Docs Builder] using SW fonts')
+    console.log('[LibRext Docs Builder] using SW configurations')
+
+    outConfig.projectName = 'Salvador Workshop'
+    outConfig.tokenPrefix = 'sw'
+    outConfig.filenamePrefix = 'sw'
+
     outConfig.fonts.body = 'open-sans'
     outConfig.fonts.bodyAlt = 'crimson-text'
     outConfig.fonts.heading = 'aleo'
@@ -44,6 +49,7 @@ if (styleVariant == 'sw') {
         brightOrange: '#FC8352',
         goldYellow: '#FDC95C',
     }
+
 }
 
 const fontsOutDir = join(projectRootDir, 'docs/style')
