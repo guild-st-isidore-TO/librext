@@ -109,9 +109,9 @@ const outConfig = {
     ...configOverrides,
 }
 
-const fontsOutDir = join(projectRootDir, 'docs')
-const cssOutDir = join(projectRootDir, 'docs')
-const htmlOutDir = join(projectRootDir, 'docs')
+const fontsOutDir = join(projectRootDir, 'docs/style')
+const cssOutDir = join(projectRootDir, 'docs/style')
+const htmlOutDir = join(projectRootDir, 'docs/style')
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, outConfig)
 const outSpec = {
