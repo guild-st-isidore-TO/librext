@@ -5,6 +5,8 @@ import { templatesDir, colourLabelModes } from '../site-builder-util.js'
 const docHome = (uiSpec, outputDir, config) => {
   const fPath = `${templatesDir}/site-home.ejs`
   const template = fileHandler.readTemplateFile(fPath);
+  const fontKeySet = new Set(Object.values(config.fonts))
+  const fontKeyList = Array.from(fontKeySet)
   // console.log('[LibRext CSS - Build HTML Home] uiSpec', uiSpec);
   const cRadiusPrefixes = [
     'none',
@@ -61,7 +63,7 @@ const docHome = (uiSpec, outputDir, config) => {
   const dataThemeDark = dataThemeLight
 
   const templatePayload = {
-    fonts: config.fonts,
+    fonts: fontKeyList,
     borderRadiusSizes: dataBorderRadSizes,
     boxShadowSizes: dataBoxShadowSizes,
     greyscalePaletteLight: dataGreyscaleLight,
