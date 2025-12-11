@@ -9,14 +9,14 @@
   <!-- ================================================ -->
   <!-- LIBREXT STYLESHEETS -->
   <!-- ================================================ -->
-  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-base.css">
   <% for(var i=0; i < fonts.length; i++) { %>
-  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/librext-font.css">
+  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/<%= filenamePrefix %>-font.css">
   <% } %>
-  <link rel="stylesheet" href="./css/librext-text.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-text.css">
 
-  <link rel="stylesheet" href="./css/librext-colours.css">
-  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-colours.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-shapes.css">
   <link rel="stylesheet" href="./css/docs-style.css">
   <!-- ================================================ -->
 
@@ -38,7 +38,7 @@
 
   <div class="page-container">
     <section class="page-section">
-      <h1 class="section-heading lbrxt-tscale-d4">LibRext — Shapes</h1>
+      <h1 class="section-heading <%= tokenPrefix %>-tscale-d4">LibRext — Shapes</h1>
 
       <p>Back to <a href="./index.html">Specimens</a></p>
 
@@ -61,7 +61,7 @@
       <div class="shape-box-set border-radius">
         <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box lbrxt-bradius <%= borderRadiusSizes[i].sizeCode %>">
+          <div class="shape-box <%= tokenPrefix %>-bradius <%= borderRadiusSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= borderRadiusSizes[i].heading %></span><br />
             <span class="box-text box-body"><%= borderRadiusSizes[i].body %></span>
           </div>
@@ -78,7 +78,7 @@
       <div class="shape-box-set box-shadow">
         <% for(var i=0; i < boxShadowSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box lbrxt-b-shadow <%= boxShadowSizes[i].sizeCode %>">
+          <div class="shape-box <%= tokenPrefix %>-b-shadow <%= boxShadowSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= boxShadowSizes[i].heading %></span><br />
             <span class="box-text box-body"><%= boxShadowSizes[i].body %></span>
           </div>
@@ -95,7 +95,7 @@
       <div class="shape-box-set widget">
         <% for(var i=0; i < widgetSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
+          <div class="shape-box widget <%= tokenPrefix %>-widget <%= widgetSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
             <span class="box-text box-body"><%= widgetSizes[i].body %></span>
           </div>

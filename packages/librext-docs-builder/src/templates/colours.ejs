@@ -9,14 +9,14 @@
   <!-- ================================================ -->
   <!-- LIBREXT STYLESHEETS -->
   <!-- ================================================ -->
-  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-base.css">
   <% for(var i=0; i < fonts.length; i++) { %>
-  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/librext-font.css">
+  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/<%= filenamePrefix %>-font.css">
   <% } %>
-  <link rel="stylesheet" href="./css/librext-text.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-text.css">
 
-  <link rel="stylesheet" href="./css/librext-colours.css">
-  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-colours.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-shapes.css">
   <link rel="stylesheet" href="./css/docs-style.css">
   <!-- ================================================ -->
 
@@ -38,7 +38,7 @@
 
   <div class="page-container">
     <section class="page-section">
-      <h1 class="section-heading lbrxt-tscale-d4">LibRext — Colours</h1>
+      <h1 class="section-heading <%= tokenPrefix %>-tscale-d4">LibRext — Colours</h1>
 
       <p>Back to <a href="./index.html">Specimens</a></p>
 
