@@ -25,6 +25,9 @@ const docTypography = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
+        projectName: config.projectName,
+        tokenPrefix: config.tokenPrefix,
+        filenamePrefix: config.filenamePrefix,
         fonts: fontKeyList,
         roles: dataRoles,
     };

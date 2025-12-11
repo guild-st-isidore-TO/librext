@@ -4,27 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LibRext — Shapes</title>
+  <title><%= projectName %> — Shapes</title>
 
   <!-- ================================================ -->
-  <!-- LIBREXT STYLESHEETS -->
+  <!-- <%= projectName %> STYLESHEETS -->
   <!-- ================================================ -->
-  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-base.css">
   <% for(var i=0; i < fonts.length; i++) { %>
-  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/librext-font.css">
+  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/<%= filenamePrefix %>-font.css">
   <% } %>
-  <link rel="stylesheet" href="./css/librext-text.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-text.css">
 
-  <link rel="stylesheet" href="./css/librext-colours.css">
-  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-colours.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-shapes.css">
   <link rel="stylesheet" href="./css/docs-style.css">
   <!-- ================================================ -->
 
   <meta name="description" content="LibRext (Librarium Textuum) is a UI design system and component library developed by the Guild of St. Isidore (TO).">
 
-  <meta property="og:title" content="LibRext — Shapes">
+  <meta property="og:title" content="<%= projectName %> — Shapes">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://guild-st-isidore-to.github.io/librext/">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
@@ -38,17 +37,8 @@
 
   <div class="page-container">
     <section class="page-section">
-      <h1 class="section-heading lbrxt-tscale-d4">LibRext — Shapes</h1>
-
+      <h1 class="section-heading <%= tokenPrefix %>-tscale-d4"><%= projectName %> — Shapes</h1>
       <p>Back to <a href="./index.html">Specimens</a></p>
-
-      <p>As for shapes, LibRext deals only with boxes. There are several options available for border radius, box shadow, widget heights, and card styles</p>
-
-      <p>Border Radius — A larger radius fits with larger boxes</p>
-
-      <p>Box Shadow — Larger sizes imply more distance between box layer and parent layer</p>
-
-      <p>Widget Heights — Presets for common/consistent UX elements. Like inputs, buttons, chips, etc.</p>
     </section>
 
     <hr class="section-divider" />
@@ -56,12 +46,10 @@
     <section class="page-section">
       <h2>Border Radii</h2>
 
-      <p>The system has six border radius styles:</p>
-
       <div class="shape-box-set border-radius">
         <% for(var i=0; i < borderRadiusSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box lbrxt-bradius <%= borderRadiusSizes[i].sizeCode %>">
+          <div class="shape-box <%= tokenPrefix %>-bradius <%= borderRadiusSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= borderRadiusSizes[i].heading %></span><br />
             <span class="box-text box-body"><%= borderRadiusSizes[i].body %></span>
           </div>
@@ -73,12 +61,10 @@
 
       <h2>Box Shadows</h2>
 
-      <p>The system has five box shadow styles available:</p>
-
       <div class="shape-box-set box-shadow">
         <% for(var i=0; i < boxShadowSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box lbrxt-b-shadow <%= boxShadowSizes[i].sizeCode %>">
+          <div class="shape-box <%= tokenPrefix %>-bshadow <%= boxShadowSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= boxShadowSizes[i].heading %></span><br />
             <span class="box-text box-body"><%= boxShadowSizes[i].body %></span>
           </div>
@@ -90,12 +76,10 @@
 
       <h2>Widgets & Inputs</h2>
 
-      <p>The system has five available widget heights:</p>
-
       <div class="shape-box-set widget">
         <% for(var i=0; i < widgetSizes.length; i++) { %>
         <div class="shape-box-wrapper">
-          <div class="shape-box widget lbrxt-widget <%= widgetSizes[i].sizeCode %>">
+          <div class="shape-box widget <%= tokenPrefix %>-widget <%= widgetSizes[i].sizeCode %>">
             <span class="box-text box-heading"><%= widgetSizes[i].heading %></span> —
             <span class="box-text box-body"><%= widgetSizes[i].body %></span>
           </div>
@@ -105,8 +89,6 @@
     </section>
 
   </div>
-  <!-- <script src="js/app.js"></script> -->
-
 </body>
 
 </html>

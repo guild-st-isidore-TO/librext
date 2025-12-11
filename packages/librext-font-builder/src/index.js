@@ -4,7 +4,7 @@
 "use strict"
 
 import { join } from 'path'
-import { cpSync } from 'fs';
+import { cpSync, copyFileSync } from 'fs';
 
 import { config } from 'librext-core'
 import { projectRootDir, fontDir } from './font-builder-util.js'
@@ -38,8 +38,18 @@ const build = (uiSpec, outputDir = defaultOutputDir, config) => {
         }
         const fontSourceDir = join(fontDir, fontKey)
         const fontTargetDir = join(targetDir, fontKey)
+
+        const sourceFile = `${fontSourceDir}/librext-font.css`
+        // const targetDir = join(outputDir, 'css')
+        const targetFile = `${fontTargetDir}/${config.filenamePrefix}-font.css`
         try {
-            cpSync(fontSourceDir, fontTargetDir, { recursive: true })
+            cpSync(fontSourceDir, fontTargetDir, {
+                recursive: true,
+                filter: (src, dest) => {
+                    return !src.endsWith('.css')
+                }
+            })
+            copyFileSync(sourceFile, targetFile)
         } catch (err) {
             console.error('[Font Builder] Font copying failed!')
             console.error(err)

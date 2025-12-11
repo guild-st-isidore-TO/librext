@@ -4,27 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LibRext — Typography</title>
+  <title><%= projectName %> — Typography</title>
 
   <!-- ================================================ -->
-  <!-- LIBREXT STYLESHEETS -->
+  <!-- <%= projectName %> STYLESHEETS -->
   <!-- ================================================ -->
-  <link rel="stylesheet" href="./css/librext-base.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-base.css">
   <% for(var i=0; i < fonts.length; i++) { %>
-  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/librext-font.css">
+  <link rel="stylesheet" href="./fonts/<%= fonts[i] %>/<%= filenamePrefix %>-font.css">
   <% } %>
-  <link rel="stylesheet" href="./css/librext-text.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-text.css">
 
-  <link rel="stylesheet" href="./css/librext-colours.css">
-  <link rel="stylesheet" href="./css/librext-shapes.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-colours.css">
+  <link rel="stylesheet" href="./css/<%= filenamePrefix %>-shapes.css">
   <link rel="stylesheet" href="./css/docs-style.css">
   <!-- ================================================ -->
 
   <meta name="description" content="LibRext (Librarium Textuum) is a UI design system and component library developed by the Guild of St. Isidore (TO).">
 
-  <meta property="og:title" content="LibRext — Typography">
+  <meta property="og:title" content="<%= projectName %> — Typography">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://guild-st-isidore-to.github.io/librext/">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
@@ -38,190 +37,159 @@
 
   <div class="page-container">
     <section class="page-section">
-      <h1 class="section-heading lbrxt-tscale-d4">LibRext — Typography</h1>
+      <h1 class="section-heading <%= tokenPrefix %>-tscale-d4">LibRext — Typography</h1>
 
       <p>Back to <a href="./index.html">Specimens</a></p>
 
-      <p>LibRext has a heavy focus on old-style serif fonts, as it looks to early Renaissance printed works as inspiration. The design system’s text styles are organized by "Font Roles" and "Document Roles”</p>
+      <hr class="section-divider" />
 
-      <p>Font Roles are functional roles that can be shared by multiple elements.</p>
+      <section class="page-section">
+        <h2>Font & Document Roles</h2>
 
-      <p>Document Roles correspond to common document styles and HTML/Markdown structure</p>
-
-      <h2>Typefaces</h2>
-
-      <p>LibRext text styles revolve around six typefaces:</p>
-
-      <ul>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-display">Cinzel</span> — Used for display</li>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-heading">Cormorant Garamond</span> — Used for headings</li>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-body">Crimson Text</span> — Used for body, headings (alt)</li>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-label">Open Sans</span> — Used for labels, UI headings</li>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-uiBody">Lato</span> — Used for UI body</li>
-        <li><span class="lbrxt-tscale-4 lbrxt-fontfam-monospace">Inconsolata</span> — Used for monospace, code</li>
-      </ul>
-    </section>
-
-    <hr class="section-divider" />
-
-    <section class="page-section">
-      <h2>Font Roles</h2>
-
-      <p>Font definitions available for the design system. These are defined by general roles, and can be used by several (more specific) styles.</p>
-
-      <h2>Document Roles</h2>
-
-      <p>
-        Font definitions for text within a document. These are defined by specific roles in a page or screen. Such as titles, subtitles, headings, etc.<br />
-        The document roles defined in the system include:
-      </p>
-
-      <% for(var i=0; i < roles.length; i++) { %>
-      <div class="type-role">
-        <div class="type-role-specimen">
-          <%  if (roles[i].htmlTags[0].length > 0) {
+        <% for(var i=0; i < roles.length; i++) { %>
+        <div class="type-role">
+          <div class="type-role-specimen">
+            <%  if (roles[i].htmlTags[0].length > 0) {
                 for(var j=0; j < roles[i].htmlTags.length; j++) {%>
-          <<%- roles[i].htmlTags[j].trim() %>>
-            <%= roles[i].spec %>
-          </<%- roles[i].htmlTags[j].trim() %>><br />
-          <% }
+            <<%- roles[i].htmlTags[j].trim() %>>
+              <%= roles[i].spec %>
+            </<%- roles[i].htmlTags[j].trim() %>><br />
+            <% }
         } else { %>
-          <span class="<%- roles[i].htmlClass %>">
-            <%= roles[i].spec %>
-          </span>
-          <% } %>
+            <span class="<%- roles[i].htmlClass %>">
+              <%= roles[i].spec %>
+            </span>
+            <% } %>
+          </div>
+          <div class="type-role-info">
+            <h4><%= roles[i].name %></h4>
+            <span>weight: <%= roles[i].weight %></span><br />
+            <span>typescale: <%= roles[i].typescale %></span><br />
+            <span>htmlTags: <%= roles[i].htmlTags %></span><br />
+            <span>htmlClass: <%= roles[i].htmlClass %></span>
+          </div>
         </div>
-        <div class="type-role-info">
-          <h4><%= roles[i].name %></h4>
-          <span>weight: <%= roles[i].weight %></span><br />
-          <span>typescale: <%= roles[i].typescale %></span><br />
-          <span>htmlTags: <%= roles[i].htmlTags %></span><br />
-          <span>htmlClass: <%= roles[i].htmlClass %></span>
-        </div>
-      </div>
-      <% } %>
-    </section>
+        <% } %>
+      </section>
 
-    <hr class="section-divider" />
+      <hr class="section-divider" />
 
-    <section class="page-section">
-      <h2>Examples</h2>
+      <section class="page-section">
+        <h2>Examples</h2>
 
-      <p>A few examples to illustrate LibRext styling.</p>
+        <div class="text-example">
+          <h1 class="<%= tokenPrefix %>-title <%= tokenPrefix %>-col-grey9">Universal Declaration of Human Rights</h1>
 
-      <div class="text-example">
-        <h1 class="lbrxt-title lbrxt-col-grey9">Universal Declaration of Human Rights</h1>
+          <span class="<%= tokenPrefix %>-subtitle <%= tokenPrefix %>-col-grey6">United Nations General Assembly resolution 217 A<br />(Paris, 10 December 1948)</span>
 
-        <span class="lbrxt-subtitle lbrxt-col-grey6">United Nations General Assembly resolution 217 A<br />(Paris, 10 December 1948)</span>
+          <hr />
 
-        <hr />
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 1</h3>
+          <p>
+            All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
+          </p>
 
-        <h3 class="lbrxt-col-grey9">Article 1</h3>
-        <p>
-          All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
-        </p>
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 2</h3>
+          <p>
+            Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.
+          </p>
 
-        <h3 class="lbrxt-col-grey9">Article 2</h3>
-        <p>
-          Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.
-        </p>
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 3</h3>
+          <p>Everyone has the right to life, liberty and security of person.</p>
 
-        <h3 class="lbrxt-col-grey9">Article 3</h3>
-        <p>Everyone has the right to life, liberty and security of person.</p>
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 4</h3>
+          <p>No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.</p>
 
-        <h3 class="lbrxt-col-grey9">Article 4</h3>
-        <p>No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.</p>
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 5</h3>
+          <p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
 
-        <h3 class="lbrxt-col-grey9">Article 5</h3>
-        <p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
-
-        <h3 class="lbrxt-col-grey9">Article 6</h3>
-        <p>Everyone has the right to recognition everywhere as a person before the law.</p>
-
-        <hr class="section-divider text-example-divider" />
-      </div>
-
-      <div class="text-example">
-        <h1 class="lbrxt-title">AENEIDOS</h1>
-
-        <span class="lbrxt-subtitle lbrxt-col-textRubric">PUBLI VERGILI MARONIS</span>
-
-        <h2>LIBER I</h2>
-
-        <p>ARMA virumque cano, Troiae qui primus ab oris
-          Italiam, fato profugus, Laviniaque venit
-          litora, multum ille et terris iactatus et alto
-          vi superum saevae memorem Iunonis ob iram;
-          multa quoque et bello passus, dum conderet urbem,
-          inferretque deos Latio, genus unde Latinum,
-          Albanique patres, atque altae moenia Romae.</p>
-
-        <p>Musa, mihi causas memora, quo numine laeso,
-          quidve dolens, regina deum tot volvere casus
-          insignem pietate virum, tot adire labores
-          impulerit. Tantaene animis caelestibus irae?</p>
-
-        <p>Urbs antiqua fuit, Tyrii tenuere coloni,
-          Karthago, Italiam contra Tiberinaque longe
-          ostia, dives opum studiisque asperrima belli;
-          quam Iuno fertur terris magis omnibus unam
-          posthabita coluisse Samo; hic illius arma,
-          hic currus fuit; hoc regnum dea gentibus esse,
-          si qua fata sinant, iam tum tenditque fovetque.
-          Progeniem sed enim Troiano a sanguine duci
-          audierat, Tyrias olim quae verteret arces;
-          hinc populum late regem belloque superbum
-          venturum excidio Libyae: sic volvere Parcas.
-          Id metuens, veterisque memor Saturnia belli,
-          prima quod ad Troiam pro caris gesserat Argis---
-          necdum etiam causae irarum saevique dolores
-          exciderant animo: manet alta mente repostum
-          iudicium Paridis spretaeque iniuria formae,
-          et genus invisum, et rapti Ganymedis honores.
-          His accensa super, iactatos aequore toto
-          Troas, reliquias Danaum atque immitis Achilli,
-          arcebat longe Latio, multosque per annos
-          errabant, acti fatis, maria omnia circum.
-          Tantae molis erat Romanam condere gentem!</p>
+          <h3 class="<%= tokenPrefix %>-col-grey9">Article 6</h3>
+          <p>Everyone has the right to recognition everywhere as a person before the law.</p>
 
           <hr class="section-divider text-example-divider" />
-      </div>
+        </div>
+
+        <div class="text-example">
+          <h1 class="<%= tokenPrefix %>-title">AENEIDOS</h1>
+
+          <span class="<%= tokenPrefix %>-subtitle <%= tokenPrefix %>-col-textRubric">PUBLI VERGILI MARONIS</span>
+
+          <h2>LIBER I</h2>
+
+          <p>ARMA virumque cano, Troiae qui primus ab oris
+            Italiam, fato profugus, Laviniaque venit
+            litora, multum ille et terris iactatus et alto
+            vi superum saevae memorem Iunonis ob iram;
+            multa quoque et bello passus, dum conderet urbem,
+            inferretque deos Latio, genus unde Latinum,
+            Albanique patres, atque altae moenia Romae.</p>
+
+          <p>Musa, mihi causas memora, quo numine laeso,
+            quidve dolens, regina deum tot volvere casus
+            insignem pietate virum, tot adire labores
+            impulerit. Tantaene animis caelestibus irae?</p>
+
+          <p>Urbs antiqua fuit, Tyrii tenuere coloni,
+            Karthago, Italiam contra Tiberinaque longe
+            ostia, dives opum studiisque asperrima belli;
+            quam Iuno fertur terris magis omnibus unam
+            posthabita coluisse Samo; hic illius arma,
+            hic currus fuit; hoc regnum dea gentibus esse,
+            si qua fata sinant, iam tum tenditque fovetque.
+            Progeniem sed enim Troiano a sanguine duci
+            audierat, Tyrias olim quae verteret arces;
+            hinc populum late regem belloque superbum
+            venturum excidio Libyae: sic volvere Parcas.
+            Id metuens, veterisque memor Saturnia belli,
+            prima quod ad Troiam pro caris gesserat Argis---
+            necdum etiam causae irarum saevique dolores
+            exciderant animo: manet alta mente repostum
+            iudicium Paridis spretaeque iniuria formae,
+            et genus invisum, et rapti Ganymedis honores.
+            His accensa super, iactatos aequore toto
+            Troas, reliquias Danaum atque immitis Achilli,
+            arcebat longe Latio, multosque per annos
+            errabant, acti fatis, maria omnia circum.
+            Tantae molis erat Romanam condere gentem!</p>
+
+          <hr class="section-divider text-example-divider" />
+        </div>
 
 
-      <div class="text-example">
-        <h1 class="lbrxt-title lbrxt-col-textRubric">Sancta Missa</h1>
+        <div class="text-example">
+          <h1 class="<%= tokenPrefix %>-title <%= tokenPrefix %>-col-textRubric">Sancta Missa</h1>
 
-        <span class="lbrxt-subtitle lbrxt-col-grey6">ex "divinumofficium.com"</span>
+          <span class="<%= tokenPrefix %>-subtitle <%= tokenPrefix %>-col-grey6">ex "divinumofficium.com"</span>
 
-        <h2 class="lbrxt-col-textRubric">Introitus</h2>
+          <h2 class="<%= tokenPrefix %>-col-textRubric">Introitus</h2>
 
-        <p>
-          <em class="lbrxt-col-textRubric">Ps 20:2-3</em><br />
-          <span class="lbrxt-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
-        </p>
+          <p>
+            <em class="<%= tokenPrefix %>-col-textRubric">Ps 20:2-3</em><br />
+            <span class="<%= tokenPrefix %>-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
+          </p>
 
-        <p>
-          <em class="lbrxt-col-textRubric">Ps 20:4</em><br />
-          Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite eius corónam de lápide pretióso.<br />
-          <span class="lbrxt-col-textRubric">℣.</span> Glória Patri, et Fílio, et Spirítui Sancto.<br />
-          <span class="lbrxt-col-textRubric">℟.</span> Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
-        </p>
+          <p>
+            <em class="<%= tokenPrefix %>-col-textRubric">Ps 20:4</em><br />
+            Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite eius corónam de lápide pretióso.<br />
+            <span class="<%= tokenPrefix %>-col-textRubric">℣.</span> Glória Patri, et Fílio, et Spirítui Sancto.<br />
+            <span class="<%= tokenPrefix %>-col-textRubric">℟.</span> Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
+          </p>
 
-        <p>
-          <span class="lbrxt-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
-        </p>
+          <p>
+            <span class="<%= tokenPrefix %>-col-textRubric">I</span>n virtúte tua, Dómine, lætábitur iustus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ eius tribuísti ei.
+          </p>
 
-        <h2 class="lbrxt-col-textRubric">Gloria</h2>
+          <h2 class="<%= tokenPrefix %>-col-textRubric">Gloria</h2>
 
-        <h2 class="lbrxt-col-textRubric">Oratio</h2>
+          <h2 class="<%= tokenPrefix %>-col-textRubric">Oratio</h2>
 
-        <p><span class="lbrxt-col-textRubric">O</span>rémus.<br />
-          Deus, qui beátum Nicoláum Pontíficem innúmeris decorásti miráculis: tríbue, quǽsumus; ut eius méritis et précibus a gehénnæ incéndiis liberémur.</p>
+          <p><span class="<%= tokenPrefix %>-col-textRubric">O</span>rémus.<br />
+            Deus, qui beátum Nicoláum Pontíficem innúmeris decorásti miráculis: tríbue, quǽsumus; ut eius méritis et précibus a gehénnæ incéndiis liberémur.</p>
 
-        <p><span class="lbrxt-col-textRubric">P</span>er Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.<br />
-          <span class="lbrxt-col-textRubric">℟.</span> Amen.
-      </div>
-    </section>
+          <p><span class="<%= tokenPrefix %>-col-textRubric">P</span>er Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.<br />
+            <span class="<%= tokenPrefix %>-col-textRubric">℟.</span> Amen.
+        </div>
+      </section>
   </div>
 
   <!-- <script src="js/app.js"></script> -->
