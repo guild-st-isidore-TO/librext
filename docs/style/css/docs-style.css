@@ -153,7 +153,7 @@ hr.section-divider {
 
 .card {
     margin: 4rem 0;
-    background-color: var(--lbrxt-col-grey3);
+    background-color: var(--sw-col-grey3);
 }
 
 .shape-box {
@@ -180,7 +180,7 @@ hr.section-divider {
 }
 
 .palette-box {
-    height: calc(var(--lbrxt-widget-xl) * 1.25);
+    height: calc(var(--sw-widget-xl) * 1.25);
     margin: 0;
     text-align: center;
     background-color: #bbbbbb;
@@ -358,9 +358,9 @@ hr.section-divider {
 
 .shape-box {
     flex: 1 1 auto;
-    height: calc(var(--lbrxt-widget-xl) * 1.25);
+    height: calc(var(--sw-widget-xl) * 1.25);
     /* margin: 1.5rem; */
-    background-color: var(--lbrxt-col-grey4);
+    background-color: var(--sw-col-grey4);
 }
 
 @media (min-width: 481px) {
@@ -384,7 +384,7 @@ hr.section-divider {
 }
 
 .widget-set .widget {
-    background-color: var(--lbrxt-col-grey4);
+    background-color: var(--sw-col-grey4);
     width: 100%;
     margin: 2rem 0;
     text-align: center;
@@ -397,7 +397,7 @@ hr.section-divider {
 }
 
 .box-text.dark {
-    color: var(--lbrxt-col-grey1);
+    color: var(--sw-col-grey1);
 }
 
 .box-text.box-heading {

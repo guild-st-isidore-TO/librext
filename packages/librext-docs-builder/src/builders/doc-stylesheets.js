@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { cpSync, copyFileSync } from 'fs';
+import { cpSync, copyFileSync, readFileSync, writeFileSync } from 'fs';
 import ejs from 'ejs';
 import { fileHandler } from 'librext-core'
 
@@ -20,13 +20,19 @@ const docStylesheets = (uiSpec, outputDir, config) => {
     const targetDir = join(outputDir, 'css')
     const targetFile = `${targetDir}/docs-style.css`
 
+
+
     console.log('[LibRext CSS - Docs Stylesheets] sourceFile', sourceFile)
     console.log('[LibRext CSS - Docs Stylesheets] targetDir', targetDir)
     console.log('[LibRext CSS - Docs Stylesheets] targetFile', targetFile)
 
     try {
         // cpSync(sourceFile, targetDir, { recursive: true })
-        copyFileSync(sourceFile, targetFile)
+        // copyFileSync(sourceFile, targetFile)
+
+        const baseStylesheet = readFileSync(sourceFile, { encoding: 'utf8' });
+        const outStylesheet = baseStylesheet.replaceAll('lbrxt-', `${config.tokenPrefix}-`)
+        writeFileSync(targetFile, outStylesheet);
     } catch (err) {
         console.error('[LibRext CSS - Docs Stylesheets] Stylesheet copying failed!')
         console.error(err)
