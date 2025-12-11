@@ -22,7 +22,7 @@ const defaultOutputDir = join(projectRootDir, config.outDirectory)
 */
 const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
-    // console.log('[LibRext Docs Builder] outputDir', outputDir);
+    console.log('[LibRext Docs Builder] outputDir', outputDir);
     return {
         htmlColours: docColours(uiSpec, outputDir, config),
         htmlHome: docHome(uiSpec, outputDir, config),
