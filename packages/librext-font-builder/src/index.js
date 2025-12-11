@@ -28,7 +28,9 @@ const build = (uiSpec, outputDir = defaultOutputDir, config) => {
     const buildSuccess = false
     const targetDir = join(outputDir, 'fonts')
 
-    config.fonts.forEach((fontKey, idx) => {
+    // config.fonts.forEach((fontKey, idx) => {
+    for (const fontRole in config.fonts) {
+        const fontKey = config.fonts[fontRole]
         if (!libRextFontsData.availableFonts.includes(fontKey)) {
             // Current fontKey is not in the system. Skip this.
             console.warn(`[Font Builder] Font key "${fontKey}" not recognized.`)
@@ -43,7 +45,8 @@ const build = (uiSpec, outputDir = defaultOutputDir, config) => {
             console.error(err)
             return false;
         }
-    })
+        // })
+    }
 
     return buildSuccess
 }

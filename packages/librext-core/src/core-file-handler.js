@@ -1,6 +1,7 @@
 "use strict"
 
 import fs from 'fs';
+import { dirname } from 'path';
 
 const readTemplateFile = (filePath) => {
     let returnData = {}
@@ -17,8 +18,13 @@ const readJsonFile = (filePath) => {
 }
 
 const writeFile = (filePath, content) => {
+    const fileDir = dirname(filePath)
     console.log('[LibRext CSS - FileHandler.writeFile] filePath', filePath)
-    fs.writeFileSync(filePath, content);
+    console.log('[LibRext CSS - FileHandler.writeFile] fileDir', fileDir)
+    fs.mkdir(fileDir, { recursive: true }, function (err) {
+        if (err) return cb(err);
+        fs.writeFileSync(filePath, content);
+    });
 }
 
 const fHandler = {

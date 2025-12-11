@@ -4,14 +4,17 @@ const DEF_TOKEN_PREFIX = 'lbrxt'
 const DEF_FILENAME_PREFIX = 'librext'
 const DEF_OUT_DIRECTORY = '/dist' // relative to project root
 const DEF_ASSET_OUT_DIRECTORY = '/dist' // relative to project root
-const DEF_FONTS = [
-    "cinzel",
-    "cormorant-garamond",
-    "crimson-text",
-    "inconsolata",
-    "lato",
-    "open-sans"
-]
+const DEF_FONTS = {
+    body: 'crimson-text',
+    bodyAlt: 'open-sans',
+    heading: 'cormorant-garamond',
+    headingAlt: 'crimson-text',
+    display: 'cinzel',
+    monospace: 'inconsolata',
+    label: 'open-sans',
+    uiHeading: 'open-sans',
+    uiBody: 'lato',
+}
 const DEF_FORMAT = 'screen'
 const DEF_LINK_COLOUR = 'primary'
 const DEF_LINK_COLOUR_HOVER = 'tertiary'

@@ -5,6 +5,8 @@ import { templatesDir } from '../docs-builder-util.js'
 const buildHtmlShapes = (uiSpec, outputDir, config) => {
     const fPath = `${templatesDir}/shapes.ejs`
     const template = fileHandler.readTemplateFile(fPath);
+    const fontKeySet = new Set(Object.values(config.fonts))
+    const fontKeyList = Array.from(fontKeySet)
     // console.log('[LibRext CSS - Build HTML Shapes] uiSpec', uiSpec);
     const cRadiusPrefixes = [
         'none',
@@ -61,7 +63,7 @@ const buildHtmlShapes = (uiSpec, outputDir, config) => {
     }
 
     const templatePayload = {
-        fonts: config.fonts,
+        fonts: fontKeyList,
         borderRadiusSizes: dataBorderRadSizes,
         boxShadowSizes: dataBoxShadowSizes,
         widgetSizes: dataWidgets,

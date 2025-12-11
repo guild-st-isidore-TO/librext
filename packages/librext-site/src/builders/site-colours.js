@@ -7,6 +7,8 @@ import { templatesDir, colourLabelModes } from '../site-builder-util.js'
 const docColours = (uiSpec, outputDir, config) => {
   const fPath = `${templatesDir}/site-colours.ejs`
   const template = fileHandler.readTemplateFile(fPath);
+  const fontKeySet = new Set(Object.values(config.fonts))
+  const fontKeyList = Array.from(fontKeySet)
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
   const librextGreyscale = uiSpec.libRextData.palette.grey
@@ -70,7 +72,7 @@ const docColours = (uiSpec, outputDir, config) => {
   ]
 
   const templatePayload = {
-    fonts: config.fonts,
+    fonts: fontKeyList,
     themePaletteLight: dataThemeLight,
     themePaletteDark: dataThemeDark,
     greyscalePaletteLight: dataGreyscaleLight,
@@ -79,7 +81,8 @@ const docColours = (uiSpec, outputDir, config) => {
     colourLayersLight: dataCollayersLight,
     colourLayersDark: dataColLayersDark,
   };
-  console.log(templatePayload);
+
+  // console.log('[LibRext CSS - Build HTML Colours] templatePayload', templatePayload);
 
   const output = ejs.render(template, templatePayload);
 

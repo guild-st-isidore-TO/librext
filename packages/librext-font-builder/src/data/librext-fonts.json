@@ -1,10 +1,13 @@
 {
     "availableFonts": [
+        "aleo",
         "cinzel",
         "cormorant-garamond",
         "crimson-text",
         "inconsolata",
         "lato",
-        "open-sans"
+        "open-sans",
+        "pt-serif",
+        "yrsa"
     ]
 }

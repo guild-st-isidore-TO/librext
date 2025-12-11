@@ -1,0 +1,77 @@
+/* ========================================================
+  LIBREXT FONTS 
+  -------------------------------------------------------
+  Font-face declarations and base variables tied to font
+  roles.
+=========================================================*/
+
+
+/*============ 
+  Crimson_Text 
+============*/
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('CrimsonText-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
