@@ -5,15 +5,21 @@
 "use strict"
 
 import { config as coreConfig } from 'librext-core'
+
+import fontFamiliesData from './data/font-families.json' with { type: 'json' };
 import buildThemeLibRext from './spec-librext.js'
 import { buildTypeScale, buildTypeScaleData } from './type-scale.js'
-import fontFamiliesData from './data/font-families.json' with { type: 'json' };
+import { buildGreyscaleProps, buildThemeProps } from './spec-theme.js'
+
 /**
  * Custom Librext UI Data (doesn't conform to Theme-UI spec)
  * @namespace libRextSpecBuilder
  */
 const buildSpec = (uiSpec, config = coreConfig) => {
 
+    /* ----------------------------------------
+     * Fonts
+     * ------------------------------------- */
     let libRextFonts = {}
     for (const fontRole in config.fonts) {
         const fontKey = config.fonts[fontRole]
@@ -23,6 +29,19 @@ const buildSpec = (uiSpec, config = coreConfig) => {
     console.log('[LibRext Spec Builder] config.fonts', config.fonts)
     console.log('[LibRext Spec Builder] libRextFonts', libRextFonts)
 
+    /* ----------------------------------------
+     * Theme
+     * ------------------------------------- */
+    // format theme data from config
+
+    // remove existing theme colours in default spec
+
+    // replace defualt spec theme with config values
+
+    
+    /* ----------------------------------------
+     * UI Spec overrides
+     * ------------------------------------- */
     const libRextTypeScale = buildTypeScale(config)
     let newSpec = {
         ...uiSpec,
@@ -30,13 +49,20 @@ const buildSpec = (uiSpec, config = coreConfig) => {
         fontSizes: libRextTypeScale
     }
 
+    /* ----------------------------------------
+     * LibRext Spec overrides
+     * ------------------------------------- */
     const libRextTypeScaleData = buildTypeScaleData(config)
     const specLibRext = buildThemeLibRext(config)
+
     const newLibRextSpec = {
         ...specLibRext.libRextData,
         fontSizes: libRextTypeScaleData
     }
 
+    /* ----------------------------------------
+     * Output Spec
+     * ------------------------------------- */
     const outSpec = {
         ...newSpec,
         libRextData: newLibRextSpec,

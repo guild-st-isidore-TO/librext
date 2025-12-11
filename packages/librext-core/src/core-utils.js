@@ -1,5 +1,9 @@
 "use strict"
 
+const capitalizeFirstLetter = (val) => {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
 function cartesian(...args) {
     var r = [], max = args.length - 1;
     function helper(arr, i) {
@@ -100,12 +104,14 @@ const codeComment = (heading, body, lang = 'js', level = 0, spacingLevel = 0) =>
 }
 
 const miscUtils = {
+    capitalizeFirstLetter,
     getPermutationsOfArrays,
     codeComment,
 }
 
 export default miscUtils
 export {
+    capitalizeFirstLetter,
     getPermutationsOfArrays,
     codeComment,
 }
