@@ -18,7 +18,7 @@ import libRextFontsData from './data/librext-fonts.json' with { type: 'json' };
 const defaultOutputDir = join(projectRootDir, config.assetOutDirectory)
 
 /**
- * 
+ * Builds font files based on config
  * @param {*} uiSpec 
  * @param {*} outputDir 
  * @param {*} config 

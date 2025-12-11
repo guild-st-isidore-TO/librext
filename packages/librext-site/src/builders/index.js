@@ -12,6 +12,7 @@ import siteHome from './site-home.js'
 import siteColours from './site-colours.js'
 import siteShapes from './site-shapes.js'
 import siteTypography from './site-typography.js'
+import siteStylesheets from './site-stylesheets.js'
 
 const defaultOutputDir = join(projectRootDir, config.outDirectory)
 
@@ -20,13 +21,14 @@ const defaultOutputDir = join(projectRootDir, config.outDirectory)
  * @namespace libRextSite
 */
 const build = (uiSpec, outputDir = defaultOutputDir, config) => {
-    // console.log('[LibRext Docs Builder] uiSpec', uiSpec);
-    // console.log('[LibRext Docs Builder] outputDir', outputDir);
+    // console.log('[LibRext Site Builder] uiSpec', uiSpec);
+    // console.log('[LibRext Site Builder] outputDir', outputDir);
     return {
         htmlColours: siteColours(uiSpec, outputDir, config),
         htmlHome: siteHome(uiSpec, outputDir, config),
         htmlShapes: siteShapes(uiSpec, outputDir, config),
         htmlTypography: siteTypography(uiSpec, outputDir, config),
+        htmlSylesheets: siteStylesheets(uiSpec, outputDir, config),
     }
 }
 

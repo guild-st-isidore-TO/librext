@@ -6,11 +6,13 @@
 
 import { join } from 'path'
 import { config } from 'librext-core'
+
 import { projectRootDir } from '../docs-builder-util.js'
 import docHome from './doc-home.js'
 import docColours from './doc-colours.js'
 import docShapes from './doc-shapes.js'
 import docTypography from './doc-typography.js'
+import docStylesheets from './doc-stylesheets.js'
 
 const defaultOutputDir = join(projectRootDir, config.outDirectory)
 
@@ -26,6 +28,7 @@ const build = (uiSpec, outputDir = defaultOutputDir, config) => {
         htmlHome: docHome(uiSpec, outputDir, config),
         htmlShapes: docShapes(uiSpec, outputDir, config),
         htmlTypography: docTypography(uiSpec, outputDir, config),
+        htmlStylesheet: docStylesheets(uiSpec, outputDir, config),
     }
 }
 
