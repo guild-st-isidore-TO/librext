@@ -66,6 +66,12 @@ npm run build:docs --variant="gsi"
 npm run build:docs --variant="inc"
 ```
 
+As of `v0.5.4`, these variants will be generated in `/docs/style/variant-file-prefix/`, like so:
+
+- `/docs/style/sw/index.html`  
+- `/docs/style/gsi/index.html`  
+- `/docs/style/innico/index.html`
+
 ## DEVELOPMENT
 
 Quickstart from the repo root:

@@ -24,14 +24,13 @@ const defaultVariant = variants[0]
 
 let styleVariant = process.env.npm_config_variant ? process.env.npm_config_variant : defaultVariant
 if (!variants.includes(styleVariant)) {
-    styleVariant = defaultVariantz
+    styleVariant = defaultVariant
 }
 
 let outConfig = { ...coreConfig }
 
 if (styleVariant == 'sw') {
     console.log('[LibRext Docs Builder] using SW configurations')
-
     outConfig.projectName = 'Salvador Workshop'
     outConfig.tokenPrefix = 'sw'
     outConfig.filenamePrefix = 'sw'
@@ -49,12 +48,23 @@ if (styleVariant == 'sw') {
         brightOrange: '#FC8352',
         goldYellow: '#FDC95C',
     }
-
+} else if (styleVariant == 'gsi') {
+    console.log('[LibRext Docs Builder] using GSI configurations')
+    outConfig.projectName = 'Guild of St. Isidore'
+    outConfig.tokenPrefix = 'gsi'
+    outConfig.filenamePrefix = 'gsi'
+} else if (styleVariant == 'inc') {
+    console.log('[LibRext Docs Builder] using INC configurations')
+    outConfig.projectName = 'In Níhilum Computábitur'
+    outConfig.tokenPrefix = 'innico'
+    outConfig.filenamePrefix = 'innico'
+} else {
+    console.log('[LibRext Docs Builder] using default configurations')
 }
 
-const fontsOutDir = join(projectRootDir, 'docs/style')
-const cssOutDir = join(projectRootDir, 'docs/style')
-const htmlOutDir = join(projectRootDir, 'docs/style')
+const fontsOutDir = join(projectRootDir, `docs/style/${outConfig.filenamePrefix}`)
+const cssOutDir = join(projectRootDir, `docs/style/${outConfig.filenamePrefix}`)
+const htmlOutDir = join(projectRootDir, `docs/style/${outConfig.filenamePrefix}`)
 
 const uiSpec = librextSpecBuilder(libRextUiSpec, outConfig)
 let outSpec = {

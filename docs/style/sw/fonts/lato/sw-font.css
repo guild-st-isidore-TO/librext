@@ -1,0 +1,78 @@
+/* ========================================================
+  LIBREXT FONTS 
+  -------------------------------------------------------
+  Font-face declarations and base variables tied to font
+  roles.
+=========================================================*/
+
+
+
+/* ========
+  Lato 
+==========*/
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Black.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}
+
