@@ -15,6 +15,17 @@ const DEF_FONTS = {
     uiHeading: 'open-sans',
     uiBody: 'lato',
 }
+const DEF_THEME_COLOURS = {
+    rubricRed: '#881403',
+    okGreen: '#77A265',
+    warnYellow: '#F6BF17',
+    errorRed: '#AC4945',
+    infoBlue: '#2471B8',
+    forestGreen: "#2F4739",
+    rustBrown: "#693628",
+    darkWine: "#513041",
+    blueSlate: "#383F46",
+}
 const DEF_FORMAT = 'screen'
 const DEF_LINK_COLOUR = 'primary'
 const DEF_LINK_COLOUR_HOVER = 'tertiary'
@@ -27,6 +38,7 @@ const filenamePrefix = DEF_FILENAME_PREFIX;
 const outDirectory = DEF_OUT_DIRECTORY;
 const assetOutDirectory = DEF_ASSET_OUT_DIRECTORY;
 const fonts = DEF_FONTS;
+const themeColours = DEF_THEME_COLOURS;
 const format = DEF_FORMAT;
 const linkColour = DEF_LINK_COLOUR;
 const linkColourHover = DEF_LINK_COLOUR_HOVER;
@@ -50,6 +62,7 @@ const coreConfig = {
     outDirectory,
     assetOutDirectory,
     fonts,
+    themeColours,
     format, // (screen/print/ebook), 
     linkColour, // (which palette colour to use for HTML links), 
     linkColourHover,
@@ -75,6 +88,7 @@ export {
     outDirectory,
     assetOutDirectory,
     fonts,
+    themeColours,
     format,
     linkColour,
     linkColourHover,

@@ -9,7 +9,8 @@ import libRextUiSpec from 'librext-ui-spec'
 import librextSpecBuilder from 'librext-spec-builder'
 import libRextFontBuilder from 'librext-font-builder'
 import libRextCssBuilder from 'librext-css-builder'
-import libRextSiteBuilder from 'librext-site'
+// import libRextSiteBuilder from 'librext-site'
+import libRextDocsBuilder from 'librext-docs-builder'
 
 import { projectRootDir } from './builder-util.js'
 
@@ -35,6 +36,14 @@ if (styleVariant == 'sw') {
     outConfig.fonts.heading = 'aleo'
     outConfig.fonts.headingAlt = 'yrsa'
     outConfig.fonts.display = 'yrsa'
+
+    outConfig.themeColours = {
+        nightBlue: '#030D4F',
+        deepOrange: '#EE4603',
+        coolBlue: '#061999',
+        brightOrange: '#FC8352',
+        goldYellow: '#FDC95C',
+    }
 }
 
 const fontsOutDir = join(projectRootDir, 'docs/style')
@@ -90,4 +99,4 @@ console.log('[LibRext Documentation/Specs]\nCSS output directory', cssOutDir)
 libRextCssBuilder(outSpec, cssOutDir, outConfig)
 
 console.log('[LibRext Documentation/Specs]\nHTML output directory', htmlOutDir)
-libRextSiteBuilder(outSpec, htmlOutDir, outConfig)
+libRextDocsBuilder(outSpec, htmlOutDir, outConfig)

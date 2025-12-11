@@ -60,6 +60,7 @@ const fontData = {
 }
 
 const buildThemeLibRext = (config) => {
+    const paletteTheme = config.themeColours
     return {
         /**
          * DATA - Custom data
@@ -68,7 +69,7 @@ const buildThemeLibRext = (config) => {
             ...fontData,
             palette: {
                 grey: librextGreyscale,
-                theme: librextTheme,
+                theme: paletteTheme,
             },
             docRoles: {
                 hero: {

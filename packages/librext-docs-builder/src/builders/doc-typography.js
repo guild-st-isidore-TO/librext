@@ -2,7 +2,7 @@ import ejs from 'ejs';
 import { fileHandler } from 'librext-core'
 import { templatesDir } from '../docs-builder-util.js'
 
-const buildHtmlTypography = (uiSpec, outputDir, config) => {
+const docTypography = (uiSpec, outputDir, config) => {
     const fPath = `${templatesDir}/typography.ejs`
     const template = fileHandler.readTemplateFile(fPath);
     const fontKeySet = new Set(Object.values(config.fonts))
@@ -35,4 +35,4 @@ const buildHtmlTypography = (uiSpec, outputDir, config) => {
 }
 
 // module.exports = { build: buildHtmlTypography };
-export default buildHtmlTypography
+export default docTypography

@@ -2,7 +2,7 @@ import ejs from 'ejs';
 import { fileHandler } from 'librext-core'
 import { templatesDir } from '../docs-builder-util.js'
 
-const buildHtmlShapes = (uiSpec, outputDir, config) => {
+const docShapes = (uiSpec, outputDir, config) => {
     const fPath = `${templatesDir}/shapes.ejs`
     const template = fileHandler.readTemplateFile(fPath);
     const fontKeySet = new Set(Object.values(config.fonts))
@@ -76,4 +76,4 @@ const buildHtmlShapes = (uiSpec, outputDir, config) => {
 }
 
 // module.exports = { build: buildHtmlShapes };
-export default buildHtmlShapes
+export default docShapes

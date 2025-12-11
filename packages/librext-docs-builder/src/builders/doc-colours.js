@@ -11,6 +11,7 @@ const docColours = (uiSpec, outputDir, config) => {
   const fontKeyList = Array.from(fontKeySet)
   // console.log('[LibRext CSS - Build HTML Colours] uiSpec', uiSpec);
 
+  // TODO - read these from configs!!
   const librextGreyscale = uiSpec.libRextData.palette.grey
   const librextTheme = uiSpec.libRextData.palette.theme
 
