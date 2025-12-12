@@ -27,7 +27,7 @@
   --gsi-col-background: #f2ede5;
   --gsi-col-primary: #B81626;
   --gsi-col-secondary: #FCDD09;
-  --gsi-col-tertiary: #322928;
+  --gsi-col-tertiary: #017D4B;
   --gsi-col-indicatorOk: #77A265;
   --gsi-col-indicatorWarn: #F6BF17;
   --gsi-col-indicatorInfo: #2471B8;
@@ -59,21 +59,15 @@
   --gsi-col-dark-background: #110e0e;
   --gsi-col-dark-primary: #B81626;
   --gsi-col-dark-secondary: #FCDD09;
-  --gsi-col-dark-tertiary: #322928;
+  --gsi-col-dark-tertiary: #017D4B;
   --gsi-col-dark-indicatorOk: #77A265;
   --gsi-col-dark-indicatorWarn: #F6BF17;
   --gsi-col-dark-indicatorInfo: #2471B8;
   --gsi-col-dark-indicatorError: #AC4945;
   --gsi-col-dark-indicatorNull: #676261;
-  --gsi-col-themeRubricRed: #881403;
-  --gsi-col-themeOkGreen: #77A265;
-  --gsi-col-themeWarnYellow: #F6BF17;
-  --gsi-col-themeErrorRed: #AC4945;
-  --gsi-col-themeInfoBlue: #2471B8;
-  --gsi-col-themeForestGreen: #2F4739;
-  --gsi-col-themeRustBrown: #693628;
-  --gsi-col-themeDarkWine: #513041;
-  --gsi-col-themeBlueSlate: #383F46;
+  --gsi-col-themeFirebrickRed: #B81626;
+  --gsi-col-themeGoldYellow: #FCDD09;
+  --gsi-col-themeSalemGreen: #017D4B;
 }
 
 
@@ -135,7 +129,7 @@
   color: #FCDD09;
 }
 .gsi-col-tertiary {
-  color: #322928;
+  color: #017D4B;
 }
 .gsi-col-indicatorOk {
   color: #77A265;
@@ -152,32 +146,14 @@
 .gsi-col-indicatorNull {
   color: #676261;
 }
-.gsi-col-themeRubricRed {
-  color: #881403;
+.gsi-col-themeFirebrickRed {
+  color: #B81626;
 }
-.gsi-col-themeOkGreen {
-  color: #77A265;
+.gsi-col-themeGoldYellow {
+  color: #FCDD09;
 }
-.gsi-col-themeWarnYellow {
-  color: #F6BF17;
-}
-.gsi-col-themeErrorRed {
-  color: #AC4945;
-}
-.gsi-col-themeInfoBlue {
-  color: #2471B8;
-}
-.gsi-col-themeForestGreen {
-  color: #2F4739;
-}
-.gsi-col-themeRustBrown {
-  color: #693628;
-}
-.gsi-col-themeDarkWine {
-  color: #513041;
-}
-.gsi-col-themeBlueSlate {
-  color: #383F46;
+.gsi-col-themeSalemGreen {
+  color: #017D4B;
 }
 
 
@@ -239,7 +215,7 @@
   background-color: #FCDD09;
 }
 .gsi-bgcol-tertiary {
-  background-color: #322928;
+  background-color: #017D4B;
 }
 .gsi-bgcol-indicatorOk {
   background-color: #77A265;
@@ -256,32 +232,14 @@
 .gsi-bgcol-indicatorNull {
   background-color: #676261;
 }
-.gsi-bgcol-themeRubricRed {
-  background-color: #881403;
+.gsi-bgcol-themeFirebrickRed {
+  background-color: #B81626;
 }
-.gsi-bgcol-themeOkGreen {
-  background-color: #77A265;
+.gsi-bgcol-themeGoldYellow {
+  background-color: #FCDD09;
 }
-.gsi-bgcol-themeWarnYellow {
-  background-color: #F6BF17;
-}
-.gsi-bgcol-themeErrorRed {
-  background-color: #AC4945;
-}
-.gsi-bgcol-themeInfoBlue {
-  background-color: #2471B8;
-}
-.gsi-bgcol-themeForestGreen {
-  background-color: #2F4739;
-}
-.gsi-bgcol-themeRustBrown {
-  background-color: #693628;
-}
-.gsi-bgcol-themeDarkWine {
-  background-color: #513041;
-}
-.gsi-bgcol-themeBlueSlate {
-  background-color: #383F46;
+.gsi-bgcol-themeSalemGreen {
+  background-color: #017D4B;
 }
 
 
@@ -370,7 +328,7 @@
   color: #FCDD09;
 }
 .gsi-col-dark-tertiary {
-  color: #322928;
+  color: #017D4B;
 }
 .gsi-col-dark-indicatorOk {
   color: #77A265;
@@ -474,7 +432,7 @@
   background-color: #FCDD09;
 }
 .gsi-bgcol-dark-tertiary {
-  background-color: #322928;
+  background-color: #017D4B;
 }
 .gsi-bgcol-dark-indicatorOk {
   background-color: #77A265;
@@ -516,13 +474,13 @@ a:visited, .gsi-link:visited {
 }
 
 a:hover, .gsi-link:hover {
-  color: #322928;
-  text-decoration-color: #322928;
+  color: #017D4B;
+  text-decoration-color: #017D4B;
 }
 
 a:active, .gsi-link:active {
-  color: #322928;
-  text-decoration-color: #322928;
+  color: #017D4B;
+  text-decoration-color: #017D4B;
 }
 
 

@@ -35,11 +35,11 @@ if (styleVariant == 'sw') {
     outConfig.tokenPrefix = 'sw'
     outConfig.filenamePrefix = 'sw'
 
-    outConfig.fonts.body = 'open-sans'
-    outConfig.fonts.bodyAlt = 'crimson-text'
+    outConfig.fonts.display = 'yrsa'
     outConfig.fonts.heading = 'aleo'
     outConfig.fonts.headingAlt = 'yrsa'
-    outConfig.fonts.display = 'yrsa'
+    outConfig.fonts.body = 'open-sans'
+    outConfig.fonts.bodyAlt = 'crimson-text'
 
     outConfig.themeColours = {
         nightBlue: '#030D4F',
@@ -53,11 +53,30 @@ if (styleVariant == 'sw') {
     outConfig.projectName = 'Guild of St. Isidore'
     outConfig.tokenPrefix = 'gsi'
     outConfig.filenamePrefix = 'gsi'
+
+    outConfig.themeColours = {
+        firebrickRed: '#B81626',
+        goldYellow: '#FCDD09',
+        salemGreen: '#017D4B'
+    }
 } else if (styleVariant == 'inc') {
     console.log('[LibRext Docs Builder] using INC configurations')
-    outConfig.projectName = 'In Níhilum Computábitur'
+    outConfig.projectName = 'In.Ní.Co. (In Níhilum Computábitur)'
     outConfig.tokenPrefix = 'innico'
     outConfig.filenamePrefix = 'innico'
+
+    outConfig.fonts.display = 'aleo'
+    outConfig.fonts.heading = 'yrsa'
+    outConfig.fonts.headingAlt = 'crimson-text'
+    outConfig.fonts.body = 'crimson-text'
+    outConfig.fonts.bodyAlt = 'open-sans'
+
+    outConfig.themeColours = {
+        rainforestGreen: '#195641',
+        burntUmber: '#993727',
+        rawSienna: '#CA8137',
+        slateGreen: '#294143',
+    }
 } else {
     console.log('[LibRext Docs Builder] using default configurations')
 }
@@ -89,21 +108,21 @@ if (styleVariant == 'sw') {
 
     outSpec.colors.primary = '#B81626'
     outSpec.colors.secondary = '#FCDD09'
-    outSpec.colors.tertiary = '#322928'
+    outSpec.colors.tertiary = '#017D4B'
 
     outSpec.colors.modes.dark.primary = '#B81626'
     outSpec.colors.modes.dark.secondary = '#FCDD09'
-    outSpec.colors.modes.dark.tertiary = '#322928'
+    outSpec.colors.modes.dark.tertiary = '#017D4B'
 } else if (styleVariant == 'inc') {
     console.log('[LibRext Docs Builder] using INC styles')
 
-    outSpec.colors.primary = '#B81626'
-    outSpec.colors.secondary = '#FCDD09'
-    outSpec.colors.tertiary = '#322928'
+    outSpec.colors.primary = '#195641'
+    outSpec.colors.secondary = '#993727'
+    outSpec.colors.tertiary = '#CA8137'
 
-    outSpec.colors.modes.dark.primary = '#B81626'
-    outSpec.colors.modes.dark.secondary = '#FCDD09'
-    outSpec.colors.modes.dark.tertiary = '#322928'
+    outSpec.colors.modes.dark.primary = '#195641'
+    outSpec.colors.modes.dark.secondary = '#993727'
+    outSpec.colors.modes.dark.tertiary = '#CA8137'
 } else {
     console.log('[LibRext Docs Builder] using default styles')
 }
